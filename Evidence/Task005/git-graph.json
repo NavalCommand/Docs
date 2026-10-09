@@ -1,0 +1,12 @@
+{
+  "nestedLocalFiles": 0,
+  "rootLocalFileAbsent": true,
+  "bootstrapSourceOverride": "FETCHCONTENT_SOURCE_DIR_NCBUILD:PATH=",
+  "bootstrapRevision": "3d3ff24d75c9d3b399207bff0d565f1db741c215",
+  "dependencies": [
+    "navalcommand.gateway.api|main|C:/Users/DmitriyPC/AppData/Local/Temp/naval-task005-git-resolution/SeaPower.Mod/o/windows-msvc-release/_deps/nc_0b1845c5e8eb-src",
+    "navalcommand.gateway.grpc.api|main|C:/Users/DmitriyPC/AppData/Local/Temp/naval-task005-git-resolution/SeaPower.Mod/o/windows-msvc-release/_deps/nc_2ce4f16e7409-src",
+    "navalcommand.gateway.grpc|main|C:/Users/DmitriyPC/AppData/Local/Temp/naval-task005-git-resolution/SeaPower.Mod/o/windows-msvc-release/_deps/nc_9c6b3dc680b0-src",
+    "navalcommand.seapower.client|main|C:/Users/DmitriyPC/AppData/Local/Temp/naval-task005-git-resolution/SeaPower.Mod/o/windows-msvc-release/_deps/nc_c754339ee794-src"
+  ]
+}

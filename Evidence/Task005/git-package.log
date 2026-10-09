@@ -1,0 +1,21 @@
+-- NavalCommand dependency navalcommand.gateway.api -> nc_0b1845c5e8eb Git main
+-- NavalCommand dependency navalcommand.gateway.grpc.api -> nc_2ce4f16e7409 Git main
+-- Found RE2 via CMake.
+-- NavalCommand dependency navalcommand.gateway.grpc -> nc_9c6b3dc680b0 Git main
+-- NavalCommand dependency navalcommand.seapower.client -> nc_c754339ee794 Git main
+-- Configuring done (0.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/DmitriyPC/AppData/Local/Temp/naval-task005-git-resolution/SeaPower.Mod/o/windows-msvc-release
+1/1 Test #1: host-abi .........................   Passed    0.04 sec
+100% tests passed, 0 tests failed out of 1
+  Gateway.Api -> C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-git-resolution\SeaPower.Mod\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-src\managed\bin\Release\netstandard2.0\Gateway.Api.dll
+  SeaPower.Client -> C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-git-resolution\SeaPower.Mod\o\windows-msvc-release\_deps\nc_c754339ee794-src\bin\Release\netstandard2.1\SeaPower.Client.dll
+  SeaPower.Mod -> C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-git-resolution\SeaPower.Mod\managed\bin\Release\netstandard2.1\SeaPower.Mod.dll
+Build succeeded.
+    6 Warning(s)
+    0 Error(s)
+  LaunchCandidate -> C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-git-resolution\SeaPower.Mod\app\harness\bin\Release\netstandard2.1\LaunchCandidate.dll
+Build succeeded.
+    2 Warning(s)
+    0 Error(s)
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-git-resolution\SeaPower.Mod\out\package\0.1.0

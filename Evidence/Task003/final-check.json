@@ -1,0 +1,32 @@
+{
+  "checkedUtc": "2026-10-09T14:50:46.1402451Z",
+  "task002PluginRestored": true,
+  "experimentPidsClosed": [
+    21824,
+    31580
+  ],
+  "vendorChangedCount": 0,
+  "workspaceBinaryFiles": [],
+  "doorstopDisabled": true,
+  "vendorChanges": [],
+  "pluginHash": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553",
+  "scriptParse": [
+    {
+      "errors": [],
+      "path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Build-AnchorChain.ps1"
+    },
+    {
+      "errors": [],
+      "path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Prepare-LaunchRequest.ps1"
+    },
+    {
+      "errors": [],
+      "path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Start-Validation.ps1"
+    }
+  ],
+  "doorstopSha256": "3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A",
+  "vendorFilesChecked": 233,
+  "remainingInstallationProcesses": [],
+  "closedExtraInstallationProcesses": [],
+  "doorstopMatchesTask002Final": true
+}

@@ -1,0 +1,10 @@
+{
+  "secondsToReady": 26.0960476,
+  "startedUtc": "2026-10-09T14:36:17.0392348Z",
+  "pid": 21824,
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AirFacilities.ini",
+  "ready": true,
+  "token": "d4eb7f69-44b7-4478-abff-13d812718aa2",
+  "side": "Taskforce1"
+}

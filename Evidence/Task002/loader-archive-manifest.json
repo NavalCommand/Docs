@@ -1,0 +1,123 @@
+{
+  "release": "V1.1.0",
+  "purpose": "offline-manifest-only-not-extracted-or-activated",
+  "sha256": "6FE07835A56E0E401AF580CFB9167CD460973F066C162F7E69DFC256B1F9A90D",
+  "entries": [
+    {
+      "bytes": 5,
+      "path": ".doorstop_version"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/cache/"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/config/"
+    },
+    {
+      "bytes": 5564,
+      "path": "BepInEx/config/BepInEx.cfg"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/core/"
+    },
+    {
+      "bytes": 204800,
+      "path": "BepInEx/core/0Harmony.dll"
+    },
+    {
+      "bytes": 267107,
+      "path": "BepInEx/core/0Harmony.xml"
+    },
+    {
+      "bytes": 111616,
+      "path": "BepInEx/core/0Harmony20.dll"
+    },
+    {
+      "bytes": 127488,
+      "path": "BepInEx/core/BepInEx.dll"
+    },
+    {
+      "bytes": 5632,
+      "path": "BepInEx/core/BepInEx.Harmony.dll"
+    },
+    {
+      "bytes": 4056,
+      "path": "BepInEx/core/BepInEx.Harmony.xml"
+    },
+    {
+      "bytes": 42496,
+      "path": "BepInEx/core/BepInEx.Preloader.dll"
+    },
+    {
+      "bytes": 7964,
+      "path": "BepInEx/core/BepInEx.Preloader.xml"
+    },
+    {
+      "bytes": 89835,
+      "path": "BepInEx/core/BepInEx.xml"
+    },
+    {
+      "bytes": 23552,
+      "path": "BepInEx/core/HarmonyXInterop.dll"
+    },
+    {
+      "bytes": 339456,
+      "path": "BepInEx/core/Mono.Cecil.dll"
+    },
+    {
+      "bytes": 43008,
+      "path": "BepInEx/core/Mono.Cecil.Mdb.dll"
+    },
+    {
+      "bytes": 86528,
+      "path": "BepInEx/core/Mono.Cecil.Pdb.dll"
+    },
+    {
+      "bytes": 27648,
+      "path": "BepInEx/core/Mono.Cecil.Rocks.dll"
+    },
+    {
+      "bytes": 105984,
+      "path": "BepInEx/core/MonoMod.RuntimeDetour.dll"
+    },
+    {
+      "bytes": 9414,
+      "path": "BepInEx/core/MonoMod.RuntimeDetour.xml"
+    },
+    {
+      "bytes": 187904,
+      "path": "BepInEx/core/MonoMod.Utils.dll"
+    },
+    {
+      "bytes": 78973,
+      "path": "BepInEx/core/MonoMod.Utils.xml"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/patchers/"
+    },
+    {
+      "bytes": 0,
+      "path": "BepInEx/plugins/"
+    },
+    {
+      "bytes": 7168,
+      "path": "BepInEx/plugins/AnchorChain.Preloader.dll"
+    },
+    {
+      "bytes": 1460,
+      "path": "doorstop_config.ini"
+    },
+    {
+      "bytes": 26112,
+      "path": "winhttp.dll"
+    }
+  ]
+}

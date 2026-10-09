@@ -1,0 +1,8 @@
+-- NavalCommand dependency navalcommand.gateway.api -> nc_0b1845c5e8eb local C:/Software/GitHub/NavalCommand/Gateway.Api
+-- NavalCommand dependency navalcommand.gateway.grpc.api -> nc_2ce4f16e7409 local C:/Software/GitHub/NavalCommand/Gateway.Grpc.Api
+-- Found RE2 via CMake.
+-- NavalCommand dependency navalcommand.gateway.grpc -> nc_9c6b3dc680b0 local C:/Software/GitHub/NavalCommand/Gateway.Grpc
+-- NavalCommand dependency navalcommand.seapower.client -> nc_c754339ee794 local C:/Software/GitHub/NavalCommand/SeaPower.Client
+-- Configuring done (0.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release

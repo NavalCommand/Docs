@@ -1,0 +1,33 @@
+Command: cmake --build Gateway.Grpc.Api/o/windows-msvc-release --clean-first --parallel 8
+[1/1] Cleaning all built files...
+[1/31] Generating generated/navalcommand/gateway/v1/session.pb.cc, generated/navalcommand/gateway/v1/session.pb.h
+[2/31] Generating generated/navalcommand/gateway/v1/orders.pb.cc, generated/navalcommand/gateway/v1/orders.pb.h
+[3/31] Generating generated/navalcommand/gateway/v1/incidents.pb.cc, generated/navalcommand/gateway/v1/incidents.pb.h
+[4/31] Generating generated/navalcommand/gateway/v1/world.pb.cc, generated/navalcommand/gateway/v1/world.pb.h
+[5/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\app\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp for CXX dependencies
+[6/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\src\NavalCommand\Gateway\Api\Codec.cpp for CXX dependencies
+[7/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\session.pb.cc for CXX dependencies
+[8/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\incidents.pb.cc for CXX dependencies
+[9/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\orders.pb.cc for CXX dependencies
+[10/31] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[11/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\world.pb.cc for CXX dependencies
+[12/31] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[13/31] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\session.pb.cc.obj
+[14/31] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\incidents.pb.cc.obj
+[15/31] Building CXX object _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp.obj
+[16/31] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\world.pb.cc.obj
+[17/31] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\orders.pb.cc.obj
+[18/31] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\NavalCommand\Gateway\Api\Codec.cpp.obj
+[19/31] Linking CXX static library _deps\nc_0b1845c5e8eb-build\src\Gateway.Api.lib
+[20/31] Generating generated/navalcommand/gateway/v1/service.pb.cc, generated/navalcommand/gateway/v1/service.pb.h, generated/navalcommand/gateway/v1/service.grpc.pb.cc, generated/navalcommand/gateway/v1/service.grpc.pb.h
+[21/31] Linking CXX executable _deps\nc_0b1845c5e8eb-build\app\schema-roundtrip.exe
+[22/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\service.pb.cc for CXX dependencies
+[23/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\service.grpc.pb.cc for CXX dependencies
+[24/31] Generating CXX dyndep file src\CMakeFiles\Gateway.Grpc.Api.dir\CXX.dd
+[25/31] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp for CXX dependencies
+[26/31] Generating CXX dyndep file app\CMakeFiles\naval-cli.dir\CXX.dd
+[27/31] Building CXX object src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.pb.cc.obj
+[28/31] Building CXX object src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.grpc.pb.cc.obj
+[29/31] Linking CXX static library src\Gateway.Grpc.Api.lib
+[30/31] Building CXX object app\CMakeFiles\naval-cli.dir\NavalCommand\Gateway\Grpc\Api\Cli.cpp.obj
+[31/31] Linking CXX executable app\naval-cli.exe

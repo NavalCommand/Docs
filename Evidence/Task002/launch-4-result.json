@@ -1,0 +1,10 @@
+{
+  "pid": 31296,
+  "startedUtc": "2026-10-09T13:30:38.0506989Z",
+  "token": "04f210fc-1b3b-405b-ba9d-f53ea8df063e",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "secondsToReady": 26.0266696,
+  "ready": true,
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\MinimalCombat.ini",
+  "side": "Taskforce1"
+}

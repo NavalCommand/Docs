@@ -1,0 +1,42 @@
+[
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AircraftThreat.ini",
+    "Hash": "CB6013A7D38771625CBFF0247DE1AE0199609E026E977770596E48A8BAF496B1"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Build-AnchorChain.ps1",
+    "Hash": "26BF20C5B36F8A0A13236C1F9A64FA304D3FDADC7D6AD34AA0CB29CF8766E6F7"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\DiagnosticProbe.cs",
+    "Hash": "851400D6009C966CFBD118F7735E0811A4679C1B555D6E9DF54A38129859ADED"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\LaunchCandidate.cs",
+    "Hash": "6425D0F33DBAE68ECF816BB1EAAE1DD9FBA63BC2BA680A9F44C1F5D7975E5B57"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\LaunchCandidate.csproj",
+    "Hash": "E2BEB5AD0A8E3314432052AA3BFA4C9C20A654FA0C5694610D2E28AB6089F084"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\MinimalCombat.ini",
+    "Hash": "B766A29398E883F9D0002CB98A6FB5283A1E4230793C2FA15D225ABC7DA383EC"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\NearContact.ini",
+    "Hash": "7A7A8F102FB7C14FDEC41D0C242E7C1F417BAE1680DF79492F6E3A4B59B4CE6A"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Prepare-LaunchRequest.ps1",
+    "Hash": "49EFBD202271B5877B2F83672000D93A3A03D04497400B5B5FD9BAC8C0DE354A"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\RuntimePlugin.cs",
+    "Hash": "E6BF95BFDC3F2060FA815E830A817E0AA4AC3B8BE83492CE01F06C790B057D20"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Start-Validation.ps1",
+    "Hash": "0CC7DF0151F0736EB7A263B12BA3DD4C73C383FF264AD8C80B279B7F444DF382"
+  }
+]

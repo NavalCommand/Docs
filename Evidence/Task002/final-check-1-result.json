@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\NearContact.ini",
+  "side": "Taskforce1",
+  "pid": 1792,
+  "token": "fb8bed1f-c890-4f9b-b50e-ee362d1bed3f",
+  "secondsToReady": 25.7820674,
+  "startedUtc": "2026-10-09T13:44:45.0725112Z"
+}

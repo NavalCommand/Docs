@@ -1,0 +1,64 @@
+# NavalCommandFramework — contributor and agent instructions
+
+These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
+
+## Architecture invariants
+
+1. **Domain before transport.** Domain contracts must not depend on Sea Power, Unity, protobuf-generated classes, gRPC, Qt, or a particular model provider. Place network serialization and transports in adapters. Keep the operational naval-world API separate from privileged runtime/simulation-control APIs.
+2. **No simulator-specific information in the operational protocol.** Do not introduce game scores, editor-only truth, pause states, or time compression into observable unit/track/environment models. Operational timestamps are allowed. Pause/resume belongs to a separate optional runtime-control interface.
+3. **Preserve observable information boundaries.** Own units may have perfect state in V1 because that is how Sea Power behaves; treat this as an adapter behavior, not a permanent API guarantee. Enemy tracks must be based on information observable to the controlled faction. Never export authoritative opponent positions/identities via the ordinary observer interface. Do not encode an invariant that one track is one unit, even if this is true in V1.
+4. **Reuse Sea Power's native automation.** Native navigation, order execution, missile evasion, and other automatic behaviors are valuable. Preserve them unless explicitly authorized. Study the underlying game code before designing command semantics or any override mechanism. For the initial backend, external slow deciders must not interrupt protected urgent native sequences; their availability/status should be observable if the engine provides it. Future external deterministic controllers must remain possible.
+5. **Policies do not leak.** Generic API, client, cache, gateway, recorder, and GUI must not depend on LLM-specific prompts, model names, inference SDKs, token budgets, or assumptions about a decider topology. A decision policy and its model provider are separate pluggable concepts.
+6. **Independent information sources.** Tasking, textual mission briefing, intelligence, and operating constraints can be injected outside Sea Power. Do not assume AI factions expose player briefing data. Keep sourced intelligence distinguishable from sensor-confirmed observations.
+7. **Keep scheduling separate.** The decider must not implement simulation pausing or own the polling cycle. A separate orchestrator supports synchronous, hybrid, and fully asynchronous operation, with periodic decisions based on operational time. Urgent native/fast decisions must not depend on an LLM evaluation.
+8. **No silent data loss.** Short-lived incidents must be retainable until read/acknowledged by each relevant consumer. Independent clients must not clear each other's unread incidents. Recording/replay and the GUI must be able to consume the same generic observations.
+9. **Safe concurrency boundaries.** Never block Sea Power's simulation thread on inference, disk/network I/O, or remote clients. Game objects must only be accessed on threads permitted by the engine. Use immutable snapshots and message passing between the game thread and I/O workers. Command acceptance is not proof of execution.
+10. **Do not overdesign V1.** Implement only verified capabilities needed for the Sea Power adapter; permit future features through sound boundaries, not speculative abstractions. Do not invent game commands, encyclopedia fields, automation state, or hit-probability models.
+11. **Observations must be read-only in effect.** Document each enemy-track field's faction-visible provenance. Do not serialize native contact objects wholesale or query environment getters that modify Unity RNG/cache/other state without a validated side-effect-free strategy.
+12. **Flight-deck/AirOps feature follows existing API boundaries.** Native `FlightDeck` facilities include ground airfields as well as ships. Investigate facility-side inventory, preparation, launch, recovery and turnaround as features of world/catalog observations, the **same** `Orders.Api`, and incidents. As soon as a normal friendly game-unit object is spawned, **whether grounded or airborne**, it uses ordinary generic unit observation and orders, subject to per-unit dynamic order eligibility. Native takeoff automation remains protected. Do not invent an `AirOperations.Api` or second order framework. Investigate whether each operation is initiated by a human/strategic AI or executed autonomously by the game.
+13. **One order system, discoverable per-entity eligibility.** Keep one `Orders.Api` for deployed units and facility operations. For each entity advertise *implemented* supported high-level orders and their **current** executable/blocked/unknown state, plus grounded machine-readable reasons where known. Recheck all preconditions and protected automation state at command dispatch; never trust an earlier eligibility snapshot or automatically replay rejected commands. An aircraft spawned on a deck/airfield is already an ordinary unit, even before takeoff.
+14. **Validate runtime assumptions per game version.** Verify assembly hashes, main-thread/job boundaries, native-command semantics, pause ownership, and loader compatibility on disposable scenarios. Decompiled code is not proof of safe live behavior.
+15. **Automated fixture startup is development infrastructure.** Keep scenario selection, test loaders and launch helpers opt-in and reversible; never export them as operational naval orders.
+16. **Preserve canonical contracts and modular deployment.** The five functional repositories keep provider and gateway implementation independent, with one canonical Protobuf message schema in `Gateway.Api`. The mod composition root owns binding/hosting. The gateway must also run with a mock provider without Sea Power.
+17. **Respect physical order semantics.** Replace vs append movement routing are distinct high-level actions. They may be repeatedly issued against moving units when dynamically supported; validate again on the game thread and never destroy protected native evasion/takeoff behavior as a side effect.
+
+## Repository, build and dependency conventions
+
+- Follow the PiSubmarine conventions for single-purpose modules, `.Api` contracts, composition roots and dependency injection. Follow the shared conventions in [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md); `UnrealVoxelSim/ModuleTemplate` and `UnrealVoxelSim/Build.CMake` are structural references, not runtime dependencies.
+- C++26 is the intended standard; use supported modern language/library features and document toolchain gaps. C# is appropriate for Sea Power/Unity integration.
+- Keep **five functional Git repositories plus one separate `Build.CMake` infrastructure repository**. Root CMake files orchestrate only; native production/test/mock/app/benchmark targets live in their relevant subdirectories. Public headers mirror namespaces. Do not invent empty modules.
+- Fetch internal source repositories through centralized `Build.CMake` using `FetchContent`; use vcpkg manifest/pinned source builds for third-party native dependencies. Do not use CPM.cmake or duplicate shared helper scripts.
+- Commit only configure presets using `<platform>-<compiler>-<build type>` names. Windows builds use **`x64-windows-static`** for both host and target triplets, with static MSVC CRT (`/MT` Release, `/MTd` Debug). Never silently substitute `x64-windows-static-md`. Keep independent clean-build validation.
+- Optional local internal dependency substitutions live in an ignored top-level `Build.Local.cmake`, never committed CMake or presets. Read [LOCAL_SOURCES.md](LOCAL_SOURCES.md).
+- Generic `.Api` interfaces own operational semantics, `Gateway.Api` owns canonical wire/provider representation, `Gateway.Grpc.Api` owns external service RPCs, and composition roots own implementation selection. Do not expose game types, inference provider SDKs or deployment decisions through domain contracts.
+- Use explicit SI units internally and conversions at backend boundaries, typed failure codes/`std::expected` where appropriate, injection-friendly logging and gtest/gmock for C++ tests. Define data/thread ownership on public interfaces.
+
+## Code style and readability
+
+The exact owner-provided C++ style is [CodeStyle.xml](CodeStyle.xml); [CODE_STYLE.md](CODE_STYLE.md) defines readability rules for **all handwritten languages** including C++, C#, CMake, PowerShell, Python, Proto, tests and development scripts. Follow both.
+
+Never minify source, pack multiple logical statements into one line, use cryptic mathematical variable names, hide physical units or embed unexplained domain constants. Use clear structure and mandatory control-flow braces; a passing formatter alone does not establish readability. Refactor nearby compressed handwritten code when modifying a file, preserve behavior and run regressions. Do not reformat generated protobuf code, dependencies or proprietary game assemblies.
+
+## Sea Power installation and modding safety
+
+- **Prefer officially documented Sea Power extension points first:** mission editor, local user/Workshop content, documented scripting facilities, and verified supported startup features. Establish exactly what each permits on the installed build. Official *content* modding support is **not** evidence of an official managed-code/plugin API.
+- **Never modify original game binaries on disk.** No patching, replacing, decompiling-and-reassembling, overwriting, or byte-editing `Sea Power.exe`, `UnityPlayer.dll`, `Seapower-Scripts.dll`, any original `Sea Power_Data/Managed/*.dll`, or other vendor-owned executable/managed game assemblies. Reading/decompiling for analysis is allowed; the originals remain untouched.
+- If first-party mechanisms cannot provide required hooks, **evaluate established community loaders** (e.g. Anchor Chain/BepInEx) as a distinct, *unofficial* fallback. Do not describe them as supported by Triassic Games without direct evidence. Prefer standard loader plugin directories and reversible run-time interception (e.g. Harmony in-memory hooks) over any installation-file alteration.
+- Before **installing/activating** an unofficial loader/preloader or modifying game-installation contents (including reversible loader files), document the change, compatibility evidence and rollback procedure, then obtain any necessary explicit approval. Offline source preparation and static inspection can proceed meanwhile. Do not silently install anything into the live game folder.
+- Use an isolated test installation/profile where possible; preserve saves and normal launch behavior. Never disable DRM, bypass integrity checks, or modify Steam/platform binaries. If the only workable approach requires changing original game binaries, **stop and report the blocker** rather than doing it.
+
+## Sea Power research and verification rules
+
+- Confirm behavior against available Sea Power assemblies/source or instrumented runtime; public mods and online descriptions are leads, not proof about the current installation.
+- For each important finding record the **assembly, class, method/property, behavior, evidence/inspection technique, confidence, version**, and relevance to our contracts. Distinguish `verified`, `inferred`, `unverified`, and `unsupported`.
+- Investigate contact filtering and faction perspective, player/AI control, class catalogs, orders and their lifecycle, native automatic actions, command interruption, threading, simulation timing, and geographical/environment data.
+- Avoid copying or committing proprietary game assemblies or decompiled game source. Commit only our own code, schemas, short references/notes, and permitted patches. Do not modify the original installation destructively.
+- If a capability cannot be verified, document the gap and propose the smallest experiment required to resolve it; do not present a guess as fact.
+
+## Collaboration and review
+
+
+- Read existing module documentation and code before editing; prefer adapting verified patterns to introducing a new framework.
+- For architectural changes, state which accepted decision is affected, the evidence, alternatives, and migration/compatibility implications.
+- Write tests for new reusable behavior. Do not claim tests or runtime behavior passed without running them.
+- State uncertainties and blockers explicitly. Provide concise technical decisions and actionable next steps rather than filling gaps with invented behavior.

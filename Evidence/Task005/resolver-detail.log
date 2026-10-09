@@ -1,0 +1,29 @@
+Start testing: Oct 09 20:54 W. Europe Daylight Time
+----------------------------------------------------------
+1/1 Testing: dependency-resolution
+1/1 Test: dependency-resolution
+Command: "C:/Users/DmitriyPC/AppData/Local/Programs/Python/Python313/python.exe" "C:/Software/GitHub/NavalCommand/Build.CMake/test/ResolutionTest.py" "C:/Program Files/JetBrains/CLion 2026.1/bin/cmake/win/x64/bin/cmake.exe" "C:/Software/GitHub/NavalCommand/Build.CMake"
+Directory: C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release/test
+"dependency-resolution" start time: Oct 09 20:54 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+PASS git-without-local
+PASS hashed names and CMP0168 NEW (no subbuild directories)
+PASS direct-and-transitive-local
+PASS git-direct-local-transitive
+PASS invalid-explicit
+PASS conflict
+PASS same-registration
+PASS late-registration
+PASS conflicting-tags
+PASS canonical-identity
+RESOLUTION_PASS fixtures=C:\Users\DmitriyPC\AppData\Local\Temp\naval-task005-resolver-v3xvhoi4
+<end of output>
+Test time =  12.07 sec
+----------------------------------------------------------
+Test Passed.
+"dependency-resolution" end time: Oct 09 20:54 W. Europe Daylight Time
+"dependency-resolution" time elapsed: 00:00:12
+----------------------------------------------------------
+
+End testing: Oct 09 20:54 W. Europe Daylight Time

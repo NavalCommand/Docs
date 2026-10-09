@@ -1,0 +1,45 @@
+Command: cmake --build Gateway.Grpc/o/windows-msvc-release --clean-first --parallel 8
+[1/1] Cleaning all built files...
+[1/43] Generating generated/navalcommand/gateway/v1/session.pb.cc, generated/navalcommand/gateway/v1/session.pb.h
+[2/43] Generating generated/navalcommand/gateway/v1/orders.pb.cc, generated/navalcommand/gateway/v1/orders.pb.h
+[3/43] Generating generated/navalcommand/gateway/v1/world.pb.cc, generated/navalcommand/gateway/v1/world.pb.h
+[4/43] Generating generated/navalcommand/gateway/v1/incidents.pb.cc, generated/navalcommand/gateway/v1/incidents.pb.h
+[5/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\src\NavalCommand\Gateway\Api\Codec.cpp for CXX dependencies
+[6/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\app\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp for CXX dependencies
+[7/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\orders.pb.cc for CXX dependencies
+[8/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\world.pb.cc for CXX dependencies
+[9/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\session.pb.cc for CXX dependencies
+[10/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\incidents.pb.cc for CXX dependencies
+[11/43] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[12/43] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[13/43] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\session.pb.cc.obj
+[14/43] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\orders.pb.cc.obj
+[15/43] Building CXX object _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp.obj
+[16/43] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\incidents.pb.cc.obj
+[17/43] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\world.pb.cc.obj
+[18/43] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\NavalCommand\Gateway\Api\Codec.cpp.obj
+[19/43] Linking CXX static library _deps\nc_0b1845c5e8eb-build\src\Gateway.Api.lib
+[20/43] Generating generated/navalcommand/gateway/v1/service.pb.cc, generated/navalcommand/gateway/v1/service.pb.h, generated/navalcommand/gateway/v1/service.grpc.pb.cc, generated/navalcommand/gateway/v1/service.grpc.pb.h
+[21/43] Linking CXX executable _deps\nc_0b1845c5e8eb-build\app\schema-roundtrip.exe
+[22/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_2ce4f16e7409-build\src\generated\navalcommand\gateway\v1\service.pb.cc for CXX dependencies
+[23/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\o\windows-msvc-release\_deps\nc_2ce4f16e7409-build\src\generated\navalcommand\gateway\v1\service.grpc.pb.cc for CXX dependencies
+[24/43] Generating CXX dyndep file _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\CXX.dd
+[25/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp for CXX dependencies
+[26/43] Generating CXX dyndep file _deps\nc_2ce4f16e7409-build\app\CMakeFiles\naval-cli.dir\CXX.dd
+[27/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\src\NavalCommand\Gateway\Grpc\Server.cpp for CXX dependencies
+[28/43] Generating CXX dyndep file src\CMakeFiles\Gateway.Grpc.dir\CXX.dd
+[29/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\app\NavalCommand\Gateway\Grpc\MockHost.cpp for CXX dependencies
+[30/43] Generating CXX dyndep file app\CMakeFiles\mock-host.dir\CXX.dd
+[31/43] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\test\NavalCommand\Gateway\Grpc\ServerTest.cpp for CXX dependencies
+[32/43] Generating CXX dyndep file test\CMakeFiles\gateway-tests.dir\CXX.dd
+[33/43] Building CXX object _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.pb.cc.obj
+[34/43] Building CXX object _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.grpc.pb.cc.obj
+[35/43] Linking CXX static library _deps\nc_2ce4f16e7409-build\src\Gateway.Grpc.Api.lib
+[36/43] Building CXX object src\CMakeFiles\Gateway.Grpc.dir\NavalCommand\Gateway\Grpc\Server.cpp.obj
+[37/43] Building CXX object _deps\nc_2ce4f16e7409-build\app\CMakeFiles\naval-cli.dir\NavalCommand\Gateway\Grpc\Api\Cli.cpp.obj
+[38/43] Linking CXX static library src\Gateway.Grpc.lib
+[39/43] Building CXX object app\CMakeFiles\mock-host.dir\NavalCommand\Gateway\Grpc\MockHost.cpp.obj
+[40/43] Building CXX object test\CMakeFiles\gateway-tests.dir\NavalCommand\Gateway\Grpc\ServerTest.cpp.obj
+[41/43] Linking CXX executable _deps\nc_2ce4f16e7409-build\app\naval-cli.exe
+[42/43] Linking CXX executable app\mock-host.exe
+[43/43] Linking CXX executable test\gateway-tests.exe

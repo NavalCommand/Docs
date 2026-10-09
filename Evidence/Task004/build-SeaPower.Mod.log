@@ -1,0 +1,18 @@
+Fresh clone: C:\Users\DMITRI~1\AppData\Local\Temp/naval-task004-clean-repositories/SeaPower.Mod
+Configure/test excerpts:
+-- The CXX compiler identification is Clang 19.1.5 with MSVC-like command-line
+-- Performing Test NC_HAS_EXPECTED
+-- Performing Test NC_HAS_EXPECTED - Success
+-- CPM: Adding package Gateway_Api@0 (e61fed5447db02934ae232e187a1c3371cb3cd38)
+-- CPM: Adding package Gateway_Grpc_Api@0 (77531a43cd003115fcbb9b86fc2ccc6f1ca5fb34)
+-- CPM: Adding package Gateway_Grpc@0 (cc41b0b19585b7b62e4f813f38aaa094b3f64925)
+Test project C:/Users/DmitriyPC/AppData/Local/Temp/naval-task004-clean-repositories/SeaPower.Mod/out/native
+1/1 Test #1: host-abi .........................   Passed    0.06 sec
+100% tests passed, 0 tests failed out of 1
+Build succeeded.
+    6 Warning(s)
+    0 Error(s)
+Build succeeded.
+    2 Warning(s)
+    0 Error(s)
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-task004-clean-repositories\SeaPower.Mod\out\package\0.1.0

@@ -1,0 +1,4 @@
+Initial fresh project build: o/windows-msvc-release; configure log records MSVC19.51; final test results in Gateway.Api-tests.log.
+[1/13] Generating CXX dyndep file app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[2/12] Generating CXX dyndep file src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[3/5] Generating CXX dyndep file test\CMakeFiles\api-tests.dir\CXX.dd

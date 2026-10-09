@@ -1,0 +1,50 @@
+[
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AircraftThreat.ini",
+    "Hash": "CB6013A7D38771625CBFF0247DE1AE0199609E026E977770596E48A8BAF496B1"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AirFacilities.ini",
+    "Hash": "20E30CAE639E32A1927E9D50B48E8972D3A03763BA6BBD3A711D5AFF74F9D322"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AirOpsProbe.cs",
+    "Hash": "1AF9B180536164E8601808A7BEE9C78EE60C5492121AC1E722B3943AF9D625C3"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Build-AnchorChain.ps1",
+    "Hash": "26BF20C5B36F8A0A13236C1F9A64FA304D3FDADC7D6AD34AA0CB29CF8766E6F7"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\DiagnosticProbe.cs",
+    "Hash": "851400D6009C966CFBD118F7735E0811A4679C1B555D6E9DF54A38129859ADED"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\LaunchCandidate.cs",
+    "Hash": "6425D0F33DBAE68ECF816BB1EAAE1DD9FBA63BC2BA680A9F44C1F5D7975E5B57"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\LaunchCandidate.csproj",
+    "Hash": "0AF51214A6812DF517828800495D78F928D063FB81DE4A6D9AC93855FEC01061"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\MinimalCombat.ini",
+    "Hash": "B766A29398E883F9D0002CB98A6FB5283A1E4230793C2FA15D225ABC7DA383EC"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\NearContact.ini",
+    "Hash": "7A7A8F102FB7C14FDEC41D0C242E7C1F417BAE1680DF79492F6E3A4B59B4CE6A"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Prepare-LaunchRequest.ps1",
+    "Hash": "49EFBD202271B5877B2F83672000D93A3A03D04497400B5B5FD9BAC8C0DE354A"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\RuntimePlugin.cs",
+    "Hash": "012F65DB212D6EA87577861D4126B60FA7250547D7ECF4FD329A6052F235135A"
+  },
+  {
+    "Path": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\Start-Validation.ps1",
+    "Hash": "898E489AACD43EA612C7C64CDB946C5C90DA644D9D544B17133DDA008E936362"
+  }
+]

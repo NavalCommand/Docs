@@ -1,0 +1,35 @@
+2026-10-09T14:36:18.4811257Z plugin-awake thread=1
+2026-10-09T14:36:18.4811257Z assembly=Seapower-Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2026-10-09T14:36:23.4235773Z scene-unloaded buildIndex=-1 thread=1
+2026-10-09T14:36:23.8924603Z scene-loaded buildIndex=0 thread=1
+2026-10-09T14:36:24.6322454Z unity-thread-confirmed id=1
+2026-10-09T14:36:24.6377784Z AIROPS installed thread=1
+2026-10-09T14:36:24.6387779Z adapter-installed-candidate
+2026-10-09T14:36:24.6945499Z scene-loaded buildIndex=4 thread=1
+2026-10-09T14:36:31.9139043Z scene-loaded buildIndex=1 thread=1
+2026-10-09T14:36:32.2810863Z mission-load-requested
+2026-10-09T14:36:33.4551729Z scene-loaded buildIndex=2 thread=1
+2026-10-09T14:36:34.9639828Z AIROPS t=0 thread=1 facility=28 request aircraft=usn_sh-2f loadout=ASW count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>ObjectBase.FlightDeckLaunchUnit>SceneCreator.SetAdditionalParameters><initShips>d__120.MoveNext>SetupCoroutine.InvokeMoveNext
+2026-10-09T14:36:34.9664995Z AIROPS t=0 thread=1 facility=28 accepted=True task=67417efe-c22c-402a-9a48-9ba716c90a5a
+2026-10-09T14:36:41.9286806Z mission-loaded side=Taskforce1 ownUnits=3
+2026-10-09T14:36:42.9828337Z playable-ready side=Taskforce1 ownUnits=3 controllableOwnUnit=true missionTime=5.03513628710061
+2026-10-09T14:36:45.9819528Z AIROPS t=8.02908596489578 thread=1 facility=1 selected aircraft=usaf_f-4e loadout=AirToAir nominalReadyWork=900 ammoCost=2509.808 pause=True tick=411
+2026-10-09T14:36:45.9819528Z AIROPS t=8.02908596489578 thread=1 facility=1 request aircraft=usaf_f-4e loadout=AirToAir count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9819528Z AIROPS t=8.02908596489578 thread=1 facility=1 accepted=True task=fdef1a74-2497-4d3d-a105-bf0afb134ed6
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=1 cancel-check inventoryRestored=True ammoRestored=True
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=1 request aircraft=usaf_f-4e loadout=AirToAir count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=1 accepted=True task=f2286173-76bc-474e-929a-25086ce8e77f
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 selected aircraft=usn_f-14a loadout=AirToAirLongRange nominalReadyWork=900 ammoCost=1359.6 pause=True tick=411
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 request aircraft=usn_f-14a loadout=AirToAirLongRange count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 accepted=True task=ef9b905b-b9f3-443f-b771-ff6429abe07d
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 cancel-check inventoryRestored=True ammoRestored=True
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 request aircraft=usn_f-14a loadout=AirToAirLongRange count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=2 accepted=True task=f70b4cb8-c863-431f-9c6e-5675fd287842
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 selected aircraft=usn_sh-2f loadout=ASW nominalReadyWork=1800 ammoCost=212.125 pause=True tick=411
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 request aircraft=usn_sh-2f loadout=ASW count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 accepted=True task=aef6341e-ebae-4b0e-b3d0-dc6a5a7faa23
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 cancel-check inventoryRestored=True ammoRestored=True
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 request aircraft=usn_sh-2f loadout=ASW count=1 mission=None strategicForcedOff=True deckAiDisabled=False callers=AirOpsProbe.LaunchPrefix>FlightDeck.DMD<SeaPower.FlightDeck::createLaunchTask>>AirOpsProbe.Request>AirOpsProbe.Update>RuntimePlugin.Update
+2026-10-09T14:36:45.9829548Z AIROPS t=8.02908596489578 thread=1 facility=28 accepted=True task=23a014fa-65b1-491f-a60c-6ab634cc71e6
+2026-10-09T14:36:46.9984113Z AIROPS pause-check unchangedTick=True paused=True
+2026-10-09T14:36:46.9997243Z AIROPS owned-test-resume compression=5

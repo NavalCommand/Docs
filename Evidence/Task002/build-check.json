@@ -1,0 +1,20 @@
+{
+  "vendorDllsCopiedToBuildOutput": false,
+  "artifactPath": "C:\\Users\\DMITRI~1\\AppData\\Local\\Temp\\naval-task002-build\\bin\\LaunchCandidate\\release\\LaunchCandidate.dll",
+  "warnings": [
+    "MSB3277 System.IO.Compression version conflict",
+    "MSB3277 System.Net.Http version conflict"
+  ],
+  "errors": 0,
+  "runtimeTested": true,
+  "installedSha256": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553",
+  "sdk": "10.0.300",
+  "target": "netstandard2.1",
+  "sourceNote": "Final source differs from tested build only by clarified worker comment.",
+  "exitCode": 0,
+  "runtimeEvidence": [
+    "final-normal-result.json",
+    "writer-fault-result.json"
+  ],
+  "artifactSha256": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553"
+}

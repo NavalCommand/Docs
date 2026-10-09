@@ -1,0 +1,52 @@
+[
+  {
+    "repository": "Gateway.Api",
+    "revision": "1578f7fcd4be2d3692451660a0635ea5463cc49f",
+    "tracked_shared_helpers": [],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "revision": "267b9f4052a5c6749b49eefc9727fccf5928ab61",
+    "tracked_shared_helpers": [],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "revision": "5e80a356f84383621b0d212c11a394b1c92b91f9",
+    "tracked_shared_helpers": [],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  },
+  {
+    "repository": "SeaPower.Client",
+    "revision": "284f28730660825068e0bb3eca6a2d072dc79849",
+    "tracked_shared_helpers": [],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "revision": "eb31e6e55f715364c0a1afe57f249bded3df871f",
+    "tracked_shared_helpers": [],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  },
+  {
+    "repository": "Build.CMake",
+    "revision": "3d3ff24d75c9d3b399207bff0d565f1db741c215",
+    "tracked_shared_helpers": [
+      "NavalCommand.Build.CMake.cmake"
+    ],
+    "local_file_ignored": true,
+    "violations": [],
+    "clean": true
+  }
+]

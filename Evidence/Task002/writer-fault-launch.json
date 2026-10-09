@@ -1,0 +1,8 @@
+{
+  "kind": "injected-writer-open-failure",
+  "pid": 30644,
+  "previousAttempt": "no injection; configuration restored before loader initialization",
+  "previousAttemptPid": 32492,
+  "startedUtc": "2026-10-09T14:11:37.5779488Z",
+  "runDirectory": "C:\\Users\\DMITRI~1\\AppData\\Local\\Temp\\naval-task002-writer-fault-2"
+}

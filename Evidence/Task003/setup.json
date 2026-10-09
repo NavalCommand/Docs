@@ -1,0 +1,12 @@
+{
+  "originalPluginHash": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553",
+  "probeHash": "6F6269C207A9E0AAC5E4B3604A46006D351FCCCAA3E265D040E5E2BDCF384A5D",
+  "rollback": "Restore own plugin backup with game closed; launcher restores Doorstop bytes",
+  "vendorGameplayHash": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "buildWarnings": 2,
+  "originalPluginBackup": "C:\\Users\\DMITRI~1\\AppData\\Local\\Temp\\naval-task003-original-LaunchCandidate.dll",
+  "buildErrors": 0,
+  "scope": "Existing approved own experimental DLL update only; no new loader/preloader/installer",
+  "finalProbeSha256": "BC5F84D787402399F5BA42DB4FEE74B1EE726D72A5AEE8426CDA6AC2B635B702",
+  "task002PluginRestored": true
+}

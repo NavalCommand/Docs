@@ -1,0 +1,233 @@
+[
+  {
+    "repository": "Gateway.Api",
+    "before": "app/SchemaRoundtrip.cpp",
+    "after": "app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+    "unchanged": true,
+    "sha256_normalized": "07d57fff9182beae1e75797577019d86ef0f035c03dbf7a684dee65462412a7a"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "proto/navalcommand/gateway/v1/incidents.proto",
+    "after": "proto/navalcommand/gateway/v1/incidents.proto",
+    "unchanged": true,
+    "sha256_normalized": "d2b032da96d54cc991485a0c7624da0f6506825fb044d734c25f2d29ca9eaffd"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "proto/navalcommand/gateway/v1/orders.proto",
+    "after": "proto/navalcommand/gateway/v1/orders.proto",
+    "unchanged": true,
+    "sha256_normalized": "7998a8657094fb747d9ed2f5a1897c5e15575469d1186b710a82bc86ec7ac92d"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "proto/navalcommand/gateway/v1/session.proto",
+    "after": "proto/navalcommand/gateway/v1/session.proto",
+    "unchanged": true,
+    "sha256_normalized": "4920e034139c5cc4a8bddc38b285c3ef1ef7a638731f2601605bdb1f8e876739"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "proto/navalcommand/gateway/v1/world.proto",
+    "after": "proto/navalcommand/gateway/v1/world.proto",
+    "unchanged": true,
+    "sha256_normalized": "63406a9827305f3545bfa1f09e8356711335938946dec4300f37552974e39004"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "public/NavalCommand/Gateway/Api/Codec.h",
+    "after": "public/NavalCommand/Gateway/Api/Codec.h",
+    "unchanged": true,
+    "sha256_normalized": "7feda21658a97f0c8c8507bdeebd02ae8e36ee499282377e865ae723e029cedf"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "public/NavalCommand/Gateway/Api/IProvider.h",
+    "after": "public/NavalCommand/Gateway/Api/IProvider.h",
+    "unchanged": true,
+    "sha256_normalized": "7f5c48e8692b7f959daa79b12f86e320c4d259faf395a71e602f2eca2226ba8d"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "public/NavalCommand/Orders/Api/Eligibility.h",
+    "after": "public/NavalCommand/Orders/Api/Eligibility.h",
+    "unchanged": true,
+    "sha256_normalized": "d0966c607016d65f5de63e5ba2ce44b6af93cbdb1b7519c480cfa3d00c9eda05"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "public/NavalCommand/Orders/Api/Order.h",
+    "after": "public/NavalCommand/Orders/Api/Order.h",
+    "unchanged": true,
+    "sha256_normalized": "3e0c1ebd976e58fd7cbb456d4934cbffb90ea01a22f3bf09fd7693ed08508bbe"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "public/NavalCommand/World/Api/View.h",
+    "after": "public/NavalCommand/World/Api/View.h",
+    "unchanged": true,
+    "sha256_normalized": "0da03b78846f04138d69e09ed771869c6db5c88532ee242faba6dd5a685d3b5d"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "src/NavalCommand/Gateway/Api/Codec.cpp",
+    "after": "src/NavalCommand/Gateway/Api/Codec.cpp",
+    "unchanged": true,
+    "sha256_normalized": "557e153fc6c6dc5cf7fcad348d28f590e1084bf6188eda651cf191f54615fc25"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "test/CodecTest.cpp",
+    "after": "test/NavalCommand/Gateway/Api/CodecTest.cpp",
+    "unchanged": true,
+    "sha256_normalized": "611662648851658a1cef84806858603d862364c27e086294d7530689cce4780e"
+  },
+  {
+    "repository": "Gateway.Api",
+    "before": "test/managed/Program.cs",
+    "after": "test/managed/Program.cs",
+    "unchanged": true,
+    "sha256_normalized": "68cd105dc243f691aa6c0ce343201bc816464897ec362d0fa007799b6041c9af"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "before": "app/Cli.cpp",
+    "after": "app/NavalCommand/Gateway/Grpc/Api/Cli.cpp",
+    "unchanged": true,
+    "sha256_normalized": "a4f9b24f5388c4ddd49032f13db2b280ca45a6aadac20d0f686e752a94d043e0"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "before": "proto/navalcommand/gateway/v1/service.proto",
+    "after": "proto/navalcommand/gateway/v1/service.proto",
+    "unchanged": true,
+    "sha256_normalized": "f8655e6687c4bac2bbe351669fb0aa7e0f90bfb4cf20396f4fbb396492ed75b8"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "before": "app/MockHost.cpp",
+    "after": "app/NavalCommand/Gateway/Grpc/MockHost.cpp",
+    "unchanged": true,
+    "sha256_normalized": "07714c948d52b81b001cf9fed97db3f05defa35866dd55c5d8f415f9f2642773"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "before": "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+    "after": "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+    "unchanged": true,
+    "sha256_normalized": "a805911dca8dfe2dab9134b6ec0769de11266b2586f1f0ecd2f713800e5f96cc"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "before": "public/NavalCommand/Gateway/Grpc/Server.h",
+    "after": "public/NavalCommand/Gateway/Grpc/Server.h",
+    "unchanged": true,
+    "sha256_normalized": "38c05a6f92959a8142e4cbb1c00ba6047d9d30774b4180560d347f647a129b52"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "before": "src/NavalCommand/Gateway/Grpc/Server.cpp",
+    "after": "src/NavalCommand/Gateway/Grpc/Server.cpp",
+    "unchanged": true,
+    "sha256_normalized": "443638a8d7399f6b9b94fe5398d65116aeab36c268936a3e8aff460b1ceb4081"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "before": "test/ServerTest.cpp",
+    "after": "test/NavalCommand/Gateway/Grpc/ServerTest.cpp",
+    "unchanged": true,
+    "sha256_normalized": "0499010f6a408b22b1729625bdcc9a2dfe6c1d459397477ceb70b2e82f9341d9"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "before": "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+    "after": "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+    "unchanged": true,
+    "sha256_normalized": "fb14190be297b4c006862167687c7750e397197476a95a12121cd29800a8f334"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "before": "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+    "after": "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+    "unchanged": true,
+    "sha256_normalized": "d0ec7f6189c47d8284e16e54a3412759356a59e700d465c23a9b088147272f25"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "before": "src/NavalCommand/SeaPower/Client/Provider.cs",
+    "after": "src/NavalCommand/SeaPower/Client/Provider.cs",
+    "unchanged": true,
+    "sha256_normalized": "dbe7441ee675f0e228363a26e888a1c91452af056f7906d39dc5c34ddbb37fd5"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "before": "test/Program.cs",
+    "after": "test/Program.cs",
+    "unchanged": true,
+    "sha256_normalized": "d496b786e41441cd21ca0c1a343895cc76cebc05df07317b98f50be2398750ab"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "app/harness/AirOpsProbe.cs",
+    "after": "app/harness/AirOpsProbe.cs",
+    "unchanged": true,
+    "sha256_normalized": "2f6330ad50aa946116f2ab0bbfb86e76d75001a3e61adf0de00bf81e72bdf7ea"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "app/harness/DiagnosticProbe.cs",
+    "after": "app/harness/DiagnosticProbe.cs",
+    "unchanged": true,
+    "sha256_normalized": "a7b54be8c9589b4fcc24c2d89f4973f4b3c4f765d800052ac7e5ff753ada925d"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "app/harness/LaunchCandidate.cs",
+    "after": "app/harness/LaunchCandidate.cs",
+    "unchanged": true,
+    "sha256_normalized": "2bb6ebf7dde42024a0a1d73aa6313d485b10c17932327ff20ee968ff98fdf19f"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "app/harness/RuntimePlugin.cs",
+    "after": "app/harness/RuntimePlugin.cs",
+    "unchanged": true,
+    "sha256_normalized": "c9f6e6de3d39543bff892a1277d9a4e6896a09320da16f811c0265da39f2b649"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "managed/Bootstrap.cs",
+    "after": "managed/Bootstrap.cs",
+    "unchanged": true,
+    "sha256_normalized": "aabcc784f05455a2bb29894fb0c87fd6f590831c8de411387e683346f42db831"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "managed/NativeTransport.cs",
+    "after": "managed/NativeTransport.cs",
+    "unchanged": true,
+    "sha256_normalized": "b7c40d7a16d5aca141183ec159a73057a7895c79f0ee2ca1cde2f2c7e98a1f27"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "native/Host.cpp",
+    "after": "src/NavalCommand/SeaPower/Mod/Host.cpp",
+    "unchanged": true,
+    "sha256_normalized": "8bd4b546c9bbf3e87bb3225d4a773af7710208bdd299c18d41bb93eb8c583d4f"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "native/Host.h",
+    "after": "src/NavalCommand/SeaPower/Mod/Host.h",
+    "unchanged": true,
+    "sha256_normalized": "35f1228b733f211bcea3e88c10c3ed18596ac3711fa37f2de04f331fbc75bfe6"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "before": "native/HostTest.cpp",
+    "after": "test/NavalCommand/SeaPower/Mod/HostTest.cpp",
+    "unchanged": true,
+    "sha256_normalized": "3d2c6aa783873c03575ab88e8f204f46b25a709bb9dbe144f5324380c4e45c60"
+  }
+]

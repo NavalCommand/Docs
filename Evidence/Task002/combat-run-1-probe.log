@@ -1,0 +1,7 @@
+2026-10-09T13:26:18.4142556Z plugin-awake thread=1
+2026-10-09T13:26:18.4152565Z assembly=Seapower-Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2026-10-09T13:26:24.4032084Z unity-thread-confirmed id=1
+2026-10-09T13:26:24.4032084Z adapter-installed-candidate
+2026-10-09T13:26:32.0193027Z mission-load-requested
+2026-10-09T13:26:42.0796747Z mission-loaded side=Taskforce1 ownUnits=1
+2026-10-09T13:26:43.1432568Z playable-ready side=Taskforce1 ownUnits=1 missionTime=5.00570546928793

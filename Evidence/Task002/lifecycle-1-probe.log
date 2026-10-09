@@ -1,0 +1,65 @@
+2026-10-09T13:43:05.4565943Z plugin-awake thread=1
+2026-10-09T13:43:05.4576130Z assembly=Seapower-Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2026-10-09T13:43:10.2849745Z scene-unloaded buildIndex=-1 thread=1
+2026-10-09T13:43:10.7294099Z scene-loaded buildIndex=0 thread=1
+2026-10-09T13:43:11.4642665Z unity-thread-confirmed id=1
+2026-10-09T13:43:11.4757740Z diagnostics-installed mainThread=1
+2026-10-09T13:43:11.4767744Z adapter-installed-candidate
+2026-10-09T13:43:11.5398638Z scene-loaded buildIndex=4 thread=1
+2026-10-09T13:43:18.8407700Z scene-loaded buildIndex=1 thread=1
+2026-10-09T13:43:19.2286461Z mission-load-requested
+2026-10-09T13:43:20.4348009Z scene-loaded buildIndex=2 thread=1
+2026-10-09T13:43:20.5370465Z pause-intent origin=external-native-call revision=1
+2026-10-09T13:43:28.9656098Z mission-loaded side=Taskforce1 ownUnits=1
+2026-10-09T13:43:29.9831667Z playable-ready side=Taskforce1 ownUnits=1 missionTime=5.4498871890828
+2026-10-09T13:43:32.5667722Z safe-sample thread=1 tick=442 objectJobsComplete=true collisionJobsComplete=true missionTime=8.02061389526352
+2026-10-09T13:43:32.5683517Z OBS side=player foreignTracks=0
+2026-10-09T13:43:32.5683517Z OBS side=ai foreignTracks=0
+2026-10-09T13:43:32.5829098Z command-accepted role=player taskInserted=True
+2026-10-09T13:43:32.5829098Z order-progress role=player retained=True distanceNative=0 telegraph=0 state=Default
+2026-10-09T13:43:37.5739016Z safe-sample thread=1 tick=743 objectJobsComplete=true collisionJobsComplete=true missionTime=13.0259209121577
+2026-10-09T13:43:37.5739016Z OBS side=player foreignTracks=0
+2026-10-09T13:43:37.5739016Z OBS side=ai foreignTracks=0
+2026-10-09T13:43:37.5739016Z order-progress role=player retained=True distanceNative=0.0517276766786625 telegraph=2 state=Default
+2026-10-09T13:43:39.5452596Z pause-intent origin=adapter revision=2
+2026-10-09T13:43:39.5468869Z lifecycle-test owns-pause-before-unload revision=2
+2026-10-09T13:43:39.5468869Z native-unload-reload-requested
+2026-10-09T13:43:40.0258041Z order-removed-or-finished role=player
+2026-10-09T13:43:40.0588902Z scene-unloaded buildIndex=2 thread=1
+2026-10-09T13:43:40.0588902Z scene-invalidated generation=1 nativeReferencesCleared=true pauseLeaseInvalidated=true
+2026-10-09T13:43:40.4592064Z scene-loaded buildIndex=2 thread=1
+2026-10-09T13:43:40.4847123Z pause-intent origin=external-native-call revision=3
+2026-10-09T13:43:47.6938348Z safe-sample thread=1 tick=1072 objectJobsComplete=true collisionJobsComplete=true missionTime=19.3173256856389
+2026-10-09T13:43:47.6938348Z OBS side=player foreignTracks=0
+2026-10-09T13:43:47.6938348Z OBS side=ai foreignTracks=0
+2026-10-09T13:43:47.6955445Z command-accepted role=player taskInserted=True
+2026-10-09T13:43:47.6955445Z order-progress role=player retained=True distanceNative=0 telegraph=0 state=Default
+2026-10-09T13:43:52.7199536Z safe-sample thread=1 tick=1343 objectJobsComplete=true collisionJobsComplete=true missionTime=24.3213490811177
+2026-10-09T13:43:52.7199536Z OBS side=player foreignTracks=0
+2026-10-09T13:43:52.7199536Z OBS side=ai foreignTracks=0
+2026-10-09T13:43:52.7214349Z command-accepted role=ai taskInserted=True
+2026-10-09T13:43:52.7214349Z order-progress role=player retained=True distanceNative=0.0513535126575821 telegraph=2 state=Default
+2026-10-09T13:43:57.7408291Z safe-sample thread=1 tick=1645 objectJobsComplete=true collisionJobsComplete=true missionTime=29.3519971766509
+2026-10-09T13:43:57.7408291Z OBS side=player foreignTracks=0
+2026-10-09T13:43:57.7408291Z OBS side=ai foreignTracks=0
+2026-10-09T13:43:57.7408291Z order-progress role=player retained=True distanceNative=0.254173315034579 telegraph=2 state=Default
+2026-10-09T13:44:02.7640196Z safe-sample thread=1 tick=1945 objectJobsComplete=true collisionJobsComplete=true missionTime=34.3632292789407
+2026-10-09T13:44:02.7640196Z OBS side=player foreignTracks=0
+2026-10-09T13:44:02.7640196Z OBS side=ai foreignTracks=0
+2026-10-09T13:44:02.7640196Z order-progress role=player retained=True distanceNative=0.561462568784296 telegraph=2 state=Default
+2026-10-09T13:44:07.7737967Z safe-sample thread=1 tick=2246 objectJobsComplete=true collisionJobsComplete=true missionTime=39.3840972580947
+2026-10-09T13:44:07.7737967Z OBS side=player foreignTracks=0
+2026-10-09T13:44:07.7737967Z OBS side=ai foreignTracks=0
+2026-10-09T13:44:07.7737967Z order-progress role=player retained=True distanceNative=0.936538762054803 telegraph=2 state=Default
+2026-10-09T13:44:12.7835320Z safe-sample thread=1 tick=2547 objectJobsComplete=true collisionJobsComplete=true missionTime=44.3915824466385
+2026-10-09T13:44:12.7835320Z OBS side=player foreignTracks=0
+2026-10-09T13:44:12.7835320Z OBS side=ai foreignTracks=0
+2026-10-09T13:44:12.7835320Z order-progress role=player retained=True distanceNative=1.35374473364563 telegraph=2 state=Default
+2026-10-09T13:44:17.8093607Z safe-sample thread=1 tick=2848 objectJobsComplete=true collisionJobsComplete=true missionTime=49.4085398600437
+2026-10-09T13:44:17.8093607Z OBS side=player foreignTracks=0
+2026-10-09T13:44:17.8093607Z OBS side=ai foreignTracks=0
+2026-10-09T13:44:17.8093607Z order-progress role=player retained=True distanceNative=1.7959213751435 telegraph=2 state=Default
+2026-10-09T13:44:22.8106611Z safe-sample thread=1 tick=3148 objectJobsComplete=true collisionJobsComplete=true missionTime=54.4087629509158
+2026-10-09T13:44:22.8106611Z OBS side=player foreignTracks=0
+2026-10-09T13:44:22.8106611Z OBS side=ai foreignTracks=0
+2026-10-09T13:44:22.8116602Z order-progress role=player retained=True distanceNative=2.23996741884263 telegraph=2 state=Default

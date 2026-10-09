@@ -1,0 +1,25 @@
+{
+  "loaderInstalled": true,
+  "normalFinalLaunch": "final-normal-result.json",
+  "offlinePreflightChecksPassed": 5,
+  "game": "0.8.3-261001",
+  "loaderActivatedDuringTests": true,
+  "launchResult": "works through approved development helper for fixture/native player side",
+  "vendorChangedCount": 0,
+  "task": "002",
+  "productionFrameworkImplemented": false,
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "faultInjection": "writer-fault-result.json",
+  "vendorFilesChecked": 233,
+  "userApprovalSatisfied": true,
+  "loaderEnabledByDefault": false,
+  "gates": {
+    "B": "partially tested cached slice/lifecycle",
+    "D": "partially tested nonplayer unit; strategic AI disabled natively",
+    "F": "partially tested synthetic native pause intent",
+    "A": "passed scoped startup",
+    "E": "passed single-aircraft guard; broader milestone partial",
+    "C": "partially tested faction whitelist"
+  },
+  "checkpointUtc": "2026-10-09T14:13:23.3086942Z"
+}

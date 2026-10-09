@@ -1,0 +1,46 @@
+{
+  "startupSeconds": [
+    26.0960476,
+    26.0198171
+  ],
+  "ownFacilityIds": [
+    1,
+    2,
+    28
+  ],
+  "gates": {
+    "F": "Passed proposed mapping; no production implementation",
+    "E": "Partial: three recoveries and cooldown start, no completed turnaround/relaunch",
+    "D": "Passed three own airborne sorties",
+    "A": "Passed scoped facility fixture",
+    "B": "Passed evidence-backed sketch; unsupported fields explicit",
+    "C": "Passed responsibility investigation; active facility AI proven, strategic AIPlayer inactive"
+  },
+  "launchRecoveryEvidence": "lifecycle-summary.json",
+  "vendorChangedCount": 0,
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "ownDeployedIds": [
+    148,
+    140,
+    221
+  ],
+  "completeAsInvestigation": true,
+  "build": "0.8.3-261001",
+  "productionFrameworkImplemented": false,
+  "task": "003",
+  "remainingGaps": [
+    "Cooldown completion and subsequent identity/condition",
+    "Active strategic AIPlayer arbitration",
+    "Actual priority reorder/delayed permission release",
+    "Damage/sea-state/layout/resource error runtime cases",
+    "Allied visibility and atomic cache coherence",
+    "MPA/strike/SAR/patrol runtime workflows"
+  ],
+  "facilityAIActiveDecisionsObserved": [
+    "AEW",
+    "CAP"
+  ],
+  "newLoaderInstalled": false,
+  "strategicAIPlayerActive": false,
+  "nativeAiFlagsModified": false
+}

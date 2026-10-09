@@ -1,0 +1,12 @@
+2026-10-09T13:34:55.0053066Z PRIVILEGED ai-control IsPlayerObject=False HasControl=True AcceptsOrdersFromAI=True AIPlayerForcedDisable=True
+2026-10-09T13:34:55.0078164Z PRIVILEGED order-progress role=ai retained=True distanceNative=0 telegraph=0 state=Loitering
+2026-10-09T13:35:00.1383296Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.0102691653102386 telegraph=2 state=Sprint
+2026-10-09T13:35:05.2101774Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.0433502208942618 telegraph=2 state=Sprint
+2026-10-09T13:35:10.3368746Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.10185241975745 telegraph=2 state=Sprint
+2026-10-09T13:35:15.4329202Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.192047124352204 telegraph=2 state=Sprint
+2026-10-09T13:35:20.5536358Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.30823517684411 telegraph=2 state=Sprint
+2026-10-09T13:35:25.6739644Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.44715856294076 telegraph=2 state=Sprint
+2026-10-09T13:35:30.7221923Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.606124804000598 telegraph=2 state=Sprint
+2026-10-09T13:35:35.7672412Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.781651234082248 telegraph=2 state=Sprint
+2026-10-09T13:35:40.7679512Z PRIVILEGED order-progress role=ai retained=True distanceNative=0.969472919150109 telegraph=2 state=Sprint
+2026-10-09T13:35:46.8285733Z PRIVILEGED order-progress role=ai retained=True distanceNative=1.15860396488074 telegraph=2 state=Sprint

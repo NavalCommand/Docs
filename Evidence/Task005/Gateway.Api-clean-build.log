@@ -1,0 +1,26 @@
+Command: cmake --build Gateway.Api/o/windows-msvc-release --clean-first --parallel 8
+[1/1] Cleaning all built files...
+[1/24] Generating generated/navalcommand/gateway/v1/session.pb.cc, generated/navalcommand/gateway/v1/session.pb.h
+[2/24] Generating generated/navalcommand/gateway/v1/orders.pb.cc, generated/navalcommand/gateway/v1/orders.pb.h
+[3/24] Generating generated/navalcommand/gateway/v1/incidents.pb.cc, generated/navalcommand/gateway/v1/incidents.pb.h
+[4/24] Generating generated/navalcommand/gateway/v1/world.pb.cc, generated/navalcommand/gateway/v1/world.pb.h
+[5/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\app\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp for CXX dependencies
+[6/24] Generating CXX dyndep file app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[7/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\incidents.pb.cc for CXX dependencies
+[8/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\src\NavalCommand\Gateway\Api\Codec.cpp for CXX dependencies
+[9/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\orders.pb.cc for CXX dependencies
+[10/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\session.pb.cc for CXX dependencies
+[11/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-release\src\generated\navalcommand\gateway\v1\world.pb.cc for CXX dependencies
+[12/24] Generating CXX dyndep file src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[13/24] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\test\NavalCommand\Gateway\Api\CodecTest.cpp for CXX dependencies
+[14/24] Generating CXX dyndep file test\CMakeFiles\api-tests.dir\CXX.dd
+[15/24] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\incidents.pb.cc.obj
+[16/24] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\session.pb.cc.obj
+[17/24] Building CXX object app\CMakeFiles\schema-roundtrip.dir\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp.obj
+[18/24] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\orders.pb.cc.obj
+[19/24] Building CXX object src\CMakeFiles\Gateway.Api.dir\NavalCommand\Gateway\Api\Codec.cpp.obj
+[20/24] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\world.pb.cc.obj
+[21/24] Linking CXX static library src\Gateway.Api.lib
+[22/24] Building CXX object test\CMakeFiles\api-tests.dir\NavalCommand\Gateway\Api\CodecTest.cpp.obj
+[23/24] Linking CXX executable app\schema-roundtrip.exe
+[24/24] Linking CXX executable test\api-tests.exe

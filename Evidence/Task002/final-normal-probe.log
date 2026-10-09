@@ -1,0 +1,12 @@
+2026-10-09T14:12:08.9127621Z plugin-awake thread=1
+2026-10-09T14:12:08.9127621Z assembly=Seapower-Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2026-10-09T14:12:13.8471625Z scene-unloaded buildIndex=-1 thread=1
+2026-10-09T14:12:14.2811076Z scene-loaded buildIndex=0 thread=1
+2026-10-09T14:12:15.0111942Z unity-thread-confirmed id=1
+2026-10-09T14:12:15.0111942Z adapter-installed-candidate
+2026-10-09T14:12:15.0793126Z scene-loaded buildIndex=4 thread=1
+2026-10-09T14:12:22.3993769Z scene-loaded buildIndex=1 thread=1
+2026-10-09T14:12:22.7305094Z mission-load-requested
+2026-10-09T14:12:23.9628394Z scene-loaded buildIndex=2 thread=1
+2026-10-09T14:12:32.9641868Z mission-loaded side=Taskforce1 ownUnits=1
+2026-10-09T14:12:33.9694115Z playable-ready side=Taskforce1 ownUnits=1 controllableOwnUnit=true missionTime=5.71191727183759

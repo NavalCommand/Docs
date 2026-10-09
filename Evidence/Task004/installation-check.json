@@ -1,0 +1,9 @@
+{
+  "vendorChanged": 0,
+  "gameProcesses": 0,
+  "pluginSha256": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553",
+  "checkedUtc": "2026-10-09T18:12:01.0081944Z",
+  "vendorFiles": 233,
+  "doorstopSha256": "3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A",
+  "loaderConfig": "# General options for Unity Doorstop\r\n[General]\r\n\r\n# Enable Doorstop?\r\nenabled = false\n\r\n# Path to the assembly to load and execute\r\n# NOTE: The entrypoint must be of format `static void Doorstop.Entrypoint.Start()`\r\ntarget_assembly=BepInEx\\core\\BepInEx.Preloader.dll\r\n\r\n# If true, Unity's output log is redirected to <current folder>\\output_log.txt\r\nredirect_output_log = false\r\n\r\n# Overrides the default boot.config file path\r\nboot_config_override =\r\n\r\n# If enabled, DOORSTOP_DISABLE env var value is ignored\r\n# USE THIS ONLY WHEN ASKED TO OR YOU KNOW WHAT THIS MEANS\r\nignore_disable_switch = false\r\n\r\n# Options specific to running under Unity Mono runtime\r\n[UnityMono]\r\n\r\n# Overrides default Mono DLL search path\r\n# Sometimes it is needed to instruct Mono to seek its assemblies from a different path\r\n# (e.g. mscorlib is stripped in original game)\r\n# This option causes Mono to seek mscorlib and core libraries from a different folder before Managed\r\n# Original Managed folder is added as a secondary folder in the search path\r\n# To specify multiple paths, separate them with semicolons (;)\r\ndll_search_path_override =\r\n\r\n# If true, Mono debugger server will be enabled\r\ndebug_enabled = false\r\n\r\n# When debug_enabled is true, specifies the address to use for the debugger server\r\ndebug_address = 127.0.0.1:10000\r\n\r\n# If true and debug_enabled is true, Mono debugger server will suspend the game execution until a debugger is attached\r\ndebug_suspend = false\r\n\r\n\r\n"
+}

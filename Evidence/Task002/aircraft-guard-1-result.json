@@ -1,0 +1,10 @@
+{
+  "startedUtc": "2026-10-09T13:39:31.0375647Z",
+  "side": "Taskforce1",
+  "secondsToReady": 26.6524957,
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "pid": 9000,
+  "ready": true,
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AircraftThreat.ini",
+  "token": "db837305-1860-4cae-ac4f-1f77f3cae35f"
+}

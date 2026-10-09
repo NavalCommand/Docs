@@ -1,0 +1,19 @@
+{
+  "tag": "V1.1.0",
+  "date": "2025-02-11T00:13:40Z",
+  "url": "https://github.com/SeaPower-Modders/AnchorChain/releases/tag/V1.1.0",
+  "assets": [
+    {
+      "digest": null,
+      "size": 629050,
+      "name": "ACPreloader.zip",
+      "url": "https://github.com/SeaPower-Modders/AnchorChain/releases/download/V1.1.0/ACPreloader.zip"
+    },
+    {
+      "digest": null,
+      "size": 11584,
+      "name": "dev.zip",
+      "url": "https://github.com/SeaPower-Modders/AnchorChain/releases/download/V1.1.0/dev.zip"
+    }
+  ]
+}

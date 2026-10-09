@@ -1,0 +1,9 @@
+{
+  "marker": {
+    "error": "writer-failed",
+    "type": "UnauthorizedAccessException"
+  },
+  "readyExists": false,
+  "pid": 30644,
+  "checkedUtc": "2026-10-09T14:11:56.7596223Z"
+}

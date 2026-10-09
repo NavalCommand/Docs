@@ -1,0 +1,65 @@
+Building vcpkg-cmake-config:x64-windows-static-md@2024-05-23...
+Elapsed time to handle vcpkg-cmake-config:x64-windows-static-md: 44.6 ms
+vcpkg-cmake-config:x64-windows-static-md package ABI: 160f70cf49c845a1abbe5f70e9a8b1c296cde6cb5ac8483f814946351ecb3ede
+Building vcpkg-cmake:x64-windows-static-md@2024-04-23...
+Elapsed time to handle vcpkg-cmake:x64-windows-static-md: 50.3 ms
+vcpkg-cmake:x64-windows-static-md package ABI: 5a588aeb60e5d4a5e8c0ccd09f5b5328441ea6c476a1fa5bd66fec1fb47528ba
+Building zlib:x64-windows-static-md@1.3.2#1...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle zlib:x64-windows-static-md: 3.6 s
+zlib:x64-windows-static-md package ABI: 799907d05d851b608fe044f4fe23fda936e9aed5924ebedd82d732effeb5e782
+Building abseil:x64-windows-static-md@20260107.1#3...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle abseil:x64-windows-static-md: 36 s
+abseil:x64-windows-static-md package ABI: e00e9dfcff703d2867db7024ed6cb6cbb59a00487b1633edfc27f171aa010005
+Building utf8-range:x64-windows-static-md@6.33.4...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle utf8-range:x64-windows-static-md: 3.4 s
+utf8-range:x64-windows-static-md package ABI: 989d0c00adf018398d1ecc5de5aec6ab03fc9c0f07d6d8a39a17ec2961605a1b
+Building re2:x64-windows-static-md@2025-11-05...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle re2:x64-windows-static-md: 7.1 s
+re2:x64-windows-static-md package ABI: b5769ac13cb4cbfba587f55774654924acf2bde13179e572fd3b422f6435a45b
+Building protobuf[core,libprotoc]:x64-windows-static-md@6.33.4#2...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle protobuf:x64-windows-static-md: 3 min
+protobuf:x64-windows-static-md package ABI: f4d5fe085920b79f351c235c612456617856f1503bffbfc09d8ebcf539273a54
+Building vcpkg-cmake-get-vars:x64-windows-static-md@2025-05-29...
+Elapsed time to handle vcpkg-cmake-get-vars:x64-windows-static-md: 46.5 ms
+vcpkg-cmake-get-vars:x64-windows-static-md package ABI: c11636c22f1618b1d87edc8329707dc2628c782e1785b2a0d5c99202cc513d63
+Building openssl:x64-windows-static-md@3.6.3...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle openssl:x64-windows-static-md: 2.2 min
+openssl:x64-windows-static-md package ABI: 669294a6a739c7d38aab6647fcd9ede73776a942f8a951cc05d12466499f0b82
+Building c-ares:x64-windows-static-md@1.34.8...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle c-ares:x64-windows-static-md: 46 s
+c-ares:x64-windows-static-md package ABI: 11204dd72632bb865f3a8cb2a2fe7c9f214025e1c42f721e6e43311c118c875e
+Building grpc[codegen,core]:x64-windows-static-md@1.81.1...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle grpc:x64-windows-static-md: 15 min
+grpc:x64-windows-static-md package ABI: 67d94838194d713cadb555324e1ceb7e3999e05b7b2c1c9be1b07e0e5bdd0bd1
+Building gtest:x64-windows-static-md@1.17.0#3...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle gtest:x64-windows-static-md: 11 s
+gtest:x64-windows-static-md package ABI: d2f0ec118b7d17684bf956a058fb7340965148bccd2611a3f3cadb8f175fc1e8
+Building fmt:x64-windows-static-md@12.2.0#1...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle fmt:x64-windows-static-md: 3.7 s
+fmt:x64-windows-static-md package ABI: 89357018c5b806358b179842f430e0839a780b3df958b4fd888c367a8f34b77d
+Building spdlog[core,fmt,tz-offset]:x64-windows-static-md@1.17.0#1...
+-- Building x64-windows-static-md-dbg
+-- Building x64-windows-static-md-rel
+Elapsed time to handle spdlog:x64-windows-static-md: 7.5 s
+spdlog:x64-windows-static-md package ABI: 520feb0ee21c79e5df1370bedbab488a89ffc87f595c91baa01e905454a8fc97
+Total install time: 23 min

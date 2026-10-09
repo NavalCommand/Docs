@@ -1,0 +1,27 @@
+[
+  {
+    "observed": "Side must equal the mission PlayerTaskforce; arbitrary side swapping is unverified.",
+    "case": "wrong-side",
+    "passed": true
+  },
+  {
+    "observed": "Cannot find path 'C:\\Users\\DMITRI~1\\AppData\\Local\\Temp\\naval-task002-preflight-ef999914-fd2e-4d9e-9d19-3305fc156da5\\missing.ini' because it does not exist.",
+    "case": "missing-path",
+    "passed": true
+  },
+  {
+    "observed": "Choose a new output directory; stale results are refused.",
+    "case": "stale-output",
+    "passed": true
+  },
+  {
+    "observed": "Keep experimental outputs outside the game installation.",
+    "case": "installation-output",
+    "passed": true
+  },
+  {
+    "case": "valid-offline-request",
+    "passed": true,
+    "status": "prepared-only-no-loader-activated"
+  }
+]

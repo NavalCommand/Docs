@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "token": "4e241516-d4e4-4f49-ad8b-bf4dd65a25de",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Experiments\\Task002\\AirFacilities.ini",
+  "side": "Taskforce1",
+  "timeoutSeconds": 180,
+  "status": "prepared-only-no-loader-activated",
+  "ready": false
+}

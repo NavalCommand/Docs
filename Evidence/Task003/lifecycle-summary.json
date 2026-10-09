@@ -1,0 +1,129 @@
+{
+  "writerErrorMarkerPresent": false,
+  "strategicAIPlayerForcedDisabled": true,
+  "selectedSide": "Taskforce1",
+  "timingMode": "Realistic",
+  "endReason": "All three own sorties recovered and entered cooldown; end of cooldown/relaunch deliberately remains untested",
+  "compressionRequested": 5,
+  "build": "0.8.3-261001",
+  "nativeFacilityAICapAndAewDecisionsObserved": true,
+  "forceFixedUpdate": false,
+  "pauseTickUnchanged": true,
+  "skipReadyUp": false,
+  "nativeRequestsWhilePaused": true,
+  "facilityResults": [
+    {
+      "relaunchIdentityTested": false,
+      "stockReturnObserved": false,
+      "facility": 1,
+      "firstCooldown": "2026-10-09T14:43:04.5720979Z AIROPS t=1363.2868082975 thread=1 facility=1 task=98a6023d-c881-4882-88af-f2c2a4bbfbf1 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=3599.4 launchAllowed=n/a",
+      "stages": [
+        {
+          "stage": "spawn-callback",
+          "facility": 1,
+          "operationalSeconds": 908.315203575883,
+          "details": "task=e4f6d5e1-6068-4f1b-9106-6d45ee4879ff unit=148 inFlight=False deckState=Spawn",
+          "wallUtc": "2026-10-09T14:41:31.8215769Z"
+        },
+        {
+          "stage": "airborne-confirmed",
+          "facility": 1,
+          "operationalSeconds": 1015.16324549029,
+          "details": "unit=148 ordinaryMember=True",
+          "wallUtc": "2026-10-09T14:41:53.3796894Z"
+        },
+        {
+          "stage": "rtb-request",
+          "facility": 1,
+          "operationalSeconds": 1032.70877566049,
+          "details": "unit=148",
+          "wallUtc": "2026-10-09T14:41:56.9578684Z"
+        },
+        {
+          "stage": "sortie-object-gone",
+          "facility": 1,
+          "operationalSeconds": 1363.2868082975,
+          "details": "rtbRequested=True",
+          "wallUtc": "2026-10-09T14:43:04.5720979Z"
+        }
+      ],
+      "lastCooldown": "2026-10-09T14:46:40.0147661Z AIROPS t=2438.46134609589 thread=1 facility=1 task=98a6023d-c881-4882-88af-f2c2a4bbfbf1 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=2524.1 launchAllowed=n/a"
+    },
+    {
+      "relaunchIdentityTested": false,
+      "stockReturnObserved": false,
+      "facility": 2,
+      "firstCooldown": "2026-10-09T14:43:39.2812354Z AIROPS t=1535.66176695609 thread=1 facility=2 task=cb234ae8-90ec-4807-be4d-222e0fc9fb10 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=7197.4 launchAllowed=n/a",
+      "stages": [
+        {
+          "stage": "spawn-callback",
+          "facility": 2,
+          "operationalSeconds": 908.315203575883,
+          "details": "task=484a1790-bb83-4831-b106-e22e206528f6 unit=140 inFlight=False deckState=Spawn",
+          "wallUtc": "2026-10-09T14:41:31.7718384Z"
+        },
+        {
+          "stage": "airborne-confirmed",
+          "facility": 2,
+          "operationalSeconds": 997.597848227713,
+          "details": "unit=140 ordinaryMember=True",
+          "wallUtc": "2026-10-09T14:41:49.8271838Z"
+        },
+        {
+          "stage": "rtb-request",
+          "facility": 2,
+          "operationalSeconds": 1012.61106695654,
+          "details": "unit=140",
+          "wallUtc": "2026-10-09T14:41:52.8814589Z"
+        },
+        {
+          "stage": "sortie-object-gone",
+          "facility": 2,
+          "operationalSeconds": 1535.66176695609,
+          "details": "rtbRequested=True",
+          "wallUtc": "2026-10-09T14:43:39.2812354Z"
+        }
+      ],
+      "lastCooldown": "2026-10-09T14:46:40.0147661Z AIROPS t=2438.46134609589 thread=1 facility=2 task=cb234ae8-90ec-4807-be4d-222e0fc9fb10 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=6295.5 launchAllowed=n/a"
+    },
+    {
+      "relaunchIdentityTested": false,
+      "stockReturnObserved": false,
+      "facility": 28,
+      "firstCooldown": "2026-10-09T14:45:47.5416742Z AIROPS t=2176.34101460362 thread=1 facility=28 task=3cc0872b-630d-4f76-ba3b-6a6f488a1418 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=1799.9 launchAllowed=n/a",
+      "stages": [
+        {
+          "stage": "spawn-callback",
+          "facility": 28,
+          "operationalSeconds": 1808.35362753505,
+          "details": "task=0e712dc0-b7c3-48d3-a6a9-a77a3b0afff5 unit=221 inFlight=False deckState=Spawn",
+          "wallUtc": "2026-10-09T14:44:33.8850303Z"
+        },
+        {
+          "stage": "airborne-confirmed",
+          "facility": 28,
+          "operationalSeconds": 1930.08580715815,
+          "details": "unit=221 ordinaryMember=True",
+          "wallUtc": "2026-10-09T14:44:58.2600077Z"
+        },
+        {
+          "stage": "rtb-request",
+          "facility": 28,
+          "operationalSeconds": 1945.34410715709,
+          "details": "unit=221",
+          "wallUtc": "2026-10-09T14:45:01.3257790Z"
+        },
+        {
+          "stage": "sortie-object-gone",
+          "facility": 28,
+          "operationalSeconds": 2176.34101460362,
+          "details": "rtbRequested=True",
+          "wallUtc": "2026-10-09T14:45:47.5416742Z"
+        }
+      ],
+      "lastCooldown": "2026-10-09T14:46:40.0147661Z AIROPS t=2438.46134609589 thread=1 facility=28 task=3cc0872b-630d-4f76-ba3b-6a6f488a1418 kind=CoolDownTask state=HandleCoolDownTask unit= remainingWork=1537.8 launchAllowed=n/a"
+    }
+  ],
+  "run": "facilities",
+  "nonplayerEvidence": "facilities-privileged.log"
+}

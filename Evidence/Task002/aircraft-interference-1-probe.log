@@ -1,0 +1,88 @@
+2026-10-09T13:40:52.8544561Z plugin-awake thread=1
+2026-10-09T13:40:52.8555950Z assembly=Seapower-Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2026-10-09T13:40:58.8942728Z unity-thread-confirmed id=1
+2026-10-09T13:40:58.9067972Z diagnostics-installed mainThread=1
+2026-10-09T13:40:58.9077971Z adapter-installed-candidate
+2026-10-09T13:41:06.6115727Z mission-load-requested
+2026-10-09T13:41:07.8903822Z pause-intent origin=external-native-call revision=1
+2026-10-09T13:41:16.6935650Z mission-loaded side=Taskforce1 ownUnits=1
+2026-10-09T13:41:17.7130021Z playable-ready side=Taskforce1 ownUnits=1 missionTime=5.24847927130759
+2026-10-09T13:41:20.5383487Z safe-sample thread=1 tick=441 objectJobsComplete=true collisionJobsComplete=true missionTime=8.0052719078958
+2026-10-09T13:41:20.5399998Z OBS side=player foreignTracks=1
+2026-10-09T13:41:20.5399998Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9537887573242 detectedLongitude=-10.2487335205078
+2026-10-09T13:41:20.5399998Z OBS side=ai foreignTracks=1
+2026-10-09T13:41:20.5399998Z OBS side=ai opaque=track-1 estimatePresent=True detectedLatitude=61.9599952697754 detectedLongitude=-10.3571929931641
+2026-10-09T13:41:20.5399998Z own-aircraft state=Default routeCount=1 speedKnots=603.3693 desiredAltitudeNative=0.005442852
+2026-10-09T13:41:24.8239300Z INCIDENT own-evasion-enter time=12.2144184471108 routeCount=1 speedKnots=602.9008 desiredAltitudeNative=0.453571
+2026-10-09T13:41:24.8239300Z deliberate-interference CeaseFire IsFinished=True
+2026-10-09T13:41:24.8258053Z INCIDENT own-evasion-exit time=12.2144184471108 routeCount=1 desiredAltitudeNative=0.005442852
+2026-10-09T13:41:25.6725523Z safe-sample thread=1 tick=742 objectJobsComplete=true collisionJobsComplete=true missionTime=13.0257849548943
+2026-10-09T13:41:25.6725523Z OBS side=player foreignTracks=4
+2026-10-09T13:41:25.6725523Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9497776031494 detectedLongitude=-10.2571563720703
+2026-10-09T13:41:25.6725523Z OBS side=player opaque=track-2 estimatePresent=True detectedLatitude=61.9493961334229 detectedLongitude=-10.2556610107422
+2026-10-09T13:41:25.6725523Z OBS side=player opaque=track-3 estimatePresent=True detectedLatitude=61.9493350982666 detectedLongitude=-10.2548065185547
+2026-10-09T13:41:25.6725523Z OBS side=player opaque=track-4 estimatePresent=True detectedLatitude=61.9498443603516 detectedLongitude=-10.2575225830078
+2026-10-09T13:41:25.6725523Z OBS side=ai foreignTracks=2
+2026-10-09T13:41:25.6725523Z OBS side=ai opaque=track-1 estimatePresent=True detectedLatitude=61.9599914550781 detectedLongitude=-10.3408966064453
+2026-10-09T13:41:25.6725523Z OBS side=ai opaque=track-2 estimatePresent=False
+2026-10-09T13:41:25.6725523Z own-aircraft state=Default routeCount=1 speedKnots=600.8694 desiredAltitudeNative=1.538276
+2026-10-09T13:41:30.7732140Z safe-sample thread=1 tick=1042 objectJobsComplete=true collisionJobsComplete=true missionTime=18.0292027299292
+2026-10-09T13:41:30.7732140Z OBS side=player foreignTracks=4
+2026-10-09T13:41:30.7732140Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9568061828613 detectedLongitude=-10.2636566162109
+2026-10-09T13:41:30.7732140Z OBS side=player opaque=track-2 estimatePresent=True detectedLatitude=61.955493927002 detectedLongitude=-10.289306640625
+2026-10-09T13:41:30.7732140Z OBS side=player opaque=track-3 estimatePresent=True detectedLatitude=61.949333190918 detectedLongitude=-10.2548065185547
+2026-10-09T13:41:30.7732140Z OBS side=player opaque=track-4 estimatePresent=True detectedLatitude=61.9538650512695 detectedLongitude=-10.2780303955078
+2026-10-09T13:41:30.7732140Z OBS side=ai foreignTracks=2
+2026-10-09T13:41:30.7732140Z OBS side=ai opaque=track-1 estimatePresent=True detectedLatitude=61.9600143432617 detectedLongitude=-10.3261260986328
+2026-10-09T13:41:30.7732140Z OBS side=ai opaque=track-2 estimatePresent=True detectedLatitude=61.9599914550781 detectedLongitude=-10.3358612060547
+2026-10-09T13:41:30.7732140Z own-aircraft state=Default routeCount=1 speedKnots=597.4791 desiredAltitudeNative=1.538276
+2026-10-09T13:41:35.9103991Z safe-sample thread=1 tick=1343 objectJobsComplete=true collisionJobsComplete=true missionTime=23.0489929053001
+2026-10-09T13:41:35.9103991Z OBS side=player foreignTracks=1
+2026-10-09T13:41:35.9103991Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9588241577148 detectedLongitude=-10.2671356201172
+2026-10-09T13:41:35.9103991Z OBS side=ai foreignTracks=1
+2026-10-09T13:41:35.9103991Z OBS side=ai opaque=track-1 estimatePresent=True detectedLatitude=61.9600105285645 detectedLongitude=-10.3184509277344
+2026-10-09T13:41:35.9103991Z own-aircraft state=Destroyed routeCount=0 speedKnots=554.1745 desiredAltitudeNative=1.538276
+2026-10-09T13:41:41.0587315Z safe-sample thread=1 tick=1644 objectJobsComplete=true collisionJobsComplete=true missionTime=28.0640562865883
+2026-10-09T13:41:41.0587315Z OBS side=player foreignTracks=1
+2026-10-09T13:41:41.0587315Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9588241577148 detectedLongitude=-10.2671356201172
+2026-10-09T13:41:41.0587315Z OBS side=ai foreignTracks=0
+2026-10-09T13:41:46.1684058Z safe-sample thread=1 tick=1945 objectJobsComplete=true collisionJobsComplete=true missionTime=33.0699882255867
+2026-10-09T13:41:46.1694059Z OBS side=player foreignTracks=1
+2026-10-09T13:41:46.1694059Z OBS side=player opaque=track-1 estimatePresent=True detectedLatitude=61.9588241577148 detectedLongitude=-10.2671356201172
+2026-10-09T13:41:46.1694059Z OBS side=ai foreignTracks=0
+2026-10-09T13:41:51.2332822Z safe-sample thread=1 tick=2246 objectJobsComplete=true collisionJobsComplete=true missionTime=38.093430345878
+2026-10-09T13:41:51.2332822Z OBS side=player foreignTracks=0
+2026-10-09T13:41:51.2332822Z OBS side=ai foreignTracks=0
+2026-10-09T13:41:56.2676589Z safe-sample thread=1 tick=2547 objectJobsComplete=true collisionJobsComplete=true missionTime=43.1102497549728
+2026-10-09T13:41:56.2676589Z OBS side=player foreignTracks=0
+2026-10-09T13:41:56.2676589Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:01.3867558Z safe-sample thread=1 tick=2847 objectJobsComplete=true collisionJobsComplete=true missionTime=48.1154052750207
+2026-10-09T13:42:01.3867558Z OBS side=player foreignTracks=0
+2026-10-09T13:42:01.3867558Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:06.5710813Z safe-sample thread=1 tick=3148 objectJobsComplete=true collisionJobsComplete=true missionTime=53.1306271757931
+2026-10-09T13:42:06.5710813Z OBS side=player foreignTracks=0
+2026-10-09T13:42:06.5710813Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:11.7079650Z safe-sample thread=1 tick=3449 objectJobsComplete=true collisionJobsComplete=true missionTime=58.1382598779164
+2026-10-09T13:42:11.7079650Z OBS side=player foreignTracks=0
+2026-10-09T13:42:11.7079650Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:16.8682609Z safe-sample thread=1 tick=3749 objectJobsComplete=true collisionJobsComplete=true missionTime=63.145130044315
+2026-10-09T13:42:16.8682609Z OBS side=player foreignTracks=0
+2026-10-09T13:42:16.8682609Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:22.0036542Z safe-sample thread=1 tick=4049 objectJobsComplete=true collisionJobsComplete=true missionTime=68.147956345696
+2026-10-09T13:42:22.0036542Z OBS side=player foreignTracks=0
+2026-10-09T13:42:22.0036542Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:27.1551874Z safe-sample thread=1 tick=4350 objectJobsComplete=true collisionJobsComplete=true missionTime=73.152944595553
+2026-10-09T13:42:27.1551874Z OBS side=player foreignTracks=0
+2026-10-09T13:42:27.1551874Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:32.3136855Z safe-sample thread=1 tick=4651 objectJobsComplete=true collisionJobsComplete=true missionTime=78.166965468321
+2026-10-09T13:42:32.3136855Z OBS side=player foreignTracks=0
+2026-10-09T13:42:32.3136855Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:37.4952060Z safe-sample thread=1 tick=4952 objectJobsComplete=true collisionJobsComplete=true missionTime=83.1945537109859
+2026-10-09T13:42:37.4952060Z OBS side=player foreignTracks=0
+2026-10-09T13:42:37.4952060Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:42.5972776Z safe-sample thread=1 tick=5254 objectJobsComplete=true collisionJobsComplete=true missionTime=88.2171729593538
+2026-10-09T13:42:42.5972776Z OBS side=player foreignTracks=0
+2026-10-09T13:42:42.5972776Z OBS side=ai foreignTracks=0
+2026-10-09T13:42:47.6689237Z safe-sample thread=1 tick=5554 objectJobsComplete=true collisionJobsComplete=true missionTime=93.2216584053822
+2026-10-09T13:42:47.6689237Z OBS side=player foreignTracks=0
+2026-10-09T13:42:47.6689237Z OBS side=ai foreignTracks=0

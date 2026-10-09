@@ -1,0 +1,4917 @@
+{
+  "tool": "ILSpy tooling retained in TEMP/naval-investigation-tools",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "locationCaveat": "Line locations refer to the local ILSpy output, not original source; regenerate with same tool version to compare.",
+  "classes": [
+    {
+      "classFile": "Seapower/FlightDeck.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 23,
+          "name": "CampaignUnitOnBoard"
+        },
+        {
+          "decompiledLine": 51,
+          "name": "FlightDeckAircraftSupportPoint"
+        },
+        {
+          "decompiledLine": 64,
+          "name": "FromRecoveryPoint"
+        },
+        {
+          "decompiledLine": 69,
+          "name": "FromIni"
+        },
+        {
+          "decompiledLine": 74,
+          "name": "IsAllowed"
+        },
+        {
+          "decompiledLine": 79,
+          "name": "CheckSupport"
+        },
+        {
+          "decompiledLine": 131,
+          "name": "ParseAllowedTypes"
+        },
+        {
+          "decompiledLine": 144,
+          "name": "ParseRoles"
+        },
+        {
+          "decompiledLine": 157,
+          "name": "ParseClasses"
+        },
+        {
+          "decompiledLine": 170,
+          "name": "SplitList"
+        },
+        {
+          "decompiledLine": 181,
+          "name": "ProfilerMarker"
+        },
+        {
+          "decompiledLine": 362,
+          "name": "Any"
+        },
+        {
+          "decompiledLine": 366,
+          "name": "Where"
+        },
+        {
+          "decompiledLine": 386,
+          "name": "LoadFromInI"
+        },
+        {
+          "decompiledLine": 700,
+          "name": "LoadInitialWaypoint"
+        },
+        {
+          "decompiledLine": 711,
+          "name": "KillAircraft"
+        },
+        {
+          "decompiledLine": 769,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 828,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 864,
+          "name": "GetSupportedAircraftTypes"
+        },
+        {
+          "decompiledLine": 869,
+          "name": "GetSupportedAircraftTypes"
+        },
+        {
+          "decompiledLine": 874,
+          "name": "GetSupportedAircraftTypes"
+        },
+        {
+          "decompiledLine": 879,
+          "name": "GetSupportedAircraftTypes"
+        },
+        {
+          "decompiledLine": 1145,
+          "name": "ResolveAircraftVehicleType"
+        },
+        {
+          "decompiledLine": 1178,
+          "name": "LoadStaticRecoveryPoints"
+        },
+        {
+          "decompiledLine": 1197,
+          "name": "NormalizeIniPath"
+        },
+        {
+          "decompiledLine": 1211,
+          "name": "FirstNonEmpty"
+        },
+        {
+          "decompiledLine": 1223,
+          "name": "LoadAircraftData"
+        },
+        {
+          "decompiledLine": 1361,
+          "name": "LoadFlightDeckAirgroupAndAmmo"
+        },
+        {
+          "decompiledLine": 1406,
+          "name": "LoadFlightDeckMagazine"
+        },
+        {
+          "decompiledLine": 1445,
+          "name": "UpdateLoadoutsAvailability"
+        },
+        {
+          "decompiledLine": 1494,
+          "name": "LoadDefaultAirgroup"
+        },
+        {
+          "decompiledLine": 1521,
+          "name": "LoadCustomAirgroup"
+        },
+        {
+          "decompiledLine": 1529,
+          "name": "LoadAirgroupFromIni"
+        },
+        {
+          "decompiledLine": 1571,
+          "name": "LoadAdditionalAircraft"
+        },
+        {
+          "decompiledLine": 1600,
+          "name": "ParseAirgroupCrewSkill"
+        },
+        {
+          "decompiledLine": 1609,
+          "name": "AddVehicle"
+        },
+        {
+          "decompiledLine": 1614,
+          "name": "GetSquadronCrewSkill"
+        },
+        {
+          "decompiledLine": 1628,
+          "name": "GetSquadronCrewSkill"
+        },
+        {
+          "decompiledLine": 1644,
+          "name": "UpdateSquadronCrewSkill"
+        },
+        {
+          "decompiledLine": 1673,
+          "name": "AddVehicle"
+        },
+        {
+          "decompiledLine": 1722,
+          "name": "RegisterCampaignUnitOnBoard"
+        },
+        {
+          "decompiledLine": 1735,
+          "name": "AssignCampaignUnitTagToLaunchedUnit"
+        },
+        {
+          "decompiledLine": 1748,
+          "name": "SaveCampaignUnitsOnBoard"
+        },
+        {
+          "decompiledLine": 1769,
+          "name": "LoadCampaignUnitsOnBoard"
+        },
+        {
+          "decompiledLine": 1798,
+          "name": "ClearAirgroup"
+        },
+        {
+          "decompiledLine": 1811,
+          "name": "CheckForEmptyHangars"
+        },
+        {
+          "decompiledLine": 1944,
+          "name": "TotalVehiclesOnBoard"
+        },
+        {
+          "decompiledLine": 1954,
+          "name": "TotalVehiclesOnBoardIncludingCooldown"
+        },
+        {
+          "decompiledLine": 1975,
+          "name": "TotalVehiclesInAir"
+        },
+        {
+          "decompiledLine": 1995,
+          "name": "TotalVehiclesNotInFlight"
+        },
+        {
+          "decompiledLine": 2015,
+          "name": "handleFlightDeckTasks"
+        },
+        {
+          "decompiledLine": 2041,
+          "name": "removeFlightDeckTask"
+        },
+        {
+          "decompiledLine": 2053,
+          "name": "addFlightDeckTask"
+        },
+        {
+          "decompiledLine": 2065,
+          "name": "launchVehicle"
+        },
+        {
+          "decompiledLine": 2114,
+          "name": "getObjectToLaunch"
+        },
+        {
+          "decompiledLine": 2185,
+          "name": "CanLaunchVehicle"
+        },
+        {
+          "decompiledLine": 2205,
+          "name": "createLaunchTask"
+        },
+        {
+          "decompiledLine": 2236,
+          "name": "createReturnTask"
+        },
+        {
+          "decompiledLine": 2241,
+          "name": "createCircuitTask"
+        },
+        {
+          "decompiledLine": 2246,
+          "name": "createRecoveryTask"
+        },
+        {
+          "decompiledLine": 2251,
+          "name": "abortLaunchTask"
+        },
+        {
+          "decompiledLine": 2278,
+          "name": "abortAllLaunchTasks"
+        },
+        {
+          "decompiledLine": 2291,
+          "name": "FindValidRoutes"
+        },
+        {
+          "decompiledLine": 2298,
+          "name": "RouteAllowsTaxiQueue"
+        },
+        {
+          "decompiledLine": 2303,
+          "name": "FindTaxiRoute"
+        },
+        {
+          "decompiledLine": 2321,
+          "name": "FindRoutesRecursive"
+        },
+        {
+          "decompiledLine": 2341,
+          "name": "SaveStateToFile"
+        },
+        {
+          "decompiledLine": 2381,
+          "name": "SaveFlightDeckPoint"
+        },
+        {
+          "decompiledLine": 2403,
+          "name": "SaveTask"
+        },
+        {
+          "decompiledLine": 2578,
+          "name": "LoadStateFromFile"
+        },
+        {
+          "decompiledLine": 3092,
+          "name": "LoadPreparationTask"
+        },
+        {
+          "decompiledLine": 3169,
+          "name": "LoadFlightDeckPoint"
+        },
+        {
+          "decompiledLine": 3213,
+          "name": "RecoverAll"
+        },
+        {
+          "decompiledLine": 3412,
+          "name": "CompleteLaunchPreparations"
+        },
+        {
+          "decompiledLine": 3423,
+          "name": "GetVehicleByName"
+        },
+        {
+          "decompiledLine": 3435,
+          "name": "ReadMaxLandingSeaState"
+        },
+        {
+          "decompiledLine": 3440,
+          "name": "ReadAssistedLandingSeaStates"
+        },
+        {
+          "decompiledLine": 3464,
+          "name": "CanOperateHelicopterInCurrentSeaState"
+        },
+        {
+          "decompiledLine": 3477,
+          "name": "CanRecoverHelicopterInCurrentSeaState"
+        },
+        {
+          "decompiledLine": 3490,
+          "name": "IsSeaStateRestrictionEnabled"
+        },
+        {
+          "decompiledLine": 3499,
+          "name": "GetEffectiveMaxLandingSeaState"
+        },
+        {
+          "decompiledLine": 3508,
+          "name": "GetEffectiveMaxLandingSeaState"
+        },
+        {
+          "decompiledLine": 3517,
+          "name": "GetHelicopterSeaStateMessage"
+        },
+        {
+          "decompiledLine": 3523,
+          "name": "GetHelicopterSeaStateMessage"
+        },
+        {
+          "decompiledLine": 3529,
+          "name": "GetHelicopterSeaStateMessage"
+        },
+        {
+          "decompiledLine": 3535,
+          "name": "GetEffectiveMaxLandingSeaState"
+        },
+        {
+          "decompiledLine": 3546,
+          "name": "SetThreatBearingStationPosition"
+        }
+      ],
+      "decompiledSha256": "AC1123C271B22624F7EB6A0A8851B922AE337F0400C381B315A46487CE264898"
+    },
+    {
+      "classFile": "Seapower/VehicleTypeOnBoard.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 121,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 126,
+          "name": "GetLoadoutByName"
+        }
+      ],
+      "decompiledSha256": "408B70C0B8640C7332C7F4A996A85FF9881E2A4034A8F6589FA33EDBDA571CF1"
+    },
+    {
+      "classFile": "Seapower/Squadron.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 66,
+          "name": "IsGreen"
+        },
+        {
+          "decompiledLine": 68,
+          "name": "IsTrained"
+        },
+        {
+          "decompiledLine": 70,
+          "name": "IsSeasoned"
+        },
+        {
+          "decompiledLine": 72,
+          "name": "IsVeterans"
+        },
+        {
+          "decompiledLine": 74,
+          "name": "IsUltra"
+        },
+        {
+          "decompiledLine": 78,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 83,
+          "name": "Squadron"
+        }
+      ],
+      "decompiledSha256": "5618B32A6F5AB66A3ACC219C04FC9F8BA837718E28DAD12B28E73E631C090201"
+    },
+    {
+      "classFile": "Seapower/Loadout.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 115,
+          "name": "GetCombatRadiusText"
+        },
+        {
+          "decompiledLine": 118,
+          "name": "IsNullOrEmpty"
+        },
+        {
+          "decompiledLine": 123,
+          "name": "Invoke"
+        },
+        {
+          "decompiledLine": 192,
+          "name": "RefreshNightWarnings"
+        },
+        {
+          "decompiledLine": 204,
+          "name": "Loadout"
+        },
+        {
+          "decompiledLine": 209,
+          "name": "Loadout"
+        }
+      ],
+      "decompiledSha256": "571ECE02E9757A67BE90A8F8BBE8040BE92F77AFB7D43AAAD2B2F79B276B2F0C"
+    },
+    {
+      "classFile": "Seapower/FlightDeckTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 107,
+          "name": "IsGreen"
+        },
+        {
+          "decompiledLine": 109,
+          "name": "IsTrained"
+        },
+        {
+          "decompiledLine": 111,
+          "name": "IsSeasoned"
+        },
+        {
+          "decompiledLine": 113,
+          "name": "IsVeterans"
+        },
+        {
+          "decompiledLine": 115,
+          "name": "IsUltra"
+        },
+        {
+          "decompiledLine": 141,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 146,
+          "name": "FlightDeckTask"
+        },
+        {
+          "decompiledLine": 151,
+          "name": "CreatePendingLaunchTask"
+        },
+        {
+          "decompiledLine": 158,
+          "name": "CreateLaunchTask"
+        },
+        {
+          "decompiledLine": 163,
+          "name": "CreateReturnTask"
+        },
+        {
+          "decompiledLine": 168,
+          "name": "CreateCircuitTask"
+        },
+        {
+          "decompiledLine": 173,
+          "name": "CreateRecoveryTask"
+        },
+        {
+          "decompiledLine": 178,
+          "name": "At"
+        },
+        {
+          "decompiledLine": 183,
+          "name": "At"
+        },
+        {
+          "decompiledLine": 188,
+          "name": "AtAny"
+        },
+        {
+          "decompiledLine": 193,
+          "name": "AtAny"
+        },
+        {
+          "decompiledLine": 198,
+          "name": "tickStateMachine"
+        },
+        {
+          "decompiledLine": 203,
+          "name": "fixedTickStateMachine"
+        }
+      ],
+      "decompiledSha256": "9C8C59BE4F03C13D9C8D48D768F13F1D946FAA1A338CF0FB2AD64FFC5D1C9318"
+    },
+    {
+      "classFile": "Seapower/PendingLaunchTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 47,
+          "name": "PendingLaunchTask"
+        },
+        {
+          "decompiledLine": 110,
+          "name": "AbortLaunchFunc"
+        },
+        {
+          "decompiledLine": 116,
+          "name": "AllowLaunchFunc"
+        },
+        {
+          "decompiledLine": 123,
+          "name": "PrioritiseTaskFunc"
+        },
+        {
+          "decompiledLine": 128,
+          "name": "ToggleLaunchAllowedFunc"
+        },
+        {
+          "decompiledLine": 133,
+          "name": "UpdateAssignedGroundCrew"
+        },
+        {
+          "decompiledLine": 152,
+          "name": "UpdateAssignedDeckSpots"
+        },
+        {
+          "decompiledLine": 170,
+          "name": "ModifyDurationForAI"
+        }
+      ],
+      "decompiledSha256": "288BBE3B9FEFC26D20529BEA89A7F9A3C7B1E5AE774EB3E5884783D033AFBA65"
+    },
+    {
+      "classFile": "Seapower/HandleReadyUpTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 18,
+          "name": "HandleReadyUpTask"
+        },
+        {
+          "decompiledLine": 23,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 45,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 49,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 59,
+          "name": "onExit"
+        }
+      ],
+      "decompiledSha256": "7ECCEC079A051DECD9682B93B3DEE5D0F16788F54A31FBC38E89C62C87C602F6"
+    },
+    {
+      "classFile": "Seapower/HandlePendingLaunchTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 26,
+          "name": "HandlePendingLaunchTask"
+        },
+        {
+          "decompiledLine": 35,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 97,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 101,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 106,
+          "name": "onExit"
+        }
+      ],
+      "decompiledSha256": "405B114094B30A3D49E897F097ACC91205125CE38AC13CE53CD9942E64A1CC6E"
+    },
+    {
+      "classFile": "Seapower/LaunchTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 5,
+          "name": "LaunchTask"
+        }
+      ],
+      "decompiledSha256": "C6AADF0A271760CD9072D6EBE741817D64BBE8FCA819DBBF68AB5119FC55339E"
+    },
+    {
+      "classFile": "Seapower/LaunchTaskParameters.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [],
+      "decompiledSha256": "739EAE2FACA0C04FD13EE554089F697EC320050CF557B1C33CB7E2A86CEAF03E"
+    },
+    {
+      "classFile": "Seapower/PlaneTakeOff.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 75,
+          "name": "PlaneTakeOff"
+        },
+        {
+          "decompiledLine": 80,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 120,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 157,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 248,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 293,
+          "name": "ReleaseLaunchPointAfterTakeoff"
+        },
+        {
+          "decompiledLine": 303,
+          "name": "GetLaunchPointHeading"
+        },
+        {
+          "decompiledLine": 308,
+          "name": "giveControl"
+        },
+        {
+          "decompiledLine": 335,
+          "name": "runParticleSystemAsync"
+        },
+        {
+          "decompiledLine": 349,
+          "name": "runAnimationAsync"
+        }
+      ],
+      "decompiledSha256": "254F7D775E4495582EFA7F6799BDC0C6F7941A87BDF4842DEB5144F6CC946C36"
+    },
+    {
+      "classFile": "Seapower/HelicopterTakeOff.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 25,
+          "name": "HelicopterTakeOff"
+        },
+        {
+          "decompiledLine": 32,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 45,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 53,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 74,
+          "name": "giveControl"
+        },
+        {
+          "decompiledLine": 102,
+          "name": "onFixedUpdate"
+        }
+      ],
+      "decompiledSha256": "3D1277EF1DD2B84FBC03FEBBC61E2A84266931E94F8D801504D15B68CFD76C60"
+    },
+    {
+      "classFile": "Seapower/ReturnTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 9,
+          "name": "ReturnTask"
+        },
+        {
+          "decompiledLine": 34,
+          "name": "ReturnTask"
+        }
+      ],
+      "decompiledSha256": "3628B8AE12D808C449FE79E5F5046E91E0C9452F78C6B7F81A70369241D9D6CA"
+    },
+    {
+      "classFile": "Seapower/ReturnToBase.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 23,
+          "name": "ReturnToBase"
+        },
+        {
+          "decompiledLine": 30,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 43,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 48,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 52,
+          "name": "onFixedUpdate"
+        }
+      ],
+      "decompiledSha256": "30B16EB3E8620A3A2E2ECEB1334D8D9CDCE163358D28B4FDB5CAAEAA75EEC834"
+    },
+    {
+      "classFile": "Seapower/HoldingPattern.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 78,
+          "name": "HoldingPattern"
+        },
+        {
+          "decompiledLine": 85,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 148,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 165,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 169,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 218,
+          "name": "RepeatHoldPattern"
+        },
+        {
+          "decompiledLine": 230,
+          "name": "TryGetRecoveryPoint"
+        }
+      ],
+      "decompiledSha256": "A2116DCD70FA9CD96C6160061C6FCB97581B3009F5F7212434B83525B8EA2D3D"
+    },
+    {
+      "classFile": "Seapower/Circuit.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 34,
+          "name": "Circuit"
+        },
+        {
+          "decompiledLine": 41,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 45,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 76,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 82,
+          "name": "onUpdate"
+        }
+      ],
+      "decompiledSha256": "6BAB5E62E4DADFD9A4E5B884BA684F73BD0E55F42B54EBC736184CECBDEF5F64"
+    },
+    {
+      "classFile": "Seapower/RecoveryTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 8,
+          "name": "RecoveryTask"
+        },
+        {
+          "decompiledLine": 103,
+          "name": "Waveoff"
+        }
+      ],
+      "decompiledSha256": "EA5F17C0161B35C9370FC5CBB552FF30CFB462D29607A57F7E0D6B2D8C5822AE"
+    },
+    {
+      "classFile": "Seapower/DeSpawn.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 15,
+          "name": "DeSpawn"
+        },
+        {
+          "decompiledLine": 20,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 147,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 151,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 155,
+          "name": "onFixedUpdate"
+        }
+      ],
+      "decompiledSha256": "E36D6AAC94702A9D827BC79D731F2DA50EFDC03D4BC8D6D68C7F169F943A9CC8"
+    },
+    {
+      "classFile": "Seapower/CoolDownTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 14,
+          "name": "CoolDownTask"
+        },
+        {
+          "decompiledLine": 34,
+          "name": "AbortLaunchFunc"
+        }
+      ],
+      "decompiledSha256": "A2D84B8EF804751BA098AF79168E8DF5A018CABE8B6C758A249FD956E9128B45"
+    },
+    {
+      "classFile": "Seapower/HandleCoolDownTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 21,
+          "name": "HandleCoolDownTask"
+        },
+        {
+          "decompiledLine": 30,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 43,
+          "name": "onFixedUpdate"
+        },
+        {
+          "decompiledLine": 47,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 52,
+          "name": "onExit"
+        }
+      ],
+      "decompiledSha256": "9ECBD7083FE6972A4AD91F5BAA6331D8387BEB14D93233FE775DED1916FF5093"
+    },
+    {
+      "classFile": "Seapower/FinishFlightDeckTask.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 11,
+          "name": "FinishFlightDeckTask"
+        },
+        {
+          "decompiledLine": 17,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 51,
+          "name": "onExit"
+        },
+        {
+          "decompiledLine": 55,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 59,
+          "name": "onFixedUpdate"
+        }
+      ],
+      "decompiledSha256": "342EF25A01F0E9C6B9913C7563E4786AF269FDC85855F99F4701B5F9E05F8553"
+    },
+    {
+      "classFile": "Seapower/CoreService.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 42,
+          "name": "Execute"
+        },
+        {
+          "decompiledLine": 61,
+          "name": "ModuleRegistry"
+        },
+        {
+          "decompiledLine": 65,
+          "name": "Regex"
+        },
+        {
+          "decompiledLine": 67,
+          "name": "Regex"
+        },
+        {
+          "decompiledLine": 73,
+          "name": "CoreService"
+        },
+        {
+          "decompiledLine": 78,
+          "name": "SetupRegistry"
+        },
+        {
+          "decompiledLine": 85,
+          "name": "WaitForClient"
+        },
+        {
+          "decompiledLine": 97,
+          "name": "ResetClients"
+        },
+        {
+          "decompiledLine": 103,
+          "name": "RegisterClient"
+        },
+        {
+          "decompiledLine": 119,
+          "name": "GetPackage"
+        },
+        {
+          "decompiledLine": 141,
+          "name": "GetPackages"
+        },
+        {
+          "decompiledLine": 152,
+          "name": "FindByUID"
+        },
+        {
+          "decompiledLine": 163,
+          "name": "PackEntity"
+        },
+        {
+          "decompiledLine": 169,
+          "name": "UnpackEntity"
+        },
+        {
+          "decompiledLine": 179,
+          "name": "FindByVehicleID"
+        },
+        {
+          "decompiledLine": 191,
+          "name": "IsNewId"
+        },
+        {
+          "decompiledLine": 204,
+          "name": "GetResumable"
+        },
+        {
+          "decompiledLine": 213,
+          "name": "GetTaskforces"
+        },
+        {
+          "decompiledLine": 218,
+          "name": "GetUnitsInTaskforce"
+        },
+        {
+          "decompiledLine": 223,
+          "name": "GetObjectInfo"
+        },
+        {
+          "decompiledLine": 235,
+          "name": "GetUnitPosition"
+        },
+        {
+          "decompiledLine": 240,
+          "name": "HasFlightDeck"
+        },
+        {
+          "decompiledLine": 245,
+          "name": "GetAircraftOnFlightDeck"
+        },
+        {
+          "decompiledLine": 262,
+          "name": "LaunchAircraft"
+        },
+        {
+          "decompiledLine": 308,
+          "name": "GetSystems"
+        },
+        {
+          "decompiledLine": 321,
+          "name": "GetWeapons"
+        },
+        {
+          "decompiledLine": 334,
+          "name": "NotifyWinchester"
+        },
+        {
+          "decompiledLine": 362,
+          "name": "GetHomeBase"
+        },
+        {
+          "decompiledLine": 380,
+          "name": "GoToWaypoint"
+        },
+        {
+          "decompiledLine": 404,
+          "name": "SetDesiredAltFeet"
+        },
+        {
+          "decompiledLine": 413,
+          "name": "ForceVehicleRelation"
+        },
+        {
+          "decompiledLine": 431,
+          "name": "IsRelationForced"
+        },
+        {
+          "decompiledLine": 442,
+          "name": "ClearForcedRelation"
+        },
+        {
+          "decompiledLine": 458,
+          "name": "SetWeaponPosture"
+        },
+        {
+          "decompiledLine": 469,
+          "name": "GetWeaponPosture"
+        },
+        {
+          "decompiledLine": 474,
+          "name": "GetAIInfo"
+        },
+        {
+          "decompiledLine": 489,
+          "name": "AttackVehicle"
+        },
+        {
+          "decompiledLine": 519,
+          "name": "UnitDestroyed"
+        },
+        {
+          "decompiledLine": 542,
+          "name": "WatchState"
+        },
+        {
+          "decompiledLine": 559,
+          "name": "VehiclesInArea"
+        },
+        {
+          "decompiledLine": 581,
+          "name": "WatchArea"
+        },
+        {
+          "decompiledLine": 634,
+          "name": "SerializeToIni"
+        },
+        {
+          "decompiledLine": 642,
+          "name": "LoadFromIni"
+        },
+        {
+          "decompiledLine": 683,
+          "name": "SetEMCON"
+        },
+        {
+          "decompiledLine": 688,
+          "name": "SetSensorEnabled"
+        },
+        {
+          "decompiledLine": 743,
+          "name": "WaitGameTime"
+        },
+        {
+          "decompiledLine": 764,
+          "name": "OnTrigger"
+        },
+        {
+          "decompiledLine": 780,
+          "name": "FireTrigger"
+        }
+      ],
+      "decompiledSha256": "1048BE92DEEDAC638275FEC22EF8BDC8390DA3E65EC213554CA91BA491CC897E"
+    },
+    {
+      "classFile": "Seapower/ObjectBase.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 349,
+          "name": "OcConsumer"
+        },
+        {
+          "decompiledLine": 351,
+          "name": "CompositeDisposable"
+        },
+        {
+          "decompiledLine": 697,
+          "name": "GenerateUid"
+        },
+        {
+          "decompiledLine": 794,
+          "name": "NextFloat"
+        },
+        {
+          "decompiledLine": 848,
+          "name": "GetMapContactID"
+        },
+        {
+          "decompiledLine": 1058,
+          "name": "Abs"
+        },
+        {
+          "decompiledLine": 1458,
+          "name": "CreateViewModel"
+        },
+        {
+          "decompiledLine": 1784,
+          "name": "HasNoiseJammer"
+        },
+        {
+          "decompiledLine": 1792,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 1797,
+          "name": "RefreshLocalizedDisplayNames"
+        },
+        {
+          "decompiledLine": 1828,
+          "name": "SetSpeedCommand"
+        },
+        {
+          "decompiledLine": 1842,
+          "name": "RestoreWakeBubbleEmitter"
+        },
+        {
+          "decompiledLine": 1851,
+          "name": "Stations_CollectionChanged"
+        },
+        {
+          "decompiledLine": 1870,
+          "name": "SetUniqueId"
+        },
+        {
+          "decompiledLine": 1880,
+          "name": "GunDamageFraction"
+        },
+        {
+          "decompiledLine": 1890,
+          "name": "GunDamageTier"
+        },
+        {
+          "decompiledLine": 1912,
+          "name": "UpdateGunDamageState"
+        },
+        {
+          "decompiledLine": 1920,
+          "name": "RaiseMissileAlert"
+        },
+        {
+          "decompiledLine": 1933,
+          "name": "RefreshPlayerThreatAlerts"
+        },
+        {
+          "decompiledLine": 1952,
+          "name": "RegisterRadarLockWarningSource"
+        },
+        {
+          "decompiledLine": 1968,
+          "name": "ReportUnderFireFrom"
+        },
+        {
+          "decompiledLine": 1976,
+          "name": "NotifyGunFireDirectedAtUs"
+        },
+        {
+          "decompiledLine": 1985,
+          "name": "OnUpdateEveryFrame"
+        },
+        {
+          "decompiledLine": 2002,
+          "name": "OnLazyUpdate"
+        },
+        {
+          "decompiledLine": 2147,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 2300,
+          "name": "CalculateGeoPosition"
+        },
+        {
+          "decompiledLine": 2365,
+          "name": "CheckForMineRemoval"
+        },
+        {
+          "decompiledLine": 2395,
+          "name": "CheckForRaftPickUp"
+        },
+        {
+          "decompiledLine": 2465,
+          "name": "SetTeleportProtection"
+        },
+        {
+          "decompiledLine": 2472,
+          "name": "SpawnPilot"
+        },
+        {
+          "decompiledLine": 2523,
+          "name": "Awake"
+        },
+        {
+          "decompiledLine": 2564,
+          "name": "OnStart"
+        },
+        {
+          "decompiledLine": 2664,
+          "name": "setInitialized"
+        },
+        {
+          "decompiledLine": 2670,
+          "name": "Enable"
+        },
+        {
+          "decompiledLine": 2686,
+          "name": "Disable"
+        },
+        {
+          "decompiledLine": 2706,
+          "name": "OnDestroy"
+        },
+        {
+          "decompiledLine": 2741,
+          "name": "isDangerous"
+        },
+        {
+          "decompiledLine": 2939,
+          "name": "TracksIncomingWeapons"
+        },
+        {
+          "decompiledLine": 2965,
+          "name": "ResolveIncomingWeaponsMode"
+        },
+        {
+          "decompiledLine": 3003,
+          "name": "EvaluateIncomingWeaponsEligibility"
+        },
+        {
+          "decompiledLine": 3039,
+          "name": "CalculateIncomingThreats"
+        },
+        {
+          "decompiledLine": 3069,
+          "name": "getDebugIncomingThreatsNames"
+        },
+        {
+          "decompiledLine": 3083,
+          "name": "HasObservedIdentifiedInboundWeapon"
+        },
+        {
+          "decompiledLine": 3103,
+          "name": "CanAutomaticallyBreakForcedEmcon"
+        },
+        {
+          "decompiledLine": 3112,
+          "name": "GetDebugIncomingWeaponsNames"
+        },
+        {
+          "decompiledLine": 3126,
+          "name": "SetWeaponStatus"
+        },
+        {
+          "decompiledLine": 3155,
+          "name": "CheckForPlayerAbort"
+        },
+        {
+          "decompiledLine": 3164,
+          "name": "CeaseFire"
+        },
+        {
+          "decompiledLine": 3244,
+          "name": "ceaseLaserGuidance"
+        },
+        {
+          "decompiledLine": 3259,
+          "name": "CeaseOffensiveJamming"
+        },
+        {
+          "decompiledLine": 3274,
+          "name": "ClearEngageTasksKeepGuiding"
+        },
+        {
+          "decompiledLine": 3290,
+          "name": "ClearEngageTasks"
+        },
+        {
+          "decompiledLine": 3300,
+          "name": "AnyWeaponHasAmmo"
+        },
+        {
+          "decompiledLine": 3312,
+          "name": "RemoveEngageTask"
+        },
+        {
+          "decompiledLine": 3321,
+          "name": "RemoveEngageTask"
+        },
+        {
+          "decompiledLine": 3326,
+          "name": "HeldTrackCount"
+        },
+        {
+          "decompiledLine": 3342,
+          "name": "EngagedAirContactCount"
+        },
+        {
+          "decompiledLine": 3348,
+          "name": "EngagedContactCount"
+        },
+        {
+          "decompiledLine": 3354,
+          "name": "CurrentEngagedContacts"
+        },
+        {
+          "decompiledLine": 3360,
+          "name": "CountAirIn"
+        },
+        {
+          "decompiledLine": 3373,
+          "name": "FillEngagedContacts"
+        },
+        {
+          "decompiledLine": 3419,
+          "name": "ClosingRateBetween"
+        },
+        {
+          "decompiledLine": 3428,
+          "name": "ClosingRateBetween"
+        },
+        {
+          "decompiledLine": 3443,
+          "name": "IsOperableMount"
+        },
+        {
+          "decompiledLine": 3452,
+          "name": "IsOperableDirector"
+        },
+        {
+          "decompiledLine": 3461,
+          "name": "FreeSolutionChannels"
+        },
+        {
+          "decompiledLine": 3490,
+          "name": "TotalSolutionChannels"
+        },
+        {
+          "decompiledLine": 3515,
+          "name": "HasSolutionCapacityForTarget"
+        },
+        {
+          "decompiledLine": 3551,
+          "name": "HeldSolutionStart"
+        },
+        {
+          "decompiledLine": 3587,
+          "name": "IsTrackedBy"
+        },
+        {
+          "decompiledLine": 3600,
+          "name": "PendingSolutionCount"
+        },
+        {
+          "decompiledLine": 3621,
+          "name": "UpdateSolutionChannel"
+        },
+        {
+          "decompiledLine": 3635,
+          "name": "TryClaimSolutionChannel"
+        },
+        {
+          "decompiledLine": 3667,
+          "name": "AnySystemExecutingEngageTask"
+        },
+        {
+          "decompiledLine": 3683,
+          "name": "HandleEngageTasks"
+        },
+        {
+          "decompiledLine": 4218,
+          "name": "InsertEngageTask"
+        },
+        {
+          "decompiledLine": 4226,
+          "name": "AddEngageTask"
+        },
+        {
+          "decompiledLine": 4231,
+          "name": "EnsurePrepAlignment"
+        },
+        {
+          "decompiledLine": 4264,
+          "name": "ClearPrepAlignment"
+        },
+        {
+          "decompiledLine": 4273,
+          "name": "DelayedEndAlignment"
+        },
+        {
+          "decompiledLine": 4293,
+          "name": "ClearDeadTargetAlignments"
+        },
+        {
+          "decompiledLine": 4305,
+          "name": "EndAlignment"
+        },
+        {
+          "decompiledLine": 4345,
+          "name": "EndAllAlignment"
+        },
+        {
+          "decompiledLine": 4372,
+          "name": "HasGuidingAlignment"
+        },
+        {
+          "decompiledLine": 4384,
+          "name": "ClampRestoredAltitudeForGuidance"
+        },
+        {
+          "decompiledLine": 4398,
+          "name": "IsHoldingLaserGuardFor"
+        },
+        {
+          "decompiledLine": 4414,
+          "name": "BestOperableLaserDesignatorRange"
+        },
+        {
+          "decompiledLine": 4432,
+          "name": "UpdateAlignmentAltitudes"
+        },
+        {
+          "decompiledLine": 4444,
+          "name": "UpdateAlignmentSpeeds"
+        },
+        {
+          "decompiledLine": 4452,
+          "name": "ReloadVariant"
+        },
+        {
+          "decompiledLine": 4521,
+          "name": "ReloadSquadron"
+        },
+        {
+          "decompiledLine": 4614,
+          "name": "ReloadUnit"
+        },
+        {
+          "decompiledLine": 4702,
+          "name": "ExportMeshCollidersToIniFile"
+        },
+        {
+          "decompiledLine": 4726,
+          "name": "ExportCollidersToIniFile"
+        },
+        {
+          "decompiledLine": 4759,
+          "name": "ShowHideColliders"
+        },
+        {
+          "decompiledLine": 4796,
+          "name": "GetMapVehicle"
+        },
+        {
+          "decompiledLine": 4801,
+          "name": "GetMapPositionForTaskforce"
+        },
+        {
+          "decompiledLine": 4812,
+          "name": "UpdateOwnPlottingState"
+        },
+        {
+          "decompiledLine": 4831,
+          "name": "TransferToTaskforce"
+        },
+        {
+          "decompiledLine": 4870,
+          "name": "ResetEngagements"
+        },
+        {
+          "decompiledLine": 4899,
+          "name": "RemoveWaypoints"
+        },
+        {
+          "decompiledLine": 4906,
+          "name": "CopyWaypointsFrom"
+        },
+        {
+          "decompiledLine": 4928,
+          "name": "ExportWaypoints"
+        },
+        {
+          "decompiledLine": 4956,
+          "name": "ImportWaypoints"
+        },
+        {
+          "decompiledLine": 4999,
+          "name": "CreateWaypointData"
+        },
+        {
+          "decompiledLine": 5033,
+          "name": "CreateWaypointData"
+        },
+        {
+          "decompiledLine": 5073,
+          "name": "AddAttackData"
+        },
+        {
+          "decompiledLine": 5086,
+          "name": "SetAttackAtWaypointTask"
+        },
+        {
+          "decompiledLine": 5195,
+          "name": "SetDipSonarAtWaypointTask"
+        },
+        {
+          "decompiledLine": 5234,
+          "name": "SetAttackAtWaypointTask"
+        },
+        {
+          "decompiledLine": 5297,
+          "name": "EngageAtWaypointPosition"
+        },
+        {
+          "decompiledLine": 5314,
+          "name": "setWaypointTask"
+        },
+        {
+          "decompiledLine": 5339,
+          "name": "SetWaypointTask"
+        },
+        {
+          "decompiledLine": 5346,
+          "name": "setWaypointTaskParameters"
+        },
+        {
+          "decompiledLine": 5420,
+          "name": "SetRelativeWaypointTask"
+        },
+        {
+          "decompiledLine": 5445,
+          "name": "SetRelativeWaypointTask"
+        },
+        {
+          "decompiledLine": 5467,
+          "name": "SetRelativeToStationWaypointTask"
+        },
+        {
+          "decompiledLine": 5494,
+          "name": "SetRelativeWaypointTask"
+        },
+        {
+          "decompiledLine": 5567,
+          "name": "isLastWaypoint"
+        },
+        {
+          "decompiledLine": 5587,
+          "name": "ClearAttackTasks"
+        },
+        {
+          "decompiledLine": 5603,
+          "name": "DeleteSelectedWaypoint"
+        },
+        {
+          "decompiledLine": 5618,
+          "name": "DeleteWaypoints"
+        },
+        {
+          "decompiledLine": 5634,
+          "name": "GetNumberOfWaypoints"
+        },
+        {
+          "decompiledLine": 5651,
+          "name": "HasWaypoints"
+        },
+        {
+          "decompiledLine": 5667,
+          "name": "GetWaypoint"
+        },
+        {
+          "decompiledLine": 5688,
+          "name": "CurrentWaypointDeploysTowedSonar"
+        },
+        {
+          "decompiledLine": 5698,
+          "name": "GetLastWaypoint"
+        },
+        {
+          "decompiledLine": 5714,
+          "name": "SetDesiredAltitudeToCurrentWaypoint"
+        },
+        {
+          "decompiledLine": 5746,
+          "name": "GetCurrentActiveWaypointGeoPos"
+        },
+        {
+          "decompiledLine": 5769,
+          "name": "GetAllWaypointsGeoPositions"
+        },
+        {
+          "decompiledLine": 5796,
+          "name": "UpdateWaypointsAltitudes"
+        },
+        {
+          "decompiledLine": 5827,
+          "name": "CreateRandomWaypointsPattern"
+        },
+        {
+          "decompiledLine": 5842,
+          "name": "IsCurrentActiveWaypointRelative"
+        },
+        {
+          "decompiledLine": 5865,
+          "name": "GetCurrentActiveWaypointName"
+        },
+        {
+          "decompiledLine": 5888,
+          "name": "ChangeCurrentActiveWaypointName"
+        },
+        {
+          "decompiledLine": 5914,
+          "name": "ChangeLastWaypointName"
+        },
+        {
+          "decompiledLine": 5940,
+          "name": "GetAllWaypointsNames"
+        },
+        {
+          "decompiledLine": 5964,
+          "name": "GetDistToCurrentActiveWaypoint"
+        },
+        {
+          "decompiledLine": 5974,
+          "name": "GetDistToCurrentActiveWaypointInMiles"
+        },
+        {
+          "decompiledLine": 5984,
+          "name": "getCurrentWaypointDeviation"
+        },
+        {
+          "decompiledLine": 5995,
+          "name": "notifyOfHit"
+        },
+        {
+          "decompiledLine": 6000,
+          "name": "getNoise"
+        },
+        {
+          "decompiledLine": 6005,
+          "name": "CavitationOnsetKts"
+        },
+        {
+          "decompiledLine": 6010,
+          "name": "SetVisible"
+        },
+        {
+          "decompiledLine": 6018,
+          "name": "SetOpticalViewModelVisible"
+        },
+        {
+          "decompiledLine": 6054,
+          "name": "setEMCON"
+        },
+        {
+          "decompiledLine": 6100,
+          "name": "CheckEMCON"
+        },
+        {
+          "decompiledLine": 6223,
+          "name": "setPlayerCommandOverride"
+        },
+        {
+          "decompiledLine": 6231,
+          "name": "setPlayerHeightControl"
+        },
+        {
+          "decompiledLine": 6236,
+          "name": "dropWakeBubble"
+        },
+        {
+          "decompiledLine": 6270,
+          "name": "CreateWakeBubble"
+        },
+        {
+          "decompiledLine": 6318,
+          "name": "getWakeBubbleDropInterval"
+        },
+        {
+          "decompiledLine": 6327,
+          "name": "SetCodeAnimsForTaxi"
+        },
+        {
+          "decompiledLine": 6334,
+          "name": "PlayCodeAnimsForFlight"
+        },
+        {
+          "decompiledLine": 6344,
+          "name": "PlayCodeAnim"
+        },
+        {
+          "decompiledLine": 6359,
+          "name": "GetCodeAnimationByName"
+        },
+        {
+          "decompiledLine": 6373,
+          "name": "SetCodeAnim"
+        },
+        {
+          "decompiledLine": 6393,
+          "name": "UpdateCodeAnims"
+        },
+        {
+          "decompiledLine": 6412,
+          "name": "getDamageModelActive"
+        },
+        {
+          "decompiledLine": 6417,
+          "name": "setDamageModelActive"
+        },
+        {
+          "decompiledLine": 6479,
+          "name": "setDestroyedFlag"
+        },
+        {
+          "decompiledLine": 6614,
+          "name": "CreateEternalTrackForPlayer"
+        },
+        {
+          "decompiledLine": 6623,
+          "name": "notifyOfExternalDestruction"
+        },
+        {
+          "decompiledLine": 6635,
+          "name": "GetPenetrationDamageMultiplier"
+        },
+        {
+          "decompiledLine": 6649,
+          "name": "getMinMaxDamageMultiplier"
+        },
+        {
+          "decompiledLine": 6655,
+          "name": "FlickerLights"
+        },
+        {
+          "decompiledLine": 6685,
+          "name": "initBehaviourTree"
+        },
+        {
+          "decompiledLine": 6748,
+          "name": "setOrder"
+        },
+        {
+          "decompiledLine": 6760,
+          "name": "ShowOrderFeedback"
+        },
+        {
+          "decompiledLine": 6774,
+          "name": "setOrder"
+        },
+        {
+          "decompiledLine": 6783,
+          "name": "GetLoadoutCapabilities"
+        },
+        {
+          "decompiledLine": 6944,
+          "name": "SetLevelAttackCapabilities"
+        },
+        {
+          "decompiledLine": 6967,
+          "name": "LoadSignalProcessingOffset"
+        },
+        {
+          "decompiledLine": 6981,
+          "name": "HasAutomaticMount"
+        },
+        {
+          "decompiledLine": 6997,
+          "name": "HasRole"
+        },
+        {
+          "decompiledLine": 7006,
+          "name": "IsInCombat"
+        },
+        {
+          "decompiledLine": 7075,
+          "name": "CheckForThreateningMissile"
+        },
+        {
+          "decompiledLine": 7111,
+          "name": "CheckForThreateningTorpedo"
+        },
+        {
+          "decompiledLine": 7139,
+          "name": "muteSoundInPauseMode"
+        },
+        {
+          "decompiledLine": 7143,
+          "name": "enableSoundWhenSwitchingUnit"
+        },
+        {
+          "decompiledLine": 7147,
+          "name": "disableSoundInPauseModeWhenSwitchingUnit"
+        },
+        {
+          "decompiledLine": 7151,
+          "name": "DefaultConfirmationMessageAndVO"
+        },
+        {
+          "decompiledLine": 7169,
+          "name": "GetMapContactID"
+        },
+        {
+          "decompiledLine": 7174,
+          "name": "getUIDAndDisplayName"
+        },
+        {
+          "decompiledLine": 7188,
+          "name": "getUIDAndName"
+        },
+        {
+          "decompiledLine": 7202,
+          "name": "FullIDData"
+        },
+        {
+          "decompiledLine": 7221,
+          "name": "DisableColliders"
+        },
+        {
+          "decompiledLine": 7230,
+          "name": "EnableColliders"
+        },
+        {
+          "decompiledLine": 7239,
+          "name": "getHomeBase"
+        },
+        {
+          "decompiledLine": 7244,
+          "name": "rememberCameraRotationAndDistToPivot"
+        },
+        {
+          "decompiledLine": 7250,
+          "name": "getLastCameraRotation"
+        },
+        {
+          "decompiledLine": 7255,
+          "name": "getLastCameraDistToPivot"
+        },
+        {
+          "decompiledLine": 7260,
+          "name": "setSensorData"
+        },
+        {
+          "decompiledLine": 7265,
+          "name": "getSensorData"
+        },
+        {
+          "decompiledLine": 7270,
+          "name": "resetDeltaToTargetAngles"
+        },
+        {
+          "decompiledLine": 7279,
+          "name": "getRootGameObject"
+        },
+        {
+          "decompiledLine": 7284,
+          "name": "setParent"
+        },
+        {
+          "decompiledLine": 7289,
+          "name": "setTaxiPositionAndRotation"
+        },
+        {
+          "decompiledLine": 7300,
+          "name": "getCameraYOffsetForDirectControl"
+        },
+        {
+          "decompiledLine": 7305,
+          "name": "setCameraDistancesToTarget"
+        },
+        {
+          "decompiledLine": 7314,
+          "name": "getCameraPivotHeight"
+        },
+        {
+          "decompiledLine": 7319,
+          "name": "adjustCameraPivotHeight"
+        },
+        {
+          "decompiledLine": 7324,
+          "name": "getDefaultCameraDistanceToTarget"
+        },
+        {
+          "decompiledLine": 7329,
+          "name": "getMinCameraDistanceToTarget"
+        },
+        {
+          "decompiledLine": 7335,
+          "name": "getTrackPoints"
+        },
+        {
+          "decompiledLine": 7340,
+          "name": "inheritTaskforce"
+        },
+        {
+          "decompiledLine": 7345,
+          "name": "setNation"
+        },
+        {
+          "decompiledLine": 7362,
+          "name": "ResetVoiceoverProfileAssignments"
+        },
+        {
+          "decompiledLine": 7367,
+          "name": "IsVoiceoverUnit"
+        },
+        {
+          "decompiledLine": 7376,
+          "name": "getNation"
+        },
+        {
+          "decompiledLine": 7381,
+          "name": "getVoiceoverNation"
+        },
+        {
+          "decompiledLine": 7391,
+          "name": "setObjectIniName"
+        },
+        {
+          "decompiledLine": 7396,
+          "name": "getObjectIniName"
+        },
+        {
+          "decompiledLine": 7401,
+          "name": "setName"
+        },
+        {
+          "decompiledLine": 7406,
+          "name": "SetTypeName"
+        },
+        {
+          "decompiledLine": 7410,
+          "name": "getName"
+        },
+        {
+          "decompiledLine": 7415,
+          "name": "setGeoPosition"
+        },
+        {
+          "decompiledLine": 7428,
+          "name": "getGeoPosition"
+        },
+        {
+          "decompiledLine": 7433,
+          "name": "getUnityPosition"
+        },
+        {
+          "decompiledLine": 7442,
+          "name": "getHeading"
+        },
+        {
+          "decompiledLine": 7451,
+          "name": "getTransform"
+        },
+        {
+          "decompiledLine": 7456,
+          "name": "getVelocityInKnots"
+        },
+        {
+          "decompiledLine": 7461,
+          "name": "getVelocityInUnity"
+        },
+        {
+          "decompiledLine": 7466,
+          "name": "setVelocityVecInUnity"
+        },
+        {
+          "decompiledLine": 7471,
+          "name": "setVelocityInKnots"
+        },
+        {
+          "decompiledLine": 7478,
+          "name": "setCamLookAroundActive"
+        },
+        {
+          "decompiledLine": 7483,
+          "name": "getHeight"
+        },
+        {
+          "decompiledLine": 7497,
+          "name": "getHeightInMeters"
+        },
+        {
+          "decompiledLine": 7502,
+          "name": "getHeightInFeet"
+        },
+        {
+          "decompiledLine": 7507,
+          "name": "setTargetCourse"
+        },
+        {
+          "decompiledLine": 7513,
+          "name": "setInterceptPosition"
+        },
+        {
+          "decompiledLine": 7518,
+          "name": "setAmmunitionForEngage"
+        },
+        {
+          "decompiledLine": 7523,
+          "name": "WiresInUse"
+        },
+        {
+          "decompiledLine": 7533,
+          "name": "HasFreeWire"
+        },
+        {
+          "decompiledLine": 7538,
+          "name": "OldestWeaponOnWire"
+        },
+        {
+          "decompiledLine": 7554,
+          "name": "OldestBreakableWeaponOnWire"
+        },
+        {
+          "decompiledLine": 7570,
+          "name": "UsesDirectFireAgainstAir"
+        },
+        {
+          "decompiledLine": 7587,
+          "name": "GetWeaponSystemsForAmmunition"
+        },
+        {
+          "decompiledLine": 7597,
+          "name": "getSensorSystems"
+        },
+        {
+          "decompiledLine": 7615,
+          "name": "getAmmunitionByName"
+        },
+        {
+          "decompiledLine": 7625,
+          "name": "CalculateAmmunitionHorizons"
+        },
+        {
+          "decompiledLine": 7641,
+          "name": "GetAmmunitionHorizons"
+        },
+        {
+          "decompiledLine": 7655,
+          "name": "ComputeAmmunitionHorizons"
+        },
+        {
+          "decompiledLine": 7690,
+          "name": "GetMaxRangeForAmmo"
+        },
+        {
+          "decompiledLine": 7696,
+          "name": "GetMaxRangeForFCR"
+        },
+        {
+          "decompiledLine": 7771,
+          "name": "GetKinematicRange"
+        },
+        {
+          "decompiledLine": 7827,
+          "name": "HasNoiseJammer"
+        },
+        {
+          "decompiledLine": 7870,
+          "name": "IsBeingOffensivelyJammedBy"
+        },
+        {
+          "decompiledLine": 7902,
+          "name": "CantSeeAirTarget"
+        },
+        {
+          "decompiledLine": 7908,
+          "name": "GetLocalAirTargetVisibilityRange"
+        },
+        {
+          "decompiledLine": 7935,
+          "name": "GetSensorRange"
+        },
+        {
+          "decompiledLine": 7975,
+          "name": "AddCrewVisionIssue"
+        },
+        {
+          "decompiledLine": 7988,
+          "name": "CrewVisionBlocksAmmo"
+        },
+        {
+          "decompiledLine": 8009,
+          "name": "UnboundedSensorRange"
+        },
+        {
+          "decompiledLine": 8021,
+          "name": "EvaluateLimitingSensor"
+        },
+        {
+          "decompiledLine": 8062,
+          "name": "GetUnjammedOptions"
+        },
+        {
+          "decompiledLine": 8073,
+          "name": "HomeOnJamOptions"
+        },
+        {
+          "decompiledLine": 8079,
+          "name": "HomeOnJamOptions"
+        },
+        {
+          "decompiledLine": 8104,
+          "name": "GetWeaponSeekerLimit"
+        },
+        {
+          "decompiledLine": 8150,
+          "name": "GetOwnLaserDesignatorRange"
+        },
+        {
+          "decompiledLine": 8167,
+          "name": "ApplyLocalAirVisibilityLimit"
+        },
+        {
+          "decompiledLine": 8181,
+          "name": "AddEngagementIssues"
+        },
+        {
+          "decompiledLine": 8226,
+          "name": "AddAntiRadiationEmissionIssue"
+        },
+        {
+          "decompiledLine": 8257,
+          "name": "GetTerrainRange"
+        },
+        {
+          "decompiledLine": 8281,
+          "name": "GetMaxEngagementRanges"
+        },
+        {
+          "decompiledLine": 8329,
+          "name": "IsWithinFCRAltitudes"
+        },
+        {
+          "decompiledLine": 8354,
+          "name": "addAmmunitionToWeaponReference"
+        },
+        {
+          "decompiledLine": 8377,
+          "name": "changeAmmunitionAmount"
+        },
+        {
+          "decompiledLine": 8389,
+          "name": "setAmmunitionAmount"
+        },
+        {
+          "decompiledLine": 8401,
+          "name": "getAmmunitionAmountByName"
+        },
+        {
+          "decompiledLine": 8408,
+          "name": "CaptureInitialAmmunitionLoadout"
+        },
+        {
+          "decompiledLine": 8417,
+          "name": "getInitialAmmunitionAmountByName"
+        },
+        {
+          "decompiledLine": 8427,
+          "name": "WasInStartingLoadout"
+        },
+        {
+          "decompiledLine": 8462,
+          "name": "addAmmunitionNameToAmmunitionReference"
+        },
+        {
+          "decompiledLine": 8470,
+          "name": "RearmAll"
+        },
+        {
+          "decompiledLine": 8486,
+          "name": "CanBeRearmed"
+        },
+        {
+          "decompiledLine": 8550,
+          "name": "ReplenishAccountableAmmo"
+        },
+        {
+          "decompiledLine": 8609,
+          "name": "ReplenishAmmo"
+        },
+        {
+          "decompiledLine": 8653,
+          "name": "addColliderToSystemReference"
+        },
+        {
+          "decompiledLine": 8667,
+          "name": "getAmmunitionForEngage"
+        },
+        {
+          "decompiledLine": 8672,
+          "name": "CalculateToWaypointDelta"
+        },
+        {
+          "decompiledLine": 8682,
+          "name": "CalculateToTargetDelta"
+        },
+        {
+          "decompiledLine": 8692,
+          "name": "calculateToTargetDelta"
+        },
+        {
+          "decompiledLine": 8734,
+          "name": "swapObject"
+        },
+        {
+          "decompiledLine": 8881,
+          "name": "SetAircraftOrHelicopterDestroyed"
+        },
+        {
+          "decompiledLine": 8894,
+          "name": "CheckAircraftOrHelicopterWaterHit"
+        },
+        {
+          "decompiledLine": 8964,
+          "name": "CheckAircraftOrHelicopterTerrainHit"
+        },
+        {
+          "decompiledLine": 9018,
+          "name": "destroyObject"
+        },
+        {
+          "decompiledLine": 9078,
+          "name": "stopJammingOfThisObject"
+        },
+        {
+          "decompiledLine": 9087,
+          "name": "GetAllCampaignAmmo"
+        },
+        {
+          "decompiledLine": 9111,
+          "name": "GetAllAvailableAmmo"
+        },
+        {
+          "decompiledLine": 9204,
+          "name": "GetAllAvailableAmmoSorted"
+        },
+        {
+          "decompiledLine": 9305,
+          "name": "DoesEngageRequiresTarget"
+        },
+        {
+          "decompiledLine": 9310,
+          "name": "DoesEngageRequiresTarget"
+        },
+        {
+          "decompiledLine": 9315,
+          "name": "DoesEngageRequiresTarget"
+        },
+        {
+          "decompiledLine": 9356,
+          "name": "DoesEngageRequiresSensor"
+        },
+        {
+          "decompiledLine": 9373,
+          "name": "GetDefaultAmmunitionForEngage"
+        },
+        {
+          "decompiledLine": 9390,
+          "name": "DoesAmmoMatchTarget"
+        },
+        {
+          "decompiledLine": 9399,
+          "name": "DoesAmmoMatchTarget"
+        },
+        {
+          "decompiledLine": 9418,
+          "name": "DoesAmmoMatchTarget"
+        },
+        {
+          "decompiledLine": 9433,
+          "name": "DoesAmmoMatchTarget"
+        },
+        {
+          "decompiledLine": 9654,
+          "name": "EngageWithECM"
+        },
+        {
+          "decompiledLine": 9662,
+          "name": "DesignateByLaser"
+        },
+        {
+          "decompiledLine": 9670,
+          "name": "LaunchChaff"
+        },
+        {
+          "decompiledLine": 9689,
+          "name": "LaunchNoisemaker"
+        },
+        {
+          "decompiledLine": 9697,
+          "name": "DropFueltanks"
+        },
+        {
+          "decompiledLine": 9738,
+          "name": "isUnit"
+        },
+        {
+          "decompiledLine": 9751,
+          "name": "isBiologic"
+        },
+        {
+          "decompiledLine": 9764,
+          "name": "isWeapon"
+        },
+        {
+          "decompiledLine": 9773,
+          "name": "isAirTarget"
+        },
+        {
+          "decompiledLine": 9805,
+          "name": "isSubTarget"
+        },
+        {
+          "decompiledLine": 9818,
+          "name": "RepairAll"
+        },
+        {
+          "decompiledLine": 9841,
+          "name": "RepairAllSystems"
+        },
+        {
+          "decompiledLine": 9849,
+          "name": "isWeaponSystemAvailable"
+        },
+        {
+          "decompiledLine": 9855,
+          "name": "isWeaponSystemAvailable"
+        },
+        {
+          "decompiledLine": 9909,
+          "name": "isOffensiveEcmSystemAvailable"
+        },
+        {
+          "decompiledLine": 9927,
+          "name": "isLaserDesignatorAvailable"
+        },
+        {
+          "decompiledLine": 9941,
+          "name": "isSubmerged"
+        },
+        {
+          "decompiledLine": 9950,
+          "name": "isNearSurface"
+        },
+        {
+          "decompiledLine": 9961,
+          "name": "isObjectDetectedByTaskforce"
+        },
+        {
+          "decompiledLine": 9970,
+          "name": "setRudderAngle"
+        },
+        {
+          "decompiledLine": 9974,
+          "name": "setTelegraph"
+        },
+        {
+          "decompiledLine": 9978,
+          "name": "getTelegraph"
+        },
+        {
+          "decompiledLine": 9983,
+          "name": "CanAcceptAircraft"
+        },
+        {
+          "decompiledLine": 10088,
+          "name": "UpdateNumberOfFreeJamChannels"
+        },
+        {
+          "decompiledLine": 10113,
+          "name": "UpdateNumberOfFreeLaserChannels"
+        },
+        {
+          "decompiledLine": 10129,
+          "name": "StoreTelegraphSetting"
+        },
+        {
+          "decompiledLine": 10134,
+          "name": "LoadTelegraphSetting"
+        },
+        {
+          "decompiledLine": 10139,
+          "name": "CreateViewModel"
+        },
+        {
+          "decompiledLine": 10148,
+          "name": "CreateContactViewModel"
+        },
+        {
+          "decompiledLine": 10153,
+          "name": "SetKinematicColliders"
+        },
+        {
+          "decompiledLine": 10163,
+          "name": "SaveStateToFile"
+        },
+        {
+          "decompiledLine": 10381,
+          "name": "LoadStateFromFile"
+        },
+        {
+          "decompiledLine": 10599,
+          "name": "UpdateAmmoCount"
+        },
+        {
+          "decompiledLine": 10670,
+          "name": "ReloadfromCampaignMagazines"
+        },
+        {
+          "decompiledLine": 10749,
+          "name": "EnableAllRadars"
+        },
+        {
+          "decompiledLine": 10755,
+          "name": "EnableAllActiveSensors"
+        },
+        {
+          "decompiledLine": 10762,
+          "name": "DisableAllActiveSensors"
+        },
+        {
+          "decompiledLine": 10769,
+          "name": "DisableAllRadars"
+        },
+        {
+          "decompiledLine": 10775,
+          "name": "HasRadar"
+        },
+        {
+          "decompiledLine": 10798,
+          "name": "EnableRadars"
+        },
+        {
+          "decompiledLine": 10817,
+          "name": "DisableRadars"
+        },
+        {
+          "decompiledLine": 10836,
+          "name": "HasAirSearchRadar"
+        },
+        {
+          "decompiledLine": 10852,
+          "name": "EnableAirSearchRadars"
+        },
+        {
+          "decompiledLine": 10882,
+          "name": "DisableAirSearchRadars"
+        },
+        {
+          "decompiledLine": 10908,
+          "name": "HasSurfaceOrAirSurfaceSearchRadar"
+        },
+        {
+          "decompiledLine": 10924,
+          "name": "HasAirAndSurfaceSurfaceSearchRadar"
+        },
+        {
+          "decompiledLine": 10940,
+          "name": "EnableRadarsForSurfaceSearch"
+        },
+        {
+          "decompiledLine": 10978,
+          "name": "DisableRadarsForSurfaceSearch"
+        },
+        {
+          "decompiledLine": 11016,
+          "name": "HasSurfaceSearchRadar"
+        },
+        {
+          "decompiledLine": 11032,
+          "name": "EnableSurfaceSearchRadars"
+        },
+        {
+          "decompiledLine": 11062,
+          "name": "DisableSurfaceSearchRadars"
+        },
+        {
+          "decompiledLine": 11088,
+          "name": "LogForcedEmconRadarActivationAttempt"
+        },
+        {
+          "decompiledLine": 11099,
+          "name": "HasActiveSonar"
+        },
+        {
+          "decompiledLine": 11115,
+          "name": "HasTowedSonar"
+        },
+        {
+          "decompiledLine": 11131,
+          "name": "HasClipOnArray"
+        },
+        {
+          "decompiledLine": 11147,
+          "name": "EnableActiveSonars"
+        },
+        {
+          "decompiledLine": 11177,
+          "name": "DisableActiveSonars"
+        },
+        {
+          "decompiledLine": 11207,
+          "name": "DeployTowedSonars"
+        },
+        {
+          "decompiledLine": 11233,
+          "name": "RetractTowedSonars"
+        },
+        {
+          "decompiledLine": 11264,
+          "name": "TowedSonarsSetActive"
+        },
+        {
+          "decompiledLine": 11279,
+          "name": "TowedSonarsSetSearchDepth"
+        },
+        {
+          "decompiledLine": 11294,
+          "name": "HasESM"
+        },
+        {
+          "decompiledLine": 11310,
+          "name": "SearchForHomeBase"
+        },
+        {
+          "decompiledLine": 11347,
+          "name": "Rebase"
+        },
+        {
+          "decompiledLine": 11360,
+          "name": "FlightDeckHasUnit"
+        },
+        {
+          "decompiledLine": 11387,
+          "name": "FlightDeckHasUnit"
+        },
+        {
+          "decompiledLine": 11407,
+          "name": "FlightDeckGetNumberOfUnits"
+        },
+        {
+          "decompiledLine": 11428,
+          "name": "FlightDeckGetNumberOfUnits"
+        },
+        {
+          "decompiledLine": 11448,
+          "name": "FlightDeckLaunchUnit"
+        },
+        {
+          "decompiledLine": 11513,
+          "name": "FlightDeckHasExactLoadout"
+        },
+        {
+          "decompiledLine": 11522,
+          "name": "FlightDeckLaunchUnit"
+        },
+        {
+          "decompiledLine": 11593,
+          "name": "IsNightCapableFit"
+        },
+        {
+          "decompiledLine": 11598,
+          "name": "FlightDeckLaunchCAP"
+        },
+        {
+          "decompiledLine": 11690,
+          "name": "FlightDeckLaunchInterceptor"
+        },
+        {
+          "decompiledLine": 11873,
+          "name": "FlightDeckGetUnitAndNumberForLoadout"
+        },
+        {
+          "decompiledLine": 11904,
+          "name": "GetEngagePriority"
+        },
+        {
+          "decompiledLine": 11926,
+          "name": "GetVesselEngagePriority"
+        },
+        {
+          "decompiledLine": 12012,
+          "name": "GetSubmarineEngagePriority"
+        },
+        {
+          "decompiledLine": 12064,
+          "name": "GetAircraftEngagePriority"
+        },
+        {
+          "decompiledLine": 12085,
+          "name": "GetFighterEngagePriority"
+        },
+        {
+          "decompiledLine": 12168,
+          "name": "GetAamAirTargetPriority"
+        },
+        {
+          "decompiledLine": 12192,
+          "name": "GetAamMissileInterceptPriority"
+        },
+        {
+          "decompiledLine": 12218,
+          "name": "CredibleClaimDistance"
+        },
+        {
+          "decompiledLine": 12227,
+          "name": "CountAlliedAamFightersEngaging"
+        },
+        {
+          "decompiledLine": 12232,
+          "name": "CountLiveIncomingShots"
+        },
+        {
+          "decompiledLine": 12246,
+          "name": "AirTargetIsMissileThreat"
+        },
+        {
+          "decompiledLine": 12255,
+          "name": "GetBomberEngagePriority"
+        },
+        {
+          "decompiledLine": 12325,
+          "name": "GetMPAEngagePriority"
+        },
+        {
+          "decompiledLine": 12378,
+          "name": "GetLandUnitEngagePriority"
+        },
+        {
+          "decompiledLine": 12399,
+          "name": "GetSAMSiteEngagePriority"
+        },
+        {
+          "decompiledLine": 12420,
+          "name": "GetASMSiteEngagePriority"
+        },
+        {
+          "decompiledLine": 12457,
+          "name": "AddEntity"
+        },
+        {
+          "decompiledLine": 12482,
+          "name": "OnInstantiated"
+        },
+        {
+          "decompiledLine": 12487,
+          "name": "PublishKinematics"
+        },
+        {
+          "decompiledLine": 12501,
+          "name": "OnAlive"
+        },
+        {
+          "decompiledLine": 12505,
+          "name": "OnPulledFromPool"
+        },
+        {
+          "decompiledLine": 12510,
+          "name": "OnReturnedToPool"
+        },
+        {
+          "decompiledLine": 12515,
+          "name": "ClearEntity"
+        },
+        {
+          "decompiledLine": 12531,
+          "name": "DisableEntity"
+        },
+        {
+          "decompiledLine": 12540,
+          "name": "EnableEntity"
+        }
+      ],
+      "decompiledSha256": "E9F0A3A4819EE47FE5D7A2F5D34BE792BD18AC2A1251CF9895FCBB5C16219507"
+    },
+    {
+      "classFile": "Seapower/Order.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 31,
+          "name": "Order"
+        },
+        {
+          "decompiledLine": 36,
+          "name": "SetOrderValue"
+        },
+        {
+          "decompiledLine": 43,
+          "name": "setOrder"
+        }
+      ],
+      "decompiledSha256": "AC0E61F9F4621CA0033AB17FB2384A506F70438AB8F9FF4044525978559ADA83"
+    },
+    {
+      "classFile": "Seapower/AI.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 194,
+          "name": "Random"
+        },
+        {
+          "decompiledLine": 310,
+          "name": "GetLegacyCompliance"
+        },
+        {
+          "decompiledLine": 335,
+          "name": "AI"
+        },
+        {
+          "decompiledLine": 340,
+          "name": "AutoSetHidingState"
+        },
+        {
+          "decompiledLine": 384,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 447,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 743,
+          "name": "CheckRetreatAfterWeaponsExpended"
+        },
+        {
+          "decompiledLine": 769,
+          "name": "IsPrimaryAntiSurfaceWeapon"
+        },
+        {
+          "decompiledLine": 787,
+          "name": "IsRetreatAfterWeaponsExpendedBoat"
+        },
+        {
+          "decompiledLine": 804,
+          "name": "IsRetreatAfterWeaponsExpendedBoatType"
+        },
+        {
+          "decompiledLine": 814,
+          "name": "CheckForPresetAttack"
+        },
+        {
+          "decompiledLine": 838,
+          "name": "HandleCarrierFunctions"
+        },
+        {
+          "decompiledLine": 873,
+          "name": "CalculateThreatBearing"
+        },
+        {
+          "decompiledLine": 1006,
+          "name": "UpdateAirStations"
+        },
+        {
+          "decompiledLine": 1032,
+          "name": "GetClosestIntersectionDistance"
+        },
+        {
+          "decompiledLine": 1055,
+          "name": "CheckAEWLaunch"
+        },
+        {
+          "decompiledLine": 1086,
+          "name": "CheckCAPLaunch"
+        },
+        {
+          "decompiledLine": 1158,
+          "name": "CheckMPALaunch"
+        },
+        {
+          "decompiledLine": 1197,
+          "name": "CheckAirstrikeLaunch"
+        },
+        {
+          "decompiledLine": 1225,
+          "name": "MaintainAirDefence"
+        },
+        {
+          "decompiledLine": 1397,
+          "name": "GetAirCombatScore"
+        },
+        {
+          "decompiledLine": 1406,
+          "name": "MaintainMPA"
+        },
+        {
+          "decompiledLine": 1457,
+          "name": "LaunchAirstrike"
+        },
+        {
+          "decompiledLine": 1473,
+          "name": "AutoFireGunsInRange"
+        },
+        {
+          "decompiledLine": 1561,
+          "name": "AmmoForTarget"
+        },
+        {
+          "decompiledLine": 1591,
+          "name": "MaxRangeForObject"
+        },
+        {
+          "decompiledLine": 1604,
+          "name": "EngagementRangeForObject"
+        },
+        {
+          "decompiledLine": 1621,
+          "name": "AmmunitionForTarget"
+        },
+        {
+          "decompiledLine": 1653,
+          "name": "BidOnEngagement"
+        },
+        {
+          "decompiledLine": 1685,
+          "name": "AutoAttackOpponentInRange"
+        },
+        {
+          "decompiledLine": 1873,
+          "name": "AutoAttackSalvoSize"
+        },
+        {
+          "decompiledLine": 1894,
+          "name": "PlayerShipAASalvoSize"
+        },
+        {
+          "decompiledLine": 1904,
+          "name": "CheckTimers"
+        },
+        {
+          "decompiledLine": 1928,
+          "name": "HasPDSAMForTarget"
+        },
+        {
+          "decompiledLine": 1943,
+          "name": "ClosingSpeedTowards"
+        },
+        {
+          "decompiledLine": 1955,
+          "name": "GuidedSalvoPerTarget"
+        },
+        {
+          "decompiledLine": 1984,
+          "name": "CheckIfAlreadyHandled"
+        },
+        {
+          "decompiledLine": 2238,
+          "name": "PrepareLaunchersForClosingThreats"
+        },
+        {
+          "decompiledLine": 2310,
+          "name": "AutoEngagePrepMargin"
+        },
+        {
+          "decompiledLine": 2358,
+          "name": "MissileDefenseHandled"
+        },
+        {
+          "decompiledLine": 2391,
+          "name": "CanWaitForPlayerAawSalvoResolution"
+        },
+        {
+          "decompiledLine": 2436,
+          "name": "TryGetInterceptorResolutionTime"
+        },
+        {
+          "decompiledLine": 2452,
+          "name": "CanStillInterceptAfterWaiting"
+        },
+        {
+          "decompiledLine": 2487,
+          "name": "FastestLauncherReadyTime"
+        },
+        {
+          "decompiledLine": 2506,
+          "name": "SelectLauncherAmmoForAutoEngage"
+        },
+        {
+          "decompiledLine": 2702,
+          "name": "SelectGunAmmoForAutoEngage"
+        },
+        {
+          "decompiledLine": 2791,
+          "name": "SelectAmmunition"
+        },
+        {
+          "decompiledLine": 2841,
+          "name": "AutoAttackByClick"
+        },
+        {
+          "decompiledLine": 2966,
+          "name": "BiologicThreatDetection"
+        },
+        {
+          "decompiledLine": 3007,
+          "name": "AIDetection"
+        },
+        {
+          "decompiledLine": 3292,
+          "name": "NearestThreatDistanceNM"
+        },
+        {
+          "decompiledLine": 3335,
+          "name": "UpdateAutoCruiseMissileTargets"
+        },
+        {
+          "decompiledLine": 3375,
+          "name": "UpdateTaskforceCuedMissileTargets"
+        },
+        {
+          "decompiledLine": 3393,
+          "name": "HasQueuedMissileShot"
+        },
+        {
+          "decompiledLine": 3405,
+          "name": "FireTaskforceCuedMissiles"
+        },
+        {
+          "decompiledLine": 3466,
+          "name": "GroupDefeatsSalvo"
+        },
+        {
+          "decompiledLine": 3508,
+          "name": "MaxHostileFleetValue"
+        },
+        {
+          "decompiledLine": 3528,
+          "name": "CruiseMissileTargetIsValuable"
+        },
+        {
+          "decompiledLine": 3565,
+          "name": "HasMatchingCruiseMissile"
+        },
+        {
+          "decompiledLine": 3583,
+          "name": "BelievesSpotted"
+        },
+        {
+          "decompiledLine": 3592,
+          "name": "UpdateDefensiveMissileTargets"
+        },
+        {
+          "decompiledLine": 3617,
+          "name": "SafeToFireCruiseMissile"
+        },
+        {
+          "decompiledLine": 3630,
+          "name": "MissileTargetAllowed"
+        },
+        {
+          "decompiledLine": 3651,
+          "name": "LaunchLikelySeen"
+        },
+        {
+          "decompiledLine": 3683,
+          "name": "UpdateClearDatum"
+        },
+        {
+          "decompiledLine": 3705,
+          "name": "UpdateASWEvasion"
+        },
+        {
+          "decompiledLine": 3718,
+          "name": "UpdateReacquireFadedContacts"
+        },
+        {
+          "decompiledLine": 3776,
+          "name": "MarkReacquireSearched"
+        },
+        {
+          "decompiledLine": 3784,
+          "name": "HasAttackableHostileInRange"
+        },
+        {
+          "decompiledLine": 3795,
+          "name": "ComputeAttackableHostileInRange"
+        },
+        {
+          "decompiledLine": 3819,
+          "name": "DetectedCloseASWHunter"
+        },
+        {
+          "decompiledLine": 3859,
+          "name": "KeepTowedArrayStreamed"
+        },
+        {
+          "decompiledLine": 3878,
+          "name": "MustSurfaceTargetOutOfRange"
+        },
+        {
+          "decompiledLine": 3918,
+          "name": "HasMissilesNeedingGuidance"
+        },
+        {
+          "decompiledLine": 3936,
+          "name": "GuidanceHoldRequiresSurface"
+        },
+        {
+          "decompiledLine": 3955,
+          "name": "FreeGuidanceChannelsForAmmo"
+        },
+        {
+          "decompiledLine": 3992,
+          "name": "UncommittedAmmoCount"
+        },
+        {
+          "decompiledLine": 4005,
+          "name": "NewTargetFitsGuidanceArc"
+        },
+        {
+          "decompiledLine": 4029,
+          "name": "MissilesCommittedAgainst"
+        },
+        {
+          "decompiledLine": 4060,
+          "name": "FireSubmarineMissileVolley"
+        },
+        {
+          "decompiledLine": 4153,
+          "name": "CheckForRaiseAlert"
+        },
+        {
+          "decompiledLine": 4207,
+          "name": "CancelAlert"
+        },
+        {
+          "decompiledLine": 4220,
+          "name": "isHostileToMe"
+        },
+        {
+          "decompiledLine": 4225,
+          "name": "ProcessContacts"
+        },
+        {
+          "decompiledLine": 4434,
+          "name": "HoldsOnOwnSensors"
+        },
+        {
+          "decompiledLine": 4439,
+          "name": "HoldsOnSharedPlot"
+        },
+        {
+          "decompiledLine": 4444,
+          "name": "HeldWithinSweep"
+        },
+        {
+          "decompiledLine": 4475,
+          "name": "RecordOwnOrientedContact"
+        },
+        {
+          "decompiledLine": 4496,
+          "name": "HasOwnOrientedContact"
+        },
+        {
+          "decompiledLine": 4505,
+          "name": "HasOwnRecentSimilarContact"
+        },
+        {
+          "decompiledLine": 4523,
+          "name": "OrientCostFor"
+        },
+        {
+          "decompiledLine": 4557,
+          "name": "IsOrientQueued"
+        },
+        {
+          "decompiledLine": 4566,
+          "name": "GetOrientCost"
+        },
+        {
+          "decompiledLine": 4575,
+          "name": "ReleaseHeldTrackForQueue"
+        },
+        {
+          "decompiledLine": 4600,
+          "name": "OrientPriority"
+        },
+        {
+          "decompiledLine": 4621,
+          "name": "IsProcessed"
+        },
+        {
+          "decompiledLine": 4646,
+          "name": "IsAutomaticMountOnlyTarget"
+        },
+        {
+          "decompiledLine": 4655,
+          "name": "IsProcessedForEngagement"
+        },
+        {
+          "decompiledLine": 4664,
+          "name": "CloserAlliedShooterHolds"
+        },
+        {
+          "decompiledLine": 4681,
+          "name": "CloserEligibleShooterExists"
+        },
+        {
+          "decompiledLine": 4698,
+          "name": "ShouldAbandonAirChase"
+        },
+        {
+          "decompiledLine": 4714,
+          "name": "CanAircraftHelpAgainstWeapon"
+        },
+        {
+          "decompiledLine": 4753,
+          "name": "IsStaleEngageTarget"
+        },
+        {
+          "decompiledLine": 4778,
+          "name": "GetPossibleTargetsList"
+        },
+        {
+          "decompiledLine": 4966,
+          "name": "ShipsOnWeaponsTightCanEngageHostileAircraft"
+        },
+        {
+          "decompiledLine": 4983,
+          "name": "ShipSAMAntiSurfaceAutoEngagementBlocked"
+        },
+        {
+          "decompiledLine": 5004,
+          "name": "ShipAntiShipMissileAutoEngagementBlocked"
+        },
+        {
+          "decompiledLine": 5025,
+          "name": "AntiShipMissileAgainstSurfacedSubmarineBlocked"
+        },
+        {
+          "decompiledLine": 5042,
+          "name": "AirAswTorpedoAntiSurfaceAutoEngagementBlocked"
+        },
+        {
+          "decompiledLine": 5067,
+          "name": "FighterAntiShipMissileEngagementBlocked"
+        },
+        {
+          "decompiledLine": 5088,
+          "name": "IsAntiShipMissile"
+        },
+        {
+          "decompiledLine": 5101,
+          "name": "IsAttackingTargetWithLauncher"
+        },
+        {
+          "decompiledLine": 5131,
+          "name": "IdentifiedAsHostile"
+        },
+        {
+          "decompiledLine": 5140,
+          "name": "UpdateAutoJamming"
+        },
+        {
+          "decompiledLine": 5157,
+          "name": "UpdateDefensiveAutoJam"
+        },
+        {
+          "decompiledLine": 5181,
+          "name": "IsDefensiveJamStillNeeded"
+        },
+        {
+          "decompiledLine": 5194,
+          "name": "TryStartDefensiveJam"
+        },
+        {
+          "decompiledLine": 5244,
+          "name": "UpdateOffensiveAutoJam"
+        },
+        {
+          "decompiledLine": 5288,
+          "name": "FindOffensiveEcm"
+        },
+        {
+          "decompiledLine": 5293,
+          "name": "GetJammableHostileUnits"
+        },
+        {
+          "decompiledLine": 5308,
+          "name": "BuildFriendlyJamCoverageCount"
+        },
+        {
+          "decompiledLine": 5345,
+          "name": "ScoreJamDirection"
+        },
+        {
+          "decompiledLine": 5363,
+          "name": "JamAimPosAtMaxRange"
+        },
+        {
+          "decompiledLine": 5370,
+          "name": "TryIncrementalJamSearch"
+        },
+        {
+          "decompiledLine": 5386,
+          "name": "StartOffensiveJam"
+        },
+        {
+          "decompiledLine": 5414,
+          "name": "UpdateJammerPositioning"
+        },
+        {
+          "decompiledLine": 5465,
+          "name": "GetHostileSurfacesForJammer"
+        },
+        {
+          "decompiledLine": 5484,
+          "name": "FindClosestShipWithRangeStatus"
+        },
+        {
+          "decompiledLine": 5506,
+          "name": "ComputeJamGeoPosition"
+        }
+      ],
+      "decompiledSha256": "2A30BF0D0F3D6083B85EC0B908EB04E7483FFF9E2AF17496C976D6AFFC95DEBF"
+    },
+    {
+      "classFile": "Seapower/AIPlayer.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 45,
+          "name": "updateIntel"
+        },
+        {
+          "decompiledLine": 59,
+          "name": "Init"
+        },
+        {
+          "decompiledLine": 75,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 80,
+          "name": "InitStaticFields"
+        },
+        {
+          "decompiledLine": 92,
+          "name": "InitGlobalCommandBoard"
+        },
+        {
+          "decompiledLine": 109,
+          "name": "SetGlobalUnitOrderAssignment"
+        },
+        {
+          "decompiledLine": 114,
+          "name": "GetGlobalUnitOrderAssignmentVariable"
+        },
+        {
+          "decompiledLine": 119,
+          "name": "GetGlobalUnitStatusReportVariable"
+        },
+        {
+          "decompiledLine": 124,
+          "name": "SetGlobalAdditionalOrderData"
+        },
+        {
+          "decompiledLine": 140,
+          "name": "GetGlobalOrderReceiveLockVariable"
+        },
+        {
+          "decompiledLine": 145,
+          "name": "GetGlobalOrderExecuteLockVariable"
+        }
+      ],
+      "decompiledSha256": "F363E2F52288E8EAF56DF5998A637A80B42BDECCEEB550ECAFE204FA3E6346A0"
+    },
+    {
+      "classFile": "Seapower/AirStrike.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 111,
+          "name": "initStates"
+        },
+        {
+          "decompiledLine": 139,
+          "name": "At"
+        },
+        {
+          "decompiledLine": 144,
+          "name": "AtAny"
+        },
+        {
+          "decompiledLine": 149,
+          "name": "init"
+        },
+        {
+          "decompiledLine": 160,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 246,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 251,
+          "name": "Finish"
+        },
+        {
+          "decompiledLine": 276,
+          "name": "CancelUnlimitedFuel"
+        },
+        {
+          "decompiledLine": 294,
+          "name": "CalculateStartAttackDistanceFromTargetNM"
+        },
+        {
+          "decompiledLine": 302,
+          "name": "GetMaxRelevantWeaponRangeNM"
+        },
+        {
+          "decompiledLine": 326,
+          "name": "IsRelevantAttackWeapon"
+        },
+        {
+          "decompiledLine": 389,
+          "name": "GetMaxAirDefenseRangeCoveringTargetNM"
+        },
+        {
+          "decompiledLine": 410,
+          "name": "GetMaxAirDefenseRangeNM"
+        },
+        {
+          "decompiledLine": 427,
+          "name": "BuildTransitionRoute"
+        },
+        {
+          "decompiledLine": 484,
+          "name": "TryFindWaterAttackFinalGeoPos"
+        },
+        {
+          "decompiledLine": 506,
+          "name": "TryFindWaterAttackFinalGeoPosAtDistance"
+        },
+        {
+          "decompiledLine": 549,
+          "name": "IsWaterCorridor"
+        },
+        {
+          "decompiledLine": 571,
+          "name": "IsWaterLine"
+        },
+        {
+          "decompiledLine": 595,
+          "name": "IsWaterPoint"
+        },
+        {
+          "decompiledLine": 605,
+          "name": "DistributeBomberTargets"
+        },
+        {
+          "decompiledLine": 653,
+          "name": "SaveStateToFile"
+        },
+        {
+          "decompiledLine": 823,
+          "name": "LoadStateFromFile"
+        }
+      ],
+      "decompiledSha256": "21A0C3D34F4EB9B88C2A25CC2BD93EBDB11032DF06FADCF67461D4717184DFBA"
+    },
+    {
+      "classFile": "Seapower/PatrolZone.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 150,
+          "name": "PatrolZone"
+        },
+        {
+          "decompiledLine": 158,
+          "name": "SetCenter"
+        },
+        {
+          "decompiledLine": 164,
+          "name": "SetCenter"
+        },
+        {
+          "decompiledLine": 174,
+          "name": "SetCenterPosition"
+        },
+        {
+          "decompiledLine": 182,
+          "name": "AddAreaPoint"
+        },
+        {
+          "decompiledLine": 188,
+          "name": "SetAreaPoint"
+        },
+        {
+          "decompiledLine": 196,
+          "name": "GetAreaPoint"
+        },
+        {
+          "decompiledLine": 201,
+          "name": "AddWaypoint"
+        },
+        {
+          "decompiledLine": 206,
+          "name": "SetWaypoint"
+        },
+        {
+          "decompiledLine": 214,
+          "name": "GetWaypoint"
+        },
+        {
+          "decompiledLine": 219,
+          "name": "GetPositionFromStoredOffset"
+        },
+        {
+          "decompiledLine": 224,
+          "name": "RemoveWaypoint"
+        },
+        {
+          "decompiledLine": 232,
+          "name": "AcceptsUnit"
+        },
+        {
+          "decompiledLine": 279,
+          "name": "IsCAPLoadout"
+        },
+        {
+          "decompiledLine": 288,
+          "name": "GetSARTransportCapacity"
+        },
+        {
+          "decompiledLine": 308,
+          "name": "IsSARHelicopter"
+        },
+        {
+          "decompiledLine": 317,
+          "name": "GetKnownCAPAircraftTypes"
+        },
+        {
+          "decompiledLine": 326,
+          "name": "RefreshKnownCAPAircraft"
+        },
+        {
+          "decompiledLine": 345,
+          "name": "AttachUnit"
+        },
+        {
+          "decompiledLine": 387,
+          "name": "RestoreAttachedUnit"
+        },
+        {
+          "decompiledLine": 403,
+          "name": "GetSARTargetAssignments"
+        },
+        {
+          "decompiledLine": 418,
+          "name": "RestoreSARTarget"
+        },
+        {
+          "decompiledLine": 435,
+          "name": "DetachUnit"
+        },
+        {
+          "decompiledLine": 449,
+          "name": "DetachAllUnits"
+        },
+        {
+          "decompiledLine": 464,
+          "name": "CanAttachAirbase"
+        },
+        {
+          "decompiledLine": 473,
+          "name": "AttachAirbase"
+        },
+        {
+          "decompiledLine": 486,
+          "name": "RemoveAirbase"
+        },
+        {
+          "decompiledLine": 495,
+          "name": "RemoveInvalidAirbases"
+        },
+        {
+          "decompiledLine": 506,
+          "name": "CreateDefaultWaypoints"
+        },
+        {
+          "decompiledLine": 540,
+          "name": "ToStoredOffset"
+        },
+        {
+          "decompiledLine": 549,
+          "name": "ToWorldOffset"
+        },
+        {
+          "decompiledLine": 558,
+          "name": "RotateOffset"
+        },
+        {
+          "decompiledLine": 567,
+          "name": "GetAbsoluteAreaPoints"
+        },
+        {
+          "decompiledLine": 577,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 600,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 640,
+          "name": "ProcessSAR"
+        },
+        {
+          "decompiledLine": 701,
+          "name": "CleanupAttachedSAR"
+        },
+        {
+          "decompiledLine": 718,
+          "name": "IsViableSARRaft"
+        },
+        {
+          "decompiledLine": 731,
+          "name": "FindBestSARRaft"
+        },
+        {
+          "decompiledLine": 746,
+          "name": "SARRaftPriority"
+        },
+        {
+          "decompiledLine": 772,
+          "name": "IsPrioritySARRaft"
+        },
+        {
+          "decompiledLine": 777,
+          "name": "AssignSARRescueRoute"
+        },
+        {
+          "decompiledLine": 803,
+          "name": "AssignSARFinalApproach"
+        },
+        {
+          "decompiledLine": 823,
+          "name": "SARRaftDistance"
+        },
+        {
+          "decompiledLine": 830,
+          "name": "ReacquireSARRaft"
+        },
+        {
+          "decompiledLine": 836,
+          "name": "AddSARWaypoint"
+        },
+        {
+          "decompiledLine": 854,
+          "name": "MaintainSARStrength"
+        },
+        {
+          "decompiledLine": 881,
+          "name": "MaintainSARReserve"
+        },
+        {
+          "decompiledLine": 893,
+          "name": "SARTaskScore"
+        },
+        {
+          "decompiledLine": 902,
+          "name": "CreateBestSARReserveTask"
+        },
+        {
+          "decompiledLine": 952,
+          "name": "IsBetterSARLoadout"
+        },
+        {
+          "decompiledLine": 969,
+          "name": "Contains"
+        },
+        {
+          "decompiledLine": 1002,
+          "name": "PointOnSegment"
+        },
+        {
+          "decompiledLine": 1015,
+          "name": "ProcessUnitsInZone"
+        },
+        {
+          "decompiledLine": 1023,
+          "name": "ProcessCAP"
+        },
+        {
+          "decompiledLine": 1053,
+          "name": "EnforceCAPPursuitBuffer"
+        },
+        {
+          "decompiledLine": 1083,
+          "name": "IsInsideCAPBuffer"
+        },
+        {
+          "decompiledLine": 1103,
+          "name": "SquaredDistanceToSegment"
+        },
+        {
+          "decompiledLine": 1116,
+          "name": "IsHostileContact"
+        },
+        {
+          "decompiledLine": 1126,
+          "name": "ProcessCAPIdentification"
+        },
+        {
+          "decompiledLine": 1167,
+          "name": "RequestCAPIdentification"
+        },
+        {
+          "decompiledLine": 1190,
+          "name": "CleanupAttachedCAP"
+        },
+        {
+          "decompiledLine": 1206,
+          "name": "AssignCAPTargets"
+        },
+        {
+          "decompiledLine": 1236,
+          "name": "MaintainCAPStrength"
+        },
+        {
+          "decompiledLine": 1270,
+          "name": "MaintainCAPReserve"
+        },
+        {
+          "decompiledLine": 1283,
+          "name": "OwnedPendingTasks"
+        },
+        {
+          "decompiledLine": 1301,
+          "name": "CountOwnedPendingTasks"
+        },
+        {
+          "decompiledLine": 1308,
+          "name": "CAPTaskScore"
+        },
+        {
+          "decompiledLine": 1318,
+          "name": "CreateBestCAPReserveTask"
+        },
+        {
+          "decompiledLine": 1382,
+          "name": "ReduceExcessCAP"
+        },
+        {
+          "decompiledLine": 1409,
+          "name": "ReleasePreparedAircraft"
+        },
+        {
+          "decompiledLine": 1432,
+          "name": "OnCAPFiltersChanged"
+        },
+        {
+          "decompiledLine": 1465,
+          "name": "Destroy"
+        }
+      ],
+      "decompiledSha256": "68DA7FED46A7E9BABFD040577D175F78F5B136A8094735FD5D8923F6E1E249EB"
+    },
+    {
+      "classFile": "Seapower/GameTime.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 116,
+          "name": "LoadMissionTimes"
+        },
+        {
+          "decompiledLine": 120,
+          "name": "InitGameTimes"
+        },
+        {
+          "decompiledLine": 125,
+          "name": "OnStart"
+        },
+        {
+          "decompiledLine": 149,
+          "name": "IncreaseTimeCompression"
+        },
+        {
+          "decompiledLine": 163,
+          "name": "DecreaseTimeCompression"
+        },
+        {
+          "decompiledLine": 181,
+          "name": "SetTimeCompression"
+        },
+        {
+          "decompiledLine": 203,
+          "name": "SetMaxPhysicsTimeCompression"
+        },
+        {
+          "decompiledLine": 220,
+          "name": "SetMinTimeCompression"
+        },
+        {
+          "decompiledLine": 234,
+          "name": "SetMaxTimeCompression"
+        },
+        {
+          "decompiledLine": 244,
+          "name": "StopTimeCompression"
+        },
+        {
+          "decompiledLine": 259,
+          "name": "Pause"
+        },
+        {
+          "decompiledLine": 284,
+          "name": "UnPause"
+        },
+        {
+          "decompiledLine": 297,
+          "name": "IsPaused"
+        },
+        {
+          "decompiledLine": 302,
+          "name": "IsPhysicsApproximationEnabled"
+        },
+        {
+          "decompiledLine": 307,
+          "name": "SetAdaptiveFixedDeltaTime"
+        },
+        {
+          "decompiledLine": 322,
+          "name": "OnUpdateUnpaused"
+        },
+        {
+          "decompiledLine": 341,
+          "name": "OnUpdatePaused"
+        },
+        {
+          "decompiledLine": 347,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 363,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 377,
+          "name": "SaveStateToFile"
+        },
+        {
+          "decompiledLine": 385,
+          "name": "LoadStateFromFile"
+        }
+      ],
+      "decompiledSha256": "7D4E69A8061E54FD18721DE146DD9E4F44A1A0C30EBDD475482B12DAC81CD709"
+    },
+    {
+      "classFile": "Seapower/MissionManager.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 90,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 116,
+          "name": "_003CPlayerHitCivilian_003Eb__0"
+        },
+        {
+          "decompiledLine": 157,
+          "name": "GetNextPatrolZoneName"
+        },
+        {
+          "decompiledLine": 162,
+          "name": "RegisterLoadedPatrolZoneID"
+        },
+        {
+          "decompiledLine": 170,
+          "name": "FindPatrolZone"
+        },
+        {
+          "decompiledLine": 189,
+          "name": "OnStart"
+        },
+        {
+          "decompiledLine": 193,
+          "name": "ResetData"
+        },
+        {
+          "decompiledLine": 203,
+          "name": "OnUpdate"
+        },
+        {
+          "decompiledLine": 226,
+          "name": "CheckOnMapAreaVisibility"
+        },
+        {
+          "decompiledLine": 252,
+          "name": "OnFixedUpdate"
+        },
+        {
+          "decompiledLine": 256,
+          "name": "PlayerHitCivilian"
+        },
+        {
+          "decompiledLine": 261,
+          "name": "GetMessageText"
+        },
+        {
+          "decompiledLine": 279,
+          "name": "PlayerHitCivilian_bkp"
+        },
+        {
+          "decompiledLine": 321,
+          "name": "GetMessageText_bkp"
+        },
+        {
+          "decompiledLine": 349,
+          "name": "UnloadMissionAndReload"
+        },
+        {
+          "decompiledLine": 364,
+          "name": "SceneManager_missionLoadedFromReload"
+        },
+        {
+          "decompiledLine": 380,
+          "name": "ExitToMainMenu"
+        },
+        {
+          "decompiledLine": 398,
+          "name": "SceneManager_missionUnloaded"
+        },
+        {
+          "decompiledLine": 406,
+          "name": "CalculateEndMissionData"
+        },
+        {
+          "decompiledLine": 539,
+          "name": "DoUnload"
+        },
+        {
+          "decompiledLine": 564,
+          "name": "DoLoad"
+        },
+        {
+          "decompiledLine": 585,
+          "name": "PreLoadSystems"
+        }
+      ],
+      "decompiledSha256": "09ADB68697783FE11A70CB01C709B2EDBCC2436E1B1E09DF02EF927C303FC526"
+    },
+    {
+      "classFile": "Seapower/SceneCreator.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 104,
+          "name": "GenerateUid"
+        },
+        {
+          "decompiledLine": 109,
+          "name": "loadAssetBundles"
+        },
+        {
+          "decompiledLine": 137,
+          "name": "downloadAssetBundle"
+        },
+        {
+          "decompiledLine": 143,
+          "name": "Awake"
+        },
+        {
+          "decompiledLine": 149,
+          "name": "OnStart"
+        },
+        {
+          "decompiledLine": 175,
+          "name": "WaitForLoadingDone"
+        },
+        {
+          "decompiledLine": 183,
+          "name": "TrySetAndCheckLinearCampaignExistenceForMission"
+        },
+        {
+          "decompiledLine": 193,
+          "name": "PathsMatch"
+        },
+        {
+          "decompiledLine": 209,
+          "name": "RefreshExistingLinearCampaignForMissionSave"
+        },
+        {
+          "decompiledLine": 231,
+          "name": "PrewarmUnitAudio"
+        },
+        {
+          "decompiledLine": 299,
+          "name": "LoadMission"
+        },
+        {
+          "decompiledLine": 690,
+          "name": "CalculateMaxEnemyLossScore"
+        },
+        {
+          "decompiledLine": 710,
+          "name": "loadLandUnits"
+        },
+        {
+          "decompiledLine": 720,
+          "name": "loadVessels"
+        },
+        {
+          "decompiledLine": 730,
+          "name": "loadSubmarines"
+        },
+        {
+          "decompiledLine": 740,
+          "name": "loadAircraft"
+        },
+        {
+          "decompiledLine": 750,
+          "name": "loadHelicopters"
+        },
+        {
+          "decompiledLine": 760,
+          "name": "loadBiologic"
+        },
+        {
+          "decompiledLine": 770,
+          "name": "loadLifeRafts"
+        },
+        {
+          "decompiledLine": 780,
+          "name": "loadWeapons"
+        },
+        {
+          "decompiledLine": 790,
+          "name": "LoadBackgroundData"
+        },
+        {
+          "decompiledLine": 799,
+          "name": "LoadBackgroundDataPart"
+        },
+        {
+          "decompiledLine": 816,
+          "name": "ProcessCityMarkersFromBackground"
+        },
+        {
+          "decompiledLine": 830,
+          "name": "ProcessLandUnitsFromBackground"
+        },
+        {
+          "decompiledLine": 841,
+          "name": "LoadBackgroundLandUnit"
+        },
+        {
+          "decompiledLine": 933,
+          "name": "ProcessSceneryItemsFromBackground"
+        },
+        {
+          "decompiledLine": 944,
+          "name": "LoadObjectives"
+        },
+        {
+          "decompiledLine": 1009,
+          "name": "LoadTriggers"
+        },
+        {
+          "decompiledLine": 1610,
+          "name": "ReadTriggerConditions"
+        },
+        {
+          "decompiledLine": 1693,
+          "name": "ReadCondition"
+        },
+        {
+          "decompiledLine": 1889,
+          "name": "TryResolveConditionPositionAnchor"
+        },
+        {
+          "decompiledLine": 1904,
+          "name": "TryParseVector3Csv"
+        },
+        {
+          "decompiledLine": 1919,
+          "name": "EstablishTriggerConnections"
+        },
+        {
+          "decompiledLine": 1971,
+          "name": "LoadCivilianRoutes"
+        },
+        {
+          "decompiledLine": 2106,
+          "name": "preloadObjects"
+        },
+        {
+          "decompiledLine": 2113,
+          "name": "GetRandomUnit"
+        },
+        {
+          "decompiledLine": 2158,
+          "name": "CheckBackwardsCompatibility"
+        },
+        {
+          "decompiledLine": 2191,
+          "name": "ReadAndParseSharedUnitWeaponGuidanceData"
+        },
+        {
+          "decompiledLine": 2197,
+          "name": "ReadAndParseSharedUnitWeaponData"
+        },
+        {
+          "decompiledLine": 2212,
+          "name": "ReadAndParseSharedUnitData"
+        },
+        {
+          "decompiledLine": 2372,
+          "name": "ParseHeightUnity"
+        },
+        {
+          "decompiledLine": 2411,
+          "name": "ParseHeightUnity"
+        },
+        {
+          "decompiledLine": 2448,
+          "name": "ParseRandomFloat"
+        },
+        {
+          "decompiledLine": 2491,
+          "name": "ParseRandomInt"
+        },
+        {
+          "decompiledLine": 2534,
+          "name": "ReadWaypoints"
+        },
+        {
+          "decompiledLine": 3015,
+          "name": "ReadWpData"
+        },
+        {
+          "decompiledLine": 3300,
+          "name": "ReadHeading"
+        },
+        {
+          "decompiledLine": 3334,
+          "name": "ReadGeoPosition"
+        },
+        {
+          "decompiledLine": 3562,
+          "name": "ReadTargetGeoPos"
+        },
+        {
+          "decompiledLine": 3582,
+          "name": "ReadCampaignVariablesFromIni"
+        },
+        {
+          "decompiledLine": 3679,
+          "name": "ReadCampaignVariables"
+        },
+        {
+          "decompiledLine": 3702,
+          "name": "CheckCampaignSpawn"
+        },
+        {
+          "decompiledLine": 3734,
+          "name": "CheckCampaignSpawnDifficulty"
+        },
+        {
+          "decompiledLine": 3754,
+          "name": "CheckSpawnByVariable"
+        },
+        {
+          "decompiledLine": 3763,
+          "name": "CheckActionByVariable"
+        },
+        {
+          "decompiledLine": 3792,
+          "name": "CheckVariableCondition"
+        },
+        {
+          "decompiledLine": 3852,
+          "name": "CheckIfFileExists"
+        },
+        {
+          "decompiledLine": 3908,
+          "name": "initLandUnits"
+        },
+        {
+          "decompiledLine": 3949,
+          "name": "initShips"
+        },
+        {
+          "decompiledLine": 4036,
+          "name": "initSubmarines"
+        },
+        {
+          "decompiledLine": 4133,
+          "name": "initAircraft"
+        },
+        {
+          "decompiledLine": 4242,
+          "name": "CheckForCallsign"
+        },
+        {
+          "decompiledLine": 4283,
+          "name": "initHelicopters"
+        },
+        {
+          "decompiledLine": 4364,
+          "name": "initBiologic"
+        },
+        {
+          "decompiledLine": 4416,
+          "name": "AddWaypoints"
+        },
+        {
+          "decompiledLine": 4486,
+          "name": "SetAdditionalParameters"
+        },
+        {
+          "decompiledLine": 4906,
+          "name": "SetAdditionalParameters_Late"
+        },
+        {
+          "decompiledLine": 4935,
+          "name": "initWeapons"
+        },
+        {
+          "decompiledLine": 4972,
+          "name": "SpawnWeapon"
+        },
+        {
+          "decompiledLine": 4993,
+          "name": "loadFormations"
+        },
+        {
+          "decompiledLine": 5015,
+          "name": "PatchControlModeIntoFormationParamStringInOldSaves"
+        },
+        {
+          "decompiledLine": 5038,
+          "name": "setUpFormation"
+        },
+        {
+          "decompiledLine": 5258,
+          "name": "OverrideSpawnPositionsWithTeleport"
+        },
+        {
+          "decompiledLine": 5270,
+          "name": "CheckFormationsSpawn"
+        },
+        {
+          "decompiledLine": 5289,
+          "name": "DefineFormationSpawn"
+        },
+        {
+          "decompiledLine": 5309,
+          "name": "setWeatherConditions"
+        },
+        {
+          "decompiledLine": 5342,
+          "name": "SetSubmarineMissileTargets"
+        },
+        {
+          "decompiledLine": 5362,
+          "name": "SetupPresetAttack"
+        },
+        {
+          "decompiledLine": 5447,
+          "name": "SetupAirSupport"
+        },
+        {
+          "decompiledLine": 5468,
+          "name": "RebaseAircraft"
+        },
+        {
+          "decompiledLine": 5479,
+          "name": "GetWeaponLaunchDiagnostics"
+        },
+        {
+          "decompiledLine": 5488,
+          "name": "LaunchWeapons"
+        },
+        {
+          "decompiledLine": 5607,
+          "name": "SetAdditionalParametersForUnits"
+        },
+        {
+          "decompiledLine": 5615,
+          "name": "LoadPatrolZones"
+        },
+        {
+          "decompiledLine": 5720,
+          "name": "ReadGeoPositions"
+        },
+        {
+          "decompiledLine": 5736,
+          "name": "TryParseGeoPosition"
+        },
+        {
+          "decompiledLine": 5753,
+          "name": "TryParsePatrolZoneOffset"
+        },
+        {
+          "decompiledLine": 5770,
+          "name": "ResolvePlacedCampaignAircraft"
+        },
+        {
+          "decompiledLine": 5884,
+          "name": "FormatText"
+        },
+        {
+          "decompiledLine": 5934,
+          "name": "OverrideCameraPosition"
+        },
+        {
+          "decompiledLine": 5991,
+          "name": "FindGlobalObjectById"
+        },
+        {
+          "decompiledLine": 6004,
+          "name": "FindObjectById"
+        },
+        {
+          "decompiledLine": 6016,
+          "name": "Update"
+        },
+        {
+          "decompiledLine": 6021,
+          "name": "SceneManager_LinearCampaignLoaded"
+        }
+      ],
+      "decompiledSha256": "C1576C12EB4E37044F3D75FB1043528E1ECD45ABF1B53A7496208BF1538A7498"
+    },
+    {
+      "classFile": "Seapower/Trigger.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 280,
+          "name": "GetPopupStyleTooltip"
+        },
+        {
+          "decompiledLine": 282,
+          "name": "GetMessageTitleTooltip"
+        },
+        {
+          "decompiledLine": 284,
+          "name": "GetMessageBodyTooltip"
+        },
+        {
+          "decompiledLine": 286,
+          "name": "GetMessageButtonTooltip"
+        },
+        {
+          "decompiledLine": 323,
+          "name": "GetMessageRoleTooltip"
+        },
+        {
+          "decompiledLine": 549,
+          "name": "GetPopupStyleTooltip"
+        },
+        {
+          "decompiledLine": 551,
+          "name": "GetMessageTitleTooltip"
+        },
+        {
+          "decompiledLine": 553,
+          "name": "GetMessageBodyTooltip"
+        },
+        {
+          "decompiledLine": 555,
+          "name": "GetMessageButtonTooltip"
+        },
+        {
+          "decompiledLine": 592,
+          "name": "GetMessageRoleTooltip"
+        },
+        {
+          "decompiledLine": 779,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 781,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 783,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 785,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 787,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 789,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 791,
+          "name": "GetLocalizedText"
+        },
+        {
+          "decompiledLine": 868,
+          "name": "InitializeRichMissionMessageCommands"
+        },
+        {
+          "decompiledLine": 880,
+          "name": "NotifyMessageProperties"
+        },
+        {
+          "decompiledLine": 886,
+          "name": "FindNavalMessagePrecedenceOption"
+        },
+        {
+          "decompiledLine": 899,
+          "name": "FindPopupStyleOption"
+        },
+        {
+          "decompiledLine": 912,
+          "name": "FindMessageRoleOption"
+        },
+        {
+          "decompiledLine": 925,
+          "name": "GetMessageTitleTooltip"
+        },
+        {
+          "decompiledLine": 937,
+          "name": "GetMessageBodyTooltip"
+        },
+        {
+          "decompiledLine": 949,
+          "name": "GetMessageButtonTooltip"
+        },
+        {
+          "decompiledLine": 961,
+          "name": "FindNavalMessageClassificationOption"
+        },
+        {
+          "decompiledLine": 974,
+          "name": "FindNavalMessageTemplateStyleOption"
+        },
+        {
+          "decompiledLine": 987,
+          "name": "SerializeMessage"
+        },
+        {
+          "decompiledLine": 992,
+          "name": "PreviewMessage"
+        },
+        {
+          "decompiledLine": 1023,
+          "name": "BuildPreviewObjectives"
+        },
+        {
+          "decompiledLine": 1045,
+          "name": "GetPreviewObjectiveText"
+        },
+        {
+          "decompiledLine": 1069,
+          "name": "GetPreviewObjectiveStatus"
+        },
+        {
+          "decompiledLine": 1091,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 1096,
+          "name": "UpdatePositionLocalization"
+        },
+        {
+          "decompiledLine": 1104,
+          "name": "CreateEditorCopy"
+        },
+        {
+          "decompiledLine": 1146,
+          "name": "TriggerLocalization"
+        },
+        {
+          "decompiledLine": 1477,
+          "name": "getText"
+        },
+        {
+          "decompiledLine": 1992,
+          "name": "CreateActionOptions"
+        },
+        {
+          "decompiledLine": 2382,
+          "name": "Trigger"
+        },
+        {
+          "decompiledLine": 2666,
+          "name": "CreateEditorCopy"
+        },
+        {
+          "decompiledLine": 2816,
+          "name": "SetLocalizations"
+        },
+        {
+          "decompiledLine": 2832,
+          "name": "ActionUnits_CollectionChanged"
+        },
+        {
+          "decompiledLine": 2863,
+          "name": "Item_UnitDisposed"
+        },
+        {
+          "decompiledLine": 2871,
+          "name": "SetActionSystemOverrideSections"
+        },
+        {
+          "decompiledLine": 2880,
+          "name": "RefreshActionUnitSystemGroups"
+        },
+        {
+          "decompiledLine": 2895,
+          "name": "UpdateActionSystemOverrideSectionsFromRows"
+        },
+        {
+          "decompiledLine": 2902,
+          "name": "GetActionAvailability"
+        },
+        {
+          "decompiledLine": 2915,
+          "name": "GetEnableDisableTuple"
+        },
+        {
+          "decompiledLine": 2925,
+          "name": "Dispose"
+        },
+        {
+          "decompiledLine": 2936,
+          "name": "AddAirOperation"
+        },
+        {
+          "decompiledLine": 2944,
+          "name": "RemoveAirOperation"
+        },
+        {
+          "decompiledLine": 2952,
+          "name": "RemoveAirOperationReferences"
+        },
+        {
+          "decompiledLine": 2962,
+          "name": "CheckTrigger"
+        },
+        {
+          "decompiledLine": 3029,
+          "name": "GetVariableAndValue"
+        },
+        {
+          "decompiledLine": 3043,
+          "name": "ActionTrigger"
+        },
+        {
+          "decompiledLine": 3725,
+          "name": "ApplyAirOperationAction"
+        },
+        {
+          "decompiledLine": 3741,
+          "name": "ReadWaypoints"
+        },
+        {
+          "decompiledLine": 4129,
+          "name": "ParseHeightUnity"
+        },
+        {
+          "decompiledLine": 4152,
+          "name": "ParseRandomFloat"
+        },
+        {
+          "decompiledLine": 4195,
+          "name": "ConstructWaypoints"
+        },
+        {
+          "decompiledLine": 4217,
+          "name": "FormatMessageText"
+        },
+        {
+          "decompiledLine": 4295,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 4300,
+          "name": "CreateAirStrike"
+        }
+      ],
+      "decompiledSha256": "7EECFF1973AA38FCC90C04F0A82CEED6B377FF4018E0F4E943E81E5D135B4CC4"
+    },
+    {
+      "classFile": "Seapower/SimpleObjectParameters.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 215,
+          "name": "Regex"
+        },
+        {
+          "decompiledLine": 219,
+          "name": "Regex"
+        },
+        {
+          "decompiledLine": 265,
+          "name": "IsNullOrEmpty"
+        },
+        {
+          "decompiledLine": 267,
+          "name": "HasNightCapableSensors"
+        },
+        {
+          "decompiledLine": 276,
+          "name": "ScanNightCapableSensors"
+        },
+        {
+          "decompiledLine": 292,
+          "name": "IsNightCapableSensorSection"
+        },
+        {
+          "decompiledLine": 328,
+          "name": "FinalizeSensorEntities"
+        },
+        {
+          "decompiledLine": 370,
+          "name": "GetLoadoutUnitKey"
+        },
+        {
+          "decompiledLine": 375,
+          "name": "IsEraTagLoadoutName"
+        },
+        {
+          "decompiledLine": 384,
+          "name": "CreateLoadoutUnit"
+        },
+        {
+          "decompiledLine": 409,
+          "name": "ApplyLoadoutServiceYear"
+        },
+        {
+          "decompiledLine": 427,
+          "name": "SimpleObjectParameters"
+        },
+        {
+          "decompiledLine": 431,
+          "name": "LoadSimpleParameters"
+        },
+        {
+          "decompiledLine": 441,
+          "name": "ReadObjectType"
+        },
+        {
+          "decompiledLine": 456,
+          "name": "CreateForType"
+        },
+        {
+          "decompiledLine": 477,
+          "name": "InitializeSimpleParameters"
+        },
+        {
+          "decompiledLine": 892,
+          "name": "LoadTypeSpecific"
+        },
+        {
+          "decompiledLine": 896,
+          "name": "LoadLifeRafts"
+        },
+        {
+          "decompiledLine": 909,
+          "name": "ReadTelegraphArray"
+        },
+        {
+          "decompiledLine": 934,
+          "name": "BuildTelegraphLadder"
+        },
+        {
+          "decompiledLine": 946,
+          "name": "LoadSurfaceTelegraph"
+        },
+        {
+          "decompiledLine": 957,
+          "name": "LoadSubmergedTelegraph"
+        },
+        {
+          "decompiledLine": 981,
+          "name": "GetAircraftTelegraphValuesInMach"
+        },
+        {
+          "decompiledLine": 1040,
+          "name": "LoadAmmunitionIds"
+        },
+        {
+          "decompiledLine": 1065,
+          "name": "LoadLoadouts"
+        },
+        {
+          "decompiledLine": 1202,
+          "name": "LoadCampaignMagazines"
+        },
+        {
+          "decompiledLine": 1237,
+          "name": "ReadAmmunitionId"
+        },
+        {
+          "decompiledLine": 1329,
+          "name": "EnsureOnboardAmmunitionReference"
+        },
+        {
+          "decompiledLine": 1352,
+          "name": "EnsureWeaponSystemReference"
+        },
+        {
+          "decompiledLine": 1373,
+          "name": "ResolveAmmoDensity"
+        },
+        {
+          "decompiledLine": 1392,
+          "name": "EnsureWeaponMagazineReference"
+        },
+        {
+          "decompiledLine": 1415,
+          "name": "GetSimpleAmmoParameters"
+        },
+        {
+          "decompiledLine": 1464,
+          "name": "GetActiveSonar"
+        },
+        {
+          "decompiledLine": 1491,
+          "name": "GetLandAttackCapabilities"
+        },
+        {
+          "decompiledLine": 1540,
+          "name": "ReadAmmoFromWeaponSystem"
+        },
+        {
+          "decompiledLine": 1584,
+          "name": "ReadAmmoFromHardpointSystem"
+        },
+        {
+          "decompiledLine": 1640,
+          "name": "ReadAmmoFromSupplySystem"
+        },
+        {
+          "decompiledLine": 1665,
+          "name": "LoadoutHasSupplySystemOverride"
+        },
+        {
+          "decompiledLine": 1678,
+          "name": "ReadAmmoFromDefaultSupplySystems"
+        },
+        {
+          "decompiledLine": 1708,
+          "name": "AddAmmo"
+        }
+      ],
+      "decompiledSha256": "B23FFCC7C20B068775E3490FE1E70DA040E56A1ABCF09AE645FDA16EEDD870BD"
+    },
+    {
+      "classFile": "SeapowerUI.ViewModels/FlightDeckViewModel.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 124,
+          "name": "DelegateCommand"
+        },
+        {
+          "decompiledLine": 129,
+          "name": "DelegateCommand"
+        },
+        {
+          "decompiledLine": 234,
+          "name": "NotifyPropertyChanged"
+        },
+        {
+          "decompiledLine": 239,
+          "name": "OpenReference"
+        },
+        {
+          "decompiledLine": 247,
+          "name": "FlightDeckViewModel"
+        },
+        {
+          "decompiledLine": 290,
+          "name": "RefreshNightWarnings"
+        },
+        {
+          "decompiledLine": 301,
+          "name": "VehiclesOnBoard_CollectionChanged"
+        },
+        {
+          "decompiledLine": 306,
+          "name": "UpdateFlightDeck"
+        },
+        {
+          "decompiledLine": 320,
+          "name": "GetAvailableAircraftTypes"
+        },
+        {
+          "decompiledLine": 331,
+          "name": "UpdateSelectedAircraftType"
+        },
+        {
+          "decompiledLine": 344,
+          "name": "GetAvailableSquadrons"
+        },
+        {
+          "decompiledLine": 357,
+          "name": "UpdateSelectedSquadron"
+        },
+        {
+          "decompiledLine": 370,
+          "name": "GetAvailableLoadouts"
+        },
+        {
+          "decompiledLine": 385,
+          "name": "UpdateSelectedLoadout"
+        },
+        {
+          "decompiledLine": 398,
+          "name": "GetAvailableCallsigns"
+        },
+        {
+          "decompiledLine": 411,
+          "name": "UpdateSelectedCallsign"
+        },
+        {
+          "decompiledLine": 424,
+          "name": "GetAvailableAircraft"
+        },
+        {
+          "decompiledLine": 437,
+          "name": "UpdateAvailableAircraft"
+        },
+        {
+          "decompiledLine": 446,
+          "name": "FlightDeckViewModel_PropertyChanged"
+        },
+        {
+          "decompiledLine": 476,
+          "name": "Dispose"
+        },
+        {
+          "decompiledLine": 485,
+          "name": "Launch"
+        },
+        {
+          "decompiledLine": 505,
+          "name": "Ready"
+        },
+        {
+          "decompiledLine": 525,
+          "name": "AssignAll"
+        }
+      ],
+      "decompiledSha256": "3B901ACB990E1EFA986D556FFBD6CBBA0A060B320051B905DA16B2042AD143F5"
+    },
+    {
+      "classFile": "AircraftStates/ReturnToBase.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 7,
+          "name": "ReturnToBase"
+        },
+        {
+          "decompiledLine": 12,
+          "name": "onEnter"
+        }
+      ],
+      "decompiledSha256": "C9B99FBC64C1685C71BC76AE9CD0F92C7509DCB16A0F5B0A534E35996CCF3C69"
+    },
+    {
+      "classFile": "AircraftStates/BingoFuel.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 7,
+          "name": "BingoFuel"
+        },
+        {
+          "decompiledLine": 12,
+          "name": "onEnter"
+        }
+      ],
+      "decompiledSha256": "AE78B79AA51597A2FFF317F22E6852A2AC07AFFEB8DA14E7ED926D4F10A78E98"
+    },
+    {
+      "classFile": "AircraftStates/Winchester.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 7,
+          "name": "Winchester"
+        },
+        {
+          "decompiledLine": 12,
+          "name": "onEnter"
+        }
+      ],
+      "decompiledSha256": "C54AD8032B50EC27499D6F18F4FBC1D09900D8C67FC00FF629EF9D6AFAD0FBE6"
+    },
+    {
+      "classFile": "AirStrikeStates/AssigningAircraft.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 6,
+          "name": "AssigningAircraft"
+        },
+        {
+          "decompiledLine": 22,
+          "name": "Ingest"
+        },
+        {
+          "decompiledLine": 73,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 143,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 233,
+          "name": "FormLoadoutsList"
+        },
+        {
+          "decompiledLine": 325,
+          "name": "ChooseVehicles"
+        }
+      ],
+      "decompiledSha256": "CC3012C4948D474A238F762ECC2EE649428CA162DE2550F8DDBF24FFF32AD137"
+    },
+    {
+      "classFile": "AirStrikeStates/Launch.cs",
+      "inspection": "ILSpy local decompilation and caller/body inspection; proprietary source omitted",
+      "memberLocations": [
+        {
+          "decompiledLine": 7,
+          "name": "Launch"
+        },
+        {
+          "decompiledLine": 12,
+          "name": "onEnter"
+        },
+        {
+          "decompiledLine": 21,
+          "name": "onUpdate"
+        },
+        {
+          "decompiledLine": 30,
+          "name": "LaunchAircraft"
+        }
+      ],
+      "decompiledSha256": "E37FF8728E996777D259DC3DFDE137B38918FA75866D63E8255C8B073AE93EE2"
+    }
+  ],
+  "build": "0.8.3-261001",
+  "assembly": "Seapower-Scripts.dll"
+}

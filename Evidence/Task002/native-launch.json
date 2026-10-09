@@ -1,0 +1,7 @@
+{
+  "startUtc": "2026-10-09T13:05:06.5271228Z",
+  "kind": "native-no-arguments-baseline",
+  "scenarioRequested": null,
+  "pid": 26368,
+  "invocation": "Start-Process -FilePath \"C:\\Games\\Sea_Power_8_3\\Sea Power.exe\" -WorkingDirectory \"C:\\Games\\Sea_Power_8_3\" -WindowStyle Hidden -PassThru"
+}

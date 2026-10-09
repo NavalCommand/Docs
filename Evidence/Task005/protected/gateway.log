@@ -1,0 +1,2 @@
+2026-10-09T18:47:12.9780340Z native-start abi=1 status=0
+2026-10-09T18:47:46.8924741Z dispatch thread=1 request=smoke-17915716667583387 stage=Rejected reason=protected_native_action seconds=12.7302150977775

@@ -1,0 +1,7 @@
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+EntryPointNotFoundException: SteamInternal_SteamAPI_Init assembly:<unknown assembly> type:<unknown type> member:(null)
+  at SteamManager.Awake () [0x000aa] in <74514530495b4cfdbdf1d0da9ebf700c>:0 
+Unity version: 6000.0.67f1
+Development build: False
+0.8.3-261001 (C) Triassic Games 2024-2026
+FileManager.CheckFileValidity(): Game passed file validity checks!

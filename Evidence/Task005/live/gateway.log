@@ -1,0 +1,3 @@
+2026-10-09T18:45:18.0373057Z native-start abi=1 status=0
+2026-10-09T18:45:36.5885642Z dispatch thread=1 request=smoke-17915715364441238 stage=NativeTaskCreated reason=native_task_membership_verified seconds=5.34450966957957
+2026-10-09T18:45:42.5229194Z dispatch thread=1 request=smoke-17915715364441238 stage=MovementObserved reason=displacement_after_native_task_creation seconds=11.2532493351027

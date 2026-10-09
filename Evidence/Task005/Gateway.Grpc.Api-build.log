@@ -1,0 +1,5 @@
+Initial fresh project build: o/windows-msvc-release; configure log records MSVC19.51; final test results in Gateway.Grpc.Api-tests.log.
+[1/17] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[2/16] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[3/9] Generating CXX dyndep file src\CMakeFiles\Gateway.Grpc.Api.dir\CXX.dd
+[4/6] Generating CXX dyndep file app\CMakeFiles\naval-cli.dir\CXX.dd

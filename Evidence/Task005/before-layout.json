@@ -1,0 +1,151 @@
+[
+  {
+    "files": [
+      ".gitignore",
+      "CMakeLists.txt",
+      "CMakePresets.json",
+      "README.md",
+      "app/SchemaRoundtrip.cpp",
+      "cmake/CPM.cmake",
+      "cmake/Common.cmake",
+      "cmake/Modules.cmake",
+      "managed/Gateway.Api.csproj",
+      "proto/navalcommand/gateway/v1/incidents.proto",
+      "proto/navalcommand/gateway/v1/orders.proto",
+      "proto/navalcommand/gateway/v1/session.proto",
+      "proto/navalcommand/gateway/v1/world.proto",
+      "public/NavalCommand/Gateway/Api/Codec.h",
+      "public/NavalCommand/Gateway/Api/IProvider.h",
+      "public/NavalCommand/Orders/Api/Eligibility.h",
+      "public/NavalCommand/Orders/Api/Order.h",
+      "public/NavalCommand/World/Api/View.h",
+      "scripts/Build-Native.ps1",
+      "src/NavalCommand/Gateway/Api/Codec.cpp",
+      "test/Check-Schema.ps1",
+      "test/CodecTest.cpp",
+      "test/managed/Conformance.csproj",
+      "test/managed/Program.cs",
+      "test/schema-baseline.json",
+      "vcpkg.json"
+    ],
+    "revision": "e61fed5447db02934ae232e187a1c3371cb3cd38",
+    "targets": [
+      "add_library(Gateway.Api STATIC ${sources} src/NavalCommand/Gateway/Api/Codec.cpp)",
+      "add_executable(schema-roundtrip app/SchemaRoundtrip.cpp)",
+      " add_executable(api-tests test/CodecTest.cpp)",
+      " add_test(NAME codec COMMAND api-tests)"
+    ],
+    "repository": "Gateway.Api"
+  },
+  {
+    "files": [
+      ".gitignore",
+      "CMakeLists.txt",
+      "CMakePresets.json",
+      "README.md",
+      "app/Cli.cpp",
+      "cmake/CPM.cmake",
+      "cmake/Common.cmake",
+      "cmake/Modules.cmake",
+      "proto/navalcommand/gateway/v1/service.proto",
+      "scripts/Build-Native.ps1",
+      "vcpkg.json"
+    ],
+    "revision": "77531a43cd003115fcbb9b86fc2ccc6f1ca5fb34",
+    "targets": [
+      "add_library(Gateway.Grpc.Api STATIC \"${gen}/${path}.pb.cc\" \"${gen}/${path}.grpc.pb.cc\")",
+      "add_executable(naval-cli app/Cli.cpp)",
+      " add_test(NAME imports COMMAND naval-cli --schema)"
+    ],
+    "repository": "Gateway.Grpc.Api"
+  },
+  {
+    "files": [
+      ".gitignore",
+      "CMakeLists.txt",
+      "CMakePresets.json",
+      "README.md",
+      "app/MockHost.cpp",
+      "cmake/CPM.cmake",
+      "cmake/Common.cmake",
+      "cmake/Modules.cmake",
+      "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+      "public/NavalCommand/Gateway/Grpc/Server.h",
+      "scripts/Build-Native.ps1",
+      "src/NavalCommand/Gateway/Grpc/Server.cpp",
+      "test/ServerTest.cpp",
+      "vcpkg.json"
+    ],
+    "revision": "cc41b0b19585b7b62e4f813f38aaa094b3f64925",
+    "targets": [
+      "add_library(Gateway.Grpc STATIC src/NavalCommand/Gateway/Grpc/Server.cpp)",
+      " add_executable(mock-host app/MockHost.cpp)",
+      " add_executable(gateway-tests test/ServerTest.cpp)",
+      " add_test(NAME gateway COMMAND gateway-tests)"
+    ],
+    "repository": "Gateway.Grpc"
+  },
+  {
+    "files": [
+      ".gitignore",
+      "README.md",
+      "SeaPower.Client.csproj",
+      "modules.lock.json",
+      "scripts/Build.ps1",
+      "scripts/Fetch-Modules.ps1",
+      "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+      "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+      "src/NavalCommand/SeaPower/Client/Provider.cs",
+      "test/Program.cs",
+      "test/ProviderTests.csproj"
+    ],
+    "revision": "d50b26803eecc1541960c04fbb194eb33f3e802f",
+    "targets": [],
+    "repository": "SeaPower.Client"
+  },
+  {
+    "files": [
+      ".gitignore",
+      "CMakeLists.txt",
+      "CMakePresets.json",
+      "README.md",
+      "app/harness/AirFacilities.ini",
+      "app/harness/AirOpsProbe.cs",
+      "app/harness/AircraftThreat.ini",
+      "app/harness/Build-AnchorChain.ps1",
+      "app/harness/DiagnosticProbe.cs",
+      "app/harness/LaunchCandidate.cs",
+      "app/harness/LaunchCandidate.csproj",
+      "app/harness/MinimalCombat.ini",
+      "app/harness/NearContact.ini",
+      "app/harness/Prepare-LaunchRequest.ps1",
+      "app/harness/RuntimePlugin.cs",
+      "app/harness/Start-Validation.ps1",
+      "cmake/CPM.cmake",
+      "cmake/Common.cmake",
+      "cmake/Modules.cmake",
+      "config.json",
+      "managed/Bootstrap.cs",
+      "managed/NativeTransport.cs",
+      "managed/SeaPower.Mod.csproj",
+      "modules.lock.json",
+      "native/Host.cpp",
+      "native/Host.h",
+      "native/HostTest.cpp",
+      "scripts/Build-Native.ps1",
+      "scripts/Build.ps1",
+      "scripts/Fetch-Modules.ps1",
+      "scripts/Prepare-Dependencies.ps1",
+      "scripts/Start-Live.ps1",
+      "scripts/Test-Mock.ps1",
+      "vcpkg.json"
+    ],
+    "revision": "fa0b7361d0be3d1b3d101b019a3ac4656396898c",
+    "targets": [
+      "add_library(SeaPower.Host SHARED native/Host.cpp)",
+      " add_executable(host-tests native/HostTest.cpp)",
+      " add_test(NAME host-abi COMMAND host-tests)"
+    ],
+    "repository": "SeaPower.Mod"
+  }
+]

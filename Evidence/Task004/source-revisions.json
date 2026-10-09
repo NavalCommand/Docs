@@ -1,0 +1,32 @@
+[
+  {
+    "revision": "e61fed5447db02934ae232e187a1c3371cb3cd38",
+    "repository": "Gateway.Api",
+    "clean": true,
+    "path": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api"
+  },
+  {
+    "revision": "77531a43cd003115fcbb9b86fc2ccc6f1ca5fb34",
+    "repository": "Gateway.Grpc.Api",
+    "clean": true,
+    "path": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api"
+  },
+  {
+    "revision": "cc41b0b19585b7b62e4f813f38aaa094b3f64925",
+    "repository": "Gateway.Grpc",
+    "clean": true,
+    "path": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc"
+  },
+  {
+    "revision": "d50b26803eecc1541960c04fbb194eb33f3e802f",
+    "repository": "SeaPower.Client",
+    "clean": true,
+    "path": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client"
+  },
+  {
+    "revision": "fa0b7361d0be3d1b3d101b019a3ac4656396898c",
+    "repository": "SeaPower.Mod",
+    "clean": true,
+    "path": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod"
+  }
+]

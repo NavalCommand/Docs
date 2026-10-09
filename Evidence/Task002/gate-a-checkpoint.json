@@ -1,0 +1,10 @@
+{
+  "gate": "A",
+  "status": "passed-for-MinimalCombat-native-player-side",
+  "consecutiveRuns": [
+    "launch-3-result.json",
+    "launch-4-result.json"
+  ],
+  "scope": "fresh process, own fixture, no briefing, no menu input",
+  "checkpointUtc": "2026-10-09T13:31:37.1506358Z"
+}

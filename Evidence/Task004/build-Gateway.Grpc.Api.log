@@ -1,0 +1,6 @@
+Fresh clone: C:\Users\DMITRI~1\AppData\Local\Temp/naval-task004-clean-repositories/Gateway.Grpc.Api
+Configure/test excerpts:
+-- CPM: Adding package Gateway_Api@0 (e61fed5447db02934ae232e187a1c3371cb3cd38)
+Test project C:/Users/DmitriyPC/AppData/Local/Temp/naval-task004-clean-repositories/Gateway.Grpc.Api/out/native
+1/1 Test #1: imports ..........................   Passed    0.06 sec
+100% tests passed, 0 tests failed out of 1

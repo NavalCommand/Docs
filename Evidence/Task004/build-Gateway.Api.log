@@ -1,0 +1,8 @@
+Fresh clone: C:\Users\DMITRI~1\AppData\Local\Temp/naval-task004-clean-repositories/Gateway.Api
+Configure/test excerpts:
+-- The CXX compiler identification is Clang 19.1.5 with MSVC-like command-line
+-- Performing Test NC_HAS_EXPECTED
+-- Performing Test NC_HAS_EXPECTED - Success
+Test project C:/Users/DmitriyPC/AppData/Local/Temp/naval-task004-clean-repositories/Gateway.Api/out/native
+1/1 Test #1: codec ............................   Passed    0.02 sec
+100% tests passed, 0 tests failed out of 1
