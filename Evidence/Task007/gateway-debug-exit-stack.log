@@ -1,0 +1,159 @@
+
+************* Preparing the environment for Debugger Extensions Gallery repositories **************
+   ExtensionRepository : Implicit
+   UseExperimentalFeatureForNugetShare : true
+   AllowNugetExeUpdate : true
+   NonInteractiveNuget : true
+   AllowNugetMSCredentialProviderInstall : true
+   AllowParallelInitializationOfLocalRepositories : true
+
+   EnableRedirectToV8JsProvider : false
+
+   -- Configuring repositories
+      ----> Repository : LocalInstalled, Enabled: true
+      ----> Repository : UserExtensions, Enabled: true
+
+>>>>>>>>>>>>> Preparing the environment for Debugger Extensions Gallery repositories completed, duration 0.000 seconds
+
+************* Waiting for Debugger Extensions Gallery to Initialize **************
+
+>>>>>>>>>>>>> Waiting for Debugger Extensions Gallery to Initialize completed, duration 0.125 seconds
+   ----> Repository : UserExtensions, Enabled: true, Packages count: 0
+   ----> Repository : LocalInstalled, Enabled: true, Packages count: 29
+
+Microsoft (R) Windows Debugger Version 10.0.26100.1742 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: C:/Software/GitHub/NavalCommand/Gateway.Grpc/o/windows-msvc-debug/test/gateway-tests.exe
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*
+Symbol search path is: srv*
+Executable search path is: 
+
++------------------------------------------------------------------------+
+| This target supports Hardware-enforced Stack Protection. A HW based    |
+| "Shadow Stack" may be available to assist in debugging and analysis.   |
+| See aka.ms/userhsp for more info.                                      |
+|                                                                        |
+| dps @ssp                                                               |
+|                                                                        |
++------------------------------------------------------------------------+
+
+ModLoad: 00007ff7`3e230000 00007ff7`41de2000   gateway-tests.exe
+ModLoad: 00007fff`a5b50000 00007fff`a5d48000   ntdll.dll
+ModLoad: 00007fff`a5a10000 00007fff`a5ad2000   C:\Windows\System32\KERNEL32.DLL
+ModLoad: 00007fff`a34c0000 00007fff`a37b6000   C:\Windows\System32\KERNELBASE.dll
+ModLoad: 00007fff`a4ae0000 00007fff`a4b91000   C:\Windows\System32\ADVAPI32.dll
+ModLoad: 00007fff`a5910000 00007fff`a59ae000   C:\Windows\System32\msvcrt.dll
+ModLoad: 00007fff`a4a40000 00007fff`a4adf000   C:\Windows\System32\sechost.dll
+ModLoad: 00007fff`a4fa0000 00007fff`a50c0000   C:\Windows\System32\RPCRT4.dll
+ModLoad: 00007fff`a3260000 00007fff`a3287000   C:\Windows\System32\bcrypt.dll
+ModLoad: 00007fff`a4c50000 00007fff`a4cbb000   C:\Windows\System32\WS2_32.dll
+ModLoad: 00007fff`a25c0000 00007fff`a25fb000   C:\Windows\SYSTEM32\IPHLPAPI.DLL
+ModLoad: 00007fff`72630000 00007fff`72639000   C:\Windows\SYSTEM32\WSOCK32.dll
+ModLoad: 00007fff`a37c0000 00007fff`a391d000   C:\Windows\System32\CRYPT32.dll
+ModLoad: 00007fff`a3a70000 00007fff`a3b70000   C:\Windows\System32\ucrtbase.dll
+ModLoad: 00007fff`a4df0000 00007fff`a4f91000   C:\Windows\System32\USER32.dll
+ModLoad: 00007fff`a3230000 00007fff`a3252000   C:\Windows\System32\win32u.dll
+ModLoad: 00007fff`a3b70000 00007fff`a3b9b000   C:\Windows\System32\GDI32.dll
+ModLoad: 00007fff`a3310000 00007fff`a3429000   C:\Windows\System32\gdi32full.dll
+ModLoad: 00007fff`a39d0000 00007fff`a3a6d000   C:\Windows\System32\msvcp_win.dll
+ModLoad: 00007fff`9a2d0000 00007fff`9a4d1000   C:\Windows\SYSTEM32\dbghelp.dll
+ModLoad: 00007fff`a2aa0000 00007fff`a2aac000   C:\Windows\SYSTEM32\CRYPTBASE.DLL
+(8600.28d0): Break instruction exception - code 80000003 (first chance)
+ntdll!LdrpDoDebuggerBreak+0x30:
+00007fff`a5c20860 cc              int     3
+0:000> cdb: Reading initial command 'g; .ecxr; k; q'
+ModLoad: 00007fff`a5ae0000 00007fff`a5b0f000   C:\Windows\System32\IMM32.DLL
+ModLoad: 00007fff`a3430000 00007fff`a34b2000   C:\Windows\System32\bcryptprimitives.dll
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-e243b8ee0f.clean\googletest\src\gtest_main.cc
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from Provider
+[ RUN      ] Provider.RejectionsDuplicatesAndSessionReset
+[       OK ] Provider.RejectionsDuplicatesAndSessionReset (0 ms)
+[ RUN      ] Provider.BoundedLedger
+[       OK ] Provider.BoundedLedger (3 ms)
+[----------] 2 tests from Provider (3 ms total)
+
+[----------] 1 test from Server
+[ RUN      ] Server.RealGrpcAndLoopbackGuard
+ModLoad: 00007fff`a2910000 00007fff`a297a000   C:\Windows\system32\mswsock.dll
+ModLoad: 00007fff`a4330000 00007fff`a4338000   C:\Windows\System32\NSI.dll
+ModLoad: 00007fff`9e3e0000 00007fff`9e3f7000   C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+ModLoad: 00007fff`9e290000 00007fff`9e2ad000   C:\Windows\SYSTEM32\dhcpcsvc.DLL
+ModLoad: 00007fff`a2600000 00007fff`a26ca000   C:\Windows\SYSTEM32\DNSAPI.dll
+ModLoad: 00007fff`7aeb0000 00007fff`7aec7000   C:\Windows\system32\napinsp.dll
+ModLoad: 00007fff`7ae90000 00007fff`7aeab000   C:\Windows\system32\pnrpnsp.dll
+ModLoad: 00007fff`7ae70000 00007fff`7ae8d000   C:\Windows\system32\wshbth.dll
+ModLoad: 00007fff`9f060000 00007fff`9f07d000   C:\Windows\system32\NLAapi.dll
+ModLoad: 00007fff`7ae50000 00007fff`7ae62000   C:\Windows\System32\winrnr.dll
+[       OK ] Server.RealGrpcAndLoopbackGuard (66 ms)
+[----------] 1 test from Server (66 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (70 ms total)
+[  PASSED  ] 3 tests.
+(8600.4458): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+Unable to get exception context, HRESULT 0x8000FFFF
+Child-SP          RetAddr               Call Site
+000000e1`6eafe800 00007fff`a5b7fcb4     ntdll!RtlpWaitOnCriticalSection+0xa6
+000000e1`6eafe8e0 00007fff`a5b7fae2     ntdll!RtlpEnterCriticalSectionContended+0x1c4
+*** WARNING: Unable to verify checksum for gateway-tests.exe
+000000e1`6eafe940 00007ff7`407940e4     ntdll!RtlEnterCriticalSection+0x42
+000000e1`6eafe970 00007ff7`406f36f5     gateway_tests!_Mtxlock+0x14
+000000e1`6eafe9a0 00007ff7`3e5434df     gateway_tests!std::_Lockit::_Lockit+0x55
+000000e1`6eafe9d0 00007ff7`3e54348d     gateway_tests!std::_Container_base12::_Orphan_all_locked_v3+0x2f
+000000e1`6eafea20 00007ff7`3ee5ebc7     gateway_tests!std::_Container_base12::_Orphan_all+0x2d
+000000e1`6eafea50 00007ff7`3ee5e2ca     gateway_tests!std::vector<grpc_event_engine::experimental::Timer *,std::allocator<grpc_event_engine::experimental::Timer *> >::_Tidy+0x57
+000000e1`6eafeab0 00007ff7`3ee5e457     gateway_tests!std::vector<grpc_event_engine::experimental::Timer *,std::allocator<grpc_event_engine::experimental::Timer *> >::~vector<grpc_event_engine::experimental::Timer *,std::allocator<grpc_event_engine::experimental::Timer *> >+0x2a
+000000e1`6eafeb10 00007ff7`3ee5e41b     gateway_tests!grpc_event_engine::experimental::TimerHeap::~TimerHeap+0x17
+000000e1`6eafeb40 00007ff7`407cf1e0     gateway_tests!grpc_event_engine::experimental::TimerList::Shard::~Shard+0x1b
+000000e1`6eafeb70 00007ff7`3ee5e7b8     gateway_tests!`eh vector destructor iterator'+0x90
+000000e1`6eafebc0 00007ff7`3ee5d000     gateway_tests!grpc_event_engine::experimental::TimerList::Shard::`vector deleting destructor'+0x38
+000000e1`6eafebf0 00007ff7`3ee5e1c3     gateway_tests!std::default_delete<grpc_event_engine::experimental::TimerList::Shard [0]>::operator()<grpc_event_engine::experimental::TimerList::Shard,0>+0x30
+000000e1`6eafec30 00007ff7`3ee5e49c     gateway_tests!std::unique_ptr<grpc_event_engine::experimental::TimerList::Shard [0],std::default_delete<grpc_event_engine::experimental::TimerList::Shard [0]> >::~unique_ptr<grpc_event_engine::experimental::TimerList::Shard [0],std::default_delete<grpc_event_engine::experimental::TimerList::Shard [0]> >+0x43
+000000e1`6eafec70 00007ff7`3ee5e8b8     gateway_tests!grpc_event_engine::experimental::TimerList::~TimerList+0x2c
+000000e1`6eafeca0 00007ff7`3ee5e710     gateway_tests!grpc_event_engine::experimental::TimerList::`scalar deleting destructor'+0x18
+000000e1`6eafecd0 00007ff7`3ee5e223     gateway_tests!std::default_delete<grpc_event_engine::experimental::TimerList>::operator()+0x30
+000000e1`6eafed10 00007ff7`3ee5aeb8     gateway_tests!std::unique_ptr<grpc_event_engine::experimental::TimerList,std::default_delete<grpc_event_engine::experimental::TimerList> >::~unique_ptr<grpc_event_engine::experimental::TimerList,std::default_delete<grpc_event_engine::experimental::TimerList> >+0x43
+000000e1`6eafed50 00007ff7`3f7c1dab     gateway_tests!grpc_event_engine::experimental::TimerManager::~TimerManager+0x48
+000000e1`6eafed80 00007ff7`3f7dafd8     gateway_tests!grpc_event_engine::experimental::WindowsEventEngine::~WindowsEventEngine+0x8eb
+000000e1`6eaff060 00007ff7`3f4c8506     gateway_tests!grpc_event_engine::experimental::WindowsEventEngine::`scalar deleting destructor'+0x18
+000000e1`6eaff090 00007ff7`3f4c8a8b     gateway_tests!std::_Destroy_in_place<grpc_event_engine::experimental::WindowsEventEngine>+0x26
+000000e1`6eaff0d0 00007ff7`3e540b23     gateway_tests!std::_Ref_count_obj2<grpc_event_engine::experimental::WindowsEventEngine>::_Destroy+0x1b
+000000e1`6eaff100 00007ff7`3e5d3e34     gateway_tests!std::_Ref_count_base::_Decref+0x33
+000000e1`6eaff130 00007ff7`3e5d0a14     gateway_tests!std::_Ptr_base<grpc_event_engine::experimental::EventEngine>::_Decref+0x24
+000000e1`6eaff160 00007ff7`3e5e54f8     gateway_tests!std::shared_ptr<grpc_event_engine::experimental::EventEngine>::~shared_ptr<grpc_event_engine::experimental::EventEngine>+0x14
+000000e1`6eaff190 00007ff7`3efdbf36     gateway_tests!std::shared_ptr<grpc_event_engine::experimental::EventEngine>::`scalar deleting destructor'+0x18
+000000e1`6eaff1c0 00007ff7`3efdc8cc     gateway_tests!grpc_core::Destruct<std::shared_ptr<grpc_event_engine::experimental::EventEngine> >+0x16
+000000e1`6eaff1f0 00007ff7`3efda560     gateway_tests!grpc_core::ManualConstructor<std::shared_ptr<grpc_event_engine::experimental::EventEngine> >::Destroy+0x1c
+000000e1`6eaff220 00007ff7`3f5d4433     gateway_tests!grpc_channel_stack_destroy+0xd0
+000000e1`6eaff270 00007ff7`3ec1b265     gateway_tests!<lambda_68df6e812c837f13d4e74f531b0527fa>::<lambda_invoker_cdecl>+0x23
+000000e1`6eaff2b0 00007ff7`3ec1a4bc     gateway_tests!exec_ctx_run+0x3f5
+000000e1`6eaff480 00007ff7`3e5b71c9     gateway_tests!grpc_core::ExecCtx::Flush+0x9c
+000000e1`6eaff540 00007ff7`3f0328a4     gateway_tests!grpc_core::ExecCtx::~ExecCtx+0x39
+000000e1`6eaff570 00007ff7`3fca3592     gateway_tests!grpc_core::WorkSerializer::WorkSerializerImpl::Run+0x394
+000000e1`6eaff720 00007ff7`3fca2da8     gateway_tests!grpc_event_engine::experimental::WorkStealingThreadPool::ThreadState::Step+0x442
+000000e1`6eaff850 00007ff7`3fca3b03     gateway_tests!grpc_event_engine::experimental::WorkStealingThreadPool::ThreadState::ThreadBody+0x158
+000000e1`6eaff950 00007ff7`3fca3b66     gateway_tests!<lambda_1d00dca3b95e322e89ca645f3f2b2959>::operator()+0x23
+000000e1`6eaff9a0 00007ff7`3ff12766     gateway_tests!<lambda_1d00dca3b95e322e89ca645f3f2b2959>::<lambda_invoker_cdecl>+0x16
+000000e1`6eaff9d0 00007fff`a5a27374     gateway_tests!`anonymous namespace'::ThreadInternalsWindows::thread_body+0x276
+000000e1`6eaffab0 00007fff`a5b9cc91     KERNEL32!BaseThreadInitThunk+0x14
+000000e1`6eaffae0 00000000`00000000     ntdll!RtlUserThreadStart+0x21
+quit:
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\atlmfc.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\ObjectiveC.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\concurrency.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\cpp_rest.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\stl.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\Windows.Data.Json.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\Windows.Devices.Geolocation.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\Windows.Devices.Sensors.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\Windows.Media.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\windows.natvis'
+NatVis script unloaded from 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\Visualizers\winrt.natvis'

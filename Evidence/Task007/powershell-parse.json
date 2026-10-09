@@ -1,0 +1,62 @@
+[
+  {
+    "errors": [],
+    "path": "Build.CMake/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "Gateway.Api/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "Gateway.Api/test/Check-Schema.ps1"
+  },
+  {
+    "errors": [],
+    "path": "Gateway.Grpc.Api/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "Gateway.Grpc/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Client/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Client/scripts/Build.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/app/harness/Build-AnchorChain.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/app/harness/Prepare-LaunchRequest.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/app/harness/Start-Validation.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/scripts/Build-Native.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/scripts/Build.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/scripts/Prepare-Dependencies.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/scripts/Start-Live.ps1"
+  },
+  {
+    "errors": [],
+    "path": "SeaPower.Mod/scripts/Test-Mock.ps1"
+  }
+]

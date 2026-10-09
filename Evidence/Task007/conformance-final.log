@@ -1,0 +1,4 @@
+PASS C# serialize canonical payload, UTF-8, uint64 and oneof with unknown field
+C++ parsed oneof, stable IDs, degrees and preserved unknown fields
+PASS C++ -> C#; unknown fields, optional zero and unknown enum preserved
+PASS canonical schema baseline; incompatible reuse detected

@@ -1,0 +1,1199 @@
+[
+  {
+    "repository": "Build.CMake",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "97DCEE3A2DD6802EDBFB6D0EF0F0AE11E198B4D96BC7008796837B001E827DB9"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "4940FB3470CAF64D11A718CF5AE07335785B74B0CC8B6D783B6042D98C5B0BD5"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "81E0BB9BE26340013C57B6AF98AE6B69A7615C787BD1118C64E5DE332921F7FC"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "NavalCommand.Build.CMake.cmake",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "37548D1AD011BCFAC40352FC6585533B04808B1F5DBA345F50D4F7EDDB33B25B"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "348201B14A9D514100342C2BCF904A27579E044230D9B3D0CEE63027C07F10A3"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "51377E6A18387E334474FC39D83DA3822FC681474E08E1ED6B86674B1CEB0E1D"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "267228152C9478F0DE6EFA6D691706058D739E1F351691EA92083D45093E7743"
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "test/ResolutionTest.py",
+    "category": "Python",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F63E4CA2CC054E54CE27F1BA64367896867AA679BC6AB5F6BE2A32ED35A0F631"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": ".clang-format",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6663499747EDDEAB8D718571521052CC6E0CF5A356C642302C488ABB6A013734"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": ".editorconfig",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "CE9E42B6AF8BA8992B5A2DFA10A1B3C33C576F70A3787C35D3FE12624B5CFAEF"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D2080BFC0129D0D115CE92349F41C111B339858AB829E6A865914EC12A4A8EC0"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D75E4E8B073822C37DF4F5CDE927CDD94D429984881FFDFF89D7ACF8DEDA3AD2"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "app/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D7C917FDE605D3328C2DE34B75A657FA438FEAD545A0B93D34C1D93DE1726C1A"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "4195F19850493DFFAB116030CB39A5F8006B94021434C3EB57B62514A191C65D"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "managed/Gateway.Api.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "931F485652BE1857EBD6F941DF3BE063356E572A4CB4AE496185F9790ED65AE3"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/incidents.proto",
+    "category": "Proto",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "20AA18C56B9CDAC65EB46E024CC295B33A57B7F5B75D7878123B9C740177575D"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/orders.proto",
+    "category": "Proto",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F880C2A60DC9A2BD9D528227144C2AD071744368BAD145B5D2F74344B42918AA"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/session.proto",
+    "category": "Proto",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "CFE201385D44B2E5E3B4ACE87577114993D12E1C94478C6AEBD43ECE2274827C"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/world.proto",
+    "category": "Proto",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "DAE58B6B4210CC32DBD4FA4CCF8B3EA1600EB639DC4FE78F93E8699F608F0CEC"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Gateway/Api/Codec.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D33C38A12783056EFF9829B3CD4389F5780B37EC36E4F2C96F4414E21B5ED892"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Gateway/Api/Error.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "4C738DC123ACC759B4D5766A2DE9D523DEC6A9B60C563CB9319382C224DD74BA"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Gateway/Api/IProvider.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "289B7994EF3F5E912AB5B1F2B5EC5B4F6FDF5781B01849AF1AA9F6AA4926B76A"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Availability.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "BBA46B5D9E2B071F3A4671332BC617D120E78B677F0B071793D4607A7D3882B1"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Eligibility.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "5C2F8AFA1FBA3D9D81DB6822F30D5A68C748EA6FB8AA883FA6B90C2D74B321EC"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Order.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "DC19B62A6CAE73B1950B451F579937539F0697B64ADE5CFA66F8B144D9E0DD37"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Request.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "555C19D0A2B5AC70884901BCC9F67344643D7E8A36E021738CE16D65FE1EE9B4"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Result.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "AF8E70A7C9E547287869A70A44A4B8758D9089B52BE6EDDFD80203E9DEBB0513"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Stage.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "C9D4187A09463CC51F5D3075CC92CBEF9E08FFBFC0A1DCEA436F1A0AE019818F"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Waypoint.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "137DC0E5B67C3F22FE39EBFB7954C828F1E881C5565665E4016722910B148173"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/Facility.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "1236EB59D0818943B0DA9F8D0F66FBDADD1FF4CBD498699A851120EE00E8196A"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/Position.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F24F480A38EE8D70FA136558D365B03FACE76A3B49E72B08FC6645E9F9BB0B4E"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/Stock.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "27C6C7923A70207538D5BA79D9CC181A05994505B483851781C8A1B015D89073"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/Track.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "08591607AB6CDE29EDBD34D433E9D6F78E9B8C8315477CD352B8F802FC025EEE"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/Unit.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "9DC24F8FDDA62E6FF39E228D038DCC9798F4726F13D9A6F2D5BBE59DEE9C81DB"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/View.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "9480C7168DDE761EF2F103A19EE3F79413DBE0342E23678AF7F8F3B93D589ACB"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "src/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "55AD224D5F4D5B133BCB608F8A8C15E9C5A87B98BA1F978CD1B799E6C3CA3B9D"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "src/NavalCommand/Gateway/Api/Codec.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8F0B9A89AEB00833067819E94B348F8BB98706E7CAB0AE19F9E35E7C06A7816A"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "9988D366BE75546C753AF10CBCE72A751BC40092954785613BFC7D946AAE0034"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/Check-Schema.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "39784341B599C0ADFA8FC11B7A0056770D993003720FA24E7A97A3B847CA3AAB"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/NavalCommand/Gateway/Api/CodecTest.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "FCE1EF9B29CE9AE6777D984211EA1CC9789932E5CE9C6F9AB2F0FEC4A0A8A4C0"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/managed/Conformance.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "B108AD8542679C8B3D345C3D778B0692BFF0C22FCFA2C473FB158460D3F35DF1"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/managed/Program.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F2EB18966780FDF64E4A1A8482B1CB67817318D519669A9FC85405C2F3F512C4"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/schema-baseline.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "2FE557A34562F64570E3438FB3D9BE5A7F2B095CB6B76BE738F5A760E8887F95"
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "vcpkg.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": ".clang-format",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6663499747EDDEAB8D718571521052CC6E0CF5A356C642302C488ABB6A013734"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "132ABF0F282F025F69285CEB7DC9FFBEDC90A16B506EF752F5F9E0D9546E4518"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "423F8B2853F4DF6E46DC0C6EBB22894BB6C77BF6406EA853D849AF6ABF7E1E37"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "app/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "EB761F9BCDF26FFA77E0CE51981122FD22266724210519B79AE01240578A4402"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "app/NavalCommand/Gateway/Grpc/Api/Cli.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "C9DE6C404B08017526AB352DF159529E31BC52758EF2BDBB3968BDC65115E283"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "proto/navalcommand/gateway/v1/service.proto",
+    "category": "Proto",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "636AAF60F5498ED3BC2E712FD0265EDBBACB0031C3873B8670573E99E9DBA21B"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "src/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "EE4E8197F726C1AC58DFE9965DA61C5CAC66B1BAB0AB39231E1CF0A987565F00"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "922828BCB911147EFF993E337F611CC6AC8A434300041865DFA5446D175262D3"
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "vcpkg.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": ".clang-format",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6663499747EDDEAB8D718571521052CC6E0CF5A356C642302C488ABB6A013734"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "5EF768FA815C48ED0A0C2F9CF54E8B14EA6B6A6F0DF44E6FB9D320924F64041C"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "AB6767061B33D082BE5130F5D7D6B8497FBB15F53B56DB490B05FB7B419B538B"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "app/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "7A26F6E126F1291B703BC3541700E8DA2D4ACFD5D80898B173F11C4127AF34CF"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "app/NavalCommand/Gateway/Grpc/MockHost.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "71545F58597642703BD8AC3E9662A04099CCF0F5E8CE5DFED1C8D283EDC15337"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "mock/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D1160DCADE5187664D28E3E80053825BD8D4FF1C6FAD8ED5424A70B2CE5476A6"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "A8976C9DD16AFBBFBD9E9903256C71ACB7C8F3E73CEA480551F1B5CF86D8C512"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "public/NavalCommand/Gateway/Grpc/Server.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "5927EEF17A5AAB33EAF77DCBD588751FE6AB0DB000EB3F1892B3C081C6AFB113"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "src/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F3C63EE84C962AF604DE2A67ED176AACC25019F10ACB709515E394508E120BF8"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "src/NavalCommand/Gateway/Grpc/Server.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "EE51A720BB12604C767D4A293405FA751067ED0BD03BFB53CB4AB20A7B0A1EDB"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "E471004F15991A7BC5A69891D884C739F24FCA4F91F4C9BBBA42444FBC617A9F"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "test/NavalCommand/Gateway/Grpc/ServerTest.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "53E007C167E9D578F279D9A3E46B081CF00107C5A58C894346B46BB14BD6E42D"
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "vcpkg.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": ".editorconfig",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "CE9E42B6AF8BA8992B5A2DFA10A1B3C33C576F70A3787C35D3FE12624B5CFAEF"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "E081BE5BB5800680C2DA1F89D61C405F8C092FDA9E6AF94D3719D0C7009FCA3F"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "5CACD265D310AF1652DC374B8CE9F62FCCDF7CFB01B321BE55DE77D66131303A"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "SeaPower.Client.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "2B27D16876A70163998B0A6D4286575E68558A5A8271013B8DD914F3E829A2FD"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "scripts/Build.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "A9A77A07DB62FFEB414518D4F936ADC90C8F134D2957D286AB4EA03607394DD5"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "71DFE6116B864E965E1CB17E64CD8EF624F9EF0252D2F16E1795D0E2A14E4D9D"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "57EE899255BE327253F1E5C1D3B8673A6510A1B02E0117ED10B7F331B8D4C267"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "7005093F98674D5DD2FC1767A5A551F652C43753FBAF7CAF7828A2D8DF51C52F"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/Provider.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "A1D6BEB2A8D6D2A5156A848FD255B49623859E454A13BC04F21A461083E6F2DC"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/StockSample.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D29DE8FA99E8301D2AB46D2686487CFE39D3BC5BFB80ED64DD54AF9D3DF4B57F"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/TrackSample.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "38A7364AE669023D3645655007FFB6C258A5EE3F0A20418D4E14F9746C8DFC10"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/UnitSample.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "E91EF12DAE804A333677397993420C93F6E08938477DF61E5FC626C8841ED167"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "018E73C401A2034F08D7044BC7B00ABA0D7FB2B0FE5C03227E8DEBCDEC1238E6"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/DistanceTests.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "18368AE38B485E2696DA390C580C685E154DF755B81587EF8ADAAA7FA5989C2F"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/FakeGameFacade.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "BBEA4B927DD25FD79C22A01B4C42CB6C295684FD1D5AA5B16F51EA6F755634C4"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/Program.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "95BF30D27B121D104077D019A4AC2DC18F0D4DAC2A673A003C9AA1E40C752092"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/ProviderTests.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "08476295B70C1B098CECBBF165E9DD925002596CE1D63014F9F5E92A5D229B18"
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "vcpkg.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "2ED17390EB8544AF3A7212DFC0D99C6BC27CBC0B7DF24D20A24FA6CDE2A4F770"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": ".clang-format",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6663499747EDDEAB8D718571521052CC6E0CF5A356C642302C488ABB6A013734"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": ".editorconfig",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "CE9E42B6AF8BA8992B5A2DFA10A1B3C33C576F70A3787C35D3FE12624B5CFAEF"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": ".gitignore",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F28FED5AA921F780DA7D7CBDF8530C13BBF3703CAD9B1BD30D84561A9E7F0879"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "CMakePresets.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "2A677855E0AE558D0E10F1753B3369028363AC09445F5E41CB3B3B537DA90924"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "README.md",
+    "category": "Reference/config",
+    "handwrittenCode": false,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6DC873142EF26C25B65A65C9775340B57012DF63CB90A6E570A00DD2EE65FA55"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8B3D4BEB103EDB0331F90F22B005483827E2283DAC50D974CD3EFB18C7752BAD"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AirFacilities.ini",
+    "category": "Fixture/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "20E30CAE639E32A1927E9D50B48E8972D3A03763BA6BBD3A711D5AFF74F9D322"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AirOpsProbe.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "7940B984962CA4C8ADE6B4C1E63952E2980F96792E42C15899C10CF263C3B549"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AircraftThreat.ini",
+    "category": "Fixture/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "CB6013A7D38771625CBFF0247DE1AE0199609E026E977770596E48A8BAF496B1"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Build-AnchorChain.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "81B335929F28364AAD4E24E04D4F2A8F4B3C37B849EB563580E0B57631FFC531"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/DiagnosticProbe.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F8D597B65813FECD34AFEFF280C059233C950C3CB8E2C02AAE40ECE92A519BBD"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/LaunchCandidate.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "DF6D2C8F9C89DC7EF013AD364403746C1726753CDB35A0ACAA1CD1A1DF61E84E"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/LaunchCandidate.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "BF59415845C3D5356ABAE0119DE09ED7826D72797C38FBE89E672B7CB579E960"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/MinimalCombat.ini",
+    "category": "Fixture/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "B766A29398E883F9D0002CB98A6FB5283A1E4230793C2FA15D225ABC7DA383EC"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/NearContact.ini",
+    "category": "Fixture/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "7A7A8F102FB7C14FDEC41D0C242E7C1F417BAE1680DF79492F6E3A4B59B4CE6A"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Prepare-LaunchRequest.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "7520D31238B171FFE84D7454567FBECDAEB70C7812A9761BCC70F09DB4061FDA"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/RuntimePlugin.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "4FCBC686D9AFC36BC4C8F7610834369ABEECAE5BD5FCBBE80B2227D9E66E2478"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Start-Validation.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "F78DA2DDE08C589D8B7377A6E64866C82B55E8303941E131D9E53C6333CE1EBD"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "config.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "B474F3BC8488689F009882129E89A91E43D3EF5074F00700B8A97D08EFF6CC77"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/Bootstrap.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "EAF19C3C029CD1489B6253A1E1B61F18148DF8DDA501F93F044F19CB8545A38D"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/NativeTransport.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "D832EA600A0DA44C529EA3AB165B598DA1BE91E06536D71FC8378A5A6745541F"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/Runtime.cs",
+    "category": "C#",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "A05E888C3070A97BFFFF1C92A9F501553DDA30B9764A15806294C700C302C679"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/SeaPower.Mod.csproj",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "662495756A89A7C996D30356C2E130ED85A07419C4DF1577A09F401D0F174262"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Build-Native.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Build.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "B145C272EF800CF71F93FA57CAACDC7BC77F5A3D8C5049BEEAD372A1D8E31E6E"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Prepare-Dependencies.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "92EE623AFA341061116A467BD1476349CD0EF324D00EAC1E0217A25BD2C36BD1"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Start-Live.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "66D2CA49C84AD92F61455BF721C09631A161AF4FB50CBCA9013AFFCAFAF38609"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Test-Mock.ps1",
+    "category": "PowerShell",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "86CED27C32947D6079DF0F19DDEF9DAB22856F0A41A7589D9465E13331BBF5B5"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "015714CB46A231D00711ABE3C3534B37B262E7BEA1F78BF6BC4DA64CD3A2B1DF"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/Bridge.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "E85D7816ADAD130B5110124087D2B4C3E24C05DCD35E6CB9F45CA189E99E1731"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/Host.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "6F01236008C324B1F40FCD2754C4FDEB2FECD0D9BC7C600646AA012B3087C26B"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/Host.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "76FDC9AD54B19ABF93C8C7A111E4679E686D2F8E58D496828C1A6906B64F8D6D"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/HostState.h",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": true,
+    "changedFromWorkingBaseline": true,
+    "sha256": "7DD3FA24395763E6BD37E989146474ECB7023BF9268EF683B5AC29E80C69D76F"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "test/CMakeLists.txt",
+    "category": "CMake",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "40DB9348434DAAA331B5193E4A95A7A0E23F93771D8BAC8F566DD52A084562CB"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "test/NavalCommand/SeaPower/Mod/HostTest.cpp",
+    "category": "C++",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": true,
+    "sha256": "ED265E509331E6C011C0296D2F8511E0C9C2BE6ED1F0097F8D33F9C8E5BE8ADB"
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "vcpkg.json",
+    "category": "Project/config",
+    "handwrittenCode": true,
+    "new": false,
+    "changedFromWorkingBaseline": false,
+    "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376"
+  }
+]

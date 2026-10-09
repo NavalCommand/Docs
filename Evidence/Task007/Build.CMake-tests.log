@@ -1,0 +1,7 @@
+Test project C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release
+    Start 1: dependency-resolution
+1/1 Test #1: dependency-resolution ............   Passed   12.83 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =  12.85 sec

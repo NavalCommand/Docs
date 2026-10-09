@@ -1,0 +1,1400 @@
+[
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power.exe",
+    "actual": "99BC22DCBA6305CFAD2A1C4489585A70D545950C828259F9EEEB31D02C67C14A",
+    "unchanged": true,
+    "expected": "99BC22DCBA6305CFAD2A1C4489585A70D545950C828259F9EEEB31D02C67C14A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\UnityPlayer.dll",
+    "actual": "2E781620A7FE6F238E46E6C1BD3C7B56EBBF99950E87D6E3CA93E5A18B6AAD89",
+    "unchanged": true,
+    "expected": "2E781620A7FE6F238E46E6C1BD3C7B56EBBF99950E87D6E3CA93E5A18B6AAD89"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\AmplifyBloom.dll",
+    "actual": "91C814360C10FAF278CEC474179248FE1829F9F1825E658F3A539A0473D52718",
+    "unchanged": true,
+    "expected": "91C814360C10FAF278CEC474179248FE1829F9F1825E658F3A539A0473D52718"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\AmplifyColor.dll",
+    "actual": "9BE2304FB3C63B07D39E476D1C3BE25942E211F0292C066D1C42D3E18AC3903E",
+    "unchanged": true,
+    "expected": "9BE2304FB3C63B07D39E476D1C3BE25942E211F0292C066D1C42D3E18AC3903E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\andywiecko.BurstTriangulator.dll",
+    "actual": "1DEBD8E4C158CDBF4A228DCF29480164B74C94E06F3C8DB22454E1967C316CAB",
+    "unchanged": true,
+    "expected": "1DEBD8E4C158CDBF4A228DCF29480164B74C94E06F3C8DB22454E1967C316CAB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Assets.dll",
+    "actual": "01387C3F2FAB6A125138C079364137004BD4244CCEB34BDBE605A43083DFE213",
+    "unchanged": true,
+    "expected": "01387C3F2FAB6A125138C079364137004BD4244CCEB34BDBE605A43083DFE213"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\AstarPathfindingProject.dll",
+    "actual": "D9DBB63C4A0C0FB745BCB93ECF79A06CD556684529EE2A7E7CB9F0DEE0099D08",
+    "unchanged": true,
+    "expected": "D9DBB63C4A0C0FB745BCB93ECF79A06CD556684529EE2A7E7CB9F0DEE0099D08"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Clipper2Lib.dll",
+    "actual": "4AE4B585AFA04F38BA997C902D47C66182888309F441FB8024805C6E13CBB232",
+    "unchanged": true,
+    "expected": "4AE4B585AFA04F38BA997C902D47C66182888309F441FB8024805C6E13CBB232"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\com.bartofzo.nativetrees.dll",
+    "actual": "AA23C8774AEE30396AFE382A7F433A5DAE143DC91F6BB542F44A886168EC1AF9",
+    "unchanged": true,
+    "expected": "AA23C8774AEE30396AFE382A7F433A5DAE143DC91F6BB542F44A886168EC1AF9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\com.bartofzo.nativetrees.samples.dll",
+    "actual": "03FBBFFFA7BEE3011AAD9763BEC2FAF64C60BB1422B9B70C7BB96445B7D118CE",
+    "unchanged": true,
+    "expected": "03FBBFFFA7BEE3011AAD9763BEC2FAF64C60BB1422B9B70C7BB96445B7D118CE"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\com.rlabrecque.steamworks.net.dll",
+    "actual": "A7290E9AF7AF1C605B5DCBF86D11370F060845EEB7D856DF6A9A1769DD40CB64",
+    "unchanged": true,
+    "expected": "A7290E9AF7AF1C605B5DCBF86D11370F060845EEB7D856DF6A9A1769DD40CB64"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\CommunityToolkit.Mvvm.dll",
+    "actual": "C30BD6E4C9221B40C76B8487FD9341EAD23BF6A98FC672FD2B58780069AD9858",
+    "unchanged": true,
+    "expected": "C30BD6E4C9221B40C76B8487FD9341EAD23BF6A98FC672FD2B58780069AD9858"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Drawing.dll",
+    "actual": "5AE6F90486D5ED9C51B5FB17A4C48E032536B81B27C1AFAEC69171CE5F6D6037",
+    "unchanged": true,
+    "expected": "5AE6F90486D5ED9C51B5FB17A4C48E032536B81B27C1AFAEC69171CE5F6D6037"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\GUPS.EasyPerformanceMonitor.Demo.dll",
+    "actual": "11A550B3B82B2872E9157BA7AF0D11E6F694916B8302FE3F5739D6F9D6A4E728",
+    "unchanged": true,
+    "expected": "11A550B3B82B2872E9157BA7AF0D11E6F694916B8302FE3F5739D6F9D6A4E728"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\GUPS.EasyPerformanceMonitor.dll",
+    "actual": "68C468D0E762D50E8C550CAA752CB1F1ADFBCBE9E0CF6D5FD25C910EF4FB46BE",
+    "unchanged": true,
+    "expected": "68C468D0E762D50E8C550CAA752CB1F1ADFBCBE9E0CF6D5FD25C910EF4FB46BE"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Humanizer.dll",
+    "actual": "AD607FAFF52474F46AFE759BCF3E6AC9A59A8173537D66069A40E8F6ACDA6DA6",
+    "unchanged": true,
+    "expected": "AD607FAFF52474F46AFE759BCF3E6AC9A59A8173537D66069A40E8F6ACDA6DA6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\io.sentry.unity.runtime.dll",
+    "actual": "B88B75252B6AB62B9B58603CBA1BB5AD6DA12E4B83612AAEFF602F64EBA21D3F",
+    "unchanged": true,
+    "expected": "B88B75252B6AB62B9B58603CBA1BB5AD6DA12E4B83612AAEFF602F64EBA21D3F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Libraries.dll",
+    "actual": "D894D99824326D59E21B5B66459B95702436BB3DA6E0C755EA5CEA25FF410549",
+    "unchanged": true,
+    "expected": "D894D99824326D59E21B5B66459B95702436BB3DA6E0C755EA5CEA25FF410549"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\MathNet.Numerics.dll",
+    "actual": "85CBAA2C0A37B8D5517C33930027BE26C53DF056ABC89BF6E7718693720BA254",
+    "unchanged": true,
+    "expected": "85CBAA2C0A37B8D5517C33930027BE26C53DF056ABC89BF6E7718693720BA254"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\MessagePack.Annotations.dll",
+    "actual": "C74C24F011A59EDB37D3FC1A4AE9B62EA549DC07A730CEF46C008355CECCA8F6",
+    "unchanged": true,
+    "expected": "C74C24F011A59EDB37D3FC1A4AE9B62EA549DC07A730CEF46C008355CECCA8F6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\MessagePack.dll",
+    "actual": "DB433DAA8DED4BC93A09333CCBDDE0B1F8506FA16771F1EE8ADACCF4C50697B0",
+    "unchanged": true,
+    "expected": "DB433DAA8DED4BC93A09333CCBDDE0B1F8506FA16771F1EE8ADACCF4C50697B0"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.Bcl.AsyncInterfaces.dll",
+    "actual": "136D5965CF4768E8420B547A8BDDEA882921F426C371833D558A858A2F0C235A",
+    "unchanged": true,
+    "expected": "136D5965CF4768E8420B547A8BDDEA882921F426C371833D558A858A2F0C235A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.CodeAnalysis.Workspaces.resources.dll",
+    "actual": "EE69561CA65DEE3A482B2C5B503F053107A48DF3D448A9CC4044788A8FB7A68B",
+    "unchanged": true,
+    "expected": "EE69561CA65DEE3A482B2C5B503F053107A48DF3D448A9CC4044788A8FB7A68B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.NET.StringTools.dll",
+    "actual": "389AACD0E9C261FCFB417C75D602BBA4BE80031B9472F623DFBCD4BD46AA1BD8",
+    "unchanged": true,
+    "expected": "389AACD0E9C261FCFB417C75D602BBA4BE80031B9472F623DFBCD4BD46AA1BD8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.VisualStudio.Threading.dll",
+    "actual": "C32B8A4ED40619F4D6E2515C735F452A74DC6F212A0CBC959DC9D84880C70557",
+    "unchanged": true,
+    "expected": "C32B8A4ED40619F4D6E2515C735F452A74DC6F212A0CBC959DC9D84880C70557"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.VisualStudio.Validation.dll",
+    "actual": "3882BE8F796D77C645D62D7A4DD3B29FE497CE1E0A1DA41A9EA26DDF9EE69DA2",
+    "unchanged": true,
+    "expected": "3882BE8F796D77C645D62D7A4DD3B29FE497CE1E0A1DA41A9EA26DDF9EE69DA2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Microsoft.Win32.Registry.dll",
+    "actual": "340933AD6701077AE9B8035E4671803D86074AB32F2DE8165ACFDB954BD260F6",
+    "unchanged": true,
+    "expected": "340933AD6701077AE9B8035E4671803D86074AB32F2DE8165ACFDB954BD260F6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Mono.Security.dll",
+    "actual": "C4B2E54051476C93DC8CD66AEB4584EEAA87DBAA88F57E030C1A790FEFF902BA",
+    "unchanged": true,
+    "expected": "C4B2E54051476C93DC8CD66AEB4584EEAA87DBAA88F57E030C1A790FEFF902BA"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\mscorlib.dll",
+    "actual": "1FE968BAA4FA8AA9C0261BCFF48D89193877AC0474140E8FBD724A0FAFB631DA",
+    "unchanged": true,
+    "expected": "1FE968BAA4FA8AA9C0261BCFF48D89193877AC0474140E8FBD724A0FAFB631DA"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Nerdbank.Streams.dll",
+    "actual": "04506CBC35357681F15A878A1FBD3F54EC998C2DB26CEF18809DA0C10ECDD0E9",
+    "unchanged": true,
+    "expected": "04506CBC35357681F15A878A1FBD3F54EC998C2DB26CEF18809DA0C10ECDD0E9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\netstandard.dll",
+    "actual": "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5",
+    "unchanged": true,
+    "expected": "6AE62E082DC494A2433984177F60CA4DB5FAE69B1F360A8B33754172B310B8C5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Newtonsoft.Json.dll",
+    "actual": "A56146202232958F46BD6A28B5A7DA166AEA123EE0D646735A46E5C341DFBF1F",
+    "unchanged": true,
+    "expected": "A56146202232958F46BD6A28B5A7DA166AEA123EE0D646735A46E5C341DFBF1F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Nito.AsyncEx.Context.dll",
+    "actual": "02CC09C061F8927841659B06031D800E969EFF20A68B9462672A0FA68C3B43DF",
+    "unchanged": true,
+    "expected": "02CC09C061F8927841659B06031D800E969EFF20A68B9462672A0FA68C3B43DF"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Nito.AsyncEx.Tasks.dll",
+    "actual": "2B7B0132E793B248352EA719AC116365643279FC8E2F25DE4F516A11BA7BE41E",
+    "unchanged": true,
+    "expected": "2B7B0132E793B248352EA719AC116365643279FC8E2F25DE4F516A11BA7BE41E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Nito.Disposables.dll",
+    "actual": "2E1E58AE51BE2BCA21E1574DE9D02435A18D6E514304A5C6A92D273CD910F703",
+    "unchanged": true,
+    "expected": "2E1E58AE51BE2BCA21E1574DE9D02435A18D6E514304A5C6A92D273CD910F703"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Noesis.NoesisGUI.dll",
+    "actual": "A4BF07E838E01544DC959480344FE05F02DCB2E1D0C3D5936D0387B207D50DEC",
+    "unchanged": true,
+    "expected": "A4BF07E838E01544DC959480344FE05F02DCB2E1D0C3D5936D0387B207D50DEC"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\PackageTools.dll",
+    "actual": "DE887561A66B555B90211BF9A2F16883992482EEF37DC679B66057E2E5B0AB0F",
+    "unchanged": true,
+    "expected": "DE887561A66B555B90211BF9A2F16883992482EEF37DC679B66057E2E5B0AB0F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\ParadoxNotion.dll",
+    "actual": "6EF7BF09DEB38B1F9AA4EE61116D8B8FEE9F2FC531C0197B4CE131EBEF63D108",
+    "unchanged": true,
+    "expected": "6EF7BF09DEB38B1F9AA4EE61116D8B8FEE9F2FC531C0197B4CE131EBEF63D108"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Pathfinding.ClipperLib.dll",
+    "actual": "4651EBA68167202DB81C212F445E23A2742560D70B605C0B367AD26A4D8DC1B3",
+    "unchanged": true,
+    "expected": "4651EBA68167202DB81C212F445E23A2742560D70B605C0B367AD26A4D8DC1B3"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Pathfinding.Ionic.Zip.Reduced.dll",
+    "actual": "481CC0F9A53A9BA94F8EA3FC0FB2A520B41812C2FDC6AB10581751EADA743D34",
+    "unchanged": true,
+    "expected": "481CC0F9A53A9BA94F8EA3FC0FB2A520B41812C2FDC6AB10581751EADA743D34"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Pathfinding.Poly2Tri.dll",
+    "actual": "6D37C20001D050B2BFD5071D64EE19F7FD7415E021E8122F1E9070613E4D570B",
+    "unchanged": true,
+    "expected": "6D37C20001D050B2BFD5071D64EE19F7FD7415E021E8122F1E9070613E4D570B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Plugins.dll",
+    "actual": "A4F62A3ACE0A379A21B5CCCB2301309E92F01FE438BD20EBC7C28FD68920E5DB",
+    "unchanged": true,
+    "expected": "A4F62A3ACE0A379A21B5CCCB2301309E92F01FE438BD20EBC7C28FD68920E5DB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Seapower-Scripts.dll",
+    "actual": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+    "unchanged": true,
+    "expected": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.dll",
+    "actual": "0C14E1ACA265CE37060792CED7A1C47E2E1E1B6D6638749AB73CAD9FE2FD4207",
+    "unchanged": true,
+    "expected": "0C14E1ACA265CE37060792CED7A1C47E2E1E1B6D6638749AB73CAD9FE2FD4207"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.Microsoft.Bcl.AsyncInterfaces.dll",
+    "actual": "C15086E87AB85B4D3E5C70FFEE09E769AC1E1958BF6F00305B49F87D25CD2052",
+    "unchanged": true,
+    "expected": "C15086E87AB85B4D3E5C70FFEE09E769AC1E1958BF6F00305B49F87D25CD2052"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.System.Collections.Immutable.dll",
+    "actual": "AC82A755881561619BCBD18ACB69EC2510FF0E050A4176CFE485D3D0A8DD6AE1",
+    "unchanged": true,
+    "expected": "AC82A755881561619BCBD18ACB69EC2510FF0E050A4176CFE485D3D0A8DD6AE1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.System.Reflection.Metadata.dll",
+    "actual": "234F25AB4476E750E8946C56A56552994C5605AD37999F11D1C4572D38756682",
+    "unchanged": true,
+    "expected": "234F25AB4476E750E8946C56A56552994C5605AD37999F11D1C4572D38756682"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.System.Runtime.CompilerServices.Unsafe.dll",
+    "actual": "152AFAD9B8A7AE1F462B04EBF5A669C0220736A016FBC82266221E817BA07235",
+    "unchanged": true,
+    "expected": "152AFAD9B8A7AE1F462B04EBF5A669C0220736A016FBC82266221E817BA07235"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.System.Text.Encodings.Web.dll",
+    "actual": "BB9AA37830262B7D39543D152FF4493ED2CCD58B965B556BF9669EC965FB764A",
+    "unchanged": true,
+    "expected": "BB9AA37830262B7D39543D152FF4493ED2CCD58B965B556BF9669EC965FB764A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.System.Text.Json.dll",
+    "actual": "06DAECFE3DE31B08669C78E4CAA3C4703B00AB3BEDF9BAB3D9EBEAAEB722D281",
+    "unchanged": true,
+    "expected": "06DAECFE3DE31B08669C78E4CAA3C4703B00AB3BEDF9BAB3D9EBEAAEB722D281"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.Unity.dll",
+    "actual": "169FCB7F477C3E6A62838BEF418F7C045F03B42D92060C5BAA63678BB2461A45",
+    "unchanged": true,
+    "expected": "169FCB7F477C3E6A62838BEF418F7C045F03B42D92060C5BAA63678BB2461A45"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.Unity.iOS.dll",
+    "actual": "2B5AA6CDC7BBAEA334F6E622A7026242950E26C02571C821160018A0C41708B9",
+    "unchanged": true,
+    "expected": "2B5AA6CDC7BBAEA334F6E622A7026242950E26C02571C821160018A0C41708B9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Sentry.Unity.Native.dll",
+    "actual": "081ED7C56F9816F818D8C2EE24C2A980B5742FFE5897EDFD44BE567A832D7634",
+    "unchanged": true,
+    "expected": "081ED7C56F9816F818D8C2EE24C2A980B5742FFE5897EDFD44BE567A832D7634"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\ShapesRuntime.dll",
+    "actual": "97B3BFE76071693F43E5E58A3075442A95543A7929E8B33F6FDA2B57C24A4D36",
+    "unchanged": true,
+    "expected": "97B3BFE76071693F43E5E58A3075442A95543A7929E8B33F6FDA2B57C24A4D36"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\ShapesSamples.dll",
+    "actual": "75DC43F63289A6AA89013822086F903CB95C534FF41AE43D4B0A87C3094824B6",
+    "unchanged": true,
+    "expected": "75DC43F63289A6AA89013822086F903CB95C534FF41AE43D4B0A87C3094824B6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\SingularityGroup.HotReload.Runtime.Public.dll",
+    "actual": "4B90E3E32F5A5E018A97BD8CF08D90A7E2FE8BE61066FFEE124AEDDBF6D60BAC",
+    "unchanged": true,
+    "expected": "4B90E3E32F5A5E018A97BD8CF08D90A7E2FE8BE61066FFEE124AEDDBF6D60BAC"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\SQLitePCLRaw.batteries_v2.dll",
+    "actual": "FD9F77ACF3A61CFFB60A2983368C72C910A350E2ED8B1C6BEFD820843A073BCD",
+    "unchanged": true,
+    "expected": "FD9F77ACF3A61CFFB60A2983368C72C910A350E2ED8B1C6BEFD820843A073BCD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\SQLitePCLRaw.core.dll",
+    "actual": "626B7902809D6D4A7508D92C84CECFA447761F3E992E708FFF97F0738E530615",
+    "unchanged": true,
+    "expected": "626B7902809D6D4A7508D92C84CECFA447761F3E992E708FFF97F0738E530615"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\SQLitePCLRaw.provider.dynamic_cdecl.dll",
+    "actual": "51FA0047B14EF347C8841DEA13DDFCA7B89099C8EA380C2EA77479F2568D7A6D",
+    "unchanged": true,
+    "expected": "51FA0047B14EF347C8841DEA13DDFCA7B89099C8EA380C2EA77479F2568D7A6D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\StreamJsonRpc.dll",
+    "actual": "BF1E52622AF773E79346A24E307244A49B0DE7DFDF5FD536A8FB3F3EAFB23923",
+    "unchanged": true,
+    "expected": "BF1E52622AF773E79346A24E307244A49B0DE7DFDF5FD536A8FB3F3EAFB23923"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\StreamJsonShim.dll",
+    "actual": "C40D314705E5E53A61F5C3AFE6D99C59F3BF90F98D2746639FCB4FE7D05CA439",
+    "unchanged": true,
+    "expected": "C40D314705E5E53A61F5C3AFE6D99C59F3BF90F98D2746639FCB4FE7D05CA439"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Buffers.dll",
+    "actual": "762F8FDBE975E05B76BE5FE996C53CE7C75E4A2830F2F50B02A5948EF6BA0AEB",
+    "unchanged": true,
+    "expected": "762F8FDBE975E05B76BE5FE996C53CE7C75E4A2830F2F50B02A5948EF6BA0AEB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Collections.dll",
+    "actual": "2C29E42916C7AB1EC30AA529554DD85B3408A70D7DE691152AE3885ED9FD1C11",
+    "unchanged": true,
+    "expected": "2C29E42916C7AB1EC30AA529554DD85B3408A70D7DE691152AE3885ED9FD1C11"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Collections.Immutable.dll",
+    "actual": "5B1B1C83BA3D135C2FDFE425842FBE9C7432878B7E468623ACB554C69B4C130F",
+    "unchanged": true,
+    "expected": "5B1B1C83BA3D135C2FDFE425842FBE9C7432878B7E468623ACB554C69B4C130F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.ComponentModel.Annotations.dll",
+    "actual": "77357A44BE285C75F40780B6C8482EFFBD9EE537D27F5B8128A812954CBC2F6F",
+    "unchanged": true,
+    "expected": "77357A44BE285C75F40780B6C8482EFFBD9EE537D27F5B8128A812954CBC2F6F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.ComponentModel.Composition.dll",
+    "actual": "99EB23B592EC1973A34BF7866D873B0F644F8B2B2C41BFBED26064C80C517335",
+    "unchanged": true,
+    "expected": "99EB23B592EC1973A34BF7866D873B0F644F8B2B2C41BFBED26064C80C517335"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.ComponentModel.DataAnnotations.dll",
+    "actual": "AD6F7B924A2D1FA08421D4B402F34D034A1DFD78F5AB2D5507026F6AF6A337EA",
+    "unchanged": true,
+    "expected": "AD6F7B924A2D1FA08421D4B402F34D034A1DFD78F5AB2D5507026F6AF6A337EA"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Composition.AttributedModel.dll",
+    "actual": "CC06D88EFD4DB3BE99610C63F963FFD046E3BF03EE215A9FF51ABBD7575158CB",
+    "unchanged": true,
+    "expected": "CC06D88EFD4DB3BE99610C63F963FFD046E3BF03EE215A9FF51ABBD7575158CB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Composition.Hosting.dll",
+    "actual": "5D3853202B3CCD845E1E7A47EC41DD415E2AE867410477482612AD0D0866422C",
+    "unchanged": true,
+    "expected": "5D3853202B3CCD845E1E7A47EC41DD415E2AE867410477482612AD0D0866422C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Composition.Runtime.dll",
+    "actual": "516F2AB27D8A11C1154516E3DAA8F86C43015A56AA8222C4762BCCDCEDA651C1",
+    "unchanged": true,
+    "expected": "516F2AB27D8A11C1154516E3DAA8F86C43015A56AA8222C4762BCCDCEDA651C1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Composition.TypedParts.dll",
+    "actual": "D1F332B764F770AB7E43FDE4B20EB38F755A13A58B07B7817BFEB77518626C31",
+    "unchanged": true,
+    "expected": "D1F332B764F770AB7E43FDE4B20EB38F755A13A58B07B7817BFEB77518626C31"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Configuration.dll",
+    "actual": "68FD7E5D9FE11FECDE90CF66C120006CF38090DEEFDBB1410700CFAB7CC8E330",
+    "unchanged": true,
+    "expected": "68FD7E5D9FE11FECDE90CF66C120006CF38090DEEFDBB1410700CFAB7CC8E330"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Core.dll",
+    "actual": "81C1491334210D0A0606339945BB5DD5070E20C7779BE8E5963F7A7F6F45824A",
+    "unchanged": true,
+    "expected": "81C1491334210D0A0606339945BB5DD5070E20C7779BE8E5963F7A7F6F45824A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Data.DataSetExtensions.dll",
+    "actual": "E564CAFCA8EE73C90854C9A4CEA9AEF8E5FBF4BCDD8849FD2359E55DB0FEDAB8",
+    "unchanged": true,
+    "expected": "E564CAFCA8EE73C90854C9A4CEA9AEF8E5FBF4BCDD8849FD2359E55DB0FEDAB8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Data.dll",
+    "actual": "85CDC0854FD02BCE23A2E6A1F8B17580ABC30601154F8DAD050B3323F7DA3199",
+    "unchanged": true,
+    "expected": "85CDC0854FD02BCE23A2E6A1F8B17580ABC30601154F8DAD050B3323F7DA3199"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Diagnostics.DiagnosticSource.dll",
+    "actual": "989B1797B5CACDF19E7130EDDD8AE51F0D79595D6020CBAF51910C1C3637CEC9",
+    "unchanged": true,
+    "expected": "989B1797B5CACDF19E7130EDDD8AE51F0D79595D6020CBAF51910C1C3637CEC9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.dll",
+    "actual": "52F0A62D4B91AB60DA876FFC61DF2B6333C0398406EF5D03678A039F22CBB0E2",
+    "unchanged": true,
+    "expected": "52F0A62D4B91AB60DA876FFC61DF2B6333C0398406EF5D03678A039F22CBB0E2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Drawing.dll",
+    "actual": "23439C5F68D3C48B7BC33019C16A99841879D38589ADC99C76CB30F9C87E979D",
+    "unchanged": true,
+    "expected": "23439C5F68D3C48B7BC33019C16A99841879D38589ADC99C76CB30F9C87E979D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.EnterpriseServices.dll",
+    "actual": "0704C93AA6BEE752D563EBE668059C71C087823ECBA01419859C509CC4AF9944",
+    "unchanged": true,
+    "expected": "0704C93AA6BEE752D563EBE668059C71C087823ECBA01419859C509CC4AF9944"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.IO.Compression.dll",
+    "actual": "30FA703BBBE4F39FC9643C40668CC2A891FBE0F74C91274A3A8EA58ADD163D76",
+    "unchanged": true,
+    "expected": "30FA703BBBE4F39FC9643C40668CC2A891FBE0F74C91274A3A8EA58ADD163D76"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.IO.Compression.FileSystem.dll",
+    "actual": "653E33AA3F32F79801E6B21BA0BD0ADAE85F54948B3A2D3E448C1C0E06455D97",
+    "unchanged": true,
+    "expected": "653E33AA3F32F79801E6B21BA0BD0ADAE85F54948B3A2D3E448C1C0E06455D97"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.IO.Pipelines.dll",
+    "actual": "FDFDB66CF02B84688052BEB6FD65372AFF749C0663CE98F53B6010E77044090F",
+    "unchanged": true,
+    "expected": "FDFDB66CF02B84688052BEB6FD65372AFF749C0663CE98F53B6010E77044090F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Memory.dll",
+    "actual": "C4F030A2CBA7DA7CDCF493257C24560E203D355904AEE490D645A935842F834A",
+    "unchanged": true,
+    "expected": "C4F030A2CBA7DA7CDCF493257C24560E203D355904AEE490D645A935842F834A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Net.Http.dll",
+    "actual": "E5BDECA4143C56E61C683ED8DB32CF2368E69812DEEBD741AA1709EF735BA0B1",
+    "unchanged": true,
+    "expected": "E5BDECA4143C56E61C683ED8DB32CF2368E69812DEEBD741AA1709EF735BA0B1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Numerics.dll",
+    "actual": "FD7BA47BC4E0D12C620CF8B46B8F92FDC744CB43FDA9B990E6F5C3D13727E8E3",
+    "unchanged": true,
+    "expected": "FD7BA47BC4E0D12C620CF8B46B8F92FDC744CB43FDA9B990E6F5C3D13727E8E3"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Numerics.Vectors.dll",
+    "actual": "99B6E70B6709196511613F5B6DCA6ABDDB24877829799FC4029F1E1F1D9C81FD",
+    "unchanged": true,
+    "expected": "99B6E70B6709196511613F5B6DCA6ABDDB24877829799FC4029F1E1F1D9C81FD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Reflection.Emit.dll",
+    "actual": "DF34BBCE14E68FD8EC293EA5F9F3CCC238F75D309768142678A4FA487E0CB6E5",
+    "unchanged": true,
+    "expected": "DF34BBCE14E68FD8EC293EA5F9F3CCC238F75D309768142678A4FA487E0CB6E5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Reflection.Emit.ILGeneration.dll",
+    "actual": "87FBADAEC2FE4BF784898D445CB866846FC6B04162F616325805CCDC08CF02C4",
+    "unchanged": true,
+    "expected": "87FBADAEC2FE4BF784898D445CB866846FC6B04162F616325805CCDC08CF02C4"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Reflection.Emit.Lightweight.dll",
+    "actual": "203B470536E67E45A018C2C0C2D6118BF7582A87EC34747037D270CA5C286CED",
+    "unchanged": true,
+    "expected": "203B470536E67E45A018C2C0C2D6118BF7582A87EC34747037D270CA5C286CED"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.CompilerServices.Unsafe.dll",
+    "actual": "C0C628ECEA65B4261CB88A1C322A3596BBDE1DC2DF102B88D63BAB8C1A48D57A",
+    "unchanged": true,
+    "expected": "C0C628ECEA65B4261CB88A1C322A3596BBDE1DC2DF102B88D63BAB8C1A48D57A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.dll",
+    "actual": "E0A7334B7BA419AAAB6BD3BB6992D693E689341A9178172C9BF99C2AA6A085BD",
+    "unchanged": true,
+    "expected": "E0A7334B7BA419AAAB6BD3BB6992D693E689341A9178172C9BF99C2AA6A085BD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.Extensions.dll",
+    "actual": "B64655F85720718B65B81A03A5D6CDCBDDF07FD0BD96DAA10E550DB80F461E14",
+    "unchanged": true,
+    "expected": "B64655F85720718B65B81A03A5D6CDCBDDF07FD0BD96DAA10E550DB80F461E14"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.InteropServices.dll",
+    "actual": "E3671531C2C72FD3C923D4A3614FEB468AF456E51517CB7574B9B91FF724DF8D",
+    "unchanged": true,
+    "expected": "E3671531C2C72FD3C923D4A3614FEB468AF456E51517CB7574B9B91FF724DF8D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.InteropServices.RuntimeInformation.dll",
+    "actual": "F3A3228D060343322613EC4762D5C05EA408EC136A041D2489B16A837A5A409C",
+    "unchanged": true,
+    "expected": "F3A3228D060343322613EC4762D5C05EA408EC136A041D2489B16A837A5A409C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Runtime.Serialization.dll",
+    "actual": "49B22875260140CDCB1A0B4F098731F9A23672CE1D9402C9902AE10832FD015A",
+    "unchanged": true,
+    "expected": "49B22875260140CDCB1A0B4F098731F9A23672CE1D9402C9902AE10832FD015A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Security.AccessControl.dll",
+    "actual": "93084849C17A21F641C13C9F17545CFE18C1EC097561F3F0EBBBE26F358BA120",
+    "unchanged": true,
+    "expected": "93084849C17A21F641C13C9F17545CFE18C1EC097561F3F0EBBBE26F358BA120"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Security.dll",
+    "actual": "DECA42CF9DDFD805FEDEEF3EB1A0B74059FC7E4FA4E2C509D3F532980EFB5E2D",
+    "unchanged": true,
+    "expected": "DECA42CF9DDFD805FEDEEF3EB1A0B74059FC7E4FA4E2C509D3F532980EFB5E2D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Security.Principal.Windows.dll",
+    "actual": "7828DFD952A9FD49404477BAFF714849177D9F18C0654ADAFADBDCAFB4B21F47",
+    "unchanged": true,
+    "expected": "7828DFD952A9FD49404477BAFF714849177D9F18C0654ADAFADBDCAFB4B21F47"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.ServiceModel.Internals.dll",
+    "actual": "29E345BD78337ABD73DA8F0BE9BFC3CBC986681EFDE6E212699B28D883D12574",
+    "unchanged": true,
+    "expected": "29E345BD78337ABD73DA8F0BE9BFC3CBC986681EFDE6E212699B28D883D12574"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Text.Encodings.Web.dll",
+    "actual": "5AD1F348223F281C34B9B857445A1C3412A430026EF049AEAC641C53A92408BE",
+    "unchanged": true,
+    "expected": "5AD1F348223F281C34B9B857445A1C3412A430026EF049AEAC641C53A92408BE"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Text.Json.dll",
+    "actual": "42A3D66464AA3F52202A625FB8D719663CEAE07678081253B54D6ED56A95EA0A",
+    "unchanged": true,
+    "expected": "42A3D66464AA3F52202A625FB8D719663CEAE07678081253B54D6ED56A95EA0A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Threading.Channels.dll",
+    "actual": "F762888361212DDBAB5BE5B372CAC9DAA30A94F27D59C934D10D7F6B2C7BFF3B",
+    "unchanged": true,
+    "expected": "F762888361212DDBAB5BE5B372CAC9DAA30A94F27D59C934D10D7F6B2C7BFF3B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Threading.Tasks.Dataflow.dll",
+    "actual": "0ECAC8E4717CA38B3226FE0062787E41F0FF4C89761AAE4077783977FCB3E399",
+    "unchanged": true,
+    "expected": "0ECAC8E4717CA38B3226FE0062787E41F0FF4C89761AAE4077783977FCB3E399"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Threading.Tasks.Extensions.dll",
+    "actual": "96150ABDCA5DF4446B376560E069D59B3550212DEDA8CBDD316272F6B834F597",
+    "unchanged": true,
+    "expected": "96150ABDCA5DF4446B376560E069D59B3550212DEDA8CBDD316272F6B834F597"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Transactions.dll",
+    "actual": "1D6654D3E176948642FEDE0B56D62AEFAD95A027B07DE533FAC4EB6908CD9BCD",
+    "unchanged": true,
+    "expected": "1D6654D3E176948642FEDE0B56D62AEFAD95A027B07DE533FAC4EB6908CD9BCD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.ValueTuple.dll",
+    "actual": "F341FDCD30BFE1615B8CDCB0DA0FB8C60DFAE0B7AAF9238FE1CD5B721DF16EB1",
+    "unchanged": true,
+    "expected": "F341FDCD30BFE1615B8CDCB0DA0FB8C60DFAE0B7AAF9238FE1CD5B721DF16EB1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Xml.dll",
+    "actual": "2DE7F61F04B0AE9EE646655283FA1699815C578E150FBD1F2F7D0022D38842CB",
+    "unchanged": true,
+    "expected": "2DE7F61F04B0AE9EE646655283FA1699815C578E150FBD1F2F7D0022D38842CB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\System.Xml.Linq.dll",
+    "actual": "8C23C25A5A7A113A95C9F9AF980732A1F28D7530AAE5B612BCFC02B08B8DD9F3",
+    "unchanged": true,
+    "expected": "8C23C25A5A7A113A95C9F9AF980732A1F28D7530AAE5B612BCFC02B08B8DD9F3"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UniRx.dll",
+    "actual": "D7F56B5F91A6FEE90347CE3770056895F348A7C2010E574934351648352C4DF6",
+    "unchanged": true,
+    "expected": "D7F56B5F91A6FEE90347CE3770056895F348A7C2010E574934351648352C4DF6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Analytics.DataPrivacy.dll",
+    "actual": "0FBC96E539D06E0BA917F0F941FB5C664A00557A8181C74A584B13C00BAE3999",
+    "unchanged": true,
+    "expected": "0FBC96E539D06E0BA917F0F941FB5C664A00557A8181C74A584B13C00BAE3999"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Burst.dll",
+    "actual": "DECF5C4DC92A0B90FA6DE87E65555EA59E99E9F81E275A2E6034EDDF1EDB317A",
+    "unchanged": true,
+    "expected": "DECF5C4DC92A0B90FA6DE87E65555EA59E99E9F81E275A2E6034EDDF1EDB317A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Burst.Unsafe.dll",
+    "actual": "9D9C1FF52411DECBEE5D9F0D1CD61EBEAA222077AA77A52101EA3DEBAFAE98E2",
+    "unchanged": true,
+    "expected": "9D9C1FF52411DECBEE5D9F0D1CD61EBEAA222077AA77A52101EA3DEBAFAE98E2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Collections.dll",
+    "actual": "F5E74CA2A13AC9E747F4E4665D974321B5130D9A070285085D01FDF08F58A68B",
+    "unchanged": true,
+    "expected": "F5E74CA2A13AC9E747F4E4665D974321B5130D9A070285085D01FDF08F58A68B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Collections.LowLevel.ILSupport.dll",
+    "actual": "FF50383F807F9692E4913B97E47D86FEFCB8FAA33D6D48CD3E3FD6FC7FFB448D",
+    "unchanged": true,
+    "expected": "FF50383F807F9692E4913B97E47D86FEFCB8FAA33D6D48CD3E3FD6FC7FFB448D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Deformations.dll",
+    "actual": "844FAB9E64CC8D62BD0B1268DE4AB552078EA129B7FCFF396E884F1F35B1CBAA",
+    "unchanged": true,
+    "expected": "844FAB9E64CC8D62BD0B1268DE4AB552078EA129B7FCFF396E884F1F35B1CBAA"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Entities.dll",
+    "actual": "B31E4BA520D9FF9C64E04ABB560D5AA15A7F33A1B125F6892DF5E01005A8763A",
+    "unchanged": true,
+    "expected": "B31E4BA520D9FF9C64E04ABB560D5AA15A7F33A1B125F6892DF5E01005A8763A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Entities.Hybrid.dll",
+    "actual": "90D07F7F6DBE605B5B9DF9460BB3E58770CBAB20F22B80C75A19CC79EFAD8A7D",
+    "unchanged": true,
+    "expected": "90D07F7F6DBE605B5B9DF9460BB3E58770CBAB20F22B80C75A19CC79EFAD8A7D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Entities.Hybrid.HybridComponents.dll",
+    "actual": "FCDA18D5B3AC68DAACE276FD207934D9CFC4916235A1CE65E4645D46639EFF63",
+    "unchanged": true,
+    "expected": "FCDA18D5B3AC68DAACE276FD207934D9CFC4916235A1CE65E4645D46639EFF63"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Entities.UI.dll",
+    "actual": "6A44085180A29D67B92CAB597969366D35539856556921BC2DCF8B91200B6160",
+    "unchanged": true,
+    "expected": "6A44085180A29D67B92CAB597969366D35539856556921BC2DCF8B91200B6160"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.InputSystem.dll",
+    "actual": "151D9D298A37C18C555F95EB759EAC19EE537605E73BB720670852BDAADFBEB1",
+    "unchanged": true,
+    "expected": "151D9D298A37C18C555F95EB759EAC19EE537605E73BB720670852BDAADFBEB1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.InputSystem.ForUI.dll",
+    "actual": "C23F7665F0236F74050DEFACB7894185B9FCB09C3C374948B9D682AF18BF3933",
+    "unchanged": true,
+    "expected": "C23F7665F0236F74050DEFACB7894185B9FCB09C3C374948B9D682AF18BF3933"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.InternalAPIEngineBridge.002.dll",
+    "actual": "905182603FE822C590EAC725D1B5A5BE5AE2960AA4F102EF38E94C662948690C",
+    "unchanged": true,
+    "expected": "905182603FE822C590EAC725D1B5A5BE5AE2960AA4F102EF38E94C662948690C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.InternalAPIEngineBridge.012.dll",
+    "actual": "0AA693521C10BB193F75995B0139FB49990C0F4DA5633E95F3777207525DD56C",
+    "unchanged": true,
+    "expected": "0AA693521C10BB193F75995B0139FB49990C0F4DA5633E95F3777207525DD56C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Jobs.dll",
+    "actual": "30BBAAAE897943A315AFB31290A7C57437143126D7A14970F039D67BFF433A4B",
+    "unchanged": true,
+    "expected": "30BBAAAE897943A315AFB31290A7C57437143126D7A14970F039D67BFF433A4B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Mathematics.dll",
+    "actual": "240F2D86682D3BAF6C26E8820D6B564E41F534971972B8AE0EF4CEE44D267B42",
+    "unchanged": true,
+    "expected": "240F2D86682D3BAF6C26E8820D6B564E41F534971972B8AE0EF4CEE44D267B42"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Mathematics.Extensions.dll",
+    "actual": "05741B07256F64C564FB6D424BCA05A595ECE7BA23868889ACBFA2AD8B065845",
+    "unchanged": true,
+    "expected": "05741B07256F64C564FB6D424BCA05A595ECE7BA23868889ACBFA2AD8B065845"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Mathematics.Extensions.Hybrid.dll",
+    "actual": "F44F776AB000BFE4D50977254C333B334B150DCF0F8183370B7B7319A6DA7BE1",
+    "unchanged": true,
+    "expected": "F44F776AB000BFE4D50977254C333B334B150DCF0F8183370B7B7319A6DA7BE1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.MemoryProfiler.dll",
+    "actual": "82E1B3A9DA592F090D2C27D5D44474653990DE14ABDBEABFC75158486A7AFDED",
+    "unchanged": true,
+    "expected": "82E1B3A9DA592F090D2C27D5D44474653990DE14ABDBEABFC75158486A7AFDED"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Multiplayer.Center.Common.dll",
+    "actual": "F13EA5A00291BE6E0AC2E3C89E536A60277F1AB437F00F266AD50DC91B49D6B1",
+    "unchanged": true,
+    "expected": "F13EA5A00291BE6E0AC2E3C89E536A60277F1AB437F00F266AD50DC91B49D6B1"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Platforms.Common.dll",
+    "actual": "F24F8CA1581E02D7C37DA752AB3A689F6752345CAF6027A222D93C2553173060",
+    "unchanged": true,
+    "expected": "F24F8CA1581E02D7C37DA752AB3A689F6752345CAF6027A222D93C2553173060"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Platforms.UI.dll",
+    "actual": "A9B388D82B1DD760FD37B97EF0C7F03DE6F8205B5102034D7CEE7BEB938775F6",
+    "unchanged": true,
+    "expected": "A9B388D82B1DD760FD37B97EF0C7F03DE6F8205B5102034D7CEE7BEB938775F6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Profiling.Core.dll",
+    "actual": "85ADCDE17EFA2E037D634EEF43E9AD146B51C0D6E6146CDA9F4BF9F18FAB1851",
+    "unchanged": true,
+    "expected": "85ADCDE17EFA2E037D634EEF43E9AD146B51C0D6E6146CDA9F4BF9F18FAB1851"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Scenes.dll",
+    "actual": "BEE0236DD1C0F95FF3DE427369EC45F02744D46375F130B8A1E33E95D48CB6B8",
+    "unchanged": true,
+    "expected": "BEE0236DD1C0F95FF3DE427369EC45F02744D46375F130B8A1E33E95D48CB6B8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.ScriptableBuildPipeline.dll",
+    "actual": "FBC10B24F8CEBFEBDD92B3CDB5E6C425E2F5A7365FA9A9DD2D001F81A81A0725",
+    "unchanged": true,
+    "expected": "FBC10B24F8CEBFEBDD92B3CDB5E6C425E2F5A7365FA9A9DD2D001F81A81A0725"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Serialization.dll",
+    "actual": "25B1C10C8FBD8692E0F303B745049FB56CE3A9750B338FC9CAFF9802703DACE0",
+    "unchanged": true,
+    "expected": "25B1C10C8FBD8692E0F303B745049FB56CE3A9750B338FC9CAFF9802703DACE0"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Analytics.dll",
+    "actual": "8BAF6B24FC3C1F1C6151CAC57A9958630B9BDDB9B041CE5DD864353226EBA316",
+    "unchanged": true,
+    "expected": "8BAF6B24FC3C1F1C6151CAC57A9958630B9BDDB9B041CE5DD864353226EBA316"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Analytics.dll",
+    "actual": "A900DDF7EF8FD06635EA35D363AFFDD394314DE8EAA98E82BA298B2BCCE3BF87",
+    "unchanged": true,
+    "expected": "A900DDF7EF8FD06635EA35D363AFFDD394314DE8EAA98E82BA298B2BCCE3BF87"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Components.dll",
+    "actual": "DD2E38058413880A7FF336E5510775E943BC4CCB602439D877815D4A9C62D4F5",
+    "unchanged": true,
+    "expected": "DD2E38058413880A7FF336E5510775E943BC4CCB602439D877815D4A9C62D4F5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Configuration.dll",
+    "actual": "E42246717E558319A4C7CFE20502C0FEF42A8698B78A2B79A1EBF3C0F40E0059",
+    "unchanged": true,
+    "expected": "E42246717E558319A4C7CFE20502C0FEF42A8698B78A2B79A1EBF3C0F40E0059"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Device.dll",
+    "actual": "A24A9DFC9038FD835C48A3C06E35C075B38558FA554534188E02BB3FA3AE6799",
+    "unchanged": true,
+    "expected": "A24A9DFC9038FD835C48A3C06E35C075B38558FA554534188E02BB3FA3AE6799"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.dll",
+    "actual": "36DF2F0E2AED874F2ED21BF1AC8C8739D2325D78049EF40880F81650A3401048",
+    "unchanged": true,
+    "expected": "36DF2F0E2AED874F2ED21BF1AC8C8739D2325D78049EF40880F81650A3401048"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Environments.dll",
+    "actual": "BBCF207FC956F92CF0DB685504506BF06BB56F71C5D1CF383DB870ED24004B65",
+    "unchanged": true,
+    "expected": "BBCF207FC956F92CF0DB685504506BF06BB56F71C5D1CF383DB870ED24004B65"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Environments.Internal.dll",
+    "actual": "0D5CB7B9BC131CDF8C45142CFAE5E407026D6CE7946AB3D250E1B92B392888D9",
+    "unchanged": true,
+    "expected": "0D5CB7B9BC131CDF8C45142CFAE5E407026D6CE7946AB3D250E1B92B392888D9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Internal.dll",
+    "actual": "EB4B9F08344E950DC9B7D2FE585F6DD197414C6DD6DF9F082356E3DA356C014C",
+    "unchanged": true,
+    "expected": "EB4B9F08344E950DC9B7D2FE585F6DD197414C6DD6DF9F082356E3DA356C014C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Networking.dll",
+    "actual": "0E8DDC2C0389C4078DB45265E947059DDA2939027C561DE129D01006A9FD1D07",
+    "unchanged": true,
+    "expected": "0E8DDC2C0389C4078DB45265E947059DDA2939027C561DE129D01006A9FD1D07"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Registration.dll",
+    "actual": "92FB0D9E58434EA2D4C86CFC7A423DA88DA4B9C520C5FFEF27630DA3BA0BDD2C",
+    "unchanged": true,
+    "expected": "92FB0D9E58434EA2D4C86CFC7A423DA88DA4B9C520C5FFEF27630DA3BA0BDD2C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Scheduler.dll",
+    "actual": "B8599625D6C8B61536FA4A3783ED4DE56E49D7D01603DD0D641CA62066E895FC",
+    "unchanged": true,
+    "expected": "B8599625D6C8B61536FA4A3783ED4DE56E49D7D01603DD0D641CA62066E895FC"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Telemetry.dll",
+    "actual": "19EA2FF523E6BC1F6FF6BE8C91DDF44CCCEF018EF7D099AB2D922D33889912A2",
+    "unchanged": true,
+    "expected": "19EA2FF523E6BC1F6FF6BE8C91DDF44CCCEF018EF7D099AB2D922D33889912A2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Services.Core.Threading.dll",
+    "actual": "B3FF406672BFB04483870D90263D84E98F9A451025F497A9774CA2E359D0A059",
+    "unchanged": true,
+    "expected": "B3FF406672BFB04483870D90263D84E98F9A451025F497A9774CA2E359D0A059"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.TextMeshPro.dll",
+    "actual": "20FB79636EB06EC7F1C14FD31172787C6E2162C2A954E64D9C7BDBF9BB40F26B",
+    "unchanged": true,
+    "expected": "20FB79636EB06EC7F1C14FD31172787C6E2162C2A954E64D9C7BDBF9BB40F26B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Transforms.dll",
+    "actual": "1B6DCCCCC8E70C4E8FDAA96C6596B5860988EB8B398EBAE3EF095FBCF8896BA8",
+    "unchanged": true,
+    "expected": "1B6DCCCCC8E70C4E8FDAA96C6596B5860988EB8B398EBAE3EF095FBCF8896BA8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Unity.Transforms.Hybrid.dll",
+    "actual": "558F4D6C9F24A4866812CCDEBEFFEF02F52AC46DBA421AC4E3D56BF9209853CF",
+    "unchanged": true,
+    "expected": "558F4D6C9F24A4866812CCDEBEFFEF02F52AC46DBA421AC4E3D56BF9209853CF"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AccessibilityModule.dll",
+    "actual": "D4422896EDDAE53A180F093C15F93C117DEB9D13C8C716D9EE65C27943BA180F",
+    "unchanged": true,
+    "expected": "D4422896EDDAE53A180F093C15F93C117DEB9D13C8C716D9EE65C27943BA180F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AIModule.dll",
+    "actual": "A7AC374F2DA66066BD84879C9B1D330872FFEC0583C798FE6469E1D3AF33695E",
+    "unchanged": true,
+    "expected": "A7AC374F2DA66066BD84879C9B1D330872FFEC0583C798FE6469E1D3AF33695E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AMDModule.dll",
+    "actual": "E6FDCB47991A776568314CAD63C655F5346ABA59F6DCEFBB282FCCF24B659697",
+    "unchanged": true,
+    "expected": "E6FDCB47991A776568314CAD63C655F5346ABA59F6DCEFBB282FCCF24B659697"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AndroidJNIModule.dll",
+    "actual": "55C50056125CC65F92BABB04B0ECC7E3711C6F4A81856860A0D78B0BF8A50E7F",
+    "unchanged": true,
+    "expected": "55C50056125CC65F92BABB04B0ECC7E3711C6F4A81856860A0D78B0BF8A50E7F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AnimationModule.dll",
+    "actual": "6DFC34B4AB14C293878E1916DFAC6FB6067D8994DEC93902A3879C4BC3A8DFF3",
+    "unchanged": true,
+    "expected": "6DFC34B4AB14C293878E1916DFAC6FB6067D8994DEC93902A3879C4BC3A8DFF3"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ARModule.dll",
+    "actual": "D65280DA1E8B41CE18338BF00F74232F33D85FC0200899851C2460572C7A681B",
+    "unchanged": true,
+    "expected": "D65280DA1E8B41CE18338BF00F74232F33D85FC0200899851C2460572C7A681B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AssetBundleModule.dll",
+    "actual": "8933EE618B561FE0F90057D31270066324AA5D3113EC823031CCEC489B1D1D6A",
+    "unchanged": true,
+    "expected": "8933EE618B561FE0F90057D31270066324AA5D3113EC823031CCEC489B1D1D6A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.AudioModule.dll",
+    "actual": "99B15C28D36C99C682F83FB168487648622E14F56783E79C9BE6569209AA6FFE",
+    "unchanged": true,
+    "expected": "99B15C28D36C99C682F83FB168487648622E14F56783E79C9BE6569209AA6FFE"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ClothModule.dll",
+    "actual": "6B14E6F39DF31BE50FBF0B0F420EC5B112DDC75F840FEE51FB6C32B207F50FB5",
+    "unchanged": true,
+    "expected": "6B14E6F39DF31BE50FBF0B0F420EC5B112DDC75F840FEE51FB6C32B207F50FB5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ClusterInputModule.dll",
+    "actual": "86086735EEE4CC12EF6715539BB783563D7950AA4B6059E7710930228BA56A29",
+    "unchanged": true,
+    "expected": "86086735EEE4CC12EF6715539BB783563D7950AA4B6059E7710930228BA56A29"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ClusterRendererModule.dll",
+    "actual": "CF27AD4BF0A34E3D9CBDFA2563E013934F32BEFB029276605C3BB921890B820D",
+    "unchanged": true,
+    "expected": "CF27AD4BF0A34E3D9CBDFA2563E013934F32BEFB029276605C3BB921890B820D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ContentLoadModule.dll",
+    "actual": "7122ECD554826BAB701298F782C1D37E7875EFDEACF32AAF51C26CA0FF5C50C2",
+    "unchanged": true,
+    "expected": "7122ECD554826BAB701298F782C1D37E7875EFDEACF32AAF51C26CA0FF5C50C2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.CoreModule.dll",
+    "actual": "99B548DFB84B43D392B58ACFBD0218ADD906AEEEE5A2543E985587D65543AC75",
+    "unchanged": true,
+    "expected": "99B548DFB84B43D392B58ACFBD0218ADD906AEEEE5A2543E985587D65543AC75"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.CrashReportingModule.dll",
+    "actual": "9EAE71E7E95022DAC4D0B56CE5AF07602676BB34ADE490E0B5CE4D21DC6FA25F",
+    "unchanged": true,
+    "expected": "9EAE71E7E95022DAC4D0B56CE5AF07602676BB34ADE490E0B5CE4D21DC6FA25F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.DirectorModule.dll",
+    "actual": "1E6798B49F35E3EF7DD16C0F7F87148395A09B6A7E879CB272D2E31D98C86C9A",
+    "unchanged": true,
+    "expected": "1E6798B49F35E3EF7DD16C0F7F87148395A09B6A7E879CB272D2E31D98C86C9A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.dll",
+    "actual": "2AA189B3A19A0644B62EF68812A06A20AC143371515E9EB28652E89136362B23",
+    "unchanged": true,
+    "expected": "2AA189B3A19A0644B62EF68812A06A20AC143371515E9EB28652E89136362B23"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.DSPGraphModule.dll",
+    "actual": "0F0194B6FEF78D8ABD566BCDD7585F63787397E02D3AA8B588BB741C58EA6BA8",
+    "unchanged": true,
+    "expected": "0F0194B6FEF78D8ABD566BCDD7585F63787397E02D3AA8B588BB741C58EA6BA8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.GameCenterModule.dll",
+    "actual": "0636030D74D405FAACA10CF3476D552226168F0B7FD26618A326A2704E16624D",
+    "unchanged": true,
+    "expected": "0636030D74D405FAACA10CF3476D552226168F0B7FD26618A326A2704E16624D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.GIModule.dll",
+    "actual": "D633995E55B29671C0B31037D5913614AA280433217D00020498960A171D1BCB",
+    "unchanged": true,
+    "expected": "D633995E55B29671C0B31037D5913614AA280433217D00020498960A171D1BCB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.GraphicsStateCollectionSerializerModule.dll",
+    "actual": "1A8C6E176E8A2987F2CEE63F134B1673E6EFF3FB779438097786D6E1F0924C95",
+    "unchanged": true,
+    "expected": "1A8C6E176E8A2987F2CEE63F134B1673E6EFF3FB779438097786D6E1F0924C95"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.GridModule.dll",
+    "actual": "5219B637309B16B14086ECD37AD53D359C9A8A1BD55AA5FBA82A61C5B28BC565",
+    "unchanged": true,
+    "expected": "5219B637309B16B14086ECD37AD53D359C9A8A1BD55AA5FBA82A61C5B28BC565"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.HierarchyCoreModule.dll",
+    "actual": "A63BBAE34146215D34190305041749157E56509CCC20AC29A03CD9F8BBC00757",
+    "unchanged": true,
+    "expected": "A63BBAE34146215D34190305041749157E56509CCC20AC29A03CD9F8BBC00757"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.HotReloadModule.dll",
+    "actual": "A19CFF6DEBD61693B185623598485E8006DA343F20FE403106958C9BE8439507",
+    "unchanged": true,
+    "expected": "A19CFF6DEBD61693B185623598485E8006DA343F20FE403106958C9BE8439507"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ImageConversionModule.dll",
+    "actual": "E22D92DFBCA2F306D0EE8EA8B36C41B64CCC8D3CB7FC9F224CD936D25EF2F544",
+    "unchanged": true,
+    "expected": "E22D92DFBCA2F306D0EE8EA8B36C41B64CCC8D3CB7FC9F224CD936D25EF2F544"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+    "actual": "B99E99A4A7FEA0FC7E2042B6C3DEAF5ADF88146B611FED607A9CF68D7C8DC884",
+    "unchanged": true,
+    "expected": "B99E99A4A7FEA0FC7E2042B6C3DEAF5ADF88146B611FED607A9CF68D7C8DC884"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.InputForUIModule.dll",
+    "actual": "09195031F6B4A8739C8F465245BE0C41DFCBB2B277718979AE502740E09959CB",
+    "unchanged": true,
+    "expected": "09195031F6B4A8739C8F465245BE0C41DFCBB2B277718979AE502740E09959CB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.InputLegacyModule.dll",
+    "actual": "18F394C12BC354887214EB5E553176B642BB3D2256F7383B512866309D4C0388",
+    "unchanged": true,
+    "expected": "18F394C12BC354887214EB5E553176B642BB3D2256F7383B512866309D4C0388"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.InputModule.dll",
+    "actual": "2ED7F5370AC564B8135166126D32B918D0D815CC03F6E6F14B7225B64DA54264",
+    "unchanged": true,
+    "expected": "2ED7F5370AC564B8135166126D32B918D0D815CC03F6E6F14B7225B64DA54264"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.JSONSerializeModule.dll",
+    "actual": "143A5AE5F5529BA37B70113C747CF376AA56CDA1F371BB3FA6EA36486AFCE5A5",
+    "unchanged": true,
+    "expected": "143A5AE5F5529BA37B70113C747CF376AA56CDA1F371BB3FA6EA36486AFCE5A5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.LocalizationModule.dll",
+    "actual": "A2EB5CD5E76CB2707F70EA3AA6B6C419F82D6657B5C9B91EDF1154D3FD55EA20",
+    "unchanged": true,
+    "expected": "A2EB5CD5E76CB2707F70EA3AA6B6C419F82D6657B5C9B91EDF1154D3FD55EA20"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.MarshallingModule.dll",
+    "actual": "61DC39ECC4A99F5E41ADCAEE4AABCF2813A0371D2B23D47196B27A3CD6A2AFF8",
+    "unchanged": true,
+    "expected": "61DC39ECC4A99F5E41ADCAEE4AABCF2813A0371D2B23D47196B27A3CD6A2AFF8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.MultiplayerModule.dll",
+    "actual": "3364FFE43FB054A08F6F1AA3149168E5A53F4389B0E367F00FD81363ACD3350A",
+    "unchanged": true,
+    "expected": "3364FFE43FB054A08F6F1AA3149168E5A53F4389B0E367F00FD81363ACD3350A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.NVIDIAModule.dll",
+    "actual": "23FF365FAF7FAF2DCBBC032F3AD85A54B901862819C22EAB961AA9FCB684324A",
+    "unchanged": true,
+    "expected": "23FF365FAF7FAF2DCBBC032F3AD85A54B901862819C22EAB961AA9FCB684324A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ParticleSystemModule.dll",
+    "actual": "3CD2CE52DDF86D2345969A76CB19BDCFE7F7CEAB7C58085E9609D032EEAC60AD",
+    "unchanged": true,
+    "expected": "3CD2CE52DDF86D2345969A76CB19BDCFE7F7CEAB7C58085E9609D032EEAC60AD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.PerformanceReportingModule.dll",
+    "actual": "45E699004C4CFECD48F13BCDEFA16BD8C55E71A813617AC6F9D1D476733D4333",
+    "unchanged": true,
+    "expected": "45E699004C4CFECD48F13BCDEFA16BD8C55E71A813617AC6F9D1D476733D4333"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.Physics2DModule.dll",
+    "actual": "2014D991B2166FC2FE544F02BA71449C93A21C0FC9C493E6C2421C6722C7880E",
+    "unchanged": true,
+    "expected": "2014D991B2166FC2FE544F02BA71449C93A21C0FC9C493E6C2421C6722C7880E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.PhysicsModule.dll",
+    "actual": "8FF252DAAE09ACEFBE5CAC8E0DB05F342AED9AEF29151652995580BDFB46BCD6",
+    "unchanged": true,
+    "expected": "8FF252DAAE09ACEFBE5CAC8E0DB05F342AED9AEF29151652995580BDFB46BCD6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.PropertiesModule.dll",
+    "actual": "1A0D3EB78EA5A99F16E58CDF4A4788EE8F5E40130FBAF6318C8FC98B082F9015",
+    "unchanged": true,
+    "expected": "1A0D3EB78EA5A99F16E58CDF4A4788EE8F5E40130FBAF6318C8FC98B082F9015"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+    "actual": "3F8F2F5966F64EF6D4B37FF29A4E8298058832A84E065683D1CF2B3A544E5A47",
+    "unchanged": true,
+    "expected": "3F8F2F5966F64EF6D4B37FF29A4E8298058832A84E065683D1CF2B3A544E5A47"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ScreenCaptureModule.dll",
+    "actual": "DDA5BA5C31CD6154C427A782940502204504A1D498755BA6D02572F1CFD1BCA5",
+    "unchanged": true,
+    "expected": "DDA5BA5C31CD6154C427A782940502204504A1D498755BA6D02572F1CFD1BCA5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.ShaderVariantAnalyticsModule.dll",
+    "actual": "587CEF23BB28CE70FB88E28B721D05C2D12263F43542E7979DE935ED0BEDF391",
+    "unchanged": true,
+    "expected": "587CEF23BB28CE70FB88E28B721D05C2D12263F43542E7979DE935ED0BEDF391"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SharedInternalsModule.dll",
+    "actual": "108B191E3D709F6FA1F6B52D2A2798E027FFFD477EC9456B163E1F4B54DFCCE2",
+    "unchanged": true,
+    "expected": "108B191E3D709F6FA1F6B52D2A2798E027FFFD477EC9456B163E1F4B54DFCCE2"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SpatialTracking.dll",
+    "actual": "2A7FD912504B904F04AE125467FE76668F35576428291EF6AE39746B974273B7",
+    "unchanged": true,
+    "expected": "2A7FD912504B904F04AE125467FE76668F35576428291EF6AE39746B974273B7"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SpriteMaskModule.dll",
+    "actual": "DEC46E763BB0BB5C39B8F794E746A65CEA7AE53931B9AF2D5B0F31880AA91EBD",
+    "unchanged": true,
+    "expected": "DEC46E763BB0BB5C39B8F794E746A65CEA7AE53931B9AF2D5B0F31880AA91EBD"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SpriteShapeModule.dll",
+    "actual": "7BAE57CE03AE5CB5A42D6F2E7DB691DC352876D4134E380017D851F592C65071",
+    "unchanged": true,
+    "expected": "7BAE57CE03AE5CB5A42D6F2E7DB691DC352876D4134E380017D851F592C65071"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.StreamingModule.dll",
+    "actual": "18ADD4BD99F4ECAD7A5FCF77CE75CDD469E848A4C06F95238400D07E5BB8C846",
+    "unchanged": true,
+    "expected": "18ADD4BD99F4ECAD7A5FCF77CE75CDD469E848A4C06F95238400D07E5BB8C846"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SubstanceModule.dll",
+    "actual": "B9A4F75601D4907340C354B14AA01D2130C2540F10F4A77F7401A1798E4C6446",
+    "unchanged": true,
+    "expected": "B9A4F75601D4907340C354B14AA01D2130C2540F10F4A77F7401A1798E4C6446"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.SubsystemsModule.dll",
+    "actual": "780DC79AE28C13B8E4EA38E702FFFECC79CC064D37431C5BD46C2017155B6E05",
+    "unchanged": true,
+    "expected": "780DC79AE28C13B8E4EA38E702FFFECC79CC064D37431C5BD46C2017155B6E05"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TerrainModule.dll",
+    "actual": "FF1183BD40126D7378E81F8669E3B6A459B302B8A78621805E0EF1F0F202728F",
+    "unchanged": true,
+    "expected": "FF1183BD40126D7378E81F8669E3B6A459B302B8A78621805E0EF1F0F202728F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TerrainPhysicsModule.dll",
+    "actual": "5E2B3D447A7AA254E1387DAAD97056B0E80D65798839E67B9FCF1F648C354DBB",
+    "unchanged": true,
+    "expected": "5E2B3D447A7AA254E1387DAAD97056B0E80D65798839E67B9FCF1F648C354DBB"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TextCoreFontEngineModule.dll",
+    "actual": "1F6129D3EE324B8ACA7F4DE5613BDC125420AC9A877EB06B6E433822BA11E78E",
+    "unchanged": true,
+    "expected": "1F6129D3EE324B8ACA7F4DE5613BDC125420AC9A877EB06B6E433822BA11E78E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TextCoreTextEngineModule.dll",
+    "actual": "8F6106009E9AB1AC3FC44FEB68C4BFCDA8020D40CF7064E1ACCAF21AA0CCBFDF",
+    "unchanged": true,
+    "expected": "8F6106009E9AB1AC3FC44FEB68C4BFCDA8020D40CF7064E1ACCAF21AA0CCBFDF"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TextRenderingModule.dll",
+    "actual": "C3BBDE1541DD1A1D1205E007F02653B5B9BCB59E52DD71DFBBA8F5FA1A71E8AF",
+    "unchanged": true,
+    "expected": "C3BBDE1541DD1A1D1205E007F02653B5B9BCB59E52DD71DFBBA8F5FA1A71E8AF"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TilemapModule.dll",
+    "actual": "D800D3FFAB12B1FD59DDB89BF6A5AF0C4263F5EA6A42AAF77F686770901FDE72",
+    "unchanged": true,
+    "expected": "D800D3FFAB12B1FD59DDB89BF6A5AF0C4263F5EA6A42AAF77F686770901FDE72"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.TLSModule.dll",
+    "actual": "3CBC69C32730064AF5C78F129B1001F35E5FE18880FA9B9A4B4208600C8631F9",
+    "unchanged": true,
+    "expected": "3CBC69C32730064AF5C78F129B1001F35E5FE18880FA9B9A4B4208600C8631F9"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UI.dll",
+    "actual": "5EF8DD8E925E7710E541176E61BE9613E568C35198FF3C8DA64847E9BA40031E",
+    "unchanged": true,
+    "expected": "5EF8DD8E925E7710E541176E61BE9613E568C35198FF3C8DA64847E9BA40031E"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UIElementsModule.dll",
+    "actual": "27DCC0769647B4C8F559BCBB98C7A55DDE8563285D7BCCAA2FB9B919A3F3C649",
+    "unchanged": true,
+    "expected": "27DCC0769647B4C8F559BCBB98C7A55DDE8563285D7BCCAA2FB9B919A3F3C649"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UIModule.dll",
+    "actual": "4C6F864DA4B58A362B69BD9A604D0C758D93AEF4D5B784224AC168B822C4F135",
+    "unchanged": true,
+    "expected": "4C6F864DA4B58A362B69BD9A604D0C758D93AEF4D5B784224AC168B822C4F135"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UmbraModule.dll",
+    "actual": "075A8DDF5DBE1BC6D33ECBCB78280D2013EDE37E1E122FEF89B64DAEB9D4428C",
+    "unchanged": true,
+    "expected": "075A8DDF5DBE1BC6D33ECBCB78280D2013EDE37E1E122FEF89B64DAEB9D4428C"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityAnalyticsCommonModule.dll",
+    "actual": "E9001F78CCC44ECC7F6AA735871583F3323559CA28847B44043D617BFD9502D6",
+    "unchanged": true,
+    "expected": "E9001F78CCC44ECC7F6AA735871583F3323559CA28847B44043D617BFD9502D6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityAnalyticsModule.dll",
+    "actual": "E4AF8E1BCA577850612E2CF8833410C51E487C7FF713F4BB01E2418C060964EF",
+    "unchanged": true,
+    "expected": "E4AF8E1BCA577850612E2CF8833410C51E487C7FF713F4BB01E2418C060964EF"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityConnectModule.dll",
+    "actual": "F0C53C5DDE5B8B0BA9CA7128DC67C5737FF807E1303DECBADA7B914875C6E4C0",
+    "unchanged": true,
+    "expected": "F0C53C5DDE5B8B0BA9CA7128DC67C5737FF807E1303DECBADA7B914875C6E4C0"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityCurlModule.dll",
+    "actual": "A0A029FF3AB0F29BA3F1A9A7CB7ABBCE92208B66FD243113BC6D603A6B993444",
+    "unchanged": true,
+    "expected": "A0A029FF3AB0F29BA3F1A9A7CB7ABBCE92208B66FD243113BC6D603A6B993444"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityTestProtocolModule.dll",
+    "actual": "B8BCB7B3CF1F3EDD0730909304020ECD38412300BA500C525A5209732B6EE72F",
+    "unchanged": true,
+    "expected": "B8BCB7B3CF1F3EDD0730909304020ECD38412300BA500C525A5209732B6EE72F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityWebRequestAssetBundleModule.dll",
+    "actual": "B087C7EFE5B0AA77791301B56A508E452AC47B41A971E90B670D61B38790B82F",
+    "unchanged": true,
+    "expected": "B087C7EFE5B0AA77791301B56A508E452AC47B41A971E90B670D61B38790B82F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityWebRequestAudioModule.dll",
+    "actual": "D5C5B7C3907E0294A9D1151F6DAF2A0119D3A421886E9E5ED040A5365B6EC205",
+    "unchanged": true,
+    "expected": "D5C5B7C3907E0294A9D1151F6DAF2A0119D3A421886E9E5ED040A5365B6EC205"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityWebRequestModule.dll",
+    "actual": "FE6889E6673F03983EF972B02F544F0E9E9EDBA3162AC0B8EE3F6297A1BE89A3",
+    "unchanged": true,
+    "expected": "FE6889E6673F03983EF972B02F544F0E9E9EDBA3162AC0B8EE3F6297A1BE89A3"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityWebRequestTextureModule.dll",
+    "actual": "B900945F4882C4BF3F2FD43552208EFF784592E472F5FADE7716278014FC496B",
+    "unchanged": true,
+    "expected": "B900945F4882C4BF3F2FD43552208EFF784592E472F5FADE7716278014FC496B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.UnityWebRequestWWWModule.dll",
+    "actual": "5A9B3F2BEB72E09D8D76B37152D65CABE9637C09C5AEC29AD4168A24A844E09F",
+    "unchanged": true,
+    "expected": "5A9B3F2BEB72E09D8D76B37152D65CABE9637C09C5AEC29AD4168A24A844E09F"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.VehiclesModule.dll",
+    "actual": "B01A798814A2E1911837A9BE6F6A49A5BA5C7EACF890979CA8455199BDC0E964",
+    "unchanged": true,
+    "expected": "B01A798814A2E1911837A9BE6F6A49A5BA5C7EACF890979CA8455199BDC0E964"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.VFXModule.dll",
+    "actual": "3A29FF3A50C69A93B968358D422B868CD7E47B3EE4BB0E863A790A9443BF7D8D",
+    "unchanged": true,
+    "expected": "3A29FF3A50C69A93B968358D422B868CD7E47B3EE4BB0E863A790A9443BF7D8D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.VideoModule.dll",
+    "actual": "96ECB249DAAD78DA4619941E01C090DCA7E118C545B39179333E5BFB45B6BBC8",
+    "unchanged": true,
+    "expected": "96ECB249DAAD78DA4619941E01C090DCA7E118C545B39179333E5BFB45B6BBC8"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.VirtualTexturingModule.dll",
+    "actual": "CF9039F46735E0E5BACDBE70719C56335BA88E9F74D50B082CF8C824C4F503F5",
+    "unchanged": true,
+    "expected": "CF9039F46735E0E5BACDBE70719C56335BA88E9F74D50B082CF8C824C4F503F5"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.VRModule.dll",
+    "actual": "6A880D491D653658FD16F5CAF01BAEF686D392666434E58ECBBBCF0D0603BDE6",
+    "unchanged": true,
+    "expected": "6A880D491D653658FD16F5CAF01BAEF686D392666434E58ECBBBCF0D0603BDE6"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.WindModule.dll",
+    "actual": "5F2E8DBDD456D7F76419386659B2CE13B05D1E05F7985DB04F7465CAF3FC667A",
+    "unchanged": true,
+    "expected": "5F2E8DBDD456D7F76419386659B2CE13B05D1E05F7985DB04F7465CAF3FC667A"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.XR.LegacyInputHelpers.dll",
+    "actual": "A4C6B3347EDFB415DE33FAF8A0F6BBD3038C9F6D8692ED37C16832EC050401D7",
+    "unchanged": true,
+    "expected": "A4C6B3347EDFB415DE33FAF8A0F6BBD3038C9F6D8692ED37C16832EC050401D7"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\UnityEngine.XRModule.dll",
+    "actual": "02E3FCB259CC7CD433CC70F01544BCC3DC66A53A2DC93E872AE92A497F28397D",
+    "unchanged": true,
+    "expected": "02E3FCB259CC7CD433CC70F01544BCC3DC66A53A2DC93E872AE92A497F28397D"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Vectrosity.dll",
+    "actual": "53466B163F1FEFADFBA2B006AA78A4F056484D79F4DEAF5990C3B5A9B36F120B",
+    "unchanged": true,
+    "expected": "53466B163F1FEFADFBA2B006AA78A4F056484D79F4DEAF5990C3B5A9B36F120B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Vuplex.WebView.dll",
+    "actual": "385848BC9996BE6AF3AB6C86060822F045BD1D3E8B9998298C18991262CED580",
+    "unchanged": true,
+    "expected": "385848BC9996BE6AF3AB6C86060822F045BD1D3E8B9998298C18991262CED580"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\Vuplex.WebViewDemos.dll",
+    "actual": "4A543D30FF20F81232FBC9BB5BBC2C35310CAF83BCF376D8BE8103799DA3AD2B",
+    "unchanged": true,
+    "expected": "4A543D30FF20F81232FBC9BB5BBC2C35310CAF83BCF376D8BE8103799DA3AD2B"
+  },
+  {
+    "path": "C:\\Games\\Sea_Power_8_3\\Sea Power_Data\\Managed\\websocket-sharp.dll",
+    "actual": "FB06FFCEB4F8789C893D2F292E5810927DD7266D3BAD68DF2CEDB8775500E8BE",
+    "unchanged": true,
+    "expected": "FB06FFCEB4F8789C893D2F292E5810927DD7266D3BAD68DF2CEDB8775500E8BE"
+  }
+]

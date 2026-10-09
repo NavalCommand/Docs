@@ -1,0 +1,25 @@
+-- The CXX compiler identification is MSVC 19.51.36260.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/18/Insiders/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- NavalCommand dependency navalcommand.gateway.api -> nc_0b1845c5e8eb local C:/Software/GitHub/NavalCommand/Gateway.Api
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Found Protobuf: C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/tools/protobuf/protoc.exe (found version "33.4.0")
+-- NavalCommand dependency navalcommand.gateway.grpc.api -> nc_2ce4f16e7409 local C:/Software/GitHub/NavalCommand/Gateway.Grpc.Api
+-- Found ZLIB: optimized;C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/lib/zs.lib;debug;C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/debug/lib/zsd.lib (found version "1.3.2")
+-- Found OpenSSL: optimized;C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/lib/libcrypto.lib;debug;C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/debug/lib/libcrypto.lib (found version "3.6.3")
+-- Found c-ares: C:/Users/DMITRI~1/AppData/Local/Temp/naval-static-runtime-prefix/x64-windows-static/share/c-ares/c-ares-config.cmake (found version "1.34.8")
+-- Found RE2 via CMake.
+-- NavalCommand dependency navalcommand.gateway.grpc -> nc_9c6b3dc680b0 local C:/Software/GitHub/NavalCommand/Gateway.Grpc
+-- NavalCommand dependency navalcommand.seapower.client -> nc_c754339ee794 local C:/Software/GitHub/NavalCommand/SeaPower.Client
+-- Configuring done (2.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-debug

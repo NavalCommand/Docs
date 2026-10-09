@@ -1,0 +1,110 @@
+[
+  {
+    "repository": "Build.CMake",
+    "baseline": "3d3ff24d75c9d3b399207bff0d565f1db741c215",
+    "head": "ae4b4efb0505542d61ba5106bf6836d7e35b3fc0",
+    "filesByCategory": {
+      "CMake": 3,
+      "Project/config": 1,
+      "PowerShell": 1,
+      "Python": 1
+    },
+    "changedByCategory": {
+      "CMake": 3,
+      "PowerShell": 1,
+      "Python": 1
+    }
+  },
+  {
+    "repository": "Gateway.Api",
+    "baseline": "1578f7fcd4be2d3692451660a0635ea5463cc49f",
+    "head": "ca5b9d8e7d2a82baf53a1c3ed310568647d66914",
+    "filesByCategory": {
+      "CMake": 4,
+      "Project/config": 5,
+      "C++": 19,
+      "Proto": 4,
+      "PowerShell": 2,
+      "C#": 1
+    },
+    "changedByCategory": {
+      "CMake": 4,
+      "C++": 19,
+      "Project/config": 2,
+      "Proto": 4,
+      "PowerShell": 2,
+      "C#": 1
+    }
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "baseline": "267b9f4052a5c6749b49eefc9727fccf5928ab61",
+    "head": "71cf5c616b1c669c40b0fb9a1d33d277947f704c",
+    "filesByCategory": {
+      "CMake": 4,
+      "Project/config": 2,
+      "C++": 1,
+      "Proto": 1,
+      "PowerShell": 1
+    },
+    "changedByCategory": {
+      "CMake": 4,
+      "C++": 1,
+      "Proto": 1,
+      "PowerShell": 1
+    }
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "baseline": "5e80a356f84383621b0d212c11a394b1c92b91f9",
+    "head": "476c9bc4dc88589893dee0c914ab2de3e984709c",
+    "filesByCategory": {
+      "CMake": 5,
+      "Project/config": 2,
+      "C++": 5,
+      "PowerShell": 1
+    },
+    "changedByCategory": {
+      "CMake": 5,
+      "C++": 5,
+      "PowerShell": 1
+    }
+  },
+  {
+    "repository": "SeaPower.Client",
+    "baseline": "284f28730660825068e0bb3eca6a2d072dc79849",
+    "head": "f6055f7319196630cfee5a640a8011e099645a37",
+    "filesByCategory": {
+      "CMake": 3,
+      "Project/config": 4,
+      "PowerShell": 2,
+      "C#": 9
+    },
+    "changedByCategory": {
+      "CMake": 3,
+      "Project/config": 2,
+      "PowerShell": 2,
+      "C#": 9
+    }
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "baseline": "eb31e6e55f715364c0a1afe57f249bded3df871f",
+    "head": "9800829a850972669542d830f93835729c8d09e3",
+    "filesByCategory": {
+      "CMake": 4,
+      "Project/config": 5,
+      "Fixture/config": 4,
+      "C#": 7,
+      "PowerShell": 8,
+      "C++": 5
+    },
+    "changedByCategory": {
+      "CMake": 4,
+      "C#": 7,
+      "PowerShell": 8,
+      "Project/config": 2,
+      "C++": 5
+    }
+  }
+]

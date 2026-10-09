@@ -1,0 +1,134 @@
+[
+  {
+    "repository": "Gateway.Api",
+    "configuration": "release",
+    "compileCommands": 7,
+    "runtimeFlags": [
+      "MT"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "configuration": "debug",
+    "compileCommands": 7,
+    "runtimeFlags": [
+      "MTd"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "configuration": "release",
+    "compileCommands": 9,
+    "runtimeFlags": [
+      "MT"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "configuration": "debug",
+    "compileCommands": 9,
+    "runtimeFlags": [
+      "MTd"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "configuration": "release",
+    "compileCommands": 12,
+    "runtimeFlags": [
+      "MT"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb",
+      "nc_2ce4f16e7409"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "configuration": "debug",
+    "compileCommands": 12,
+    "runtimeFlags": [
+      "MTd"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb",
+      "nc_2ce4f16e7409"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "SeaPower.Client",
+    "configuration": "release",
+    "compileCommands": 6,
+    "runtimeFlags": [
+      "MT"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "SeaPower.Client",
+    "configuration": "debug",
+    "compileCommands": 6,
+    "runtimeFlags": [
+      "MTd"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "configuration": "release",
+    "compileCommands": 13,
+    "runtimeFlags": [
+      "MT"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb",
+      "nc_2ce4f16e7409",
+      "nc_9c6b3dc680b0"
+    ],
+    "allDependencyNamesLength15": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "configuration": "debug",
+    "compileCommands": 13,
+    "runtimeFlags": [
+      "MTd"
+    ],
+    "cppLatest": true,
+    "hashedDependencyNames": [
+      "nc_0b1845c5e8eb",
+      "nc_2ce4f16e7409",
+      "nc_9c6b3dc680b0"
+    ],
+    "allDependencyNamesLength15": true
+  }
+]

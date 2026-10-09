@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\app\\harness\\MinimalCombat.ini",
+  "side": "Taskforce1",
+  "secondsToReady": 27.5225017,
+  "token": "68f08127-81ca-402e-aa1a-d90a33fc9c1e",
+  "pid": 13708,
+  "startedUtc": "2026-10-09T23:00:17.4342838Z",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A"
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "path": "Gateway.Api/app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Gateway/Api/Codec.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Gateway/Api/Error.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Gateway/Api/IProvider.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Availability.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Eligibility.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Order.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Request.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Result.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Stage.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/Orders/Api/Waypoint.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/Facility.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/Position.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/Stock.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/Track.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/Unit.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/public/NavalCommand/World/Api/View.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/src/NavalCommand/Gateway/Api/Codec.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Api/test/NavalCommand/Gateway/Api/CodecTest.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc.Api/app/NavalCommand/Gateway/Grpc/Api/Cli.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc/app/NavalCommand/Gateway/Grpc/MockHost.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc/mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc/public/NavalCommand/Gateway/Grpc/Server.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc/src/NavalCommand/Gateway/Grpc/Server.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "Gateway.Grpc/test/NavalCommand/Gateway/Grpc/ServerTest.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "SeaPower.Mod/src/NavalCommand/SeaPower/Mod/Bridge.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "SeaPower.Mod/src/NavalCommand/SeaPower/Mod/Host.cpp",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "SeaPower.Mod/src/NavalCommand/SeaPower/Mod/Host.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "SeaPower.Mod/src/NavalCommand/SeaPower/Mod/HostState.h",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "path": "SeaPower.Mod/test/NavalCommand/SeaPower/Mod/HostTest.cpp",
+    "exitCode": 0,
+    "output": ""
+  }
+]

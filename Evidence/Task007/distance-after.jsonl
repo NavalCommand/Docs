@@ -1,0 +1,7 @@
+{"Name":"coincident","StartLatitude":0,"StartLongitude":0,"EndLatitude":0,"EndLongitude":0,"DistanceMeters":0,"Bits":0}
+{"Name":"one_degree_equator","StartLatitude":0,"StartLongitude":0,"EndLatitude":0,"EndLongitude":1,"DistanceMeters":111194.92664455874,"Bits":4682377670385286829}
+{"Name":"typical_waypoint","StartLatitude":61.96,"StartLongitude":-10.37,"EndLatitude":62,"EndLongitude":-10.37,"DistanceMeters":4447.797065782254,"Bits":4661612419292908427}
+{"Name":"date_line","StartLatitude":10,"StartLongitude":179.9,"EndLatitude":10,"EndLongitude":-179.9,"DistanceMeters":21901.124835754712,"Bits":4671749349310405367}
+{"Name":"near_north_pole","StartLatitude":89.999,"StartLongitude":0,"EndLatitude":89.999,"EndLongitude":180,"DistanceMeters":222.38985328931798,"Bits":4642028663911152507}
+{"Name":"near_south_pole","StartLatitude":-89.999,"StartLongitude":45,"EndLatitude":-89.999,"EndLongitude":-135,"DistanceMeters":222.38985328931798,"Bits":4642028663911152507}
+{"Name":"near_antipodal","StartLatitude":0,"StartLongitude":0,"EndLatitude":0,"EndLongitude":179.999999,"DistanceMeters":20015086.79602057,"Bits":4716137969180508177}

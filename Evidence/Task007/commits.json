@@ -1,0 +1,80 @@
+[
+  {
+    "repository": "Docs",
+    "head": "fb688d489cf31bfdcbd400e823c27f7cbc6e662b",
+    "status": [
+      "?? Evidence/Task007/",
+      "?? Tasks/007/Audit.py",
+      "?? Tasks/007/Verify.ps1"
+    ],
+    "taskCommits": [
+      "fb688d489cf31bfdcbd400e823c27f7cbc6e662b Clarify Docs authority and representable formatting rules"
+    ]
+  },
+  {
+    "repository": "Build.CMake",
+    "head": "ae4b4efb0505542d61ba5106bf6836d7e35b3fc0",
+    "status": [],
+    "taskCommits": [
+      "ae4b4efb0505542d61ba5106bf6836d7e35b3fc0 Clarify domain names and constants and adopt Docs authority",
+      "03a330ce9ac71da9ad40ba1d6321c17ceae2960d Expand handwritten code and apply owner formatting rules",
+      "4b006957d876cba1c2e6b13e355d1a4aab239d9e Document the static Windows runtime policy"
+    ]
+  },
+  {
+    "repository": "Gateway.Api",
+    "head": "ca5b9d8e7d2a82baf53a1c3ed310568647d66914",
+    "status": [],
+    "taskCommits": [
+      "ca5b9d8e7d2a82baf53a1c3ed310568647d66914 Clarify domain names and constants and adopt Docs authority",
+      "accbb3ec169a1d1fc0359805bac14e9325c3309c Expand handwritten code and apply owner formatting rules",
+      "17c7d4d9ec4a2d4173689b59af4e8155bea3c8dc Use static Windows dependencies and matching MSVC runtime"
+    ]
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "head": "71cf5c616b1c669c40b0fb9a1d33d277947f704c",
+    "status": [],
+    "taskCommits": [
+      "71cf5c616b1c669c40b0fb9a1d33d277947f704c Clarify domain names and constants and adopt Docs authority",
+      "ea362175aaca4d455eb99e39e452ec4a2e5a1078 Expand handwritten code and apply owner formatting rules",
+      "97637c840093702d1926b5fee8d950da95182a7c Use static Windows dependencies and matching MSVC runtime"
+    ]
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "head": "476c9bc4dc88589893dee0c914ab2de3e984709c",
+    "status": [],
+    "taskCommits": [
+      "476c9bc4dc88589893dee0c914ab2de3e984709c Clarify domain names and constants and adopt Docs authority",
+      "ed9b77cb883d82194f7063811b87b9bb5bea83c1 Expand handwritten code and apply owner formatting rules",
+      "827faa908b2ffd961f460a87b782e3ff48af97b3 Use static Windows dependencies and matching MSVC runtime"
+    ]
+  },
+  {
+    "repository": "SeaPower.Client",
+    "head": "f6055f7319196630cfee5a640a8011e099645a37",
+    "status": [],
+    "taskCommits": [
+      "f6055f7319196630cfee5a640a8011e099645a37 Explain geographic distance arithmetic and add numerical regressions",
+      "c24afedcbc6cbfa4e57751445175e183e0039fac Clarify provider ownership and native adapter names without changing contracts",
+      "1a14df19f8e8dea61a356f80b37c3dcdbf5ab6aa Expand handwritten code and apply owner formatting rules",
+      "b089ec4766ce74d73e58a4237136a846a0333ef9 Use static Windows dependencies and matching MSVC runtime"
+    ]
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "head": "9800829a850972669542d830f93835729c8d09e3",
+    "status": [
+      " M README.md",
+      " M src/CMakeLists.txt",
+      "?? .idea/"
+    ],
+    "taskCommits": [
+      "9800829a850972669542d830f93835729c8d09e3 Expand diagnostic helpers and clarify reversible verification scripts",
+      "861d4551f5af8735db73706b61cf355ea287a6f7 Separate host types and clarify composition mailbox ownership",
+      "472fb5ffb540b4193ddd9ba997aff36f5a6d2c55 Expand handwritten code and apply owner formatting rules",
+      "7b6d424463c23b5abb3a28c109744239ff9c62bf Use static Windows dependencies and matching MSVC runtime"
+    ]
+  }
+]

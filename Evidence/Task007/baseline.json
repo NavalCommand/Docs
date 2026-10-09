@@ -1,0 +1,1702 @@
+[
+  {
+    "files": [
+      {
+        "path": ".gitattributes",
+        "sha256": "1A1DBE176BC233B499D35A57DB7513F2941C99AB9759F177830C9149BE99005B",
+        "lines": 2
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "DAFBD6FCF8A1AF9F0D25250E069CE6CD47739070FC25A4B94D1BFBF991A25436",
+        "lines": 64
+      },
+      {
+        "path": "ARCHITECTURE.md",
+        "sha256": "73F8B0A6070BA0C8139579EAEB18A36DAB2EEC504B1716653934B83F42241BEF",
+        "lines": 169
+      },
+      {
+        "path": "CODE_STYLE.md",
+        "sha256": "6AC084C01492CFFF76029F7F8A3DF833B42B05EFFB0519FCEE27225E3DC3A25F",
+        "lines": 86
+      },
+      {
+        "path": "CodeStyle.xml",
+        "sha256": "BD03868CF7229A78E3BEBFF936C9D427D217CBA84303B8C3077B00A7C4FCFA9E",
+        "lines": 92
+      },
+      {
+        "path": "Evidence/README.md",
+        "sha256": "ED315CD8EDBA67D5442ABD4EA8FDAE15983BDD8D52026B8C6297A8E364FCC242",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task002/aircraft-guard-1-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/aircraft-guard-1-probe.log",
+        "sha256": "E3691C29933C5D256C3E43E8C9852B5F938AEC85575FEF48DED0D9DAA70E93E6",
+        "lines": 63
+      },
+      {
+        "path": "Evidence/Task002/aircraft-guard-1-result.json",
+        "sha256": "F0A345E401BA99BE8FB2283F7C43D34C93B3671D645160CF7E25DCF8F64F3EEB",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/aircraft-interference-1-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/aircraft-interference-1-probe.log",
+        "sha256": "8AE1BB52285D9D10269E7E214FA17B8D2C8FF5D8361B676223730639D3C29B72",
+        "lines": 88
+      },
+      {
+        "path": "Evidence/Task002/aircraft-interference-1-result.json",
+        "sha256": "D5BCE28A608791AA9A6867BCECF9D323E072959A04DF11C4833A9AA3558309B5",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/anchorchain-release-metadata.json",
+        "sha256": "21B2FCC2E002F52BE9A4303EF0E72CC4D4ED2AD1362489B7CE47BB0AA8D66BAB",
+        "lines": 19
+      },
+      {
+        "path": "Evidence/Task002/binary-baseline.json",
+        "sha256": "C535897C6764934A5246FC26894CAA57C655B3F1D929E482B32D75C3FA74D5D4",
+        "lines": 934
+      },
+      {
+        "path": "Evidence/Task002/binary-verification.json",
+        "sha256": "90B6EDB104492DF1A3119F8DD825E85CC770B2C084A6C628C82D628E6AA06067",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task002/build-check.json",
+        "sha256": "060412845E7F5E8B34915277DC055F404BF19CB300B311C9296EA8CDEDF0FEC7",
+        "lines": 20
+      },
+      {
+        "path": "Evidence/Task002/cleanup.json",
+        "sha256": "C12A01B9867B5C8F3F9D0A43D37FC5447A89195FD517F4185DEC547DF17607E1",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/closed-leftover-processes.json",
+        "sha256": "C1805004EA3B996CEF4708AE79C25C046DABFBE61C8CC1340984AD32F8B6CE2D",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task002/combat-run-1-probe.log",
+        "sha256": "E2D2CB7B7CFD993E6C1357862072E43CA7979A1ED590FE27E86F4CBDC6DD83EE",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task002/combat-run-1.json",
+        "sha256": "9B88DDE53D0A20B7C3B4E60132E621D5A3AEE8689C84197517D0E2272F98FB84",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task002/diagnostics-1-privileged.log",
+        "sha256": "1174604956318050AE7343618D7C63D3689D193C4E3DDB4AF5396F0C2A264F7A",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/diagnostics-1-probe.log",
+        "sha256": "ABD74A2E23EC8259755C9155FA16D51C56146DD2337BC872F7A78922B0A7F6A6",
+        "lines": 73
+      },
+      {
+        "path": "Evidence/Task002/diagnostics-1-result.json",
+        "sha256": "3170EDB036964ABE3766DE7E5DDBE0ACA1246892677BFFA76A4F4460BB3FA9AC",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/doorstop-before-final-test.sha256",
+        "sha256": "1276916856BD6EC4F001F3D3B1357ABB8BF97AE6DBB2464189FEF2D4CE112399",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task002/doorstop-disable-failed-launch.json",
+        "sha256": "CFCFB1A73D5ECEB1D79C7497B4B5B3E1043B0CFDD12B5601E18D2E7F14E670C2",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task002/doorstop-restore-check.json",
+        "sha256": "A64B144ACC51E4522EFCEF1A3F12DE318EE485DED5E9E7755CDD6586D3EDEAB5",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task002/final-check-1-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/final-check-1-probe.log",
+        "sha256": "8A3EB47BEDB91B0C6D7603294D2E560C5590D09AFD3AC765C83E879B27D067D1",
+        "lines": 129
+      },
+      {
+        "path": "Evidence/Task002/final-check-1-result.json",
+        "sha256": "B124FB926B3E147D889E0340983C48E7F596DB3AD9FE793E2878CEE72637769A",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/final-check-2-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/final-check-2-probe.log",
+        "sha256": "8DA69F76AA7C02EE9DDA9A5FA8453C508A4DCE58EDC1EFD4CDC743823B5B14CE",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/final-check-2-result.json",
+        "sha256": "339AECBC4EC4A60222B7825335AAEF6D63A368E9E5A79F861C3D269C915C547B",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/final-normal-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/final-normal-probe.log",
+        "sha256": "4F424B7A008CCACA9945938BE1F6BFA25564E4C40B90A60D53394A4CEECB73FD",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/final-normal-result.json",
+        "sha256": "382C14F57449911802D6FDACEC66779D6CD704936FD86798927BB689757EEA51",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/final-readiness-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/final-readiness-probe.log",
+        "sha256": "58F6290E36597EB66432C6F7045E6FA22CDD866431D6DFB5910A10E271C0F5E3",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/final-readiness-result.json",
+        "sha256": "3F47BD2274265C8084D63D8B4FEC630128155F3C68BDF1DB90D88AC31970B47B",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/gate-a-checkpoint.json",
+        "sha256": "4057B1B0667E04E1139AE873F5F7F492F577FD22AAA7C2DFA611A3694EC94A09",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/installed-files.json",
+        "sha256": "A75E51CFDC4D18174BEB4D95EF3FDE006794BF54F59274DBB88D969918AAD271",
+        "lines": 157
+      },
+      {
+        "path": "Evidence/Task002/launch-3-bepinex.log",
+        "sha256": "FB27B76201E3387ACAB7606AC05354D1F036AFE26576C34742FED4A315E585FF",
+        "lines": 21
+      },
+      {
+        "path": "Evidence/Task002/launch-3-probe.log",
+        "sha256": "E6B1189A331A453EFB165E247CD9CE6F4A7F63B854788E8D931EE0542BAB1AF6",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task002/launch-3-result.json",
+        "sha256": "5D463EB93AE78F3347DD88BB903CFB4BF50D5841408C0158310A890A4167D9DA",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/launch-4-bepinex.log",
+        "sha256": "FB27B76201E3387ACAB7606AC05354D1F036AFE26576C34742FED4A315E585FF",
+        "lines": 21
+      },
+      {
+        "path": "Evidence/Task002/launch-4-probe.log",
+        "sha256": "207A4B5BEDDFAE61CCB29AEB1671972FF118325DD04F7D061EBBF571E4EBBB1B",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task002/launch-4-result.json",
+        "sha256": "AB8EB52B2E3DDA02FD9EE46C77C319C7FCDF0FBBBEE324B3D5DF0251110BEC71",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/lifecycle-1-privileged.log",
+        "sha256": "DA750EA63E119228DDF3EF4141A80FF8BC16184E3991B8C132E0BF4109DB2668",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task002/lifecycle-1-probe.log",
+        "sha256": "27D26FA099AC8729D3ED1EEF4DCB3FB0CF6E11DA39C72F547D5EC21F726A95C3",
+        "lines": 65
+      },
+      {
+        "path": "Evidence/Task002/lifecycle-1-result.json",
+        "sha256": "79BCD7AF475E8F29BB1914CB675FBB55646097A43CDF96AB19024C55D56E9E1B",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/loader-archive-manifest.json",
+        "sha256": "BDCA93891C481677C86E61CD41549638B915F9452840471328D11652A207724C",
+        "lines": 123
+      },
+      {
+        "path": "Evidence/Task002/loader-noop-bepinex.log",
+        "sha256": "8208B393E12E7B4E191352879A96BADE30836AB058BC748406BAD9F72BA9005A",
+        "lines": 19
+      },
+      {
+        "path": "Evidence/Task002/loader-noop-probe.log",
+        "sha256": "663288487DE5D15D90DE8CD6186BC33A9CC8F7FFE12DC1BA40AE6DF5F0F066D9",
+        "lines": 3
+      },
+      {
+        "path": "Evidence/Task002/loader-run-1.json",
+        "sha256": "4DD656CABFCC7C907101F79992A757A4CEBA9CEE211EF2B19892992397B54B7C",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task002/native-launch-1-excerpt.txt",
+        "sha256": "0BC704949A12A1490AD7F1D96EA13150C5458BE89E6E43398D84944AEAC20E2C",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task002/native-launch.json",
+        "sha256": "3CBEF1BD1BC239DF9C64FB7D9086021CE3C6A05ACF985C5128218162C71A2F6D",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task002/near-contact-1-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/near-contact-1-probe.log",
+        "sha256": "7EC897CF35F59EE95BCAB16FF5717E224B5FBA08E2B31657FCDD3BA0DE90BE8B",
+        "lines": 116
+      },
+      {
+        "path": "Evidence/Task002/near-contact-1-result.json",
+        "sha256": "F22FA04F2B4D9EDB64C2110D16BFB066234BC5561556FE3B7B3B32640D92728E",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/preflight-tests.json",
+        "sha256": "FF29CF26262E0D6D3DF4EA2EB480E894EEB8C472DEBA5424A9CAECC1F2808376",
+        "lines": 27
+      },
+      {
+        "path": "Evidence/Task002/prototype-checkpoint.json",
+        "sha256": "C0310ECE0FE583E6348F7EFC3C29FA6972F277F651F1453048B81CB9D70ECA93",
+        "lines": 42
+      },
+      {
+        "path": "Evidence/Task002/result-summary.json",
+        "sha256": "E3FFE2F130252E9A1A60906C7CA830F44E0E44F83358CBFBB5499B786991C637",
+        "lines": 25
+      },
+      {
+        "path": "Evidence/Task002/script-parse-check.json",
+        "sha256": "5672339A20AC3E31B0476281FD41B9DA8F4B7585C3915E7A197DF908B38452B0",
+        "lines": 14
+      },
+      {
+        "path": "Evidence/Task002/worker-check-privileged.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task002/worker-check-probe.log",
+        "sha256": "842E1988E54A9D58ED3EA0F1250B361BFBF8AC59D0BA3F322F6C7E53A9920374",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task002/worker-check-result.json",
+        "sha256": "09328AD83C6D150739BFE27DD11528DD7862DAE578A8691C5F0778DC04533403",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task002/writer-fault-error.json",
+        "sha256": "969D02D67CD7CC03B20CC12C74F765E48A868C5A336772BB4EEF11E648D5575D",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task002/writer-fault-launch.json",
+        "sha256": "1612BDA2F3168E6CE2C6EC1DFC5458962831FB5E59DF7C43F9D6BEE41762E567",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task002/writer-fault-result.json",
+        "sha256": "7C7121FD9B287CD10B63EB52E8E923DC610F40D970376945EDFC51DC4591CFAE",
+        "lines": 9
+      },
+      {
+        "path": "Evidence/Task003/facilities-launch.json",
+        "sha256": "8A227FA4F469D80E904171F328FE7510068E742D241130A120E67DACEBC8DA9B",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task003/facilities-privileged.log",
+        "sha256": "22570FDFCFE3BB66A34F980A0889238A801EDEE81E434C9F236C754CFD283B3F",
+        "lines": 1709
+      },
+      {
+        "path": "Evidence/Task003/facilities-probe.log",
+        "sha256": "F8D17E52D7BA4DECB14FF2CBCA5E9AF048D77C60E5D61F52CC610DF15F82448B",
+        "lines": 2473
+      },
+      {
+        "path": "Evidence/Task003/facilities-ready.json",
+        "sha256": "2BBB1DF71D1A3392BA6F1FE6CA240BF98F2C3BAB8A448F7BABE1B1F2680A8825",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task003/facilities-request.json",
+        "sha256": "8C1A7AAE821F68D0F051B50DB9F6AD316CCA7D5AAF4C2A2F0216E1653A1214ED",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task003/facilities-result.json",
+        "sha256": "E87030F4883C1D2B7F106CA222E51A0AFDD69D9DC70CD9610A4310EE852ADF66",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task003/final-check.json",
+        "sha256": "3087E12E233973EB42461CF4796B89F6F7CE7D977012732846821D9BB0916681",
+        "lines": 32
+      },
+      {
+        "path": "Evidence/Task003/initial-launch.json",
+        "sha256": "7FC49025B9E79C9B308B2D31F077792F48D04FF50D03B9B7CBA402224EA949C8",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task003/initial-privileged.log",
+        "sha256": "512F1493FD096EC2154F97D6AD66F5148290AD042405DD27AE10303BA46DB98E",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task003/initial-probe.log",
+        "sha256": "BF24574BD393988C69834CF837E843163892C495DCD9626A5B13E66C980298A0",
+        "lines": 35
+      },
+      {
+        "path": "Evidence/Task003/initial-request.json",
+        "sha256": "995B3472ED1DE9EECB95F3EA3E81F19CB00B7EAD18BF8D4BE1112331BF49666F",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task003/initial-result.json",
+        "sha256": "11B20C1D4A4FB2423EE157424676B3467797C640CECD99C34C00A6DC0AF49A4A",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task003/lifecycle-summary.json",
+        "sha256": "572AA3FA32AD0D69522B979D83FA087C07EE2D9B82EC7AE185DB58472E5E0B48",
+        "lines": 129
+      },
+      {
+        "path": "Evidence/Task003/loader.log",
+        "sha256": "F78E07B27D1A517915F3BFAF6A8EA5545A75E84A3ED28885864C077403399029",
+        "lines": 22
+      },
+      {
+        "path": "Evidence/Task003/result-summary.json",
+        "sha256": "247D467C5A02776627491F77D91AC9CD80407695C918621ED69013689BAF2E88",
+        "lines": 46
+      },
+      {
+        "path": "Evidence/Task003/setup.json",
+        "sha256": "1FCFE5117B07A25D84C09243AE091D147A6ED26DE250A2CD7F9E6FB979C46B90",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task003/source-checkpoint.json",
+        "sha256": "64340BCEFC4273A1775C60174B84AEEFEE3959D9C2B37186DFE8E29BB1DDD43E",
+        "lines": 50
+      },
+      {
+        "path": "Evidence/Task003/static-members.json",
+        "sha256": "C696FC90683A8791F4185CC2FAE89A2D5BAF8F3B1BB232666A6223B6F3894289",
+        "lines": 4917
+      },
+      {
+        "path": "Evidence/Task004/README.md",
+        "sha256": "19D84FED973DC10F01CAFD2F6970744B385B124687095F7814063E3250220F8A",
+        "lines": 19
+      },
+      {
+        "path": "Evidence/Task004/build-Gateway.Api.log",
+        "sha256": "D55A8DDDD63CB8749C68E38623BE77A553E6F7286981D8585BA65CAAF49F7A35",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task004/build-Gateway.Grpc.Api.log",
+        "sha256": "84BBC0187CA726A94823C3EC5D1B157225832250B8F06540700FEE392CC970FA",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task004/build-Gateway.Grpc.log",
+        "sha256": "52C1F769C88E06D24BD55FDD2587726E06BEEFFBDF727238A901C1436EBB665F",
+        "lines": 10
+      },
+      {
+        "path": "Evidence/Task004/build-SeaPower.Client.log",
+        "sha256": "69398831516DBA9C0000A73C6D952ECFFBC5E3BA5725DD760814AE077541617B",
+        "lines": 82
+      },
+      {
+        "path": "Evidence/Task004/build-SeaPower.Mod.log",
+        "sha256": "6952E8A9C2B3CF6D975C658652A38BCE7A0142B1AB8087BAE2655F21CAB7B584",
+        "lines": 18
+      },
+      {
+        "path": "Evidence/Task004/conformance.log",
+        "sha256": "632AB565620DC7A9B4EF53580C5F46EE49775957FCAEF43E56B666DD9CB04C56",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task004/dependencies.log",
+        "sha256": "7EB8132D4BEC443CE3EB398AD19303173F9354F933CC093FC0827A3BC7F23189",
+        "lines": 65
+      },
+      {
+        "path": "Evidence/Task004/distribution-manifest.json",
+        "sha256": "A3520904CB3C928ED26255D3F81486ED7B33D03929648642CB60AB712BE77C12",
+        "lines": 26
+      },
+      {
+        "path": "Evidence/Task004/hosting-sources.json",
+        "sha256": "4B8D34B384CA068B25DF17A02BF9D7CD7E6789055624533EFB869BB401391F6C",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task004/installation-check.json",
+        "sha256": "3A4F52B2EA81B7A3B0EA188EA1FADFDFB990A9B1E6A2C4DC90286EBE3BCE9E2A",
+        "lines": 9
+      },
+      {
+        "path": "Evidence/Task004/mock/cli.log",
+        "sha256": "7A972A762F978567ABB0AEB112E16EC77D4C1E742AA910DD18BC6605F8A7414E",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task004/mock/host-error.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task004/mock/host.log",
+        "sha256": "9E3ACBB00D15414C5E7FBB0A2544DBD23AA7DCC3ED28DA294FF20AA1E616D4CE",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task004/package-manifest.json",
+        "sha256": "33F45BCFE6D658021CB804B6D1F2536FAA310AE2EE12CB02E88955ED651E555F",
+        "lines": 30
+      },
+      {
+        "path": "Evidence/Task004/protected/cleanup.json",
+        "sha256": "B4C1B383DDD7CDF48451B3DEA9D3BDDA6DD78997E7AEE6E256965DBF48477AB2",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task004/protected/cli.log",
+        "sha256": "896AA51269BE801407575094F8F020FE06A10BB8EB808D861D3BE1CA6EEE583B",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task004/protected/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/protected/gateway.log",
+        "sha256": "F9648C99AD9A9C0FC7D9CA85953459EDC4E3873EE0EB927124C8B4B4B3AEF301",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task004/protected/launch.json",
+        "sha256": "C994DC253CB988104BE48D4AFA3DA1B8C43ADACA64F8563D41F901B60CCA5056",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task004/protected/probe.log",
+        "sha256": "C4BE79FD40A10D5FA6E5E36A03D91E3EA9479BC5CBBED1549A4456D05FEA6A96",
+        "lines": 14
+      },
+      {
+        "path": "Evidence/Task004/protected/ready.json",
+        "sha256": "7F9C88699B2C2F123EFA47CB6F35E214026D8E73E53930A8FEF12ED86F6C9114",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/protected/smoke-result.json",
+        "sha256": "BEA3A197C31FBB7F3F4C2BB71B3849CAF734A26EECB5690FFD0AAEC9F413FE33",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task004/reload/cleanup.json",
+        "sha256": "3B516DBD9BE8D13870CC24020812A5F81C48A90D3009FF521F4C36A8027E41D2",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task004/reload/cli.log",
+        "sha256": "1037DC4FE6B3AC8EF48BBC20A27F660B32DB86C8D487E41E15ABB421257C34D4",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task004/reload/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/reload/gateway.log",
+        "sha256": "44C003076A38346A95794EEF123DEBFCBC35B15D8F61B2DB8697FC3274EF836A",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task004/reload/launch.json",
+        "sha256": "D3E4B471E82846AEC69871918E517576A59F2AFE1030413BBEB08573607D8A03",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task004/reload/probe.log",
+        "sha256": "2212894D2B8AC04921A3E99F36B65B54ECED76A4B39E89A653C424E45C272663",
+        "lines": 17
+      },
+      {
+        "path": "Evidence/Task004/reload/ready.json",
+        "sha256": "907ABA0809E20BB02B35A36174CA6BB1AF507DE448A60DE7ABC42D4EB3B41413",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/reload/smoke-result.json",
+        "sha256": "CB742E6A0C09E0B9744FC08F821F9EEA6D7B77B8FF05CF91367318619E66BD7D",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task004/source-revisions.json",
+        "sha256": "B65C8AAD71D884493EDED5BDB47869DA7CCDA0D6177224669BAC7E89D1306FFD",
+        "lines": 32
+      },
+      {
+        "path": "Evidence/Task004/vendor-hashes.json",
+        "sha256": "777B1934788B96C6810A6CB12605890615473193F8185FFC8F98BF36A47BC66F",
+        "lines": 1400
+      },
+      {
+        "path": "Evidence/Task004/waypoint/cleanup.json",
+        "sha256": "41E75E3C7E6205911557DD92F80F482B9FAA9CECBDB90C37B4ED81FBA53ECCB1",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task004/waypoint/cli.log",
+        "sha256": "E695650C6C117506FADB917FDB89D5FCFD31EDAD8818BB3D60D290F39D08CCF2",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task004/waypoint/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/waypoint/gateway.log",
+        "sha256": "FDFC565934F0F76580500F8BAF7A4FAC359C5381D78937F5EA9221B22AB9EC25",
+        "lines": 3
+      },
+      {
+        "path": "Evidence/Task004/waypoint/launch.json",
+        "sha256": "F6B1DA76217AA2296EC8411F170973A4006DF332759DCA7B9D2568BD336C20D8",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task004/waypoint/probe.log",
+        "sha256": "C8AA394AC9FEA3D02D26EA2E7D7EC12EF5F5B365FD3B12A706223A4C5B6665C1",
+        "lines": 14
+      },
+      {
+        "path": "Evidence/Task004/waypoint/ready.json",
+        "sha256": "B90F7FA094ED9E59C526CF22C599A05A9F93BB1D2C93BADD54098F8852ED72BB",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task004/waypoint/smoke-result.json",
+        "sha256": "86FBC3EF784C058CE9540F4BA1955DBAC136D885CAFEA2B178DB0938B28151A7",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task005/Build.CMake-build.log",
+        "sha256": "71AA391EC7D7E291B419A7F40FBA91919E14AC2394AB4E8B66ED126E267D70F6",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/Build.CMake-configure.log",
+        "sha256": "B19E4CDA0BF6803CA98ED8ADCC093E85B685B18C708AB23D49A58DD4DD9506F4",
+        "lines": 3
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Api-build.log",
+        "sha256": "6D052012512D7BA8B9965A9A31DA39DF6C92482BFEBDDCC79F9F408FC2238A17",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Api-clean-build.log",
+        "sha256": "CB7C1338ECE7DC8281CC7468A2CA79D5806A9F3845868D89F7D23A07F9C575D5",
+        "lines": 26
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Api-configure.log",
+        "sha256": "605F82FB6D8E5221601B9A8FED5300C0E30E863A78CADE5D5A184C3EB97B355C",
+        "lines": 3
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Api-tests.log",
+        "sha256": "29A54D6D0842D983A4358D120B4C7FF6203E90D9AE513D5B4C46B09C65040AF5",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc-build.log",
+        "sha256": "7947ABF05B3133C6F19890BB33C08C1D18404EA15FD34F8EA6366119B1799F69",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc-clean-build.log",
+        "sha256": "F22037428F99804D999B562FF11F6FF8EC2484BEACB6EFAB71F4A550CA34023E",
+        "lines": 45
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc-configure.log",
+        "sha256": "A0FDC55B413C7A136F9006F7743D9C02AC955A9D64FA61C8F191FAC3F817F7B9",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc-tests.log",
+        "sha256": "D052B34A67AC5219CA7FDBFC733710B0093354EECC9DBCE9FEA5426D107508A1",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc.Api-build.log",
+        "sha256": "32EBC5CDBE803D1D474436D3E2D2E5E052BE4A2B83CC65D779351569B95A345F",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc.Api-clean-build.log",
+        "sha256": "3A13E195F25B734D621E80B288243091468B3A0FFF9DB2DA778E4ECBF787180C",
+        "lines": 33
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc.Api-configure.log",
+        "sha256": "48BB674A01059DF599C9FEAF9A0651FACAAF700D8B8B86C53C7FBC8D3FEEB2BD",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/Gateway.Grpc.Api-tests.log",
+        "sha256": "43537C22B5FB573ECBB10D4B5CB4655EF2CB0E8B234961628F3F3F6CB0E7A991",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/README.md",
+        "sha256": "F4A63FDAB5FCC8A76D4603E246B502D82A62A8C6D0B383960E8FE09628E99C05",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Client-build.log",
+        "sha256": "6EE9C669EA7F73E8DFD569C388AB729AAAADB7C428943948B13515F44EEFCEA1",
+        "lines": 9
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Client-clean-build.log",
+        "sha256": "DBA681AB138DCFDA6BE10F477525295B26B61ECC14E58482878E3F8887BF317D",
+        "lines": 28
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Client-configure.log",
+        "sha256": "B8DD869A7230002E98D9BE9148147800ACB8FD2853B7CCD345E1DEEDE1971A39",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Client-tests.log",
+        "sha256": "FBECEDE278B5B03E6D3B60DD70E1F2F3C95EA9E4F991EA0E452A6F13955C0AE3",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Mod-build.log",
+        "sha256": "857B70A8589C3367A831E1DB4C7E36C20F78D2EBE30488176B9FEFE5853D1DBE",
+        "lines": 9
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Mod-clean-build.log",
+        "sha256": "86AEE44B20C67AE3125D0614CCA0F2E3BAA1E5726D160DC46A5312CE864F668B",
+        "lines": 49
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Mod-configure.log",
+        "sha256": "379D7221CB9D05CB04B3C905A751998DECAEA4968FC06F5A9332CC9AB459985B",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task005/SeaPower.Mod-tests.log",
+        "sha256": "7303C6B5F1B87D39685AC10B0F9C7BBADF935582FF6B8651247D0540E414FF66",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/api-build.log",
+        "sha256": "C017E07F34DACC6A9D7E418CF48D03A1C849B243CCD33748BD138A41F02B5E80",
+        "lines": 26
+      },
+      {
+        "path": "Evidence/Task005/api-configure.log",
+        "sha256": "10CF3B2EE7D1072E7D6024DF89F34140E0995060DFB50E9EBF534DAC8B420D4F",
+        "lines": 17
+      },
+      {
+        "path": "Evidence/Task005/before-layout.json",
+        "sha256": "D01EB8F5B5123938FB7BF37DA1C445B3D207B3D1701C3332C9BF3597D4B54730",
+        "lines": 151
+      },
+      {
+        "path": "Evidence/Task005/conformance.log",
+        "sha256": "632AB565620DC7A9B4EF53580C5F46EE49775957FCAEF43E56B666DD9CB04C56",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task005/distribution-manifest.json",
+        "sha256": "1F6B09BF0844FC72DC5F800EA661A9A0CCF80FE368BC5D9FB3202289EB556E78",
+        "lines": 30
+      },
+      {
+        "path": "Evidence/Task005/git-build-summary.log",
+        "sha256": "A0FBA832A16344C832CC386186C6E7BD59B41D78D227698A158B0C07D201EE51",
+        "lines": 52
+      },
+      {
+        "path": "Evidence/Task005/git-configure.log",
+        "sha256": "3F6BE21DFDCE34374F5135D413FBA1AE0268D25EFE3B25A62BD590C6333F02F6",
+        "lines": 46
+      },
+      {
+        "path": "Evidence/Task005/git-graph.json",
+        "sha256": "0181ECC1D3F10098477669D7DBBC1F40BEFC68716413C64A1964D600AD03B1BB",
+        "lines": 12
+      },
+      {
+        "path": "Evidence/Task005/git-package.log",
+        "sha256": "3551AED279D2D0661198A91E74BCE849ADA2B681D8F3375F4E95DF0EF8A173A7",
+        "lines": 21
+      },
+      {
+        "path": "Evidence/Task005/git-tests.log",
+        "sha256": "FCBAB45E35399A60B736C8710BFB8CBC86A917893C134114116CCB509979F2F0",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/installation-check.json",
+        "sha256": "797AA2ACFFB16C2FCF8F91B67F5C8C94D6E7220C869F091DA6B3468939D01A68",
+        "lines": 9
+      },
+      {
+        "path": "Evidence/Task005/live-run.log",
+        "sha256": "9B3D4AE4F3EE81714F8E61EDD5F73E293EC26F0360F5B87C815BBDE9941389D5",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task005/live/cleanup.json",
+        "sha256": "337F048E7FECCF36F1A94EBB2C1F8C7808EB722A6C26712159BF815ECBABA80B",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/live/cli.log",
+        "sha256": "9B3D4AE4F3EE81714F8E61EDD5F73E293EC26F0360F5B87C815BBDE9941389D5",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task005/live/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/live/gateway.log",
+        "sha256": "491DA41082B4CD4C4DCD190BBB7ACAA711509CC966A78EAB7A04CFBFFEBB562F",
+        "lines": 3
+      },
+      {
+        "path": "Evidence/Task005/live/launch.json",
+        "sha256": "190BB098E50184842D8D40273B2A8B07535B61C93FE9493B522AD31A57E03ACC",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task005/live/probe.log",
+        "sha256": "FFAEC40564F5D26CD134448DD55C8152CC94D9F475DBB6976EA92AF193271F7D",
+        "lines": 14
+      },
+      {
+        "path": "Evidence/Task005/live/ready.json",
+        "sha256": "03C29077A390CF2AEB0698E8E02BD293604B45FC28AB71146ABE9D34E17C121D",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/live/smoke-result.json",
+        "sha256": "9798201134717493B32EBD651EAF5FB33A349F58FA6D147FA578A46CADA10759",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task005/mock-run.log",
+        "sha256": "66F06A4B783FE083F2DB1436BC8F5928DA2F4454CE7BEB42A07246BFDA56D1AA",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task005/mock/cli.log",
+        "sha256": "66F06A4B783FE083F2DB1436BC8F5928DA2F4454CE7BEB42A07246BFDA56D1AA",
+        "lines": 11
+      },
+      {
+        "path": "Evidence/Task005/mock/host-error.log",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "lines": 0
+      },
+      {
+        "path": "Evidence/Task005/mock/host.log",
+        "sha256": "4913479751943C1C83C37A4655F1812D201CCA0F81DF2DA7B48F2B79CD3346A2",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task005/package-build.log",
+        "sha256": "43C96750F812983D3FD52666F2FCDFFD50AFBE8DB5E21089B911A7B37C0CCE93",
+        "lines": 21
+      },
+      {
+        "path": "Evidence/Task005/package-manifest.json",
+        "sha256": "FAB3826D165F12DB6F7CFF56F64477331AF9C17E87E97E3D53CEF59D2D59583F",
+        "lines": 30
+      },
+      {
+        "path": "Evidence/Task005/protected-run.log",
+        "sha256": "2891A1DDAA410C6CF12B89307029FEED068520F5113A56F998A7FC1BA6B231FE",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task005/protected/cleanup.json",
+        "sha256": "E91F3395B82F8F8C591134AF7312485985CAAF46D70FB2ACAFED9125A69AEFBC",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/protected/cli.log",
+        "sha256": "2891A1DDAA410C6CF12B89307029FEED068520F5113A56F998A7FC1BA6B231FE",
+        "lines": 4
+      },
+      {
+        "path": "Evidence/Task005/protected/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/protected/gateway.log",
+        "sha256": "8F3AFB94D3D7AC50F81D744A6E435DF6BF44A1E361743B564CCB35A7AF9EB2D0",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task005/protected/launch.json",
+        "sha256": "DFB75F2B9035B04E8DF085FE6E29D91FC347C0DF7D27042592CB294A4302B90C",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task005/protected/probe.log",
+        "sha256": "AB2BB7A6FAF2FCB7CA79E7F5718199A16248506DAAD816A4CD9FF66FBBBD6706",
+        "lines": 14
+      },
+      {
+        "path": "Evidence/Task005/protected/ready.json",
+        "sha256": "B6E04D772849D53F4C7B53050ACBF5DC2A067047B80C2DDC92FC4417F1E70BBE",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/protected/smoke-result.json",
+        "sha256": "039AFB75FF3A8DCAD1723BD0D48E7F973FD320C8DBE9770D603103A015FE8605",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task005/reload-run.log",
+        "sha256": "1291F837D2AB1AAA2EDACF96FAB96A04049EDA574E2AAA5B68585FC0EE6B71AD",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/reload/cleanup.json",
+        "sha256": "3AF839ACC78C6C97A770DC5872D91285CDB74B8B9C42458AE49A30DD544F43BD",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/reload/cli.log",
+        "sha256": "1291F837D2AB1AAA2EDACF96FAB96A04049EDA574E2AAA5B68585FC0EE6B71AD",
+        "lines": 5
+      },
+      {
+        "path": "Evidence/Task005/reload/gateway-ready.json",
+        "sha256": "5528AF0148F1D75240966A95C2C03670E88C02913F9A5440D7DE21E6326059B9",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/reload/gateway.log",
+        "sha256": "51FECABAEBB3EADE9189E5DBD699C54098395DC6343E07C65F607ED621864ED1",
+        "lines": 2
+      },
+      {
+        "path": "Evidence/Task005/reload/launch.json",
+        "sha256": "7E9C62507337F13085590D0EF5377B2BCD3AA35D81BAF97B93DF5843BE41375E",
+        "lines": 8
+      },
+      {
+        "path": "Evidence/Task005/reload/probe.log",
+        "sha256": "BE5337267F48631732A85A1EE17DC0C69946ECB915D31A9994EC80C603CDE3B2",
+        "lines": 17
+      },
+      {
+        "path": "Evidence/Task005/reload/ready.json",
+        "sha256": "D0986896AA09CE9040AAFC5E6513231247AB49FB68BD3F879D46056C119AB916",
+        "lines": 1
+      },
+      {
+        "path": "Evidence/Task005/reload/smoke-result.json",
+        "sha256": "2F47884AEA77E0CBB720CF05EBC0ECBAE779CA4EF5E9ACB166D4332380CA7DE8",
+        "lines": 6
+      },
+      {
+        "path": "Evidence/Task005/resolver-detail.log",
+        "sha256": "0156EB0F782F07F4D6F79D6236981CDFD57B8703E6AB80FC36D03560EDC83DA5",
+        "lines": 29
+      },
+      {
+        "path": "Evidence/Task005/resolver-tests.log",
+        "sha256": "6DC119C8C3CEA19096C0C76A4AF4296CA3F03B9577672EE6DF61353039F4ECB5",
+        "lines": 7
+      },
+      {
+        "path": "Evidence/Task005/source-preservation.json",
+        "sha256": "833346C7FCD91C1E8DC4323ECD3EC9B124A8F937C926530754F7A91A227CA15C",
+        "lines": 233
+      },
+      {
+        "path": "Evidence/Task005/source-revisions.json",
+        "sha256": "712524B5CC1D517067AF31490FF02526C837198731DEC57244B5075A46DA3688",
+        "lines": 52
+      },
+      {
+        "path": "Evidence/Task005/structure-audit.json",
+        "sha256": "712524B5CC1D517067AF31490FF02526C837198731DEC57244B5075A46DA3688",
+        "lines": 52
+      },
+      {
+        "path": "Evidence/Task005/vendor-hashes.json",
+        "sha256": "CC3D92FD950587B9EA3D7C1259C17DC27B61D43B84AE0FC907F3BEBC5ADE1BA0",
+        "lines": 1400
+      },
+      {
+        "path": "LOCAL_SOURCES.md",
+        "sha256": "5E736E4B32B1E1F76E359DC0571961017EF36E64D7C97BC23ACF32AE86077DB0",
+        "lines": 57
+      },
+      {
+        "path": "MODULE_STRUCTURE.md",
+        "sha256": "6E2D3BF3066446D4801AC3EEBA9316CA0764262FDB6B0C51A639DEA3099EE6FC",
+        "lines": 86
+      },
+      {
+        "path": "README.md",
+        "sha256": "C25F5236259D7A0CAF27A8A5724780221F16B0CAD35291DD2EB40432B421EAB4",
+        "lines": 29
+      },
+      {
+        "path": "Tasks/001/001-seapower-investigation.md",
+        "sha256": "A5238A9F9C1687372A5128424F6563D2EDCD69782690F8243662E0849C808B09",
+        "lines": 90
+      },
+      {
+        "path": "Tasks/001/SEAPOWER_FINDINGS.md",
+        "sha256": "A0FB7A2EC26BACE33D3B6FBDD22AB3E3E60E8454BDEB44D1D8F509EF4E7D2EB6",
+        "lines": 294
+      },
+      {
+        "path": "Tasks/002/002-seapower-runtime-validation.md",
+        "sha256": "37E8EB90512EE349524730F93CA517C8960D8B4577F8A16A5F9CF6AF96FE441B",
+        "lines": 163
+      },
+      {
+        "path": "Tasks/002/AUTOMATED_LAUNCH.md",
+        "sha256": "B3AFE93CD84A931815F9BD2127020709DE97E47B562D4EA1449517A49E2A231F",
+        "lines": 47
+      },
+      {
+        "path": "Tasks/002/SEAPOWER_RUNTIME_FINDINGS.md",
+        "sha256": "7F29EE2B70834FC373516D9E694B619C92CB2AA85744FDAA7E7695C79823092F",
+        "lines": 88
+      },
+      {
+        "path": "Tasks/002/TASK002_REPRODUCTION.md",
+        "sha256": "8FD24D1B3BD57BF26F5575FA6B4C6CA3010BDBD5E65C469D6D7A44893EE90446",
+        "lines": 63
+      },
+      {
+        "path": "Tasks/003/003-air-operations-investigation.md",
+        "sha256": "937E638B1CD19077574DC1286B9F7AFAE3E6355C45AC44D15215A45CF713C50C",
+        "lines": 160
+      },
+      {
+        "path": "Tasks/003/AIROPS_REPRODUCTION.md",
+        "sha256": "2B06ACB37B23AB42B01F6D35BA0FB4679FE86A5C7244B4ADFA8911F420871596",
+        "lines": 91
+      },
+      {
+        "path": "Tasks/003/SEAPOWER_AIROPS_FINDINGS.md",
+        "sha256": "45D531FCF0B9DBD781851C03EECE8B2ACCB4F2C248EB97F0BFFE6F8693A37224",
+        "lines": 163
+      },
+      {
+        "path": "Tasks/004/004-first-end-to-end-vertical-slice.md",
+        "sha256": "276E3B56F1936382D19F0098F2A9731998BC016149ADAE9F16AD62B9C2B5D5F6",
+        "lines": 161
+      },
+      {
+        "path": "Tasks/004/TASK004_IMPLEMENTATION.md",
+        "sha256": "C65BDE92DD29100E09AC5A536E895DEAFD9A1AFE1336098A6C2D4C24C75147CA",
+        "lines": 84
+      },
+      {
+        "path": "Tasks/004/TASK004_REPRODUCTION.md",
+        "sha256": "59447DC07FD77F04B9467E53BAB42CB40E6D4A5A351EA5749BCE5F10C700D764",
+        "lines": 79
+      },
+      {
+        "path": "Tasks/005/TASK005_IMPLEMENTATION.md",
+        "sha256": "CC8089BDB282321F5A310167DF11434C4A070C40893D15298476EF5841ED1C82",
+        "lines": 119
+      },
+      {
+        "path": "Tasks/006/006-operational-command-control.md",
+        "sha256": "96DC848720651B60E5283DA987458B1B44CF8132FA7AA9D52F3178D91008CEBD",
+        "lines": 129
+      },
+      {
+        "path": "Tasks/007/007-code-readability-and-docs-adoption.md",
+        "sha256": "2EE9D40A7D5540BD1B901DB582320AD2A2DF6568BE569A042B0E4C96FAEB96EE",
+        "lines": 113
+      },
+      {
+        "path": "Tasks/README.md",
+        "sha256": "401E8FB1A9EE510BBB0249E4F28994333BDDF75C317070BDA3778FA6F7C7A9F3",
+        "lines": 16
+      }
+    ],
+    "repository": "Docs",
+    "head": "f7733a7ac6d105cff5a9dfcc1250b3800ef8ba60",
+    "status": []
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "97DCEE3A2DD6802EDBFB6D0EF0F0AE11E198B4D96BC7008796837B001E827DB9",
+        "lines": 3
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "2BB122086EBF230063DD6ECCA9E1EE866CD43B0C19A3536892162A19F1E5BDF1",
+        "lines": 7
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "81E0BB9BE26340013C57B6AF98AE6B69A7615C787BD1118C64E5DE332921F7FC",
+        "lines": 57
+      },
+      {
+        "path": "NavalCommand.Build.CMake.cmake",
+        "sha256": "848691CE2B8880C03AA748F379CC34FEFA82EB0DF7E567512DECF28BBE0A3F10",
+        "lines": 124
+      },
+      {
+        "path": "README.md",
+        "sha256": "96D141A1F85C036C55181D448F25EE2865FFCAF5C02B1D1C9DF5D3AF180B3AC7",
+        "lines": 26
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "236B122EE281573B5A07119DFAB1B73EDF9D4DF1039B3A760010473B1C340277",
+        "lines": 14
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "5C468418A557E851B036A25587B5BB73BB98453EBE5AC496FDABE64B698859F2",
+        "lines": 2
+      },
+      {
+        "path": "test/ResolutionTest.py",
+        "sha256": "C43E25E1AABF35423984360C25EDC02A08586BC09A40F65DDA323F3D1FA27202",
+        "lines": 73
+      }
+    ],
+    "repository": "Build.CMake",
+    "head": "3d3ff24d75c9d3b399207bff0d565f1db741c215",
+    "status": [
+      " M README.md"
+    ]
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD",
+        "lines": 10
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "2CC964774948FAEE5D185AA3985EE4CEA4689B3D2DF362C85CB59BC73EA4707D",
+        "lines": 13
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4",
+        "lines": 91
+      },
+      {
+        "path": "README.md",
+        "sha256": "C39FCDBC941E57F30BD7C3620035755379E6C4A80278E642D3D75840E3B925CB",
+        "lines": 21
+      },
+      {
+        "path": "app/CMakeLists.txt",
+        "sha256": "B9E9F369158AAC8EA57A63D01397C214A986021F039887D45F4D0D1AE2FC740D",
+        "lines": 3
+      },
+      {
+        "path": "app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+        "sha256": "BCDBF071246197D806D489B45284887A8342E62C57C51B83C34FD0EE34CA5B5E",
+        "lines": 18
+      },
+      {
+        "path": "managed/Gateway.Api.csproj",
+        "sha256": "950C798814BD8C9FB97741D71C3880280BDE43067CDA0C045057C664D510D237",
+        "lines": 10
+      },
+      {
+        "path": "proto/navalcommand/gateway/v1/incidents.proto",
+        "sha256": "6817613D81F4402AA16E6C0343381F6324994BD7F47A15B2785F3CF610C2438B",
+        "lines": 6
+      },
+      {
+        "path": "proto/navalcommand/gateway/v1/orders.proto",
+        "sha256": "A796FB6EDCF52D6FC186B8104BCF0F86787A67CBC9D97DF99F9A464904674887",
+        "lines": 11
+      },
+      {
+        "path": "proto/navalcommand/gateway/v1/session.proto",
+        "sha256": "B3EB1C2ADC3550B36F6E08516A98B9E5766D5B6A882178B5450FE4291551E10C",
+        "lines": 6
+      },
+      {
+        "path": "proto/navalcommand/gateway/v1/world.proto",
+        "sha256": "8B322CB484731A296DA344390FD6CF085121C7A7DFB766C0B6D0E5E920AA2662",
+        "lines": 12
+      },
+      {
+        "path": "public/NavalCommand/Gateway/Api/Codec.h",
+        "sha256": "107D1CF9C527D224F7A3C396EDF72464CF084712D792074F10F06887DE91B2B7",
+        "lines": 12
+      },
+      {
+        "path": "public/NavalCommand/Gateway/Api/IProvider.h",
+        "sha256": "D837937AFFADB5465F33F2D1F59F6C95F7B3CA7276811474BFFEA989C06F7C3E",
+        "lines": 17
+      },
+      {
+        "path": "public/NavalCommand/Orders/Api/Eligibility.h",
+        "sha256": "E3BA9FADDF1149CE9896AD2FCAC1DDBA487B2C3227C2C203D84BFBE3251D511C",
+        "lines": 10
+      },
+      {
+        "path": "public/NavalCommand/Orders/Api/Order.h",
+        "sha256": "9016A725EF451C60332B51C14E7E466DF092451516F63891A838E954878597C7",
+        "lines": 28
+      },
+      {
+        "path": "public/NavalCommand/World/Api/View.h",
+        "sha256": "EC25FF49077740F158B082C30728ABDE66691A5B32D619D435961FFED032C18D",
+        "lines": 45
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "1BE9806501F6FEB375B29A0792A57A7DB7AE524E7C53898569AC385B57C522DA",
+        "lines": 11
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "sha256": "76D11FEADF47E84F526950227863C2A1C19E99A9E9849AA770DB3D5A041A0CC9",
+        "lines": 15
+      },
+      {
+        "path": "src/NavalCommand/Gateway/Api/Codec.cpp",
+        "sha256": "E7E1C923E50B6AC4A17A06E7AF51BA3BDF180E18CF285811AFA58A7BD83CB68A",
+        "lines": 136
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "1FE3607C62921053AEA825022DE1823CC0CF4B7D3E4C77D14933FF12D2F203F7",
+        "lines": 5
+      },
+      {
+        "path": "test/Check-Schema.ps1",
+        "sha256": "EFA3CD4D9F8BF135E7DD8419F6BE676C7D7EEC9D388F83C68941C07A9654A06D",
+        "lines": 33
+      },
+      {
+        "path": "test/NavalCommand/Gateway/Api/CodecTest.cpp",
+        "sha256": "82F78EE02E3ED61CC53C6D913F6BB4214E4E25DD88F248C58428FCA9CFD7749C",
+        "lines": 29
+      },
+      {
+        "path": "test/managed/Conformance.csproj",
+        "sha256": "EA3C82D92FA72E4C287A55B01F2F898782AF78A76FE61B811D01C6C36B4738C4",
+        "lines": 2
+      },
+      {
+        "path": "test/managed/Program.cs",
+        "sha256": "A100A7606B5CE00E023C9002E93B9E5998C5A6134B5F93B6E712FA80FB73591A",
+        "lines": 21
+      },
+      {
+        "path": "test/schema-baseline.json",
+        "sha256": "2FE557A34562F64570E3438FB3D9BE5A7F2B095CB6B76BE738F5A760E8887F95",
+        "lines": 89
+      },
+      {
+        "path": "vcpkg.json",
+        "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376",
+        "lines": 16
+      }
+    ],
+    "repository": "Gateway.Api",
+    "head": "1578f7fcd4be2d3692451660a0635ea5463cc49f",
+    "status": [
+      " M CMakePresets.json"
+    ]
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD",
+        "lines": 10
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "C4B0578A3855C5D8C21D4A9591FC7B6C6794AA4CF03F316097D3615BC7742031",
+        "lines": 14
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4",
+        "lines": 91
+      },
+      {
+        "path": "README.md",
+        "sha256": "F2C8869742BDB956F2A845B0386F4C373261E1DED96F7C10FB97279693CC3C83",
+        "lines": 21
+      },
+      {
+        "path": "app/CMakeLists.txt",
+        "sha256": "3E787F3AE7A651F060D6EC9EFE8E1E960CB3BF37E7BDD4DF1C4218FEEF124865",
+        "lines": 3
+      },
+      {
+        "path": "app/NavalCommand/Gateway/Grpc/Api/Cli.cpp",
+        "sha256": "35653E1AB6D8E90BB05268BAC70387F36AD1A08326DBC9CAB121E281C736C8D8",
+        "lines": 177
+      },
+      {
+        "path": "proto/navalcommand/gateway/v1/service.proto",
+        "sha256": "71E8B4B24D0B5A584CF9BD5105141EB95F3279EF5DF9DA0335493FCB5D4B3030",
+        "lines": 13
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "1BE9806501F6FEB375B29A0792A57A7DB7AE524E7C53898569AC385B57C522DA",
+        "lines": 11
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "sha256": "5F80678E7BD3A411B1D376CCED932626290C65067509223C770D4DD61CD46878",
+        "lines": 12
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "839D18A03597AA97B4F5D5EA4253AD72B643F6FD508AD815FDFE7E6843696ABB",
+        "lines": 1
+      },
+      {
+        "path": "vcpkg.json",
+        "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376",
+        "lines": 16
+      }
+    ],
+    "repository": "Gateway.Grpc.Api",
+    "head": "267b9f4052a5c6749b49eefc9727fccf5928ab61",
+    "status": [
+      " M CMakePresets.json"
+    ]
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD",
+        "lines": 10
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "22B1CE47105877A6105B965B2591C32EF62725934CBB58E89EB93CF66A07C99E",
+        "lines": 15
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4",
+        "lines": 91
+      },
+      {
+        "path": "README.md",
+        "sha256": "070E59F0204302EEB54B04B610B2A46171D71C7FA9094417344948F7AF335E1A",
+        "lines": 21
+      },
+      {
+        "path": "app/CMakeLists.txt",
+        "sha256": "0C8C88F3D2FDEB7202875FF3E4D1625343CA524DEFACD084E424CEAFB86E3272",
+        "lines": 3
+      },
+      {
+        "path": "app/NavalCommand/Gateway/Grpc/MockHost.cpp",
+        "sha256": "19BE0E64F7BECC1716322D7D64F63FA8011B4F4FFBC1720541CB79A60016E4C8",
+        "lines": 17
+      },
+      {
+        "path": "mock/CMakeLists.txt",
+        "sha256": "335E7DFCAF5C1B577746C977076D3B4AADF439E5FE806600A478B6CA460657EF",
+        "lines": 3
+      },
+      {
+        "path": "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+        "sha256": "C6D480E12F724991E5C82A12A7DA29060B860DC8CFECA3DBD216318E63DF255E",
+        "lines": 86
+      },
+      {
+        "path": "public/NavalCommand/Gateway/Grpc/Server.h",
+        "sha256": "2FF36EFEEF500E662F0967EC185AE17CCA58066E415AB1E7854A01E1693C0A26",
+        "lines": 32
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "1BE9806501F6FEB375B29A0792A57A7DB7AE524E7C53898569AC385B57C522DA",
+        "lines": 11
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "sha256": "C1FF8F6BE53F1AB8F2F7E5A3FDB9143E8DFEC35579004ABCEBF346D5E442B81B",
+        "lines": 5
+      },
+      {
+        "path": "src/NavalCommand/Gateway/Grpc/Server.cpp",
+        "sha256": "18CF529ED7CD3484EA4928703173C3E201894A6F60096A65E8A3BEBFB7FC7F1D",
+        "lines": 91
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "06A1B098CC7FDA319DFD31BEEAA014353EF6CF1AD3D491B4217106BA3BA8B918",
+        "lines": 5
+      },
+      {
+        "path": "test/NavalCommand/Gateway/Grpc/ServerTest.cpp",
+        "sha256": "188BCE741AF54E9CC68B4DFA3C8EA67C3DAC0CA31FD4EE5EC9D14B5D00528EE9",
+        "lines": 42
+      },
+      {
+        "path": "vcpkg.json",
+        "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376",
+        "lines": 16
+      }
+    ],
+    "repository": "Gateway.Grpc",
+    "head": "5e80a356f84383621b0d212c11a394b1c92b91f9",
+    "status": [
+      " M CMakePresets.json"
+    ]
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD",
+        "lines": 10
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "57063F416A24E381EA4FD5EFE4E46AD76A3686BE1955E5D97C41E7A056922B48",
+        "lines": 14
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "1AC8074285BCEF02673B3D6422F7BAE29E2A011EF500EEE8599E064B14E832B4",
+        "lines": 91
+      },
+      {
+        "path": "README.md",
+        "sha256": "F83FADB7CC576C661673423DA3AA524023953AA575B177D3424BEC1C8197447C",
+        "lines": 21
+      },
+      {
+        "path": "SeaPower.Client.csproj",
+        "sha256": "55B039B5EF230311B58A9025B816D7357E6BFF9414B59D333DC2C95FA64E87E0",
+        "lines": 16
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "1BE9806501F6FEB375B29A0792A57A7DB7AE524E7C53898569AC385B57C522DA",
+        "lines": 11
+      },
+      {
+        "path": "scripts/Build.ps1",
+        "sha256": "0239E3040C92AD5AE3E45FFAEB1C4D029BB3695E490EE4DDC6414D07EEFF301F",
+        "lines": 3
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "sha256": "1825E30C8047B9ED1A1397F32FA4D3E7D986A4A4ADBCB61ECE7EB704F7F066AE",
+        "lines": 11
+      },
+      {
+        "path": "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+        "sha256": "044912910B257B1DB010BD17A3A0E5519F7592EC7B981A2C777B1AD2761A412E",
+        "lines": 22
+      },
+      {
+        "path": "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+        "sha256": "D3F2138F90648FD73CFCB15D5820240109234E51F27EA6DEA57378E54778B152",
+        "lines": 48
+      },
+      {
+        "path": "src/NavalCommand/SeaPower/Client/Provider.cs",
+        "sha256": "2DF110763238A4CD0E15D63C923634ACB224052E431BA1124E4390260F144CC7",
+        "lines": 91
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "6380838C2C3D3354DE73E1C1A2A4E6F2E5673F2994C4EEA99C7B57702ACC1D96",
+        "lines": 4
+      },
+      {
+        "path": "test/Program.cs",
+        "sha256": "1B7D5483763E632BCCE67DBF2827F094BD36A94E8B4AA39D1FF7D29295A22D88",
+        "lines": 38
+      },
+      {
+        "path": "test/ProviderTests.csproj",
+        "sha256": "EAC4BCC159A2D7EABE0E500957352DED4EF0D956AEE0866CAFE835E0B8F1269A",
+        "lines": 2
+      },
+      {
+        "path": "vcpkg.json",
+        "sha256": "2ED17390EB8544AF3A7212DFC0D99C6BC27CBC0B7DF24D20A24FA6CDE2A4F770",
+        "lines": 16
+      }
+    ],
+    "repository": "SeaPower.Client",
+    "head": "284f28730660825068e0bb3eca6a2d072dc79849",
+    "status": [
+      " M CMakePresets.json"
+    ]
+  },
+  {
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "6B97F8CE47F16E1307CC2D575BEE8B4DEDAB51E5C8CF0F2FD2379EAA75271ADD",
+        "lines": 10
+      },
+      {
+        "path": "CMakeLists.txt",
+        "sha256": "5A34AD32AE4D8A54234666E214711E92BD8847422DFA2DE34704F1A545F7F433",
+        "lines": 17
+      },
+      {
+        "path": "CMakePresets.json",
+        "sha256": "2A677855E0AE558D0E10F1753B3369028363AC09445F5E41CB3B3B537DA90924",
+        "lines": 53
+      },
+      {
+        "path": "README.md",
+        "sha256": "7D573A165C64C0068412F28521D8A2105E2B37BCC82469A524FDE5926482ACDB",
+        "lines": 27
+      },
+      {
+        "path": "app/CMakeLists.txt",
+        "sha256": "897700763818538A7E955B55D8EB95E2C0EA3B8E787FCDDC618F0D24C38DD108",
+        "lines": 5
+      },
+      {
+        "path": "app/harness/AirFacilities.ini",
+        "sha256": "20E30CAE639E32A1927E9D50B48E8972D3A03763BA6BBD3A711D5AFF74F9D322",
+        "lines": 61
+      },
+      {
+        "path": "app/harness/AirOpsProbe.cs",
+        "sha256": "1AF9B180536164E8601808A7BEE9C78EE60C5492121AC1E722B3943AF9D625C3",
+        "lines": 170
+      },
+      {
+        "path": "app/harness/AircraftThreat.ini",
+        "sha256": "CB6013A7D38771625CBFF0247DE1AE0199609E026E977770596E48A8BAF496B1",
+        "lines": 46
+      },
+      {
+        "path": "app/harness/Build-AnchorChain.ps1",
+        "sha256": "51353BA37F24F7BA4CA68790008D3BFF0448D4DEB6EDC003520F88844A1B8FCB",
+        "lines": 35
+      },
+      {
+        "path": "app/harness/DiagnosticProbe.cs",
+        "sha256": "851400D6009C966CFBD118F7735E0811A4679C1B555D6E9DF54A38129859ADED",
+        "lines": 213
+      },
+      {
+        "path": "app/harness/LaunchCandidate.cs",
+        "sha256": "6425D0F33DBAE68ECF816BB1EAAE1DD9FBA63BC2BA680A9F44C1F5D7975E5B57",
+        "lines": 117
+      },
+      {
+        "path": "app/harness/LaunchCandidate.csproj",
+        "sha256": "405A12343EBCEE5BDD5887AA48816D782E356AAAC50C412CDBC9A78EFFEF8A59",
+        "lines": 26
+      },
+      {
+        "path": "app/harness/MinimalCombat.ini",
+        "sha256": "B766A29398E883F9D0002CB98A6FB5283A1E4230793C2FA15D225ABC7DA383EC",
+        "lines": 40
+      },
+      {
+        "path": "app/harness/NearContact.ini",
+        "sha256": "7A7A8F102FB7C14FDEC41D0C242E7C1F417BAE1680DF79492F6E3A4B59B4CE6A",
+        "lines": 41
+      },
+      {
+        "path": "app/harness/Prepare-LaunchRequest.ps1",
+        "sha256": "79EFEF387074BCB26FAC4A036A43E49E3737F698C02C5718B2D1AFDD1490B9B1",
+        "lines": 41
+      },
+      {
+        "path": "app/harness/RuntimePlugin.cs",
+        "sha256": "316E9C60D88F32C93CCA5532B8B1AABD6C51E1746BA20915F858E1BC2879AC0F",
+        "lines": 182
+      },
+      {
+        "path": "app/harness/Start-Validation.ps1",
+        "sha256": "1F899CBF802AFCC52DB9DC4F04DC285DB228D154380170EE00ED83FC8FB3CFE5",
+        "lines": 69
+      },
+      {
+        "path": "config.json",
+        "sha256": "B474F3BC8488689F009882129E89A91E43D3EF5074F00700B8A97D08EFF6CC77",
+        "lines": 11
+      },
+      {
+        "path": "managed/Bootstrap.cs",
+        "sha256": "3324F98F67A81305D3ABFCF0AD4A9F0AD751CB3BDB53A4E9B64286A2C5A1E034",
+        "lines": 81
+      },
+      {
+        "path": "managed/NativeTransport.cs",
+        "sha256": "778E486BBC5C2F541F223785ABE6072388EBDAEFB4B0C9FD6BA14628C768758A",
+        "lines": 28
+      },
+      {
+        "path": "managed/SeaPower.Mod.csproj",
+        "sha256": "522363956243D5AE304EFCBAB3B636326637492BA683118CF7DEE0860A4D089E",
+        "lines": 12
+      },
+      {
+        "path": "scripts/Build-Native.ps1",
+        "sha256": "1BE9806501F6FEB375B29A0792A57A7DB7AE524E7C53898569AC385B57C522DA",
+        "lines": 11
+      },
+      {
+        "path": "scripts/Build.ps1",
+        "sha256": "709C2CCB56B36DF327060F0C291493E0FE985EC03A57D8F5BD0E3A490B00DDBF",
+        "lines": 38
+      },
+      {
+        "path": "scripts/Prepare-Dependencies.ps1",
+        "sha256": "2318010BBADA7EB37EB6A2C877BFB9AF8193E5F973039B78198FD8F3E8AC8100",
+        "lines": 7
+      },
+      {
+        "path": "scripts/Start-Live.ps1",
+        "sha256": "4A8EAC8EAA664DD2A5B823E2F94F6EB9E649D9ECCE1684901EDF76BC86FE4D33",
+        "lines": 55
+      },
+      {
+        "path": "scripts/Test-Mock.ps1",
+        "sha256": "CE3972FD021016B136931C49411F08CE7D01C85DDA0D410493540BDD26EFE784",
+        "lines": 12
+      },
+      {
+        "path": "src/CMakeLists.txt",
+        "sha256": "28DA03DE8CE92560D69AFD4A552E19F85306B49C216E068B00C30FF74636D643",
+        "lines": 5
+      },
+      {
+        "path": "src/NavalCommand/SeaPower/Mod/Host.cpp",
+        "sha256": "D00150D114E0E8F53BC5CCF8D579BF0116CB3852BD2524DB8FCB657D6FC91E9F",
+        "lines": 164
+      },
+      {
+        "path": "src/NavalCommand/SeaPower/Mod/Host.h",
+        "sha256": "DEC4F256671F0EF9D4891B0647C93BCC6B437BB0FC90C681D85AC784677C0A42",
+        "lines": 20
+      },
+      {
+        "path": "test/CMakeLists.txt",
+        "sha256": "D51D9907CEDF8A7FEE2C4E483C001130CFE700A1BF061BAB76E77B9CBBA7482F",
+        "lines": 7
+      },
+      {
+        "path": "test/NavalCommand/SeaPower/Mod/HostTest.cpp",
+        "sha256": "9372F8AD94164B8A1CC5CED038914D68700A641D0D66F0D1528FB61444456729",
+        "lines": 73
+      },
+      {
+        "path": "vcpkg.json",
+        "sha256": "D75823581387620EA9621527EF5927BA92DACE573271143D584EDFA9295DA376",
+        "lines": 16
+      }
+    ],
+    "repository": "SeaPower.Mod",
+    "head": "eb31e6e55f715364c0a1afe57f249bded3df871f",
+    "status": [
+      " M CMakePresets.json",
+      " M README.md",
+      " M scripts/Prepare-Dependencies.ps1",
+      " M src/CMakeLists.txt",
+      "?? .idea/"
+    ]
+  }
+]

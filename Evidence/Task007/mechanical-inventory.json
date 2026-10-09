@@ -1,0 +1,537 @@
+[
+  {
+    "repository": "Build.CMake",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "NavalCommand.Build.CMake.cmake",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Build.CMake",
+    "path": "test/ResolutionTest.py",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "app/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "managed/Gateway.Api.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/incidents.proto",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/orders.proto",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/session.proto",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "proto/navalcommand/gateway/v1/world.proto",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Gateway/Api/Codec.h",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Gateway/Api/IProvider.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Eligibility.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/Orders/Api/Order.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "public/NavalCommand/World/Api/View.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "src/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "src/NavalCommand/Gateway/Api/Codec.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/Check-Schema.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/NavalCommand/Gateway/Api/CodecTest.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/managed/Conformance.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/managed/Program.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "test/schema-baseline.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Api",
+    "path": "vcpkg.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "app/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "app/NavalCommand/Gateway/Grpc/Api/Cli.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "proto/navalcommand/gateway/v1/service.proto",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "src/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "path": "vcpkg.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "app/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "app/NavalCommand/Gateway/Grpc/MockHost.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "mock/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "mock/NavalCommand/Gateway/Grpc/MockProvider.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "public/NavalCommand/Gateway/Grpc/Server.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "src/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "src/NavalCommand/Gateway/Grpc/Server.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "test/NavalCommand/Gateway/Grpc/ServerTest.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "path": "vcpkg.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "SeaPower.Client.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "scripts/Build.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "src/NavalCommand/SeaPower/Client/Provider.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/Program.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "test/ProviderTests.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Client",
+    "path": "vcpkg.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": ".gitignore",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "CMakePresets.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "README.md",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AirFacilities.ini",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AirOpsProbe.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/AircraftThreat.ini",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Build-AnchorChain.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/DiagnosticProbe.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/LaunchCandidate.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/LaunchCandidate.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/MinimalCombat.ini",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/NearContact.ini",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Prepare-LaunchRequest.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/RuntimePlugin.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "app/harness/Start-Validation.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "config.json",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/Bootstrap.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/NativeTransport.cs",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "managed/SeaPower.Mod.csproj",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Build-Native.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Build.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Prepare-Dependencies.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Start-Live.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "scripts/Test-Mock.ps1",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/Host.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "src/NavalCommand/SeaPower/Mod/Host.h",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "test/CMakeLists.txt",
+    "mechanicallyChanged": false
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "test/NavalCommand/SeaPower/Mod/HostTest.cpp",
+    "mechanicallyChanged": true
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "path": "vcpkg.json",
+    "mechanicallyChanged": false
+  }
+]

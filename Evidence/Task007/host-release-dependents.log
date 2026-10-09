@@ -1,0 +1,29 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\src\SeaPower.Host.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ADVAPI32.dll
+    IPHLPAPI.DLL
+    WSOCK32.dll
+    WS2_32.dll
+    CRYPT32.dll
+    KERNEL32.dll
+    USER32.dll
+    bcrypt.dll
+    dbghelp.dll
+
+  Summary
+
+       6F000 .data
+        1000 .fptable
+       6E000 .pdata
+      32B000 .rdata
+       19000 .reloc
+        1000 .rsrc
+      A13000 .text

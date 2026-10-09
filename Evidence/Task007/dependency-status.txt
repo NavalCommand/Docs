@@ -1,0 +1,160 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: da2d6984f4fe4a25f5f5148e027c5d177601cc828475fe9f35588ddfb2b40759
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: fe72aa56a901a728288f692e12b7626786704477f1b1d167711d511e0acc8b13
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: fc28946d83d5e90ca883db4dae3580afde0cd580ff73a42310d14faf9d1d6928
+Description: A compression library
+Status: install ok installed
+
+Package: abseil
+Version: 20260107.1
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 3031c4ad723dbe57ae4e66becc96e3b07b7952b65337c454ca1a81695652df9b
+Description: Abseil is an open-source collection of C++ library code designed to augment the C++ standard library. The Abseil library code is collected from Google's own C++ code base, has been extensively tested and used in production, and is the same code we depend on in our daily coding lives.
+    In some cases, Abseil provides pieces missing from the C++ standard; in others, Abseil provides alternatives to the standard for special needs we've found through usage in the Google code base. We denote those cases clearly within the library code we provide you.
+    Abseil is not meant to be a competitor to the standard library; we've just found that many of these utilities serve a purpose within our code base, and we now want to provide those resources to the C++ community as a whole.
+Status: install ok installed
+
+Package: utf8-range
+Version: 6.33.4
+Depends: abseil, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: c2077074a740b06c1c87c597e892b5f74c9da763e86a94237764da605ae23cf9
+Description: Fast UTF-8 validation with Range algorithm (NEON+SSE4+AVX2)
+Status: install ok installed
+
+Package: re2
+Version: 2025-11-05
+Depends: abseil, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 5fe6b2a608425760ecb8ee8d097d92a863a0f9df3f37eb5f07d8f6d66ec5005c
+Description: RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
+Status: install ok installed
+
+Package: protobuf
+Version: 6.33.4
+Port-Version: 2
+Depends: abseil, utf8-range, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 866b647c8181f2bb2286c153bfaaa35b94c2110dd895c7b726db972ab85f947c
+Description: Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.
+Status: install ok installed
+
+Package: protobuf
+Feature: libprotoc
+Architecture: x64-windows-static
+Multi-Arch: same
+Description: Build the libprotoc compiler library for target builds.
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2025-05-29
+Depends: vcpkg-cmake
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: c64213819b9480d68c6ddcc0094b6c9ed29bcab07e6cd78e7664f99ac46e2c42
+Status: install ok installed
+
+Package: openssl
+Version: 3.6.3
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: bd80c2cd62662a12e82be7b954381e9c5cd1ae0df728cd73d09444466d5708ac
+Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: c-ares
+Version: 1.34.8
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: cda7f29b259eca652cea704d49fd3170350d8ccd7a7a58c5841e815876f7a969
+Description: A C library for asynchronous DNS requests
+Status: install ok installed
+
+Package: grpc
+Version: 1.81.1
+Depends: abseil, c-ares, openssl, protobuf, re2, utf8-range, vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 7263593ca4ffd6dcbfbf8030648925f5e8b813bf1c1b9f82598e5f1de176cd73
+Description: gRPC is a modern, open source, high-performance remote procedure call (RPC) framework that can run anywhere. gRPC enables client and server applications to communicate transparently, and simplifies the building of connected systems.
+Status: install ok installed
+
+Package: grpc
+Feature: codegen
+Depends: protobuf
+Architecture: x64-windows-static
+Multi-Arch: same
+Description: Build code generator machinery
+Status: install ok installed
+
+Package: gtest
+Version: 1.17.0
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: eed6e5a8167f5a7bf7e05f6bb30e551105b4ec0cff69ba4db488a465fbf77adb
+Description: Google Testing and Mocking Framework
+Status: install ok installed
+
+Package: fmt
+Version: 12.2.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: e3daa90adc9bf9dc92d2c6558dc40d6679d56d10fefd41fa414eacb6d2bb0b07
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+
+Package: spdlog
+Version: 1.17.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows-static
+Multi-Arch: same
+Abi: 527786a93ce4ececf7157760b473bfb623e8cbc37fa65e87d2a6a8b2998a3c3f
+Description: Very fast, header-only/compiled, C++ logging library.
+Default-Features: fmt, tz-offset
+Status: install ok installed
+
+Package: spdlog
+Feature: fmt
+Depends: fmt
+Architecture: x64-windows-static
+Multi-Arch: same
+Description: Use fmt library
+Status: install ok installed
+
+Package: spdlog
+Feature: tz-offset
+Architecture: x64-windows-static
+Multi-Arch: same
+Description: Omit %z timezone offset (use on platforms without tm_gmtoff)
+Status: install ok installed
+
