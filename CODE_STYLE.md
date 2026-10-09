@@ -78,6 +78,10 @@ Keep the public signature unchanged unless authorized, and do not assume newer A
 
 ## Enforcement in code changes
 
+Native modules use `.clang-format` for the representable C++ export rules: tab indentation, the 180-column margin, braces, sorted includes and linkage-specification brace placement. LLVM defaults fill in settings the export does not specify. This is a formatting subset, not an exact translation of naming, definition ordering or project structure; those remain manual review requirements. Compatibility exceptions for existing public member names, generated methods and ABI exports must be explicit.
+
+Managed repositories use `.editorconfig` with ordinary C# spacing, indentation and multiline-block rules. Those settings do not inherit the C++ naming policy. Apply tools only to enumerated handwritten files; generated bindings and dependency trees are excluded.
+
 - Before writing a file, inspect the governing repo style, `Docs/CodeStyle.xml` and this document. If a reference is only in the shared project documentation, bring the relevant instructions into the actual working repository context.
 - Preserve the XML verbatim as a review reference. Establish project-local `.editorconfig`, C++ formatter configuration, and language-specific tooling only for settings that can be represented faithfully; note any limitations. Do **not** create a competing generic formatting configuration that silently overrides the owner's settings.
 - For any file modified in a change, clean up nearby manually authored code with minified methods, obfuscated names and dense statements. Perform a focused readability audit across handwritten source/test/build files in the affected repositories; identify remaining issues rather than claiming a wholesale cleanup without inspection.

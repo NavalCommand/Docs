@@ -10,6 +10,7 @@ This directory contains historical work specifications, reports and reproduction
 | [004](004/) | First end-to-end gateway implementation assignment, [results](004/TASK004_IMPLEMENTATION.md), [reproduction](004/TASK004_REPRODUCTION.md) |
 | [005](005/) | [Completed module/build restructuring report](005/TASK005_IMPLEMENTATION.md); its originally recorded compiler/runtime settings are historical, not the desired current `x64-windows-static` policy |
 | [006](006/) | Repeatable movement and facility-launch assignment (not evidence of completion) |
+| [007](007/007-code-readability-and-docs-adoption.md) | Repository-wide readability and documentation adoption; [implementation report](007/REPORT.md) |
 
 Run-specific evidence remains in [../Evidence/](../Evidence/README.md) under its original directory identifiers. Some archived commands or inline `Docs/...` paths reflect the former root-level document layout; use this index when locating moved reports.
 

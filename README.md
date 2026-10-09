@@ -6,7 +6,7 @@ This `Docs/` directory separates **normative project contracts** from **dated im
 
 | Document | Purpose |
 |---|---|
-| [AGENTS.md](AGENTS.md) | Permanent instructions for contributors and coding agents; keep a corresponding copy at each repository root if that is how the agent discovers instructions |
+| [AGENTS.md](AGENTS.md) | Sole project-wide instructions for contributors and coding agents; explicitly read this file from code repositories rather than copying it to the unsynchronized parent workspace |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | System concepts, domain ownership, observation boundaries, native automation and deployment architecture |
 | [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md) | Git repository separation, shared `Build.CMake`, module structure, toolchains, presets, dependency and runtime linkage policy |
 | [LOCAL_SOURCES.md](LOCAL_SOURCES.md) | Optional, Git-ignored `Build.Local.cmake` internal dependency overrides |
