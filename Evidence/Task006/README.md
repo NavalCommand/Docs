@@ -1,5 +1,7 @@
 # Execution evidence, 10 October 2026
 
+Subsequent facility-launch lifecycle corrections and new receipts are separated under [Stabilization/](Stabilization/README.md). Original run artifacts below remain unchanged.
+
 Current scope is [the Task006 report](../../Tasks/006/TASK006_IMPLEMENTATION.md), using current post-011 sources. Receipts describe actual executed tests, including failures. No proprietary binaries or decompiled source are included.
 
 ## Final live receipts

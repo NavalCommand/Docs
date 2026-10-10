@@ -1,0 +1,10 @@
+2026-10-10T17:37:26.4785685Z plugin-awake thread=1
+2026-10-10T17:37:31.4968459Z scene-unloaded buildIndex=-1
+2026-10-10T17:37:31.9919827Z scene-loaded buildIndex=0
+2026-10-10T17:37:32.7357982Z scenario-launcher-installed
+2026-10-10T17:37:32.8079130Z scene-loaded buildIndex=4
+2026-10-10T17:37:39.9755394Z scene-loaded buildIndex=1
+2026-10-10T17:37:40.3572418Z mission-load-requested
+2026-10-10T17:37:41.5953764Z scene-loaded buildIndex=2
+2026-10-10T17:37:50.3658592Z mission-loaded side=Taskforce1 ownUnits=3
+2026-10-10T17:37:51.4230288Z playable-ready side=Taskforce1 ownUnits=3 controllableOwnUnit=true missionTime=5.20729505596682

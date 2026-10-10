@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "mode": "Combined",
+  "cliExitCode": 0,
+  "clientArguments": [
+    "--launch-smoke"
+  ],
+  "optedIntoMutation": true,
+  "finishedUtc": "2026-10-10T17:34:43.2869170Z"
+}

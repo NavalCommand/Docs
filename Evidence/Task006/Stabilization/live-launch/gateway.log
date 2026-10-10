@@ -1,0 +1,10 @@
+2026-10-10T17:33:55.9490743Z native-start abi=1 status=0
+2026-10-10T17:34:13.9216295Z player-side-bound Taskforce1
+2026-10-10T17:34:15.3068768Z dispatch thread=1 request=launch-17916536552111604-resources stage=Rejected reason=resources_unavailable seconds=5.10547556355596
+2026-10-10T17:34:21.6098055Z dispatch thread=1 request=launch-17916536552111604unsupported_aircraft stage=Rejected reason=unsupported_aircraft seconds=128.616722861305
+2026-10-10T17:34:22.1242750Z dispatch thread=1 request=launch-17916536552111604invalid_squadron stage=Rejected reason=invalid_squadron seconds=232.231664696708
+2026-10-10T17:34:22.6460670Z dispatch thread=1 request=launch-17916536552111604invalid_loadout stage=Rejected reason=invalid_loadout seconds=337.355406204239
+2026-10-10T17:34:22.9272735Z dispatch thread=1 request=launch-17916536552111604 stage=NativeTaskCreated reason=native_launch_reservation_verified seconds=383.889027157798
+2026-10-10T17:34:22.9272735Z dispatch thread=1 request=launch-17916536552111604 stage=Preparing reason=native_pending_preparation_observed seconds=383.889027157798
+2026-10-10T17:34:39.1999149Z dispatch thread=1 request=launch-17916536552111604 stage=AircraftSpawned reason=native_spawn_membership_observed seconds=1295.04908494093
+2026-10-10T17:34:42.7969327Z dispatch thread=1 request=launch-17916536552111604 stage=Airborne reason=native_airborne_observed seconds=1401.05606261827

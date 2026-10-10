@@ -1,0 +1,62 @@
+[
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "Domain.Api"
+  },
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "Gateway.Api"
+  },
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "Gateway.Grpc.Api"
+  },
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "Gateway.Grpc"
+  },
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "SeaPower.Client"
+  },
+  {
+    "Configuration": "Release",
+    "Exit": 0,
+    "Repository": "SeaPower.Mod"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 0,
+    "Repository": "Domain.Api"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 0,
+    "Repository": "Gateway.Api"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 0,
+    "Repository": "Gateway.Grpc.Api"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 8,
+    "Repository": "Gateway.Grpc"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 0,
+    "Repository": "SeaPower.Client"
+  },
+  {
+    "Configuration": "Debug",
+    "Exit": 8,
+    "Repository": "SeaPower.Mod"
+  }
+]

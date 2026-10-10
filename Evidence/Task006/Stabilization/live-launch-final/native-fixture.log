@@ -1,0 +1,59 @@
+2026-10-10T17:37:46.9470323Z native-aircraft-states seconds=2.00623709335923 
+2026-10-10T17:37:46.9470323Z resource-injection ammoBefore=1000000 stock=2 tasks=0
+2026-10-10T17:37:46.9470323Z facility seconds=2.00623709335923 ammo=-1 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:56.9698774Z resources-restored stock=2 tasks=0 compression=200 native-maximum native-timings-unchanged
+2026-10-10T17:37:57.0959269Z facility seconds=35.2357496037148 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:57.2624255Z facility seconds=68.7991691841744 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:57.4488131Z facility seconds=100.501229883637 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:57.6098447Z facility seconds=135.550552846398 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:57.7708744Z facility seconds=167.641673566308 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:57.9329092Z facility seconds=198.61345696589 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:58.1160960Z facility seconds=234.957859994378 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:58.2936975Z facility seconds=269.82730054995 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:58.4781694Z facility seconds=306.056060196366 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:58.6530833Z facility seconds=340.934420229401 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:58.8373008Z facility seconds=377.287164689507 ammo=1000000 unreserved=2 physicalOnboard=2 tasks=
+2026-10-10T17:37:59.0143965Z facility seconds=412.199588777032 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=886.8585
+2026-10-10T17:37:59.1984752Z facility seconds=448.529433490243 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=850.5286
+2026-10-10T17:37:59.3738654Z facility seconds=483.347494365182 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=815.7105
+2026-10-10T17:37:59.5583918Z facility seconds=519.683739663567 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=779.3743
+2026-10-10T17:37:59.7338571Z facility seconds=554.391622306313 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=744.6663
+2026-10-10T17:37:59.9174480Z facility seconds=590.639766456094 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=708.4181
+2026-10-10T17:38:00.0927260Z facility seconds=625.354148389306 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=673.7037
+2026-10-10T17:38:00.2756917Z facility seconds=661.533071996178 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=637.5247
+2026-10-10T17:38:00.4519812Z facility seconds=696.249635220971 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=602.8082
+2026-10-10T17:38:00.6359911Z facility seconds=732.513338328805 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=566.5444
+2026-10-10T17:38:00.8108739Z facility seconds=767.238481046166 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=531.8192
+2026-10-10T17:38:00.9951944Z facility seconds=803.463563920464 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=495.5941
+2026-10-10T17:38:01.1710642Z facility seconds=838.159048677888 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=460.8987
+2026-10-10T17:38:01.3547687Z facility seconds=874.454707743134 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=424.603
+2026-10-10T17:38:01.9690051Z facility seconds=909.259689451661 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=389.7981
+2026-10-10T17:38:02.8421836Z facility seconds=940.192158953752 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=358.8655
+2026-10-10T17:38:03.8507088Z facility seconds=970.276235015597 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=328.7815
+2026-10-10T17:38:04.8771398Z facility seconds=1000.31326279184 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=298.7444
+2026-10-10T17:38:05.8874123Z facility seconds=1030.40883611282 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=268.6488
+2026-10-10T17:38:06.9005629Z facility seconds=1060.53790524742 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=238.5196
+2026-10-10T17:38:07.9545243Z facility seconds=1091.19157897076 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=207.8659
+2026-10-10T17:38:08.9951127Z facility seconds=1121.83102163812 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=177.2264
+2026-10-10T17:38:10.0297321Z facility seconds=1151.88426746568 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=147.1731
+2026-10-10T17:38:11.0539682Z facility seconds=1182.48220232269 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=116.5751
+2026-10-10T17:38:12.0919790Z facility seconds=1212.50444930932 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=86.55289
+2026-10-10T17:38:13.1552648Z facility seconds=1243.38067355892 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=55.67668
+2026-10-10T17:38:14.1644312Z facility seconds=1273.57295310637 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=PendingLaunchTask:HandleReadyUpTask:work=25.48438
+2026-10-10T17:38:15.0902126Z native-aircraft-states seconds=1299.94232921442 uid=161 state=NoMotionController flightDeckState=Spawn inFlight=False
+2026-10-10T17:38:15.1295375Z native-aircraft-states seconds=1301.63757531485 uid=161 state=NoMotionController flightDeckState=OpenHangarDoors inFlight=False
+2026-10-10T17:38:15.1295375Z native-aircraft-states seconds=1301.63757531485 uid=161 state=NoMotionController flightDeckState=EmbarkElevator inFlight=False
+2026-10-10T17:38:15.1305347Z native-aircraft-states seconds=1301.63757531485 uid=161 state=Default flightDeckState=EmbarkElevator inFlight=False
+2026-10-10T17:38:15.1882985Z facility seconds=1303.86975841364 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=LaunchTask:EmbarkElevator:work=0
+2026-10-10T17:38:15.1882985Z own-aircraft uid=161 state=Default flightDeckState=EmbarkElevator inFlight=False
+2026-10-10T17:38:15.6039991Z native-aircraft-states seconds=1316.116739647 uid=161 state=Default flightDeckState=RaiseElevator inFlight=False
+2026-10-10T17:38:15.6049940Z native-aircraft-states seconds=1316.116739647 uid=161 state=Default flightDeckState=TaxiToLaunchPoint inFlight=False
+2026-10-10T17:38:16.2439932Z facility seconds=1334.80711321672 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=LaunchTask:TaxiToLaunchPoint:work=0
+2026-10-10T17:38:16.2439932Z own-aircraft uid=161 state=Default flightDeckState=TaxiToLaunchPoint inFlight=False
+2026-10-10T17:38:16.9818892Z native-aircraft-states seconds=1355.69829268893 uid=161 state=Default flightDeckState=PreFlightAnim inFlight=False
+2026-10-10T17:38:17.2659152Z facility seconds=1364.81501993677 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=LaunchTask:PreFlightAnim:work=0
+2026-10-10T17:38:17.2659152Z own-aircraft uid=161 state=Default flightDeckState=PreFlightAnim inFlight=False
+2026-10-10T17:38:17.3290465Z native-aircraft-states seconds=1366.17196479579 uid=161 state=Default flightDeckState=PlaneTakeOff inFlight=False
+2026-10-10T17:38:18.3214731Z facility seconds=1395.03978344938 ammo=997490.2 unreserved=1 physicalOnboard=2 tasks=LaunchTask:PlaneTakeOff:work=0
+2026-10-10T17:38:18.3214731Z own-aircraft uid=161 state=Default flightDeckState=PlaneTakeOff inFlight=False
+2026-10-10T17:38:18.6897409Z native-aircraft-states seconds=1405.62841531774 uid=161 state=Default flightDeckState= inFlight=True

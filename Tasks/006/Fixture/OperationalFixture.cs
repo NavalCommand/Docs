@@ -87,8 +87,9 @@ public sealed class OperationalFixture : BaseUnityPlugin
         {
             deck._currentAmmo = ammoBefore;
             restored = true;
-            GameTime.TimeCompression = 5;
-            Emit("resources-restored stock=" + deck.TotalVehiclesOnBoard() + " tasks=" + deck.FlightDeckTasks.Count + " compression=5 native-timings-unchanged");
+            GameTime.SetMaxTimeCompression();
+            Emit("resources-restored stock=" + deck.TotalVehiclesOnBoard() + " tasks=" + deck.FlightDeckTasks.Count
+                + " compression=" + GameTime.TimeCompression + " native-maximum native-timings-unchanged");
         }
         if (GameTime.missionElapsedTime >= nextSampleSeconds)
         {
