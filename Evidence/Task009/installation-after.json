@@ -1,0 +1,22 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "99BC22DCBA6305CFAD2A1C4489585A70D545950C828259F9EEEB31D02C67C14A",
+    "Path": "C:\\Games\\Sea_Power_8_3\\Sea Power.exe"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2E781620A7FE6F238E46E6C1BD3C7B56EBBF99950E87D6E3CA93E5A18B6AAD89",
+    "Path": "C:\\Games\\Sea_Power_8_3\\UnityPlayer.dll"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A",
+    "Path": "C:\\Games\\Sea_Power_8_3\\doorstop_config.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2779887F350B0BC3D367CC129ED0B96FC1D86ADA91249255A2F21B4E09AB3553",
+    "Path": "C:\\Games\\Sea_Power_8_3\\BepInEx\\plugins\\LaunchCandidate.dll"
+  }
+]

@@ -1,0 +1,26 @@
+PASS Default-disabled configuration
+PASS Package-relative native path
+PASS Independent absolute production log directory
+PASS Explicit activation override
+PASS Invalid activation override
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Relative explicit config path
+PASS Missing explicit config
+PASS Relative native library
+PASS Missing native DLL
+PASS Retryable publish backpressure preserves pending bytes
+PASS Worker copies native command bytes
+PASS Orderly off-thread shutdown happens once
+PASS Shutdown status logged
+PASS Transport startup failure is observable
+PASS Unwritable log path retains both failures
+PASS Harness-only token/PID readiness receipt
+PASS Harness reports unwritable evidence path
+Runtime/harness checks passed: 25

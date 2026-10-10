@@ -1,6 +1,6 @@
 # Task 009 — Production Managed Runtime and Reusable Development Harness
 
-**Type:** Structural and behavioral-maintenance implementation task. **Status:** Not started.
+**Type:** Structural and behavioral-maintenance implementation task. **Status:** Completed; see [implementation report](009-implementation.md). The existing Debug gRPC shutdown issue remains unresolved.
 
 **Prerequisites:** Tasks 004–005 established the gateway and module layout. Keep Tasks 007 (code readability) and 008 (formations/weapon posture investigation) as distinct assignments; **Task 008 has not yet run**. Complete this cleanup before using the harness for Task 008's runtime experiments.
 

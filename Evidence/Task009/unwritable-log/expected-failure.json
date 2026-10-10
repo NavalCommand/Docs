@@ -1,0 +1,5 @@
+{
+  "expectedFailure": true,
+  "verifiedIn": "loader.log",
+  "error": "Production bootstrap failed; see archived loader.log"
+}

@@ -1,0 +1,167 @@
+{
+  "repositories": {
+    "Build.CMake": {
+      "status": [],
+      "head": "ae4b4efb0505542d61ba5106bf6836d7e35b3fc0"
+    },
+    "Gateway.Grpc": {
+      "status": [],
+      "head": "476c9bc4dc88589893dee0c914ab2de3e984709c"
+    },
+    "Docs": {
+      "status": [
+        " M AGENTS.md",
+        " M ARCHITECTURE.md",
+        " M MODULE_STRUCTURE.md",
+        " M Tasks/009/009-runtime-harness-separation.md",
+        " M Tasks/README.md",
+        "?? Evidence/Task009/",
+        "?? Tasks/009/009-implementation.md",
+        "?? Tasks/009/ArchivedProbes/"
+      ],
+      "head": "7dc0a813d6986e575c9b036d3df85bec1b4dfbcb"
+    },
+    "Gateway.Api": {
+      "status": [],
+      "head": "ca5b9d8e7d2a82baf53a1c3ed310568647d66914"
+    },
+    "SeaPower.Client": {
+      "status": [],
+      "head": "f6055f7319196630cfee5a640a8011e099645a37"
+    },
+    "Gateway.Grpc.Api": {
+      "status": [],
+      "head": "71cf5c616b1c669c40b0fb9a1d33d277947f704c"
+    },
+    "SeaPower.Mod": {
+      "status": [
+        " M .gitignore",
+        " M README.md",
+        " M src/CMakeLists.txt"
+      ],
+      "head": "f34ab0097d95d37804eedf6bfe1b1d689cf57b2c"
+    }
+  },
+  "source": [
+    {
+      "sha256": "722D35745FDF7B01A2BEF21F81043D5B95C8FB6D8613F8FAC81B39176EAAAD55",
+      "file": "managed/harness/EvidenceWriter.cs"
+    },
+    {
+      "sha256": "0DBBA7E7C52A76B6C2B6C6A2048F21E34D76C6EA4D3029488D89F20A264ECA51",
+      "file": "managed/harness/HarnessPlugin.cs"
+    },
+    {
+      "sha256": "28F304DA6A5B348CF980EBBDEB208D45BFEBA0C39881A84EA6DB8914C9BC5EDD",
+      "file": "managed/harness/MissionLauncher.cs"
+    },
+    {
+      "sha256": "B7D52C79F2563F032DBE62D62EBE68FB00C93CBED5FD6E28401EA38E6E9877D6",
+      "file": "managed/harness/SeaPower.Harness.csproj"
+    },
+    {
+      "sha256": "20B3485656C1FC7B1A308EE90D7A74D9D2C750CDFC205112704E88408D6A46AD",
+      "file": "managed/harness/scenarios/AirFacilities.ini"
+    },
+    {
+      "sha256": "32FF96C8C2D98A9C293E553F72CA7016C635C6BBC8ECC17543011E5B1890CE7E",
+      "file": "managed/harness/scenarios/AircraftThreat.ini"
+    },
+    {
+      "sha256": "AFB33203EE7CDC61465F6312B4ACDA5F4EE27E45E08309530D50EB2E0167661F",
+      "file": "managed/harness/scenarios/MinimalCombat.ini"
+    },
+    {
+      "sha256": "257DF69E3AEFD44AC4371FEBF76362653F70DF5B07D0B66194D6EBF9E9CC5525",
+      "file": "managed/harness/scenarios/NearContact.ini"
+    },
+    {
+      "sha256": "CBE650C1C8E08E7DBDB66A4ED041E16D27550856EFB093FBC006BCEAC722B6BC",
+      "file": "managed/runtime/Bootstrap.cs"
+    },
+    {
+      "sha256": "860DE3AB7C3C83AE4363D43B95F1A011900A6201C3EFAFE5ACC6FD1CDE4F4B2C",
+      "file": "managed/runtime/INativeTransport.cs"
+    },
+    {
+      "sha256": "65797110DDAD9AFAD0BAC71C5A65E095C1CEBE6AC5FDF30E3FB5B8274B974356",
+      "file": "managed/runtime/NativeTransport.cs"
+    },
+    {
+      "sha256": "815F38ABEFDE8FDEFE2D505BF5AD873EE99ECB6D23408D105199EA3C9F863459",
+      "file": "managed/runtime/Runtime.cs"
+    },
+    {
+      "sha256": "90EFA32888F4F471353D35064884F560C4F4968962513AD3B6CE9A330FFC861B",
+      "file": "managed/runtime/RuntimeConfiguration.cs"
+    },
+    {
+      "sha256": "56EC7EF9AF7CC7D0A4091ED5F88C7C7116047D65593090ADBF22F9EE2412A87F",
+      "file": "managed/runtime/RuntimeMailbox.cs"
+    },
+    {
+      "sha256": "E0FBAB393B7CDDB31CFAD45ABE2FBA13DC652663AEA1FC026E573856E9F56035",
+      "file": "managed/runtime/SeaPower.Mod.csproj"
+    },
+    {
+      "sha256": "DEABAE866E908A020631FE179FAAA36ECDA3056C1AD461A795B80222FCCB4265",
+      "file": "managed/runtime/TransportWorker.cs"
+    },
+    {
+      "sha256": "81B335929F28364AAD4E24E04D4F2A8F4B3C37B849EB563580E0B57631FFC531",
+      "file": "scripts/Build-AnchorChain.ps1"
+    },
+    {
+      "sha256": "C744DB125ED1D0E50E706D88918D7158886017F25C38DACD2B09BB513B60747C",
+      "file": "scripts/Build-Harness.ps1"
+    },
+    {
+      "sha256": "8CBC2FE9796BA8E8DF70EDDCD47EF2F90F9CAC21BC740DE822BD8FF669EEEECB",
+      "file": "scripts/Build-Native.ps1"
+    },
+    {
+      "sha256": "481948C49B1A97ACBE7BF24FA1A0BDFCB83112D1B126988D63AFE4D5F44C1725",
+      "file": "scripts/Build.ps1"
+    },
+    {
+      "sha256": "92EE623AFA341061116A467BD1476349CD0EF324D00EAC1E0217A25BD2C36BD1",
+      "file": "scripts/Prepare-Dependencies.ps1"
+    },
+    {
+      "sha256": "7520D31238B171FFE84D7454567FBECDAEB70C7812A9761BCC70F09DB4061FDA",
+      "file": "scripts/Prepare-LaunchRequest.ps1"
+    },
+    {
+      "sha256": "B2DB039B1BBD7076E1287EA49F750A9D85AF2980CA6CF9D42E3D587F32B89FD5",
+      "file": "scripts/Start-Live.ps1"
+    },
+    {
+      "sha256": "710A249063E43BB53F9B4CD746BE99BBE2B542BEBA9574CB11F24DF46DBAC85C",
+      "file": "scripts/Start-Validation.ps1"
+    },
+    {
+      "sha256": "86CED27C32947D6079DF0F19DDEF9DAB22856F0A41A7589D9465E13331BBF5B5",
+      "file": "scripts/Test-Mock.ps1"
+    },
+    {
+      "sha256": "AD36A4486422B5D3E58832DC696849BA57A6513988D16992EE709CA253993877",
+      "file": "test/CMakeLists.txt"
+    },
+    {
+      "sha256": "07DEDDAB2AD84845581B26FC294E9ADC561A47896A370A569535C3F41F42AF91",
+      "file": "test/NavalCommand/SeaPower/Mod/AbiMismatchFixture.cpp"
+    },
+    {
+      "sha256": "ED265E509331E6C011C0296D2F8511E0C9C2BE6ED1F0097F8D33F9C8E5BE8ADB",
+      "file": "test/NavalCommand/SeaPower/Mod/HostTest.cpp"
+    },
+    {
+      "sha256": "530BE03D68FBCD2E59756A946E16CEE25460017E19587D27A5B9719E9D6EB433",
+      "file": "test/managed/Program.cs"
+    },
+    {
+      "sha256": "EECA83E8A1453052835787CD2405E54F2ADF1932ABBE425029F4AF363938F84C",
+      "file": "test/managed/RuntimeTests.csproj"
+    }
+  ]
+}

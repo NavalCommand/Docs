@@ -1,0 +1,19 @@
+Build started 10.10.2026 14:08:38.
+     1>Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\SeaPower.Harness.csproj" on node 1 (Clean target(s)).
+     1>CoreClean:
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\bin\Release\netstandard2.1\SeaPower.Harness.deps.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\bin\Release\netstandard2.1\SeaPower.Harness.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\bin\Release\netstandard2.1\SeaPower.Harness.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.csproj.AssemblyReference.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.sourcelink.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\obj\Release\netstandard2.1\SeaPower.Harness.pdb".
+     1>Done Building Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\harness\SeaPower.Harness.csproj" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.29

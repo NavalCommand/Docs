@@ -1,0 +1,6 @@
+{
+  "expectedFailure": true,
+  "verifiedIn": "loader.log",
+  "error": "Production bootstrap failed: native host is missing",
+  "processSurvivedUntilOwnedCleanup": true
+}

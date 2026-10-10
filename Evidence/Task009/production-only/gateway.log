@@ -1,0 +1,5 @@
+2026-10-10T12:02:08.9768985Z native-start abi=1 status=0
+2026-10-10T12:03:04.5941155Z player-side-bound Taskforce1
+2026-10-10T12:03:05.1169112Z dispatch thread=1 request=smoke-17916337849170799 stage=NativeTaskCreated reason=native_task_membership_verified seconds=5.05951389484107
+2026-10-10T12:03:11.0454534Z dispatch thread=1 request=smoke-17916337849170799 stage=MovementObserved reason=displacement_after_native_task_creation seconds=10.977825905662
+worker-stop status=0

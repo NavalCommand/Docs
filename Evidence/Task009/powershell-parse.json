@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "parsedScripts": [
+    "Build-AnchorChain.ps1",
+    "Build-Harness.ps1",
+    "Build-Native.ps1",
+    "Build.ps1",
+    "Prepare-Dependencies.ps1",
+    "Prepare-LaunchRequest.ps1",
+    "Start-Live.ps1",
+    "Start-Validation.ps1",
+    "Test-Mock.ps1"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "capturedUtc": "2026-10-10T11:46:42.3420243Z",
+  "repositories": {
+    "Gateway.Grpc": {
+      "status": [],
+      "head": "476c9bc4dc88589893dee0c914ab2de3e984709c"
+    },
+    "SeaPower.Client": {
+      "status": [],
+      "head": "f6055f7319196630cfee5a640a8011e099645a37"
+    },
+    "Gateway.Api": {
+      "status": [],
+      "head": "ca5b9d8e7d2a82baf53a1c3ed310568647d66914"
+    },
+    "SeaPower.Mod": {
+      "status": [
+        " M .gitignore",
+        " M CMakePresets.json",
+        " M README.md",
+        " M src/CMakeLists.txt"
+      ],
+      "head": "9800829a850972669542d830f93835729c8d09e3"
+    },
+    "Gateway.Grpc.Api": {
+      "status": [],
+      "head": "71cf5c616b1c669c40b0fb9a1d33d277947f704c"
+    },
+    "Build.CMake": {
+      "status": [],
+      "head": "ae4b4efb0505542d61ba5106bf6836d7e35b3fc0"
+    },
+    "Docs": {
+      "status": [],
+      "head": "7dc0a813d6986e575c9b036d3df85bec1b4dfbcb"
+    }
+  },
+  "files": [
+    "SeaPower.Mod/scripts\\Test-Mock.ps1",
+    "SeaPower.Mod/scripts\\Start-Live.ps1",
+    "SeaPower.Mod/scripts\\Prepare-Dependencies.ps1",
+    "SeaPower.Mod/scripts\\Build.ps1",
+    "SeaPower.Mod/scripts\\Build-Native.ps1",
+    "SeaPower.Mod/managed\\SeaPower.Mod.csproj",
+    "SeaPower.Mod/managed\\Runtime.cs",
+    "SeaPower.Mod/managed\\NativeTransport.cs",
+    "SeaPower.Mod/managed\\Bootstrap.cs",
+    "SeaPower.Mod/app\\CMakeLists.txt",
+    "SeaPower.Mod/test\\CMakeLists.txt",
+    "SeaPower.Mod/app\\harness\\Start-Validation.ps1",
+    "SeaPower.Mod/app\\harness\\RuntimePlugin.cs",
+    "SeaPower.Mod/app\\harness\\Prepare-LaunchRequest.ps1",
+    "SeaPower.Mod/app\\harness\\NearContact.ini",
+    "SeaPower.Mod/app\\harness\\MinimalCombat.ini",
+    "SeaPower.Mod/app\\harness\\LaunchCandidate.csproj",
+    "SeaPower.Mod/app\\harness\\LaunchCandidate.cs",
+    "SeaPower.Mod/app\\harness\\DiagnosticProbe.cs",
+    "SeaPower.Mod/app\\harness\\Build-AnchorChain.ps1",
+    "SeaPower.Mod/app\\harness\\AirOpsProbe.cs",
+    "SeaPower.Mod/app\\harness\\AirFacilities.ini",
+    "SeaPower.Mod/app\\harness\\AircraftThreat.ini",
+    "SeaPower.Mod/test\\NavalCommand\\SeaPower\\Mod\\HostTest.cpp"
+  ],
+  "productionStartup": "Harness writer loads platform shims and provider dependencies, then reflection-attaches Bootstrap on engine thread",
+  "packaging": "Build.ps1 builds runtime and harness together; Task004.LaunchCandidate.dll is packaged",
+  "knownRegression": "Debug gRPC shutdown process-exit access violation remains unresolved"
+}

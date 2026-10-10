@@ -15,6 +15,8 @@ The platform has five independent functional Git repositories and one separate i
 | `SeaPower.Mod` | C# composition/loader root, native host/C ABI, DI, package assembly and developer harness | Managed/native build and packaging orchestration |
 | `Build.CMake` | Shared CMake functions, policies, internal-source registry and native target configuration | Infrastructure only; never a runtime/domain module |
 
+Managed mod sources are grouped in `SeaPower.Mod/managed/runtime/` and `SeaPower.Mod/managed/harness/`, with distinct projects and outputs. `scripts/Build.ps1` stages the production runtime only; `scripts/Build-Harness.ps1` stages optional development tooling and scenario fixtures separately. `app/` owns CMake composition metadata, not managed implementation sources. The approved BepInEx runtime plugin bootstraps independently; a harness is never a runtime build or deployment prerequisite.
+
 The provider and gateway implementations do not depend on each other. `SeaPower.Mod` binds them. The common `.proto` payload types are defined once in `Gateway.Api`, imported by `Gateway.Grpc.Api` and generated for both C++ and C#. Build/source dependency edges must not contradict [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Native repository layout

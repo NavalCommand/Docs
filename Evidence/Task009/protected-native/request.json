@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "token": "e1767c17-75fb-4a05-8707-80955fecc15e",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\harness\\scenarios\\AircraftThreat.ini",
+  "side": "Taskforce1",
+  "timeoutSeconds": 180,
+  "status": "prepared-only-no-loader-activated",
+  "ready": false
+}
