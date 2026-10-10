@@ -1,6 +1,7 @@
 # Task 012 — Sea Power weapon engagement envelope and effectiveness investigation
 
-**Status:** Proposed / not started  
+**Status:** Partial — initial static investigation underway; the UI path and principal calculation semantics are recorded in [STATIC_FINDINGS.md](STATIC_FINDINGS.md). Runtime validation (Gate C) and API feasibility/design (Gate D) are deferred. Task 012 is not complete.
+
 **Type:** Static investigation, limited runtime validation, and API feasibility assessment. **Do not implement a production API in this task.**  
 **Priority:** Investigate the existing player weapon-order hover display and its native calculations before deciding how to expose equivalent read-only information through NavalCommand.
 
