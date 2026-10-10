@@ -40,6 +40,14 @@
 
 The export does **not** explicitly specify a complete formatting scheme for every C++ construct, C# naming/indentation, PowerShell, Python, CMake or Protobuf. Do not misrepresent it as if it did.
 
+## Additional C++ project conventions
+
+- **No closing-namespace comments.** Close namespaces with a plain `}`, not `} // namespace` or `} // namespace NavalCommand::Orders::Api`. Modern IDEs display the surrounding namespace. The extra comments provide little value and create maintenance noise. Remove them from handwritten files when editing the surrounding code; do not mass-reformat unrelated files solely for this reason.
+- **Prefer one independently usable public type per header.** A public header should not force consumers to include unrelated type definitions they do not use. Treat header inclusion as a dependency and apply the intent of the [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle): keep each header's public responsibility narrow. A file containing several unrelated or independently reusable public classes, structs or enums is discouraged; place those types in separate appropriately named headers.
+- **Exception for inseparable, closely related types.** Multiple types in a single header are acceptable when they form one cohesive abstraction and cannot reasonably be used independently. Prefer a nested type when a helper exists only as part of its owner. For example, `LaunchOption` should be a nested member type of `Stock` (such as `Stock::LaunchOption`) if it has no meaningful standalone use; if other interfaces or consumers use it independently, give it a dedicated `LaunchOption.h` instead. Do not nest it solely to avoid creating a file if it is conceptually independent.
+- These are additional project conventions, **not** settings claimed to originate in `CodeStyle.xml`. When adjusting existing public headers, consider source/ABI compatibility, preserve intended wire behavior, and test affected consumers; do not launch an unrelated mass header-refactoring campaign.
+
+
 ## Example of forbidden density
 
 The following **shape** is not acceptable regardless of language:

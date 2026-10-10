@@ -1,0 +1,7 @@
+NavalCommandFramework — TODO
+=========================
+
+1. Naming: Consider renaming Orders::Api::Waypoint to RouteCommand (or WaypointCommand) to distinguish a requested route mutation from RoutePoint, which represents an observed/planned route entry. Preserve protocol compatibility when implementing.
+2. Build warning: Investigate and resolve MSVC C4996 in VC/Tools/MSVC/14.51.36231/include/xmemory(337): 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead. Determine whether deprecated use is in our code or a gRPC dependency; update the relevant API/dependency rather than globally suppressing the warning.
+3. Test utilities: Move standalone executables and utilities used exclusively by tests (for example, Gateway.Api/app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp) into the owning repository's test/ tree. test/ is not limited to Google Test code; preserve their build targets and CTest integration.
+4. Header segregation: Review headers with multiple independently usable types and split them into one public type per header. Closely coupled helper types may remain nested in their owning type. For Domain.Api/World/Api/Stock.h, consider nesting LaunchOption within Stock if it has no independent use; otherwise move LaunchOption to its own LaunchOption.h. Keep public compatibility intentional.
