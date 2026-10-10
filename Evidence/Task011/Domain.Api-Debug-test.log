@@ -1,0 +1,9 @@
+Test project C:/Software/GitHub/NavalCommand/Domain.Api/o/windows-msvc-debug
+    Start 1: orders-headers
+1/2 Test #1: orders-headers ...................   Passed    0.07 sec
+    Start 2: world-headers
+2/2 Test #2: world-headers ....................   Passed    0.09 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.26 sec

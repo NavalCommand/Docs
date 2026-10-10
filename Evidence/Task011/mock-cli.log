@@ -1,0 +1,11 @@
+view {"session":{"schemaVersion":1,"sessionId":"mock-session","observerId":"mock-observer","ready":true},"observationVersion":"1","ownUnits":[{"id":"unit-1","name":"Mock vessel","position":{"latitudeDeg":61.96,"longitudeDeg":-10.37},"speedMps":0,"orders":[{"kind":"set_waypoint","availability":"EXECUTABLE","argumentSemantics":"append; current altitude; telegraph 2; no formation"}]}]}
+discovery {"sessionId":"mock-session","entityId":"unit-1","orders":[{"kind":"set_waypoint","availability":"EXECUTABLE","argumentSemantics":"append; current altitude; telegraph 2; no formation"}]}
+submit {"sessionId":"old","requestId":"smoke-17916482488865637-bad0","stage":"REJECTED","reason":"stale_session"}
+submit {"sessionId":"mock-session","requestId":"smoke-17916482488865637-bad1","stage":"REJECTED","reason":"wrong_side_or_invalid_entity"}
+submit {"sessionId":"mock-session","requestId":"smoke-17916482488865637-bad2","stage":"REJECTED","reason":"invalid_arguments"}
+submit {"sessionId":"mock-session","requestId":"smoke-17916482488865637-bad3","stage":"REJECTED","reason":"stale_observation"}
+submit {"sessionId":"mock-session","requestId":"smoke-17916482488865637","stage":"MOVEMENT_OBSERVED","reason":"mock_displacement","sampledAtSeconds":1,"displacementM":111}
+status {"sessionId":"mock-session","requestId":"smoke-17916482488865637","stage":"MOVEMENT_OBSERVED","reason":"mock_displacement","sampledAtSeconds":1,"displacementM":111}
+submit {"sessionId":"mock-session","requestId":"smoke-17916482488865637","stage":"MOVEMENT_OBSERVED","reason":"mock_displacement","sampledAtSeconds":1,"displacementM":111}
+final-view {"session":{"schemaVersion":1,"sessionId":"mock-session","observerId":"mock-observer","ready":true},"observationVersion":"1","ownUnits":[{"id":"unit-1","name":"Mock vessel","position":{"latitudeDeg":61.961,"longitudeDeg":-10.37},"speedMps":0,"orders":[{"kind":"set_waypoint","availability":"EXECUTABLE","argumentSemantics":"append; current altitude; telegraph 2; no formation"}]}]}
+SMOKE_PASS request=smoke-17916482488865637 movement_m=111

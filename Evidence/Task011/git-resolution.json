@@ -1,0 +1,22 @@
+{
+  "Build.CMake": "f12d7dd3d07d03644a55cde069313254120c2e76",
+  "Domain.Api": "8472b5b2b1edc062fe32aeb69d8259545d587546",
+  "Gateway.Api": "865cea0573ce3c603c3ba397c7fbb842fddee4b1",
+  "Gateway.Grpc.Api": "f416e7d530547ffb289cb3ed46b8dec6a4727a3c",
+  "Gateway.Grpc": "bf62e93e82464a198e9538c05745ad6dedcfda86",
+  "SeaPower.Client": "49299cbe40bebba32023d3a6cf1aa4106fee0d94",
+  "SeaPower.Mod": "d361aa7407d14b05cccf80947cb5614fc86476ab",
+  "Gateway.Api-resolution": [
+    "navalcommand.domain.api|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/Gateway.Api/o/git-release/_deps/nc_eea0c16a12ca-src"
+  ],
+  "SeaPower.Mod-resolution": [
+    "navalcommand.domain.api|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_eea0c16a12ca-src",
+    "navalcommand.gateway.api|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_0b1845c5e8eb-src",
+    "navalcommand.gateway.grpc.api|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_2ce4f16e7409-src",
+    "navalcommand.gateway.grpc|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_9c6b3dc680b0-src",
+    "navalcommand.seapower.client|main|C:/Software/GitHub/NavalCommand/Domain.Api/o/run-g9c2w2ua/SeaPower.Mod/o/git-release/_deps/nc_c754339ee794-src"
+  ],
+  "fixture": "C:\\Software\\GitHub\\NavalCommand\\Domain.Api\\o\\run-g9c2w2ua",
+  "publicRemoteVerified": false,
+  "result": "PASS isolated Git FetchContent with no local override; direct and transitive Domain.Api and managed graph"
+}

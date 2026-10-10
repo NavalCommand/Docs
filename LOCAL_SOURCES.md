@@ -34,6 +34,8 @@ NavalCommandSetDependencyPath(
 
 The shared helper defines `NavalCommandSetDependencyPath` and evaluates **only** `${CMAKE_SOURCE_DIR}/Build.Local.cmake` once, before any normal dependency declaration. Keep `/Build.Local.cmake` in every module's `.gitignore`; never commit machine-specific absolute paths, local checkout discovery or overrides in a published `CMakeLists.txt` or `CMakePresets.json`.
 
+For the initially unpublished `Domain.Api`, register `https://github.com/NavalCommand/Domain.Api.git` with the local Domain.Api checkout in this same top-level file. Every top-level gateway or mod configuration must supply that registration until publication; a registration in a fetched Gateway.Api's local file is not read. Domain.Api itself needs only the Build.CMake bootstrap when the shared infrastructure is local. Public-remote builds remain blocked until the owner publishes the new repository.
+
 The normal `cmake --preset windows-msvc-debug` command works with or without this file. No alternative preset, source-root environment variable or automatic sibling discovery is needed.
 
 ## Resolution rules

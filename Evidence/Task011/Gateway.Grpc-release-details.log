@@ -1,0 +1,36 @@
+Start testing: Oct 10 18:01 W. Europe Daylight Time
+----------------------------------------------------------
+1/1 Testing: gateway
+1/1 Test: gateway
+Command: "C:/Software/GitHub/NavalCommand/Gateway.Grpc/o/windows-msvc-release/test/gateway-tests.exe"
+Directory: C:/Software/GitHub/NavalCommand/Gateway.Grpc/o/windows-msvc-release/test
+"gateway" start time: Oct 10 18:01 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-e243b8ee0f.clean\googletest\src\gtest_main.cc
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from Provider
+[ RUN      ] Provider.RejectionsDuplicatesAndSessionReset
+[       OK ] Provider.RejectionsDuplicatesAndSessionReset (0 ms)
+[ RUN      ] Provider.BoundedLedger
+[       OK ] Provider.BoundedLedger (0 ms)
+[----------] 2 tests from Provider (0 ms total)
+
+[----------] 1 test from Server
+[ RUN      ] Server.RealGrpcAndLoopbackGuard
+[       OK ] Server.RealGrpcAndLoopbackGuard (18 ms)
+[----------] 1 test from Server (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (18 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"gateway" end time: Oct 10 18:01 W. Europe Daylight Time
+"gateway" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 10 18:01 W. Europe Daylight Time

@@ -1,0 +1,51 @@
+Start testing: Oct 10 18:04 W. Europe Daylight Time
+----------------------------------------------------------
+1/2 Testing: dependency-resolution
+1/2 Test: dependency-resolution
+Command: "C:/Users/DmitriyPC/AppData/Local/Programs/Python/Python313/python.exe" "C:/Software/GitHub/NavalCommand/Build.CMake/test/ResolutionTest.py" "C:/Program Files/JetBrains/CLion 2026.1/bin/cmake/win/x64/bin/cmake.exe" "C:/Software/GitHub/NavalCommand/Build.CMake"
+Directory: C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release/test
+"dependency-resolution" start time: Oct 10 18:04 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+PASS git-without-local
+PASS hashed names and CMP0168 NEW (no subbuild directories)
+PASS direct-and-transitive-local
+PASS git-direct-local-transitive
+PASS invalid-explicit
+PASS conflict
+PASS same-registration
+PASS late-registration
+PASS conflicting-tags
+PASS canonical-identity
+RESOLUTION_PASS fixtures=C:\Software\GitHub\NavalCommand\Build.CMake\o\resolver-tests\run-ypzexle7
+<end of output>
+Test time =  12.87 sec
+----------------------------------------------------------
+Test Passed.
+"dependency-resolution" end time: Oct 10 18:04 W. Europe Daylight Time
+"dependency-resolution" time elapsed: 00:00:12
+----------------------------------------------------------
+
+2/2 Testing: managed-integration
+2/2 Test: managed-integration
+Command: "C:/Users/DmitriyPC/AppData/Local/Programs/Python/Python313/python.exe" "C:/Software/GitHub/NavalCommand/Build.CMake/test/ManagedIntegrationTest.py" "C:/Program Files/JetBrains/CLion 2026.1/bin/cmake/win/x64/bin/cmake.exe" "C:/Software/GitHub/NavalCommand/Build.CMake"
+Directory: C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release/test
+"managed-integration" start time: Oct 10 18:04 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+PASS git: direct + transitive contexts, direct Debug/Release MSBuild and CMake target
+PASS git: conflicting consumer rejected and explicit IDE context replacement verified
+PASS git: stale CMake consumer rejected; direct IDE uses selected context; replacement resets
+PASS local: direct + transitive contexts, direct Debug/Release MSBuild and CMake target
+PASS local: conflicting consumer rejected and explicit IDE context replacement verified
+PASS local: stale CMake consumer rejected; direct IDE uses selected context; replacement resets
+MANAGED_INTEGRATION_PASS fixtures=C:\Software\GitHub\NavalCommand\Build.CMake\o\managed-tests\run-x9wo66kg
+<end of output>
+Test time =  21.83 sec
+----------------------------------------------------------
+Test Passed.
+"managed-integration" end time: Oct 10 18:05 W. Europe Daylight Time
+"managed-integration" time elapsed: 00:00:21
+----------------------------------------------------------
+
+End testing: Oct 10 18:05 W. Europe Daylight Time

@@ -1,0 +1,15 @@
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:18:	World::Api::View m_View;
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:19:	std::map<std::string, Orders::Api::Result> m_Ledger;
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:38:								{{"set_waypoint", Orders::Api::Availability::Executable, "", "append; current altitude; telegraph 2; no formation"}}});
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:40:	std::expected<World::Api::View, Api::Error> View() override {
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:44:	Orders::Api::Result Submit(const Orders::Api::Request &request) override {
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:46:		using OrderStage = Orders::Api::Stage;
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:48:			return Orders::Api::Result{request.sessionId, request.requestId, OrderStage::Rejected, reason};
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:56:		Orders::Api::Result result;
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:68:		} else if (m_View.units[0].orders[0].availability != Orders::Api::Availability::Executable) {
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:77:	Orders::Api::Result Status(const std::string &sessionId, const std::string &requestId) override {
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:80:			return {sessionId, requestId, Orders::Api::Stage::Rejected, "stale_session"};
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:85:		return {sessionId, requestId, Orders::Api::Stage::Unknown, "unknown_or_expired_request"};
+mock/NavalCommand/Gateway/Grpc/MockProvider.h:89:		m_View.units[0].orders[0].availability = Orders::Api::Availability::Blocked;
+test/NavalCommand/Gateway/Grpc/ServerTest.cpp:7:	Orders::Api::Request request{"mock-session", "id", "unit-1", 1, Orders::Api::Waypoint{62, -10}};
+test/NavalCommand/Gateway/Grpc/ServerTest.cpp:22:		Orders::Api::Request request{"mock-session", std::to_string(requestIndex), "invalid", 1, {}};

@@ -1,0 +1,143 @@
+{
+  "package": {
+    "files": [
+      "Gateway.Api.dll",
+      "Google.Protobuf.dll",
+      "SeaPower.Client.dll",
+      "SeaPower.Host.dll",
+      "SeaPower.Mod.dll",
+      "config.json",
+      "licenses/abseil.txt",
+      "licenses/c-ares.txt",
+      "licenses/fmt.txt",
+      "licenses/grpc.txt",
+      "licenses/gtest.txt",
+      "licenses/openssl.txt",
+      "licenses/protobuf.txt",
+      "licenses/re2.txt",
+      "licenses/spdlog.txt",
+      "licenses/utf8-range.txt",
+      "licenses/vcpkg-cmake-config.txt",
+      "licenses/vcpkg-cmake-get-vars.txt",
+      "licenses/vcpkg-cmake.txt",
+      "licenses/zlib.txt",
+      "manifest.json"
+    ],
+    "manifest": [
+      {
+        "file": "config.json",
+        "sha256": "B474F3BC8488689F009882129E89A91E43D3EF5074F00700B8A97D08EFF6CC77"
+      },
+      {
+        "file": "Gateway.Api.dll",
+        "sha256": "B15EAFD7DA8B3861CB2A1F8DF9E17D28975B5C1581471A5C7EE422F1AB6C170B"
+      },
+      {
+        "file": "Google.Protobuf.dll",
+        "sha256": "3ACE11B1214889A982B8CEAD4919DD9D37655B99321BE5B8EC63ABF91C5881C2"
+      },
+      {
+        "file": "SeaPower.Client.dll",
+        "sha256": "13E30DCC8955DE1BD747B82017466F3FA304EDFE876550CC612E97808681A440"
+      },
+      {
+        "file": "SeaPower.Host.dll",
+        "sha256": "7FFA5F2625C82E56FA12959BBB1DA3DBA04CCCE3058ABB755BF0D60E879EF062"
+      },
+      {
+        "file": "SeaPower.Mod.dll",
+        "sha256": "684E23C038F9A0F2774095326DD242DB737DB56B1A60421CCD4F90BBD13CAB93"
+      },
+      {
+        "file": "licenses/abseil.txt",
+        "sha256": "C79A7FEA0E3CAC04CD43F20E7B648E5A0FF8FA5344E644B0EE09CA1162B62747"
+      },
+      {
+        "file": "licenses/c-ares.txt",
+        "sha256": "460F5E768FDA3752CA2169A95DF062578A10FB126BFD65F3B9B1A1BED2F84807"
+      },
+      {
+        "file": "licenses/fmt.txt",
+        "sha256": "A65FCC5A1095FC33CC37E4FFF69366E49D7E92F613558A2B95ED1B70E33758B4"
+      },
+      {
+        "file": "licenses/grpc.txt",
+        "sha256": "58C86A3F2B5CCA0EBDF9ED3E7F4E6DC38E3B38796D8C3DC92064C62A4E39D0DD"
+      },
+      {
+        "file": "licenses/gtest.txt",
+        "sha256": "9702DE7E4117A8E2B20DAFAB11FFDA58C198AEDE066406496BEF670D40A22138"
+      },
+      {
+        "file": "licenses/openssl.txt",
+        "sha256": "7D5450CB2D142651B8AFA315B5F238EFC805DAD827D91BA367D8516BC9D49E7A"
+      },
+      {
+        "file": "licenses/protobuf.txt",
+        "sha256": "6E5E117324AFD944DCF67F36CF329843BC1A92229A8CD9BB573D7A83130FEA7D"
+      },
+      {
+        "file": "licenses/re2.txt",
+        "sha256": "6040CDA75D90B1738292A631D89934C411EF7FFD543C4D6A1B7EDFC8EDF29449"
+      },
+      {
+        "file": "licenses/spdlog.txt",
+        "sha256": "D678C20826E1392578508E1C78649A1E3C31BDA05EF4388D967DBD654461B140"
+      },
+      {
+        "file": "licenses/utf8-range.txt",
+        "sha256": "02DE69B64FC36D9E938F418E52723E42F0B2B226D58A9CB3C8DCBDF7059F5074"
+      },
+      {
+        "file": "licenses/vcpkg-cmake-config.txt",
+        "sha256": "04B60F99A43BFD7FEFDC8364B24AAC704A2160CEF969B75BA6A38B62DC4C4B70"
+      },
+      {
+        "file": "licenses/vcpkg-cmake-get-vars.txt",
+        "sha256": "1EE376FC340E0AA6AD6A3581C94126E741468705096AC92263048A21DAA86460"
+      },
+      {
+        "file": "licenses/vcpkg-cmake.txt",
+        "sha256": "1EE376FC340E0AA6AD6A3581C94126E741468705096AC92263048A21DAA86460"
+      },
+      {
+        "file": "licenses/zlib.txt",
+        "sha256": "E32FF4E00D9D94930537635291DA39E7E612703334BF6FDE8C7F1686FE8A45A2"
+      }
+    ],
+    "checksumAndExclusionChecks": "PASS"
+  },
+  "harness": {
+    "files": [
+      "SeaPower.Harness.dll",
+      "manifest.json",
+      "scenarios/AirFacilities.ini",
+      "scenarios/AircraftThreat.ini",
+      "scenarios/MinimalCombat.ini",
+      "scenarios/NearContact.ini"
+    ],
+    "manifest": [
+      {
+        "file": "SeaPower.Harness.dll",
+        "sha256": "8587E2F2846A88407736C8FE815125EC8B31A24B39484EEE4AFF81340B2DE522"
+      },
+      {
+        "file": "scenarios/AircraftThreat.ini",
+        "sha256": "32FF96C8C2D98A9C293E553F72CA7016C635C6BBC8ECC17543011E5B1890CE7E"
+      },
+      {
+        "file": "scenarios/AirFacilities.ini",
+        "sha256": "20B3485656C1FC7B1A308EE90D7A74D9D2C750CDFC205112704E88408D6A46AD"
+      },
+      {
+        "file": "scenarios/MinimalCombat.ini",
+        "sha256": "AFB33203EE7CDC61465F6312B4ACDA5F4EE27E45E08309530D50EB2E0167661F"
+      },
+      {
+        "file": "scenarios/NearContact.ini",
+        "sha256": "257DF69E3AEFD44AC4371FEBF76362653F70DF5B07D0B66194D6EBF9E9CC5525"
+      }
+    ],
+    "checksumAndExclusionChecks": "PASS"
+  }
+}

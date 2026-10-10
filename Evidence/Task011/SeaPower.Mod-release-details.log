@@ -1,0 +1,72 @@
+Start testing: Oct 10 18:01 W. Europe Daylight Time
+----------------------------------------------------------
+1/2 Testing: host-abi
+1/2 Test: host-abi
+Command: "C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/host-tests.exe"
+Directory: C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test
+"host-abi" start time: Oct 10 18:01 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-e243b8ee0f.clean\googletest\src\gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Host
+[ RUN      ] Host.VersionBoundsPortAndSessionReset
+[       OK ] Host.VersionBoundsPortAndSessionReset (42 ms)
+[----------] 1 test from Host (42 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (42 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"host-abi" end time: Oct 10 18:01 W. Europe Daylight Time
+"host-abi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: managed-runtime-harness
+2/2 Test: managed-runtime-harness
+Command: "C:/Program Files/dotnet/dotnet.exe" "run" "--project" "C:/Software/GitHub/NavalCommand/SeaPower.Mod/test/managed/RuntimeTests.csproj" "-c" "Release" "--" "C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/abi-mismatch-fixture.dll" "C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/missing-exports-fixture.dll"
+Directory: C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test
+"managed-runtime-harness" start time: Oct 10 18:01 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+PASS Default-disabled configuration
+PASS Package-relative native path
+PASS Independent absolute production log directory
+PASS Explicit activation override
+PASS Invalid activation override
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Invalid runtime configuration
+PASS Relative explicit config path
+PASS Missing explicit config
+PASS Relative native library
+PASS Missing native DLL
+PASS Loaded native DLL with wrong ABI rejected
+PASS Loaded native DLL with missing exports rejected
+PASS Retryable publish backpressure preserves pending bytes
+PASS Worker copies native command bytes
+PASS Orderly off-thread shutdown happens once
+PASS Shutdown status logged
+PASS Transport startup failure is observable
+PASS Unwritable log path retains both failures
+PASS Harness-only token/PID readiness receipt
+PASS Harness reports unwritable evidence path
+Runtime/harness checks passed: 27
+<end of output>
+Test time =   1.64 sec
+----------------------------------------------------------
+Test Passed.
+"managed-runtime-harness" end time: Oct 10 18:01 W. Europe Daylight Time
+"managed-runtime-harness" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Oct 10 18:01 W. Europe Daylight Time

@@ -1,0 +1,8 @@
+[1/8] Scanning C:\Software\GitHub\NavalCommand\Domain.Api\test\OrdersHeaderSmoke.cpp for CXX dependencies
+[2/8] Scanning C:\Software\GitHub\NavalCommand\Domain.Api\test\WorldHeaderSmoke.cpp for CXX dependencies
+[3/8] Generating CXX dyndep file test\CMakeFiles\orders-header-smoke.dir\CXX.dd
+[4/8] Generating CXX dyndep file test\CMakeFiles\world-header-smoke.dir\CXX.dd
+[5/8] Building CXX object test\CMakeFiles\orders-header-smoke.dir\OrdersHeaderSmoke.cpp.obj
+[6/8] Linking CXX executable test\orders-header-smoke.exe
+[7/8] Building CXX object test\CMakeFiles\world-header-smoke.dir\WorldHeaderSmoke.cpp.obj
+[8/8] Linking CXX executable test\world-header-smoke.exe

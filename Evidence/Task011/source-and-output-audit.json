@@ -1,0 +1,102 @@
+{
+  "Domain.Api": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 2,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 2,
+        "staticRuntime": true
+      }
+    ]
+  },
+  "Build.CMake": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [],
+    "unchangedProtectedFiles": 0
+  },
+  "Gateway.Api": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 8,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 8,
+        "staticRuntime": true
+      }
+    ],
+    "unchangedProtectedFiles": 11
+  },
+  "Gateway.Grpc.Api": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 9,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 9,
+        "staticRuntime": true
+      }
+    ],
+    "unchangedProtectedFiles": 1
+  },
+  "Gateway.Grpc": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 12,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 12,
+        "staticRuntime": true
+      }
+    ],
+    "unchangedProtectedFiles": 2
+  },
+  "SeaPower.Client": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 6,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 6,
+        "staticRuntime": true
+      }
+    ],
+    "unchangedProtectedFiles": 11
+  },
+  "SeaPower.Mod": {
+    "unexpectedOutputsOutsideO": [],
+    "runtimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 15,
+        "staticRuntime": true
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 15,
+        "staticRuntime": true
+      }
+    ],
+    "unchangedProtectedFiles": 18
+  }
+}

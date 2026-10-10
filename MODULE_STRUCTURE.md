@@ -4,11 +4,12 @@
 
 ## Repository boundaries
 
-The platform has five independent functional Git repositories and one separate infrastructure repository:
+The platform has six independent functional Git repositories and one separate infrastructure repository:
 
 | Repository | Responsibility | Build shape |
 |---|---|---|
-| `Gateway.Api` | Canonical Protobuf payloads, provider-facing interfaces, transport-independent domain semantics/adapters | Native C++ libraries; generated C# bindings |
+| `Domain.Api` | Operational value contracts: distinct header-only `Orders.Api` and `World.Api` targets | C++ public headers; independent orders/world consumers |
+| `Gateway.Api` | Canonical Protobuf payloads, provider-facing interfaces and domain ↔ wire conversion; PUBLIC domain dependencies | Native C++ libraries; generated C# bindings |
 | `Gateway.Grpc.Api` | External gRPC services importing canonical `Gateway.Api` payloads; development CLI | Native C++ bindings and executable |
 | `Gateway.Grpc` | Generic, provider-injected C++ gateway; separately composable mock-host | Native library, mocks, tests and executable |
 | `SeaPower.Client` | Game-specific C# facade/provider, game-thread validation and observation | Managed compile-only game integration, local fake tests |
@@ -94,3 +95,9 @@ All repository-owned generated files stay under that repository's `o/`. Native p
 Production mod staging is `o/package/0.1.0`; development staging is `o/harness/0.1.0`. CMake `package-runtime` builds the native host, then the top-level managed runtime graph, then assembles the production allowlist. `package-harness` builds only the independent managed harness and stages fixtures. Old stages move to recoverable uniquely named backups under `o/`. Evaluated MSBuild TargetPath/copy-local records select package inputs. No script resolves another dependency graph or guesses a source-adjacent binary path.
 
 The managed context contains configuration-independent resolved source, protoc and optional game-reference locations. Identical Debug/Release or consuming builds reuse it. Conflicting inputs fail unless one configure explicitly selects a replacement; old CMake consumers validate their captured contexts before invoking MSBuild. Do not build conflicting source/tool contexts concurrently. See [MANAGED_BUILD.md](MANAGED_BUILD.md) for configuration, direct IDE and package workflows.
+
+## Domain contract ownership
+
+`Domain.Api/src/CMakeLists.txt` defines `Orders.Api` and `World.Api` as INTERFACE libraries, exporting `public/` with the existing namespace-mirrored include paths. `World.Api` links `Orders.Api` INTERFACE because Unit uses order eligibility. Gateway.Api resolves the Domain.Api repository through Build.CMake before composition and links both targets PUBLIC. Native consumers inherit their includes by linking targets; do not manually add sibling include paths or restore gateway shadow headers. Domain-only consumers link their corresponding target without Gateway.Api. Protobuf, codec and IProvider remain in Gateway.Api; no managed domain mirror is introduced.
+
+Domain.Api needs no external native packages or vcpkg manifest. The Windows presets preserve static CRT; shared C++26 policy remains in Build.CMake. The initially unpublished Domain.Api repository requires a developer-owned ignored top-level Build.Local.cmake registration for direct or transitive local builds until publication is authorized. That limitation is a source availability gate, not an alternate resolver.

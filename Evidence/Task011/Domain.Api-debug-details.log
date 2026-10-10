@@ -1,0 +1,33 @@
+Start testing: Oct 10 18:02 W. Europe Daylight Time
+----------------------------------------------------------
+1/2 Testing: orders-headers
+1/2 Test: orders-headers
+Command: "C:/Software/GitHub/NavalCommand/Domain.Api/o/windows-msvc-debug/test/orders-header-smoke.exe"
+Directory: C:/Software/GitHub/NavalCommand/Domain.Api/o/windows-msvc-debug/test
+"orders-headers" start time: Oct 10 18:02 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"orders-headers" end time: Oct 10 18:02 W. Europe Daylight Time
+"orders-headers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: world-headers
+2/2 Test: world-headers
+Command: "C:/Software/GitHub/NavalCommand/Domain.Api/o/windows-msvc-debug/test/world-header-smoke.exe"
+Directory: C:/Software/GitHub/NavalCommand/Domain.Api/o/windows-msvc-debug/test
+"world-headers" start time: Oct 10 18:02 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"world-headers" end time: Oct 10 18:02 W. Europe Daylight Time
+"world-headers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 10 18:02 W. Europe Daylight Time

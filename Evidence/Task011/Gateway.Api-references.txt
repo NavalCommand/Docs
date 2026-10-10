@@ -1,0 +1,29 @@
+public/NavalCommand/Gateway/Api/Codec.h:6:Wire::WorldSnapshot Encode(const World::Api::View &);
+public/NavalCommand/Gateway/Api/Codec.h:7:World::Api::View Decode(const Wire::WorldSnapshot &);
+public/NavalCommand/Gateway/Api/Codec.h:8:Wire::OrderRequest Encode(const Orders::Api::Request &);
+public/NavalCommand/Gateway/Api/Codec.h:9:Orders::Api::Request Decode(const Wire::OrderRequest &);
+public/NavalCommand/Gateway/Api/Codec.h:10:Wire::OrderResult Encode(const Orders::Api::Result &);
+public/NavalCommand/Gateway/Api/Codec.h:11:Orders::Api::Result Decode(const Wire::OrderResult &);
+public/NavalCommand/Gateway/Api/IProvider.h:3:#include <NavalCommand/Orders/Api/Order.h>
+public/NavalCommand/Gateway/Api/IProvider.h:4:#include <NavalCommand/World/Api/View.h>
+public/NavalCommand/Gateway/Api/IProvider.h:13:	virtual std::expected<World::Api::View, Error> View() = 0;
+public/NavalCommand/Gateway/Api/IProvider.h:14:	virtual Orders::Api::Result Submit(const Orders::Api::Request &) = 0;
+public/NavalCommand/Gateway/Api/IProvider.h:15:	virtual Orders::Api::Result Status(const std::string &session, const std::string &request) = 0;
+src/NavalCommand/Gateway/Api/Codec.cpp:3:static void EncodePosition(Wire::GeoPoint &wirePosition, const World::Api::Position &domainValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:10:static World::Api::Position DecodePosition(const Wire::GeoPoint &wirePosition) {
+src/NavalCommand/Gateway/Api/Codec.cpp:13:Wire::WorldSnapshot Encode(const World::Api::View &domainValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:61:World::Api::View Decode(const Wire::WorldSnapshot &wireValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:62:	World::Api::View domainValue;
+src/NavalCommand/Gateway/Api/Codec.cpp:70:		World::Api::Unit domainUnit;
+src/NavalCommand/Gateway/Api/Codec.cpp:80:				{eligibility.kind(), static_cast<Orders::Api::Availability>(eligibility.availability()), eligibility.reason(), eligibility.argument_semantics()});
+src/NavalCommand/Gateway/Api/Codec.cpp:88:		World::Api::Facility domainFacility;
+src/NavalCommand/Gateway/Api/Codec.cpp:99:Wire::OrderRequest Encode(const Orders::Api::Request &domainValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:111:Orders::Api::Request Decode(const Wire::OrderRequest &wireValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:112:	Orders::Api::Request domainValue{wireValue.session_id(), wireValue.request_id(), wireValue.entity_id(), wireValue.based_on_version()};
+src/NavalCommand/Gateway/Api/Codec.cpp:114:		domainValue.waypoint = Orders::Api::Waypoint{wireValue.waypoint().latitude_deg(), wireValue.waypoint().longitude_deg()};
+src/NavalCommand/Gateway/Api/Codec.cpp:118:Wire::OrderResult Encode(const Orders::Api::Result &domainValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:130:Orders::Api::Result Decode(const Wire::OrderResult &wireValue) {
+src/NavalCommand/Gateway/Api/Codec.cpp:131:	Orders::Api::Result domainValue{
+src/NavalCommand/Gateway/Api/Codec.cpp:132:		wireValue.session_id(), wireValue.request_id(), static_cast<Orders::Api::Stage>(wireValue.stage()), wireValue.reason(), wireValue.sampled_at_seconds()};
+test/NavalCommand/Gateway/Api/CodecTest.cpp:5:	World::Api::View domainView;
+test/NavalCommand/Gateway/Api/CodecTest.cpp:8:	domainView.units.push_back({"u", "own", {61.96, -10.37, {}}, {}, 42, {{"set_waypoint", Orders::Api::Availability::Executable, "", "append"}}});

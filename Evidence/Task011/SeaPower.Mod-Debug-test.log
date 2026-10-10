@@ -1,0 +1,25 @@
+Test project C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-debug
+    Start 1: host-abi
+1/2 Test #1: host-abi .........................***Exception: SegFault  0.24 sec
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-e243b8ee0f.clean\googletest\src\gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Host
+[ RUN      ] Host.VersionBoundsPortAndSessionReset
+[       OK ] Host.VersionBoundsPortAndSessionReset (112 ms)
+[----------] 1 test from Host (112 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (112 ms total)
+[  PASSED  ] 1 test.
+
+    Start 2: managed-runtime-harness
+2/2 Test #2: managed-runtime-harness ..........   Passed    1.39 sec
+
+50% tests passed, 1 tests failed out of 2
+
+Total Test time (real) =   1.65 sec
+
+The following tests FAILED:
+	  1 - host-abi (SEGFAULT)
+Errors while running CTest

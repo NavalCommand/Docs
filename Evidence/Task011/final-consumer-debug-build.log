@@ -1,0 +1,5 @@
+[1/4] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\test\DomainConsumer.cpp for CXX dependencies
+[2/4] Generating CXX dyndep file test\CMakeFiles\domain-consumer.dir\CXX.dd
+[3/4] Building CXX object test\CMakeFiles\domain-consumer.dir\DomainConsumer.cpp.obj
+[4/4] Linking CXX executable test\domain-consumer.exe
+C:/Software/GitHub/NavalCommand/Gateway.Api/o/windows-msvc-debug/test/domain-consumer.exe: message: deploying dependencies

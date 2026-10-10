@@ -1,0 +1,47 @@
+{
+  "Domain.Api": {
+    "commit": "3ee1a46e9942fba347df2e8039892977ac2aaccb",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true,
+    "remotes": []
+  },
+  "Build.CMake": {
+    "commit": "477d8055a366731839b42a4b73e913e0968301f9",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  },
+  "Gateway.Api": {
+    "commit": "55a700de4720d6f1b7b03d1e3fd021067259e0fc",
+    "status": [
+      " M app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp"
+    ],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  },
+  "Gateway.Grpc.Api": {
+    "commit": "71cf5c616b1c669c40b0fb9a1d33d277947f704c",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  },
+  "Gateway.Grpc": {
+    "commit": "476c9bc4dc88589893dee0c914ab2de3e984709c",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  },
+  "SeaPower.Client": {
+    "commit": "5c7a8862657b9cf937a40128150d93e0d8f69f91",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  },
+  "SeaPower.Mod": {
+    "commit": "e9bc2703e541ed1b522a9d0580ff39a4cf8526cf",
+    "status": [],
+    "trackedMachineSpecificBuildPaths": [],
+    "ignoredLocalOverride": true
+  }
+}

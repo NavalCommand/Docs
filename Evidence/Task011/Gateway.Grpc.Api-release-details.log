@@ -1,0 +1,19 @@
+Start testing: Oct 10 18:01 W. Europe Daylight Time
+----------------------------------------------------------
+1/1 Testing: imports
+1/1 Test: imports
+Command: "C:/Software/GitHub/NavalCommand/Gateway.Grpc.Api/o/windows-msvc-release/app/naval-cli.exe" "--schema"
+Directory: C:/Software/GitHub/NavalCommand/Gateway.Grpc.Api/o/windows-msvc-release/test
+"imports" start time: Oct 10 18:01 W. Europe Daylight Time
+Output:
+----------------------------------------------------------
+navalcommand.gateway.v1.WorldSnapshot navalcommand.gateway.v1.Gateway
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"imports" end time: Oct 10 18:01 W. Europe Daylight Time
+"imports" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 10 18:01 W. Europe Daylight Time

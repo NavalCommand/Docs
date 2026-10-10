@@ -1,0 +1,34 @@
+{
+  "navalcommand/gateway/v1/incidents.pb.cc": {
+    "sha256": "15c06c3e7a8f37b6edab1435e305ce30daa2251dc19ff85a5ee09a9cf91b9720",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/incidents.pb.h": {
+    "sha256": "f284abede773a73b81e9f8aca4eca2fec5bde0dd7ea4b97fcc7430a6c0749dda",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/orders.pb.cc": {
+    "sha256": "4b4225d63dc512392b15e6dad9d323a0221cab932b0ac5a131a3cb5103f6caea",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/orders.pb.h": {
+    "sha256": "39ab3ffb140d121727b7e487c2ea9f1b66d7070f4662f55ccb41a88d54293ff0",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/session.pb.cc": {
+    "sha256": "58d04cd6866f7a2b00ec146724b0cc8d142da573a76696c01fac920bbed55b55",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/session.pb.h": {
+    "sha256": "1c5a02ec0313c71083601d0478dee99e50e509873560a897310dd78c8c71e756",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/world.pb.cc": {
+    "sha256": "b2e97cac69eec541d1c9e7ad72c302f228e586c116cf624599d72729e96b8efb",
+    "debugReleaseIdentical": true
+  },
+  "navalcommand/gateway/v1/world.pb.h": {
+    "sha256": "d19f93cbece3c2828adc916412a11749c4971375628bf44c1870e1f0c08a94c8",
+    "debugReleaseIdentical": true
+  }
+}

@@ -1,0 +1,10 @@
+src/NavalCommand/SeaPower/Mod/Bridge.h:25:	World::Api::View m_View;
+src/NavalCommand/SeaPower/Mod/Bridge.h:27:	std::map<std::string, Orders::Api::Result> m_Ledger;
+src/NavalCommand/SeaPower/Mod/Bridge.h:30:	std::expected<World::Api::View, Gateway::Api::Error> View() override {
+src/NavalCommand/SeaPower/Mod/Bridge.h:37:	Orders::Api::Result Submit(const Orders::Api::Request &request) override {
+src/NavalCommand/SeaPower/Mod/Bridge.h:39:		using OrderStage = Orders::Api::Stage;
+src/NavalCommand/SeaPower/Mod/Bridge.h:41:			return Orders::Api::Result{request.sessionId, request.requestId, OrderStage::Rejected, reason};
+src/NavalCommand/SeaPower/Mod/Bridge.h:58:		auto result = Orders::Api::Result{request.sessionId, request.requestId, OrderStage::Received, "mailbox_received"};
+src/NavalCommand/SeaPower/Mod/Bridge.h:76:	Orders::Api::Result Status(const std::string &sessionId, const std::string &requestId) override {
+src/NavalCommand/SeaPower/Mod/Bridge.h:79:			return {sessionId, requestId, Orders::Api::Stage::Rejected, "stale_session"};
+src/NavalCommand/SeaPower/Mod/Bridge.h:84:		return {sessionId, requestId, Orders::Api::Stage::Unknown, "unknown_or_expired_request"};

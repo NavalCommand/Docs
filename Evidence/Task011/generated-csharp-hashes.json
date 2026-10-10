@@ -1,0 +1,18 @@
+{
+  "Incidents.cs": {
+    "sha256": "d96bb17bd0cf5d852ee8a221560a4d307d548939b26fd6d54ace96cc52f3333b",
+    "allConfigurationsIdentical": true
+  },
+  "Orders.cs": {
+    "sha256": "87fa102610e55e6b6ec30406b399e20ef96514b4afbfce2c7296f06c7475a563",
+    "allConfigurationsIdentical": true
+  },
+  "Session.cs": {
+    "sha256": "f3210a67cfb82ca83e4fb0beb3acb5b3fff23c8bbea0c8750bfc8cb9efd8ff1b",
+    "allConfigurationsIdentical": true
+  },
+  "World.cs": {
+    "sha256": "eb4b6919391667c75b5e0a6e60713dd95b9da77b68aa40df6e6863c1e99c642d",
+    "allConfigurationsIdentical": true
+  }
+}

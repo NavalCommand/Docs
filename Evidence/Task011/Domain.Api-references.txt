@@ -1,0 +1,43 @@
+public/NavalCommand/Orders/Api/Availability.h:2:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Availability.h:9:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/Orders/Api/Eligibility.h:2:#include <NavalCommand/Orders/Api/Availability.h>
+public/NavalCommand/Orders/Api/Eligibility.h:4:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Eligibility.h:12:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/Orders/Api/Order.h:6:#include <NavalCommand/Orders/Api/Request.h>
+public/NavalCommand/Orders/Api/Order.h:7:#include <NavalCommand/Orders/Api/Result.h>
+public/NavalCommand/Orders/Api/Request.h:2:#include <NavalCommand/Orders/Api/Waypoint.h>
+public/NavalCommand/Orders/Api/Request.h:7:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Request.h:15:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/Orders/Api/Result.h:2:#include <NavalCommand/Orders/Api/Stage.h>
+public/NavalCommand/Orders/Api/Result.h:6:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Result.h:15:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/Orders/Api/Stage.h:3:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Stage.h:11:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/Orders/Api/Waypoint.h:3:namespace NavalCommand::Orders::Api {
+public/NavalCommand/Orders/Api/Waypoint.h:8:} // namespace NavalCommand::Orders::Api
+public/NavalCommand/World/Api/Facility.h:2:#include <NavalCommand/World/Api/Stock.h>
+public/NavalCommand/World/Api/Facility.h:7:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/Facility.h:14:} // namespace NavalCommand::World::Api
+public/NavalCommand/World/Api/Position.h:4:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/Position.h:10:} // namespace NavalCommand::World::Api
+public/NavalCommand/World/Api/Stock.h:5:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/Stock.h:11:} // namespace NavalCommand::World::Api
+public/NavalCommand/World/Api/Track.h:2:#include <NavalCommand/World/Api/Position.h>
+public/NavalCommand/World/Api/Track.h:5:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/Track.h:12:} // namespace NavalCommand::World::Api
+public/NavalCommand/World/Api/Unit.h:2:#include <NavalCommand/Orders/Api/Eligibility.h>
+public/NavalCommand/World/Api/Unit.h:3:#include <NavalCommand/World/Api/Position.h>
+public/NavalCommand/World/Api/Unit.h:8:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/Unit.h:9:using Eligibility = NavalCommand::Orders::Api::Eligibility;
+public/NavalCommand/World/Api/Unit.h:18:} // namespace NavalCommand::World::Api
+public/NavalCommand/World/Api/View.h:2:#include <NavalCommand/World/Api/Facility.h>
+public/NavalCommand/World/Api/View.h:3:#include <NavalCommand/World/Api/Track.h>
+public/NavalCommand/World/Api/View.h:4:#include <NavalCommand/World/Api/Unit.h>
+public/NavalCommand/World/Api/View.h:9:namespace NavalCommand::World::Api {
+public/NavalCommand/World/Api/View.h:21:} // namespace NavalCommand::World::Api
+test/OrdersHeaderSmoke.cpp:1:#include <NavalCommand/Orders/Api/Eligibility.h>
+test/OrdersHeaderSmoke.cpp:2:#include <NavalCommand/Orders/Api/Order.h>
+test/OrdersHeaderSmoke.cpp:5:namespace Orders = NavalCommand::Orders::Api;
+test/WorldHeaderSmoke.cpp:1:#include <NavalCommand/World/Api/View.h>
+test/WorldHeaderSmoke.cpp:4:namespace World = NavalCommand::World::Api;
+test/WorldHeaderSmoke.cpp:5:namespace Orders = NavalCommand::Orders::Api;

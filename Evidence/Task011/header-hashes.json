@@ -1,0 +1,67 @@
+[
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Availability.h",
+    "before": "bba46b5d9e2b071f3a4671332bc617d120e78b677f0b071793d4607a7d3882b1",
+    "after": "bba46b5d9e2b071f3a4671332bc617d120e78b677f0b071793d4607a7d3882b1"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Eligibility.h",
+    "before": "5c2f8afa1fba3d9d81db6822f30d5a68c748ea6fb8aa883fa6b90c2d74b321ec",
+    "after": "5c2f8afa1fba3d9d81db6822f30d5a68c748ea6fb8aa883fa6b90c2d74b321ec"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Order.h",
+    "before": "a8716b009d3a6ce685f94857cde11c230b015ea5409c483cd5ac4b4e2b9ccd10",
+    "after": "a8716b009d3a6ce685f94857cde11c230b015ea5409c483cd5ac4b4e2b9ccd10"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Request.h",
+    "before": "555c19d0a2b5ac70884901bcc9f67344643d7e8a36e021738ce16d65fe1ee9b4",
+    "after": "555c19d0a2b5ac70884901bcc9f67344643d7e8a36e021738ce16d65fe1ee9b4"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Result.h",
+    "before": "af8e70a7c9e547287869a70a44a4b8758d9089b52be6eddfd80203e9debb0513",
+    "after": "af8e70a7c9e547287869a70a44a4b8758d9089b52be6eddfd80203e9debb0513"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Stage.h",
+    "before": "c9d4187a09463cc51f5d3075cc92cbef9e08ffbfc0a1dcea436f1a0ae019818f",
+    "after": "c9d4187a09463cc51f5d3075cc92cbef9e08ffbfc0a1dcea436f1a0ae019818f"
+  },
+  {
+    "path": "public\\NavalCommand\\Orders\\Api\\Waypoint.h",
+    "before": "137dc0e5b67c3f22fe39ebfb7954c828f1e881c5565665e4016722910b148173",
+    "after": "137dc0e5b67c3f22fe39ebfb7954c828f1e881c5565665e4016722910b148173"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\Facility.h",
+    "before": "1236eb59d0818943b0da9f8d0f66fbdadd1ff4cbd498699a851120ee00e8196a",
+    "after": "1236eb59d0818943b0da9f8d0f66fbdadd1ff4cbd498699a851120ee00e8196a"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\Position.h",
+    "before": "f24f480a38ee8d70fa136558d365b03face76a3b49e72b08fc6645e9f9bb0b4e",
+    "after": "f24f480a38ee8d70fa136558d365b03face76a3b49e72b08fc6645e9f9bb0b4e"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\Stock.h",
+    "before": "27c6c7923a70207538d5ba79d9cc181a05994505b483851781c8a1b015d89073",
+    "after": "27c6c7923a70207538d5ba79d9cc181a05994505b483851781c8a1b015d89073"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\Track.h",
+    "before": "08591607ab6cde29edbd34d433e9d6f78e9b8c8315477cd352b8f802fc025eee",
+    "after": "08591607ab6cde29edbd34d433e9d6f78e9b8c8315477cd352b8f802fc025eee"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\Unit.h",
+    "before": "9dc24f8fdda62e6ff39e228d038dcc9798f4726f13d9a6f2d5bbe59dee9c81db",
+    "after": "9dc24f8fdda62e6ff39e228d038dcc9798f4726f13d9a6f2d5bbe59dee9c81db"
+  },
+  {
+    "path": "public\\NavalCommand\\World\\Api\\View.h",
+    "before": "9480c7168dde761ef2f103a19ee3f79413dbe0342e23678af7f8f3b93d589acb",
+    "after": "9480c7168dde761ef2f103a19ee3f79413dbe0342e23678af7f8f3b93d589acb"
+  }
+]

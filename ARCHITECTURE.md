@@ -18,17 +18,18 @@ Separate:
 
 ### Module graph and deployment
 
-**Repositories are separate from process boundaries.** Five independent functional Git repositories form the integration spine. A sixth `Build.CMake` repository owns shared build infrastructure and is not a runtime module:
+**Repositories are separate from process boundaries.** Six independent functional Git repositories form the integration spine. A seventh `Build.CMake` repository owns shared build infrastructure and is not a runtime module:
 
 | Repository | Language | Responsibility | Direct implementation dependencies |
 |---|---|---|---|
-| `SeaPower.Client` | C# | Thin Sea Power-facing implementation: faction observations, native command dispatch and engine-thread safety | `Gateway.Api` generated C# message bindings as needed; abstract operational contracts, **not** `Gateway.Grpc` |
-| `Gateway.Api` | language-neutral `.proto` plus generated C# / C++ bindings and narrow C++ provider interfaces | **Canonical upstream Gateway-owned contract**: message types and provider/gateway interaction semantics | Domain semantics (`World.Api`, `Orders.Api`, etc.) are authoritative; no Sea Power, hosting mechanism or gRPC service implementation |
+| `Domain.Api` | C++ headers | Operational value contracts in distinct `Orders.Api` and `World.Api` INTERFACE targets | `World.Api` uses `Orders.Api`; no gateway, wire, simulator or third-party dependency |
+| `SeaPower.Client` | C# | Thin Sea Power-facing implementation: faction observations, native command dispatch and engine-thread safety | `Gateway.Api` generated C# wire messages; no parallel managed domain model and no `Gateway.Grpc` dependency |
+| `Gateway.Api` | language-neutral `.proto` plus generated C# / C++ bindings and narrow C++ provider interfaces | **Canonical upstream Gateway-owned contract**: message types and provider/gateway interaction semantics | `Domain.Api` targets `World.Api` and `Orders.Api`, exposed PUBLIC transitively; no Sea Power, hosting mechanism or gRPC service implementation |
 | `Gateway.Grpc` | C++ | Generic gateway implementation: receives provider observations/commands through `Gateway.Api`, serves external clients via `Gateway.Grpc.Api` | `Gateway.Api`, `Gateway.Grpc.Api`, domain contracts; **not** `SeaPower.Client` or `SeaPower.Mod` |
 | `Gateway.Grpc.Api` | `.proto` | **External gRPC service definitions**; imports and reuses canonical messages from `Gateway.Api`, without redefining their payloads | `Gateway.Api` proto definitions |
 | `SeaPower.Mod` | C# composition root with narrowly scoped C++ native host/shim build | Loader-facing mod wrapper, dependency injection, configuration, C ABI glue, gateway startup/shutdown, dependency builds and distributable packaging | Composes `SeaPower.Client` and `Gateway.Grpc`; uses API repositories; implementation-to-implementation knowledge lives **only here** |
 
-The independently launched generic **external C++ client** consumes `Gateway.Grpc.Api` and the shared messages from `Gateway.Api`. A minimal CLI can be hosted in a separate application repo or a justified existing client module; it must not become a dependency of either gateway or Sea Power provider. Existing conceptual `World.Api`, `Orders.Api`, catalog and incidents contracts retain ownership of **operational meaning**, distinct from both Gateway communication interfaces.
+The independently launched generic **external C++ client** consumes `Gateway.Grpc.Api` and the shared messages from `Gateway.Api`. A minimal CLI can be hosted in a separate application repo or a justified existing client module; it must not become a dependency of either gateway or Sea Power provider. `Domain.Api` physically owns the existing C++ `World.Api` and `Orders.Api` contracts. Catalog and incidents remain conceptual extension boundaries. Operational domain contracts retain ownership of **operational meaning**, distinct from both Gateway communication interfaces.
 
 ```mermaid
 flowchart TB
@@ -43,6 +44,7 @@ flowchart TB
     GATEWAY -."upstream abstractions + canonical messages".-> API["Gateway.Api"]
     CLI -."generated gRPC client + shared messages".-> GRPCAPI["Gateway.Grpc.Api"]
     GRPCAPI -->|"imports"| API
+    API -->|"PUBLIC targets"| DOMAIN["Domain.Api: World.Api → Orders.Api"]
 ```
 
 **One canonical Protobuf message schema, two ways of exchanging messages.** `Gateway.Api` defines the sole canonical `.proto` declarations for operational message *representations* (world/units, tracks, orders, status, incidents, session). Generate **C# and C++ code from the exact same proto sources**; do not create separately maintained or transformed duplicate internal/external payload schemas. `Gateway.Grpc.Api` owns the external RPC service definitions (`service`/RPC methods and truly transport-specific request envelopes only), and **imports** the canonical messages. The internal C# ↔ C++ bridge exchanges those serialized Protobuf messages through a small C ABI; **it does not run gRPC**, and internal transport/lifecycle envelopes may differ. External clients communicate using gRPC with those same payload message types. Do not assume all internal operations and external RPCs share the same call or stream topology.
