@@ -1,0 +1,23 @@
+{
+  "FreshUiExtractionSha256": "7CB015F79AC94D26AF979A7038AE0F1E0666F5E363496E2AABEAC694CE88F007",
+  "ProprietarySourceCommitted": false,
+  "GameBuild": "0.8.3-261001",
+  "Assembly": "Seapower-Scripts.dll",
+  "Members": [
+    "SeapowerUI.ViewModels.UnitSelectedState.MouseDown",
+    "SeapowerUI.ViewModels.UnitSelectedState.HandleUnit",
+    "SeaPower.ObjectBase.RemoveWaypoints",
+    "SeaPower.ObjectBase.setWaypointTask",
+    "SeaPower.ObjectBase.SetWaypointTask",
+    "SeaPower.ObjectBase.setWaypointTaskParameters",
+    "SeaPower.UserRootNode.ClearTasks",
+    "SeaPower.UserRootNode.AddTask",
+    "SeaPower.GoToWaypointTask.OnExecute",
+    "SeaPower.HandlePendingLaunchTask.onUpdate",
+    "SeaPower.FlightDeck.launchVehicle",
+    "SeaPower.PlaneTakeOff.onUpdate"
+  ],
+  "GuiClickExecuted": false,
+  "Tool": "ILSpy command-line type extraction",
+  "AssemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A"
+}

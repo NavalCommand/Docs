@@ -1,0 +1,5 @@
+2026-10-10T17:08:23.8698297Z native-start abi=1 status=0
+2026-10-10T17:08:41.7388033Z player-side-bound Taskforce1
+2026-10-10T17:08:50.6997205Z dispatch thread=1 request=smoke-17916521306448561 stage=Rejected reason=protected_native_action seconds=12.6942175407894
+2026-10-10T17:08:50.9604938Z dispatch thread=1 request=smoke-17916521306448561-1 stage=Rejected reason=protected_native_action seconds=12.9560688440688
+2026-10-10T17:08:51.2222797Z dispatch thread=1 request=smoke-17916521306448561-1-2 stage=Rejected reason=protected_native_action seconds=13.2180340425111

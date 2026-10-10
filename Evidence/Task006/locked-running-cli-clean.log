@@ -1,0 +1,11 @@
+[1/1] Cleaning all built files...
+FAILED: clean 
+C:\Software\STM32CubeCLT\Ninja\bin\ninja.exe  -t clean 
+Cleaning... ninja: error: remove(app/naval-cli.exe): Access is denied.
+
+
+
+
+50 files.
+
+ninja: build stopped: subcommand failed.

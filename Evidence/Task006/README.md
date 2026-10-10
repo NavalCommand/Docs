@@ -1,0 +1,31 @@
+# Execution evidence, 10 October 2026
+
+Current scope is [the Task006 report](../../Tasks/006/TASK006_IMPLEMENTATION.md), using current post-011 sources. Receipts describe actual executed tests, including failures. No proprietary binaries or decompiled source are included.
+
+## Final live receipts
+
+| Run | Result and discriminating evidence |
+|---|---|
+| [live-movement-execution](live-movement-execution/cli.log) | CLI 0, MOVEMENT_ROUTE_PASS. Request prefix `route-17916524383322598`; A legacy movement at 11.596792 s / 5.309478 m; B replacement; C/D appended, native copied B→C→D sequence; E 3→1 replacement and movement at 15.545419 s / 5.728649 m while E was current route head. Reconnected duplicate keeps the same receipt/route. Negative old session, unauthorized handle, latitude 100, stale observation, enum 99 reject. |
+| [live-protected-final](live-protected-final/cli.log) | CLI 0; session `4838371f4dfe4521a2d5e4728e4f76a5`. Native own UID 1 entered `AdvancedMissileEvasion` at 12.213021 s; legacy, replace and append reject. Final world observation at 13.218034 s still advertises protected state with unchanged `wp` route. [Native transition probe](live-protected-final/native-fixture.log) records no state exit before cleanup. |
+| [live-launch-final](live-launch-final/cli.log) | CLI 0, FACILITY_LAUNCH_PASS. Session `194ba8744ce84e30b65b3635abf6c190`, request `launch-17916520042349798`, facility `9730d0eb314049fb9dbef4ca4fe0a37e`. Shortage request rejected at 5.386907 s; native stock 2/tasks 0 before injection and after restoration. New request Preparing at 21.321415 s, one reservation. AIRCRAFT_SPAWNED at 928.21 s and AIRBORNE at 1035.05 s (full precision in log), correlated ID `90c46562e91b49e39332fceda4c5bd10`. [Native evidence](live-launch-final/native-fixture.log): unreserved 2→1; physical onboard remains 2 while preparing/taxiing, becomes 1 after takeoff; native TaxiToLaunchPoint/PlaneTakeOff and inFlight false→true. Invalid count/type/squadron/loadout/handle/view rejected. |
+| [live-reload-final](live-reload-final/cli.log) | CLI 0; old session and old entity handle reject after native scenario reload. |
+| [live-launch-1](live-launch-1/cli.log) | Earlier successful launch at normal game time, no shortage fixture/compression. Native preparation about 900 mission seconds, grounded regular spawn then airborne. Captured runtime manifest identifies deployed binaries. |
+
+Each final live directory archives runtime/harness manifests, readiness, loader/gateway/harness logs, results and cleanup. Fixture runs additionally record the deployed fixture DLL hash. Final movement and reload use no fixture. Source hashes/revisions are recorded separately; runtime manifests identify actual deployed binaries, even before task commits.
+
+Earlier `live-movement-1` failed the initial empty-route reachability guard without mutation. `live-movement-2` passed a prototype that still selected speed; `live-movement-final` and `live-movement-verified` passed the corrected speed-preserving implementation before the CLI was strengthened to wait for E's own motion. They are retained as historical attempts, not substituted for final execution receipts. `locked-running-cli-clean.log` records a failed clean while a test CLI held its executable; subsequent clean runs succeeded after cleanup.
+
+## Builds, tests and audits
+
+- `results-Release.json`: six independent fresh configure/clean native and managed builds, CTest and mod packaging all exit 0. `results-Debug.json`: same builds/packaging pass; Gateway.Grpc and SeaPower.Mod CTest exit 8, **post-assertion SEGFAULT**, other suites pass. Third-party static dependency prefix was reused.
+- Repository/configuration logs retain command outputs. Final targeted logs cover subsequent mock/test/CLI and provider changes. `mock-progress-Release-test.log` passes; `mock-progress-Debug-test.log` retains the known Debug exit failure after all four assertions tests pass. `mod-final-Release-test.log` passes both native-host and managed-runtime/harness suites.
+- [Mock legacy](mock-legacy/cli.log) and [final mock route test](mock-movement-final/cli.log) pass through an independently hosted gateway executable. Synthetic displacement is labelled mock; queued append stays route-mutated until it is the head. No game execution inference is drawn from mocks.
+- `provider-final-tests.log` and Debug counterpart include route sequence, legacy non-destructiveness, stale/ownership/protected/formation guards, adjacent recheck, bounded capacity, queued-append non-execution, facility validation/resources/duplicate/correlation and grounded/airborne distinction. Fake native effects are regression evidence only.
+- [Package audits](packages-Release.json) and Debug counterpart verify every staged hash against manifest plus exact DLL allowlists, runtime disabled defaults, no fixture/harness/vendor game DLLs in production. Harness has only its own DLL and scenario data.
+- [Safety audit](safety-audit.json): **233 vendor binaries unchanged**, exact Doorstop hash restored, no owned processes/plugin deployments left, no generated DLL/EXE/PDB/assets/cache outside `o/`, owner XML unchanged. Source-revision receipt lists separate task commits. Previous unrelated `SchemaRoundtrip.cpp` owner edit is excluded.
+- Native formatter dry run and managed/test whitespace checks pass; workspace-reference warnings from managed formatter are retained. Manual readability review supplements automated checks. Only handwritten changed files were selected.
+
+`Build.ps1`, `Verify.ps1`, `Run-Mock.ps1`, `Audit-Packages.ps1` and `Audit-Safety.ps1` are archived verification runners/receipts, with local execution paths intentionally recorded here. They are not shared build infrastructure or committed module-local dependency overrides. The isolated fixture sources live under [Tasks/006/Fixture](../../Tasks/006/Fixture/) and compile into Docs/o/ only.
+
+Not executed: live non-navigation/formation negative fixture, natural waypoint arrival, other facility assets/loadouts, Linux builds, interactive IDE opening, new clean third-party dependency builds. Debug shutdown is unresolved. Gates A/C pass within validated scope; B/D remain partial for these stated gaps/failure, rather than claiming blanket task acceptance.

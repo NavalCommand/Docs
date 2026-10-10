@@ -1,0 +1,27 @@
+Build started 10.10.2026 18:55:34.
+     1>Project "C:\Software\GitHub\NavalCommand\SeaPower.Client\test\managed\ProviderTests.csproj" on node 1 (Clean target(s)).
+     1>CoreClean:
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\bin\x64\Release\net10.0\ProviderTests.exe".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\bin\x64\Release\net10.0\ProviderTests.deps.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\bin\x64\Release\net10.0\ProviderTests.runtimeconfig.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\bin\x64\Release\net10.0\ProviderTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\bin\x64\Release\net10.0\ProviderTests.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.csproj.AssemblyReference.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.AssemblyInfoInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.AssemblyInfo.cs".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.sourcelink.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\Provider.044E0CEE.Up2Date".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\refint\ProviderTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ProviderTests.genruntimeconfig.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Client\o\managed\ProviderTests\obj\x64\Release\net10.0\ref\ProviderTests.dll".
+     1>Done Building Project "C:\Software\GitHub\NavalCommand\SeaPower.Client\test\managed\ProviderTests.csproj" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.39

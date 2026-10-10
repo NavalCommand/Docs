@@ -1,0 +1,34 @@
+[
+  {
+    "Repository": "Domain.Api",
+    "Commit": "6d52ae934d56dc0d407b93609d26cc3637220c82",
+    "Status": []
+  },
+  {
+    "Repository": "Gateway.Api",
+    "Commit": "76161c23b11ad8363d67c43ab5571cb6f9b51277",
+    "Status": [
+      " M app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp"
+    ]
+  },
+  {
+    "Repository": "Gateway.Grpc.Api",
+    "Commit": "f8f36cedb573b85bfa43cd25aba7576c39d0cb9a",
+    "Status": []
+  },
+  {
+    "Repository": "Gateway.Grpc",
+    "Commit": "ee6c3d35d1763f4c5098edb952201767f0e2af7e",
+    "Status": []
+  },
+  {
+    "Repository": "SeaPower.Client",
+    "Commit": "2236e19f87f62052f405ffb4733dbfb90ebd19c4",
+    "Status": []
+  },
+  {
+    "Repository": "SeaPower.Mod",
+    "Commit": "0ceb29eb89a1abda737574b57e2e10da577d1706",
+    "Status": []
+  }
+]

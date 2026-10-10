@@ -9,7 +9,7 @@ This directory contains historical work specifications, reports and reproduction
 | [003](003/) | Air-facility investigation request, [AirOps findings](003/SEAPOWER_AIROPS_FINDINGS.md), [reproduction](003/AIROPS_REPRODUCTION.md) |
 | [004](004/) | First end-to-end gateway implementation assignment, [results](004/TASK004_IMPLEMENTATION.md), [reproduction](004/TASK004_REPRODUCTION.md) |
 | [005](005/) | [Completed module/build restructuring report](005/TASK005_IMPLEMENTATION.md); its originally recorded compiler/runtime settings are historical, not the desired current `x64-windows-static` policy |
-| [006](006/) | Repeatable movement and facility-launch assignment (not evidence of completion) |
+| [006](006/) | Repeatable movement and first native facility launch; [implementation and explicit partial gates](006/TASK006_IMPLEMENTATION.md), [UI path](006/TASK006_UI_ORDER_PATH.md), [reproduction](006/TASK006_REPRODUCTION.md) |
 | [007](007/007-code-readability-and-docs-adoption.md) | Completed code-readability and documentation adoption task; [implementation report](007/REPORT.md). Debug gRPC/host teardown failure remains an explicitly unresolved issue |
 | [008](008/008-formations-and-weapon-posture-investigation.md) | **Not started:** inspect player/AI formations and weapon engagement modes; decide whether observation/getter/setter and formation orders are justified |
 | [009](009/009-runtime-harness-separation.md) | Completed production managed runtime and generic development harness separation; [implementation and verification](009/009-implementation.md). Existing Debug shutdown issue remains unresolved |

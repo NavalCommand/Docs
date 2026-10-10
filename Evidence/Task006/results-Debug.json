@@ -1,0 +1,233 @@
+[
+  {
+    "Action": "configure",
+    "Repository": "Domain.Api",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe"
+    ]
+  },
+  {
+    "Action": "clean",
+    "Repository": "Domain.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "Domain.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "ctest",
+    "Repository": "Domain.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "configure",
+    "Repository": "Gateway.Api",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe",
+      "-DVCPKG_INSTALLED_DIR=C:/Users/DmitriyPC/AppData/Local/Temp/naval-static-runtime-prefix",
+      "-DVCPKG_MANIFEST_INSTALL=OFF"
+    ]
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "Gateway.Api",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\managed\\Gateway.Api.csproj"
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "Gateway.Api",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\test\\managed\\Conformance.csproj"
+  },
+  {
+    "Action": "clean",
+    "Repository": "Gateway.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "Gateway.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "ctest",
+    "Repository": "Gateway.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "configure",
+    "Repository": "Gateway.Grpc.Api",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe",
+      "-DVCPKG_INSTALLED_DIR=C:/Users/DmitriyPC/AppData/Local/Temp/naval-static-runtime-prefix",
+      "-DVCPKG_MANIFEST_INSTALL=OFF"
+    ]
+  },
+  {
+    "Action": "clean",
+    "Repository": "Gateway.Grpc.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "Gateway.Grpc.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "ctest",
+    "Repository": "Gateway.Grpc.Api",
+    "Exit": 0
+  },
+  {
+    "Action": "configure",
+    "Repository": "Gateway.Grpc",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe",
+      "-DVCPKG_INSTALLED_DIR=C:/Users/DmitriyPC/AppData/Local/Temp/naval-static-runtime-prefix",
+      "-DVCPKG_MANIFEST_INSTALL=OFF"
+    ]
+  },
+  {
+    "Action": "clean",
+    "Repository": "Gateway.Grpc",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "Gateway.Grpc",
+    "Exit": 0
+  },
+  {
+    "Action": "ctest",
+    "Repository": "Gateway.Grpc",
+    "Exit": 8
+  },
+  {
+    "Action": "configure",
+    "Repository": "SeaPower.Client",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe",
+      "-DVCPKG_INSTALLED_DIR=C:/Users/DmitriyPC/AppData/Local/Temp/naval-static-runtime-prefix",
+      "-DVCPKG_MANIFEST_INSTALL=OFF"
+    ]
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "SeaPower.Client",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\managed\\SeaPower.Client.csproj"
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "SeaPower.Client",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\test\\managed\\ProviderTests.csproj"
+  },
+  {
+    "Action": "clean",
+    "Repository": "SeaPower.Client",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "SeaPower.Client",
+    "Exit": 0
+  },
+  {
+    "Action": "ctest",
+    "Repository": "SeaPower.Client",
+    "Exit": 0
+  },
+  {
+    "Action": "configure",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Arguments": [
+      "--preset",
+      "windows-msvc-debug",
+      "--fresh",
+      "-DFETCHCONTENT_SOURCE_DIR_NCBUILD=C:/Software/GitHub/NavalCommand/Build.CMake",
+      "-DCMAKE_MAKE_PROGRAM=C:/Software/STM32CubeCLT/Ninja/bin/ninja.exe",
+      "-DVCPKG_INSTALLED_DIR=C:/Users/DmitriyPC/AppData/Local/Temp/naval-static-runtime-prefix",
+      "-DVCPKG_MANIFEST_INSTALL=OFF"
+    ]
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\harness\\SeaPower.Harness.csproj"
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\runtime\\SeaPower.Mod.csproj"
+  },
+  {
+    "Action": "managed-clean",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Project": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\test\\managed\\RuntimeTests.csproj"
+  },
+  {
+    "Action": "clean",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0
+  },
+  {
+    "Action": "build",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0
+  },
+  {
+    "Action": "packages",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0
+  },
+  {
+    "Action": "direct-msbuild",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Project": "managed/runtime/SeaPower.Mod.csproj"
+  },
+  {
+    "Action": "direct-msbuild",
+    "Repository": "SeaPower.Mod",
+    "Exit": 0,
+    "Project": "managed/harness/SeaPower.Harness.csproj"
+  },
+  {
+    "Action": "ctest",
+    "Repository": "SeaPower.Mod",
+    "Exit": 8
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "RemainingOwnedProcesses": [],
+  "GeneratedOutsideOutput": [],
+  "GameAssemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "OwnerEditExcluded": "Gateway.Api/app/NavalCommand/Gateway/Api/SchemaRoundtrip.cpp",
+  "OwnerStyleSha256": "BD03868CF7229A78E3BEBFF936C9D427D217CBA84303B8C3077B00A7C4FCFA9E",
+  "VendorMismatches": [],
+  "SourceHeadsBeforeTaskCommits": {
+    "Docs": "7e4de34e1554dcfa97c9848a15f787344a45a92c",
+    "SeaPower.Mod": "e9bc2703e541ed1b522a9d0580ff39a4cf8526cf",
+    "Build.CMake": "477d8055a366731839b42a4b73e913e0968301f9",
+    "Gateway.Api": "55a700de4720d6f1b7b03d1e3fd021067259e0fc",
+    "SeaPower.Client": "5c7a8862657b9cf937a40128150d93e0d8f69f91",
+    "Gateway.Grpc.Api": "71cf5c616b1c669c40b0fb9a1d33d277947f704c",
+    "Domain.Api": "3ee1a46e9942fba347df2e8039892977ac2aaccb",
+    "Gateway.Grpc": "476c9bc4dc88589893dee0c914ab2de3e984709c"
+  },
+  "DoorstopSha256": "3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A",
+  "OwnerStyleUnchanged": true,
+  "RemainingOwnedPluginFolders": [],
+  "VendorFilesChecked": 233
+}

@@ -1,0 +1,227 @@
+[1/55] Generating generated/navalcommand/gateway/v1/session.pb.cc, generated/navalcommand/gateway/v1/session.pb.h
+[2/55] Generating generated/navalcommand/gateway/v1/orders.pb.cc, generated/navalcommand/gateway/v1/orders.pb.h
+[3/55] Generating generated/navalcommand/gateway/v1/incidents.pb.cc, generated/navalcommand/gateway/v1/incidents.pb.h
+[4/55] Generating generated/navalcommand/gateway/v1/world.pb.cc, generated/navalcommand/gateway/v1/world.pb.h
+[5/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\test\NavalCommand\SeaPower\Mod\AbiMismatchFixture.cpp for CXX dependencies
+[6/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\test\NavalCommand\SeaPower\Mod\AbiMismatchFixture.cpp for CXX dependencies
+[7/55] Generating CXX dyndep file test\CMakeFiles\missing-exports-fixture.dir\CXX.dd
+[8/55] Generating CXX dyndep file test\CMakeFiles\abi-mismatch-fixture.dir\CXX.dd
+[9/55] Building CXX object test\CMakeFiles\missing-exports-fixture.dir\NavalCommand\SeaPower\Mod\AbiMismatchFixture.cpp.obj
+[10/55] Building CXX object test\CMakeFiles\abi-mismatch-fixture.dir\NavalCommand\SeaPower\Mod\AbiMismatchFixture.cpp.obj
+[11/55] Linking CXX shared library test\missing-exports-fixture.dll
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/missing-exports-fixture.dll: message: deploying dependencies
+[12/55] Linking CXX shared library test\abi-mismatch-fixture.dll
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/abi-mismatch-fixture.dll: message: deploying dependencies
+[13/55] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\src\NavalCommand\Gateway\Api\Codec.cpp for CXX dependencies
+[14/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\session.pb.cc for CXX dependencies
+[15/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\incidents.pb.cc for CXX dependencies
+[16/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\orders.pb.cc for CXX dependencies
+[17/55] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\app\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp for CXX dependencies
+[18/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_0b1845c5e8eb-build\src\generated\navalcommand\gateway\v1\world.pb.cc for CXX dependencies
+[19/55] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[20/55] Generating CXX dyndep file _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[21/55] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\session.pb.cc.obj
+[22/55] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\incidents.pb.cc.obj
+[23/55] Building CXX object _deps\nc_0b1845c5e8eb-build\app\CMakeFiles\schema-roundtrip.dir\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp.obj
+[24/55] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\orders.pb.cc.obj
+[25/55] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\world.pb.cc.obj
+[26/55] Building CXX object _deps\nc_0b1845c5e8eb-build\src\CMakeFiles\Gateway.Api.dir\NavalCommand\Gateway\Api\Codec.cpp.obj
+[27/55] Linking CXX static library _deps\nc_0b1845c5e8eb-build\src\Gateway.Api.lib
+[28/55] Generating generated/navalcommand/gateway/v1/service.pb.cc, generated/navalcommand/gateway/v1/service.pb.h, generated/navalcommand/gateway/v1/service.grpc.pb.cc, generated/navalcommand/gateway/v1/service.grpc.pb.h
+[29/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_2ce4f16e7409-build\src\generated\navalcommand\gateway\v1\service.pb.cc for CXX dependencies
+[30/55] Linking CXX executable _deps\nc_0b1845c5e8eb-build\app\schema-roundtrip.exe
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/_deps/nc_0b1845c5e8eb-build/app/schema-roundtrip.exe: message: deploying dependencies
+[31/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\windows-msvc-release\_deps\nc_2ce4f16e7409-build\src\generated\navalcommand\gateway\v1\service.grpc.pb.cc for CXX dependencies
+[32/55] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp for CXX dependencies
+[33/55] Generating CXX dyndep file _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\CXX.dd
+[34/55] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\src\NavalCommand\Gateway\Grpc\Server.cpp for CXX dependencies
+[35/55] Generating CXX dyndep file _deps\nc_2ce4f16e7409-build\app\CMakeFiles\naval-cli.dir\CXX.dd
+[36/55] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\app\NavalCommand\Gateway\Grpc\MockHost.cpp for CXX dependencies
+[37/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\test\NavalCommand\SeaPower\Mod\HostTest.cpp for CXX dependencies
+[38/55] Generating CXX dyndep file _deps\nc_9c6b3dc680b0-build\src\CMakeFiles\Gateway.Grpc.dir\CXX.dd
+[39/55] Scanning C:\Software\GitHub\NavalCommand\SeaPower.Mod\src\NavalCommand\SeaPower\Mod\Host.cpp for CXX dependencies
+[40/55] Generating CXX dyndep file _deps\nc_9c6b3dc680b0-build\app\CMakeFiles\mock-host.dir\CXX.dd
+[41/55] Generating CXX dyndep file test\CMakeFiles\host-tests.dir\CXX.dd
+[42/55] Generating CXX dyndep file src\CMakeFiles\SeaPower.Host.dir\CXX.dd
+[43/55] Building CXX object _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.pb.cc.obj
+[44/55] Building CXX object _deps\nc_9c6b3dc680b0-build\src\CMakeFiles\Gateway.Grpc.dir\NavalCommand\Gateway\Grpc\Server.cpp.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[45/55] Building CXX object _deps\nc_2ce4f16e7409-build\src\CMakeFiles\Gateway.Grpc.Api.dir\generated\navalcommand\gateway\v1\service.grpc.pb.cc.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[46/55] Linking CXX static library _deps\nc_2ce4f16e7409-build\src\Gateway.Grpc.Api.lib
+[47/55] Linking CXX static library _deps\nc_9c6b3dc680b0-build\src\Gateway.Grpc.lib
+[48/55] Building CXX object src\CMakeFiles\SeaPower.Host.dir\NavalCommand\SeaPower\Mod\Host.cpp.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[49/55] Building CXX object _deps\nc_9c6b3dc680b0-build\app\CMakeFiles\mock-host.dir\NavalCommand\Gateway\Grpc\MockHost.cpp.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[50/55] Building CXX object _deps\nc_2ce4f16e7409-build\app\CMakeFiles\naval-cli.dir\NavalCommand\Gateway\Grpc\Api\Cli.cpp.obj
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/LaunchSmoke.h(18): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/LaunchSmoke.h(18): note: the template instantiation context (the oldest one first) is
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/LaunchSmoke.h(32): note: see reference to function template instantiation 'auto LaunchSmoke::<lambda_1>::operator ()<navalcommand::gateway::v1::WorldSnapshot>(const char *,const _T1 &) const' being compiled
+        with
+        [
+            _T1=navalcommand::gateway::v1::WorldSnapshot
+        ]
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/MovementSmoke.h(20): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/MovementSmoke.h(20): note: the template instantiation context (the oldest one first) is
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand/Gateway/Grpc/Api/MovementSmoke.h(46): note: see reference to function template instantiation 'auto MovementSmoke::<lambda_1>::operator ()<navalcommand::gateway::v1::WorldSnapshot>(const char *,const _T1 &) const' being compiled
+        with
+        [
+            _T1=navalcommand::gateway::v1::WorldSnapshot
+        ]
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp(21): warning C4834: discarding return value of function with [[nodiscard]] attribute
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp(21): note: the template instantiation context (the oldest one first) is
+C:\Software\GitHub\NavalCommand\Gateway.Grpc.Api\app\NavalCommand\Gateway\Grpc\Api\Cli.cpp(75): note: see reference to function template instantiation 'void Print<navalcommand::gateway::v1::WorldSnapshot>(const char *,const T &)' being compiled
+        with
+        [
+            T=navalcommand::gateway::v1::WorldSnapshot
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[51/55] Building CXX object test\CMakeFiles\host-tests.dir\NavalCommand\SeaPower\Mod\HostTest.cpp.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[52/55] Linking CXX shared library src\SeaPower.Host.dll
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/src/SeaPower.Host.dll: message: deploying dependencies
+[53/55] Linking CXX executable _deps\nc_2ce4f16e7409-build\app\naval-cli.exe
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/_deps/nc_2ce4f16e7409-build/app/naval-cli.exe: message: deploying dependencies
+[54/55] Linking CXX executable _deps\nc_9c6b3dc680b0-build\app\mock-host.exe
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/_deps/nc_9c6b3dc680b0-build/app/mock-host.exe: message: deploying dependencies
+[55/55] Linking CXX executable test\host-tests.exe
+C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-release/test/host-tests.exe: message: deploying dependencies

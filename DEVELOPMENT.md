@@ -1,5 +1,7 @@
 # Production, development tooling and experiments
 
+The maintained live launcher accepts explicit external `ClientArguments` and an optional absolute `FixtureAssembly` DLL. Fixture staging is permitted only with an opted-in harness run, in a separate temporary owned plugin directory, with hash evidence and cleanup. Fixtures are independently built regression artifacts; production runtime and generic harness assemblies must never reference them or depend on fixture environment/state. Their sources and experiment-specific behavior belong under the relevant archived task, and all generated fixture artifacts remain under the owning repository's `o/`.
+
 **Authority:** Permanent engineering policy for every NavalCommandFramework repository. Read with [AGENTS.md](AGENTS.md), [ARCHITECTURE.md](ARCHITECTURE.md), and [CODE_STYLE.md](CODE_STYLE.md). This document is not a work log; numbered assignments and evidence belong under [Tasks/](Tasks/README.md) and [Evidence/](Evidence/README.md).
 
 ## Source ownership and lifecycle

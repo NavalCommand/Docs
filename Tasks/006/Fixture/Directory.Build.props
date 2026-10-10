@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)../../../o/managed/OperationalFixture/bin/</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../../../o/managed/OperationalFixture/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

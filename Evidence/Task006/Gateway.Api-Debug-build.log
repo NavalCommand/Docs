@@ -1,0 +1,31 @@
+[1/28] Generating generated/navalcommand/gateway/v1/session.pb.cc, generated/navalcommand/gateway/v1/session.pb.h
+[2/28] Generating generated/navalcommand/gateway/v1/orders.pb.cc, generated/navalcommand/gateway/v1/orders.pb.h
+[3/28] Generating generated/navalcommand/gateway/v1/incidents.pb.cc, generated/navalcommand/gateway/v1/incidents.pb.h
+[4/28] Generating generated/navalcommand/gateway/v1/world.pb.cc, generated/navalcommand/gateway/v1/world.pb.h
+[5/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-debug\src\generated\navalcommand\gateway\v1\session.pb.cc for CXX dependencies
+[6/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-debug\src\generated\navalcommand\gateway\v1\incidents.pb.cc for CXX dependencies
+[7/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-debug\src\generated\navalcommand\gateway\v1\orders.pb.cc for CXX dependencies
+[8/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\src\NavalCommand\Gateway\Api\Codec.cpp for CXX dependencies
+[9/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\o\windows-msvc-debug\src\generated\navalcommand\gateway\v1\world.pb.cc for CXX dependencies
+[10/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\app\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp for CXX dependencies
+[11/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\test\NavalCommand\Gateway\Api\CodecTest.cpp for CXX dependencies
+[12/28] Scanning C:\Software\GitHub\NavalCommand\Gateway.Api\test\DomainConsumer.cpp for CXX dependencies
+[13/28] Generating CXX dyndep file src\CMakeFiles\Gateway.Api.dir\CXX.dd
+[14/28] Generating CXX dyndep file test\CMakeFiles\api-tests.dir\CXX.dd
+[15/28] Generating CXX dyndep file app\CMakeFiles\schema-roundtrip.dir\CXX.dd
+[16/28] Generating CXX dyndep file test\CMakeFiles\domain-consumer.dir\CXX.dd
+[17/28] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\incidents.pb.cc.obj
+[18/28] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\session.pb.cc.obj
+[19/28] Building CXX object test\CMakeFiles\domain-consumer.dir\DomainConsumer.cpp.obj
+[20/28] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\orders.pb.cc.obj
+[21/28] Building CXX object app\CMakeFiles\schema-roundtrip.dir\NavalCommand\Gateway\Api\SchemaRoundtrip.cpp.obj
+[22/28] Building CXX object src\CMakeFiles\Gateway.Api.dir\generated\navalcommand\gateway\v1\world.pb.cc.obj
+[23/28] Building CXX object src\CMakeFiles\Gateway.Api.dir\NavalCommand\Gateway\Api\Codec.cpp.obj
+[24/28] Linking CXX static library src\Gateway.Api.lib
+[25/28] Building CXX object test\CMakeFiles\api-tests.dir\NavalCommand\Gateway\Api\CodecTest.cpp.obj
+[26/28] Linking CXX executable app\schema-roundtrip.exe
+C:/Software/GitHub/NavalCommand/Gateway.Api/o/windows-msvc-debug/app/schema-roundtrip.exe: message: deploying dependencies
+[27/28] Linking CXX executable test\domain-consumer.exe
+C:/Software/GitHub/NavalCommand/Gateway.Api/o/windows-msvc-debug/test/domain-consumer.exe: message: deploying dependencies
+[28/28] Linking CXX executable test\api-tests.exe
+C:/Software/GitHub/NavalCommand/Gateway.Api/o/windows-msvc-debug/test/api-tests.exe: message: deploying dependencies

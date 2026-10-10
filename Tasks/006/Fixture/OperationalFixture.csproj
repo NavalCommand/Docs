@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Seapower-Scripts" HintPath="$(GameManaged)/Seapower-Scripts.dll" Private="false" />
+    <Reference Include="BepInEx" HintPath="$(GameManaged)/../../BepInEx/core/BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(GameManaged)/../../BepInEx/core/0Harmony.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameManaged)/UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(GameManaged)/UnityEngine.dll" Private="false" />
+    <Reference Include="Plugins" HintPath="$(GameManaged)/Plugins.dll" Private="false" />
+    <Reference Include="Libraries" HintPath="$(GameManaged)/Libraries.dll" Private="false" />
+    <Reference Include="UniRx" HintPath="$(GameManaged)/UniRx.dll" Private="false" />
+  </ItemGroup>
+</Project>

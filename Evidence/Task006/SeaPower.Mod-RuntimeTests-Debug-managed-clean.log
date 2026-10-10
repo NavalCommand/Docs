@@ -1,0 +1,25 @@
+Build started 10.10.2026 18:53:28.
+     1>Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\test\managed\RuntimeTests.csproj" on node 1 (Clean target(s)).
+     1>CoreClean:
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\bin\x64\Debug\net10.0\RuntimeTests.exe".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\bin\x64\Debug\net10.0\RuntimeTests.deps.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\bin\x64\Debug\net10.0\RuntimeTests.runtimeconfig.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\bin\x64\Debug\net10.0\RuntimeTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\bin\x64\Debug\net10.0\RuntimeTests.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.AssemblyInfoInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.AssemblyInfo.cs".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.sourcelink.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\refint\RuntimeTests.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\RuntimeTests.genruntimeconfig.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\RuntimeTests\obj\x64\Debug\net10.0\ref\RuntimeTests.dll".
+     1>Done Building Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\test\managed\RuntimeTests.csproj" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.43

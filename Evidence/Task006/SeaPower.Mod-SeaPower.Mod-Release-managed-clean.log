@@ -1,0 +1,36 @@
+Build started 10.10.2026 18:55:44.
+     1>Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\runtime\SeaPower.Mod.csproj" on node 1 (Clean target(s)).
+     1>CoreClean:
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\bin\x64\Release\netstandard2.1\SeaPower.Mod.deps.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\bin\x64\Release\netstandard2.1\SeaPower.Mod.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\bin\x64\Release\netstandard2.1\SeaPower.Mod.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.csproj.AssemblyReference.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.AssemblyInfoInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.AssemblyInfo.cs".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.sourcelink.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.7B8481E2.Up2Date".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\SeaPower.Mod\o\managed\SeaPower.Mod\obj\x64\Release\netstandard2.1\SeaPower.Mod.pdb".
+     1>Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\runtime\SeaPower.Mod.csproj" (1) is building "C:\Software\GitHub\NavalCommand\Gateway.Api\managed\Gateway.Api.csproj" (3:2) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\bin\x64\Release\netstandard2.0\Gateway.Api.deps.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\bin\x64\Release\netstandard2.0\Gateway.Api.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\bin\x64\Release\netstandard2.0\Gateway.Api.pdb".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.csproj.AssemblyReference.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.AssemblyInfoInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.AssemblyInfo.cs".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.sourcelink.json".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.dll".
+         Deleting file "C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\obj\x64\Release\netstandard2.0\Gateway.Api.pdb".
+     3>Done Building Project "C:\Software\GitHub\NavalCommand\Gateway.Api\managed\Gateway.Api.csproj" (Clean target(s)).
+     1>Done Building Project "C:\Software\GitHub\NavalCommand\SeaPower.Mod\managed\runtime\SeaPower.Mod.csproj" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.53

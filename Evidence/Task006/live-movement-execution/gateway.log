@@ -1,0 +1,9 @@
+2026-10-10T17:13:39.6496863Z native-start abi=1 status=0
+2026-10-10T17:13:56.9307620Z player-side-bound Taskforce1
+2026-10-10T17:13:58.5662237Z dispatch thread=1 request=route-17916524383322598A stage=NativeTaskCreated reason=native_task_membership_verified seconds=5.63867918914184
+2026-10-10T17:14:04.6593928Z dispatch thread=1 request=route-17916524383322598A stage=MovementObserved reason=displacement_after_native_task_creation seconds=11.5967924608849
+2026-10-10T17:14:04.9556671Z dispatch thread=1 request=route-17916524383322598B stage=RouteMutated reason=native_route_sequence_verified seconds=11.8325420636684
+2026-10-10T17:14:05.4593720Z dispatch thread=1 request=route-17916524383322598C stage=RouteMutated reason=native_route_sequence_verified seconds=12.3423112598248
+2026-10-10T17:14:05.9740369Z dispatch thread=1 request=route-17916524383322598D stage=RouteMutated reason=native_route_sequence_verified seconds=12.8486194577999
+2026-10-10T17:14:06.5063887Z dispatch thread=1 request=route-17916524383322598E stage=RouteMutated reason=native_route_sequence_verified seconds=13.3870288641192
+2026-10-10T17:14:08.6625330Z dispatch thread=1 request=route-17916524383322598E stage=MovementObserved reason=displacement_while_requested_route_head seconds=15.5454193674959

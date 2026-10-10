@@ -1,0 +1,29 @@
+[1/4] Scanning C:\Software\GitHub\NavalCommand\Gateway.Grpc\test\NavalCommand\Gateway\Grpc\ServerTest.cpp for CXX dependencies
+[2/4] Generating CXX dyndep file test\CMakeFiles\gateway-tests.dir\CXX.dd
+[3/4] Building CXX object test\CMakeFiles\gateway-tests.dir\NavalCommand\Gateway\Grpc\ServerTest.cpp.obj
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): warning C4996: 'grpc::experimental::IdentityKeyCertPair::~IdentityKeyCertPair': Use IdentityKeyOrSignerCertPair instead
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(337): note: the template instantiation context (the oldest one first) is
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see reference to class template instantiation 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>' being compiled
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2089): note: while compiling class template member function 'void std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy(void) noexcept'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(832): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::_Tidy' in 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector'
+C:\Users\DmitriyPC\AppData\Local\Temp\naval-static-runtime-prefix\x64-windows-static\include\grpcpp/security/tls_certificate_provider.h(75): note: see the first reference to 'std::vector<grpc::experimental::IdentityKeyCertPair,std::allocator<grpc::experimental::IdentityKeyCertPair>>::~vector' in 'grpc::experimental::StaticDataCertificateProvider::StaticDataCertificateProvider'
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vector(2099): note: see reference to function template instantiation 'void std::_Destroy_range<std::allocator<grpc::experimental::IdentityKeyCertPair>>(grpc::experimental::IdentityKeyCertPair *,grpc::experimental::IdentityKeyCertPair *const ,_Alloc &) noexcept' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(1107): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::destroy<_Ty>(_Alloc &,_Uty *const )' being compiled
+        with
+        [
+            _Alloc=std::allocator<grpc::experimental::IdentityKeyCertPair>,
+            _Ty=grpc::experimental::IdentityKeyCertPair,
+            _Uty=grpc::experimental::IdentityKeyCertPair
+        ]
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\xmemory(739): note: see reference to function template instantiation 'void std::destroy_at<_Uty>(_Ty *const ) noexcept' being compiled
+        with
+        [
+            _Uty=grpc::experimental::IdentityKeyCertPair,
+            _Ty=grpc::experimental::IdentityKeyCertPair
+        ]
+[4/4] Linking CXX executable test\gateway-tests.exe
+C:/Software/GitHub/NavalCommand/Gateway.Grpc/o/windows-msvc-debug/test/gateway-tests.exe: message: deploying dependencies

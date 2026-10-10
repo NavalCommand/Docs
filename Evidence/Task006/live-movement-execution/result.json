@@ -1,0 +1,10 @@
+{
+  "ready": true,
+  "mode": "Combined",
+  "cliExitCode": 0,
+  "clientArguments": [
+    "--movement-smoke"
+  ],
+  "optedIntoMutation": true,
+  "finishedUtc": "2026-10-10T17:14:08.8131326Z"
+}
