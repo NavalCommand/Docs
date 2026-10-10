@@ -1,6 +1,6 @@
 # Managed modules and cross-language build integration
 
-**Authority:** Permanent project-wide architectural/build policy. Read with [AGENTS.md](AGENTS.md), [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), and [DEVELOPMENT.md](DEVELOPMENT.md). This is a stable contract, not a task log. The implementation assignment is [Task 010](Tasks/010/010-unified-build-output-layout.md).
+**Authority:** Permanent project-wide architectural/build policy. Read with [AGENTS.md](AGENTS.md), [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), and [DEVELOPMENT.md](DEVELOPMENT.md). This is a stable contract, not a task log.
 
 ## Objectives and design ownership
 
@@ -48,3 +48,53 @@ Do not run `dotnet restore`/`dotnet build` merely to **configure CMake** unless 
 Every change to this integration must verify direct IDE/MSBuild compilation **after configuration**, transitive C# project references, direct and transitive local source overrides, ordinary Git resolution, Debug/Release isolation, fresh builds without source-adjacent artifacts, Protobuf generation, CTest integration and production-vs-harness package contents. Mark tooling/IDE scenarios not actually executed as unverified.
 
 Generated paths, build logs, binaries, restore intermediates, and packages remain under `o/`. Ordinary NuGet global caches, deliberately selected external runtime logs and the game installation are not repository-owned build artifacts. Do not move vendor code or change gameplay/contracts merely to standardize build structure.
+
+## Implemented configure, IDE and package workflows
+
+Enter the VS 2026 x64 developer shell with CMake 4.2+, Ninja, .NET SDK (including net10.0 for regression executables), PowerShell 7 and Git available. Set standard `VCPKG_ROOT` for the pinned manifest toolchain. Register developer source substitutions and optional `SEAPOWER_GAME_ROOT` in ignored top-level `Build.Local.cmake`. No installation is needed for native-only targets or the fake-provider/runtime regression executables; a requested game-dependent project gives an explicit error if its compile-only references are unavailable.
+
+Configure once from the owning repository:
+
+```powershell
+cmake --preset windows-msvc-release
+```
+
+Local work on the shared helper may add `-DFETCHCONTENT_SOURCE_DIR_NCBUILD=/absolute/path/to/Build.CMake`. The helper discovers `managed/CMakeLists.txt`. `NavalCommandManagedContext(Name=value ...)` writes the repository-local ignored context; `NavalCommandAddManagedProject(target project.csproj)` registers an explicit MSBuild build target. `NavalCommandManagedProtoc(output)` uses the resolved Protobuf host tool. Context generation never compiles C# or restores NuGet.
+
+After configuration, repeat ordinary direct builds without CMake or manual properties:
+
+```powershell
+dotnet build managed/SeaPower.Client.csproj -c Debug
+# From SeaPower.Mod:
+dotnet build managed/runtime/SeaPower.Mod.csproj -c Release
+dotnet build managed/harness/SeaPower.Harness.csproj -c Release
+dotnet run --project test/managed/RuntimeTests.csproj -c Release
+```
+
+Open those same ordinary projects in Visual Studio or Rider. Their committed ProjectReferences use CMake-resolved properties; each referenced repository imports its own context and writes its own outputs. Fake-provider tests deliberately retain source links to the engine-independent provider classes so they do not require proprietary game references. Direct .NET verification is distinct from testing interactive IDE restore/design-time behavior.
+
+CMake's selected `$<CONFIG>` reaches managed builds and CTest, including Ninja Multi-Config. Neither compilation nor packaging silently chooses Release for Debug. Full staging uses:
+
+```powershell
+cmake --build o/windows-msvc-release --target package-runtime
+cmake --build o/windows-msvc-release --target package-harness
+ctest --test-dir o/windows-msvc-release --output-on-failure --no-tests=error
+# With a supported multi-config build directory:
+cmake --build o/multi --config Debug --target package-runtime
+```
+
+The `scripts/Build.ps1` / `Build-Harness.ps1` wrappers select the configured CMake target; they do not configure or resolve sources. `-Configuration` is relevant to multi-config generators; a single-config build uses its configured build type. Package records under `o/managed/<project>/bin/<Configuration>/` contain evaluated TargetPath and copy-local paths, including the actual platform/framework directories; SDK binary and intermediate paths retain those dimensions. The current projects have one framework each and the supported native host architecture is x64. Do not concurrently stage different configurations to the same versioned distribution directory; each package invocation replaces it with a fresh stage and checksums all included files.
+
+### Active managed context selection
+
+`o/managed/Build.Context.props` is the explicit active IDE context. Source paths, resolved host protoc, shared MSBuild targets location and configured game SDK directory are its inputs. C# edits, NuGet restore and Debug/Release switches do not require regeneration. Changed dependency resolution, tooling location, repository graph or SDK path requires CMake configuration.
+
+An identical context is not rewritten. A different context fails with a diagnostic; close other builds and select the intended context with `-DNAVALCOMMAND_REPLACE_MANAGED_CONTEXT=ON`. This permission resets to OFF after the successful top-level configure. Reconfigure other consumers before building them. CMake captures the resolved dependency contexts and rejects stale contexts before MSBuild; an IDE uses the explicitly selected active context. Use separate source checkouts for simultaneous incompatible contexts. This is source/tool context selection, not a second managed dependency resolver or extra preset scheme.
+
+The generated import is optional so engine-independent regression projects remain directly usable without configuration. Projects requiring resolved dependencies validate context presence, and game-dependent projects validate their game references. Protobuf codegen uses canonical `proto/` inputs and the resolved host protoc; NuGet remains standard MSBuild restore. `Managed.targets` records outputs after successful compilation, avoiding guessed binary paths or custom package resolution.
+
+### Legacy artifacts and deployment
+
+Audit known ignored `bin/obj/out` remnants before moving or deleting them. Verify canonical containment in the owning repository and absence of tracked/user source; prefer recoverable movement into `o/legacy-generated/`. Never delete arbitrary user-owned directories or historical evidence. Source-generated-file audits exclude `o/` and separately identify explicitly requested receipts/exports. The NuGet global cache and permitted game installation are external inputs, not repository build outputs.
+
+Build/staging does not install or activate plugins. Existing `Start-Live.ps1` deployment remains opt-in, owned-process-only, manifest-validated and reversible. Production packages exclude harness/scenarios, game assemblies, probes and platform System/Unity DLLs. The known Debug gRPC shutdown issue remains a separate unresolved runtime follow-up; build-layout work must not conceal or claim to repair it.

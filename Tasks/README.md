@@ -13,6 +13,7 @@ This directory contains historical work specifications, reports and reproduction
 | [007](007/007-code-readability-and-docs-adoption.md) | Completed code-readability and documentation adoption task; [implementation report](007/REPORT.md). Debug gRPC/host teardown failure remains an explicitly unresolved issue |
 | [008](008/008-formations-and-weapon-posture-investigation.md) | **Not started:** inspect player/AI formations and weapon engagement modes; decide whether observation/getter/setter and formation orders are justified |
 | [009](009/009-runtime-harness-separation.md) | Completed production managed runtime and generic development harness separation; [implementation and verification](009/009-implementation.md). Existing Debug shutdown issue remains unresolved |
+| [010](010/010-unified-build-output-layout.md) | Implemented unified managed source/build/output architecture; [report](010/REPORT.md). Known Debug gateway/host exit failures reproduced and retained |
 
 Run-specific evidence remains in [../Evidence/](../Evidence/README.md) under its original directory identifiers. Some archived commands or inline `Docs/...` paths reflect the former root-level document layout; use this index when locating moved reports.
 

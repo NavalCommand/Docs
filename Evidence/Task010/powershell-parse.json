@@ -1,0 +1,50 @@
+[
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Build-AnchorChain.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Build-Harness.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Build-Native.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Build.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Package.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Prepare-Dependencies.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Prepare-LaunchRequest.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Start-Live.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Start-Validation.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\scripts\\Test-Mock.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\scripts\\Build-Native.ps1",
+    "errors": []
+  },
+  {
+    "file": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\scripts\\Build.ps1",
+    "errors": []
+  }
+]

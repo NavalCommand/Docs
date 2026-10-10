@@ -1,0 +1,128 @@
+{
+  "Build.CMake": {
+    "test/CMakeLists.txt": [
+      [
+        "add_test",
+        "dependency-resolution"
+      ]
+    ]
+  },
+  "Gateway.Api": {
+    "app/CMakeLists.txt": [
+      [
+        "add_executable",
+        "schema-roundtrip"
+      ]
+    ],
+    "src/CMakeLists.txt": [
+      [
+        "add_library",
+        "Gateway.Api"
+      ]
+    ],
+    "test/CMakeLists.txt": [
+      [
+        "add_executable",
+        "api-tests"
+      ],
+      [
+        "add_test",
+        "codec"
+      ]
+    ]
+  },
+  "Gateway.Grpc.Api": {
+    "app/CMakeLists.txt": [
+      [
+        "add_executable",
+        "naval-cli"
+      ]
+    ],
+    "src/CMakeLists.txt": [
+      [
+        "add_library",
+        "Gateway.Grpc.Api"
+      ]
+    ],
+    "test/CMakeLists.txt": [
+      [
+        "add_test",
+        "imports"
+      ]
+    ]
+  },
+  "Gateway.Grpc": {
+    "app/CMakeLists.txt": [
+      [
+        "add_executable",
+        "mock-host"
+      ]
+    ],
+    "mock/CMakeLists.txt": [
+      [
+        "add_library",
+        "Gateway.Grpc.Mock"
+      ]
+    ],
+    "src/CMakeLists.txt": [
+      [
+        "add_library",
+        "Gateway.Grpc"
+      ]
+    ],
+    "test/CMakeLists.txt": [
+      [
+        "add_executable",
+        "gateway-tests"
+      ],
+      [
+        "add_test",
+        "gateway"
+      ]
+    ]
+  },
+  "SeaPower.Client": {
+    "src/CMakeLists.txt": [
+      [
+        "add_custom_target",
+        "SeaPower.Client.Managed"
+      ]
+    ],
+    "test/CMakeLists.txt": [
+      [
+        "add_test",
+        "provider"
+      ]
+    ]
+  },
+  "SeaPower.Mod": {
+    "src/CMakeLists.txt": [
+      [
+        "add_library",
+        "SeaPower.Host"
+      ]
+    ],
+    "test/CMakeLists.txt": [
+      [
+        "add_executable",
+        "host-tests"
+      ],
+      [
+        "add_test",
+        "host-abi"
+      ],
+      [
+        "add_library",
+        "abi-mismatch-fixture"
+      ],
+      [
+        "add_library",
+        "missing-exports-fixture"
+      ],
+      [
+        "add_test",
+        "managed-runtime-harness"
+      ]
+    ]
+  }
+}

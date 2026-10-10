@@ -1,0 +1,127 @@
+{
+  "Build.CMake": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [],
+    "gitStatus": [],
+    "nativeRuntimeFlags": []
+  },
+  "Gateway.Api": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [
+      "test/managed/Program.cs"
+    ],
+    "gitStatus": [],
+    "nativeRuntimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 7,
+        "matchingRuntime": "/MTd",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\windows-msvc-debug\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /std:c++latest -MTd -RTC1 -Zi /EHsc /utf-8 /Zc:__cplusplus @src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fosrc\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fdsrc\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\windows-msvc-debug\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 7,
+        "matchingRuntime": "/MT",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\windows-msvc-release\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG /std:c++latest -MT /EHsc /utf-8 /Zc:__cplusplus @src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fosrc\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fdsrc\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\windows-msvc-release\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      }
+    ]
+  },
+  "Gateway.Grpc.Api": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [],
+    "gitStatus": [],
+    "nativeRuntimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 9,
+        "matchingRuntime": "/MTd",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /std:c++latest -MTd -RTC1 -Zi /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 9,
+        "matchingRuntime": "/MT",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG /std:c++latest -MT /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      }
+    ]
+  },
+  "Gateway.Grpc": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [],
+    "gitStatus": [],
+    "nativeRuntimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 12,
+        "matchingRuntime": "/MTd",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /std:c++latest -MTd -RTC1 -Zi /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 12,
+        "matchingRuntime": "/MT",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG /std:c++latest -MT /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      }
+    ]
+  },
+  "SeaPower.Client": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [
+      "managed/src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+      "managed/src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+      "managed/src/NavalCommand/SeaPower/Client/Provider.cs",
+      "managed/src/NavalCommand/SeaPower/Client/StockSample.cs",
+      "managed/src/NavalCommand/SeaPower/Client/TrackSample.cs",
+      "managed/src/NavalCommand/SeaPower/Client/UnitSample.cs",
+      "test/managed/DistanceTests.cs",
+      "test/managed/FakeGameFacade.cs",
+      "test/managed/Program.cs"
+    ],
+    "gitStatus": [],
+    "nativeRuntimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 6,
+        "matchingRuntime": "/MTd",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /std:c++latest -MTd -RTC1 -Zi /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 6,
+        "matchingRuntime": "/MT",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG /std:c++latest -MT /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      }
+    ]
+  },
+  "SeaPower.Mod": {
+    "unexpectedGeneratedOutsideO": [],
+    "handwrittenCs": [
+      "managed/harness/EvidenceWriter.cs",
+      "managed/harness/HarnessPlugin.cs",
+      "managed/harness/MissionLauncher.cs",
+      "managed/runtime/Bootstrap.cs",
+      "managed/runtime/INativeTransport.cs",
+      "managed/runtime/NativeTransport.cs",
+      "managed/runtime/Runtime.cs",
+      "managed/runtime/RuntimeConfiguration.cs",
+      "managed/runtime/RuntimeMailbox.cs",
+      "managed/runtime/TransportWorker.cs",
+      "test/managed/Program.cs"
+    ],
+    "gitStatus": [],
+    "nativeRuntimeFlags": [
+      {
+        "configuration": "debug",
+        "translationUnits": 15,
+        "matchingRuntime": "/MTd",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /std:c++latest -MTd -RTC1 -Zi /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\windows-msvc-debug\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      },
+      {
+        "configuration": "release",
+        "translationUnits": 15,
+        "matchingRuntime": "/MT",
+        "sampleCommand": "C:\\PROGRA~1\\MICROS~1\\18\\Insiders\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -D_MBCS -IC:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\public -IC:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated -external:IC:\\Users\\DmitriyPC\\AppData\\Local\\Temp\\naval-static-runtime-prefix\\x64-windows-static\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG /std:c++latest -MT /EHsc /utf-8 /Zc:__cplusplus @_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj.modmap /Fo_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\generated\\navalcommand\\gateway\\v1\\session.pb.cc.obj /Fd_deps\\nc_0b1845c5e8eb-build\\src\\CMakeFiles\\Gateway.Api.dir\\Gateway.Api.pdb /FS -c C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\windows-msvc-release\\_deps\\nc_0b1845c5e8eb-build\\src\\generated\\navalcommand\\gateway\\v1\\session.pb.cc"
+      }
+    ]
+  }
+}

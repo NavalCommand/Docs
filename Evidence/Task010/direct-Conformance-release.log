@@ -1,0 +1,10 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Gateway.Api -> C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Gateway.Api\bin\Release\netstandard2.0\Gateway.Api.dll
+  Conformance -> C:\Software\GitHub\NavalCommand\Gateway.Api\o\managed\Conformance\bin\Release\net10.0\Conformance.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.33

@@ -1,0 +1,24 @@
+{
+  "Build.CMake": "6a4f1c963107d352c27325cf76bf44bbbb4d8dd4",
+  "Gateway.Api": "e8a3c44e97e9c3eb7da49bbeb658e1de31a84876",
+  "Gateway.Grpc.Api": "9efbb1814aae9de5435ef346eb0241af6c56291c",
+  "Gateway.Grpc": "1a8d559281b2003db232be9147ca5239b5e2528a",
+  "SeaPower.Client": "1313e5f84922bdfdc20ce867ffb3d89ef9d370d0",
+  "SeaPower.Mod": "39c100992ef5ad13151d1e691af167eca73d6a8d",
+  "fixture": "C:\\Software\\GitHub\\NavalCommand\\Build.CMake\\o\\git-source-verification\\run-w5y_3j_t",
+  "resolution": [
+    "navalcommand.gateway.api|main|C:/Software/GitHub/NavalCommand/Build.CMake/o/git-source-verification/run-w5y_3j_t/SeaPower.Mod/o/git-release/_deps/nc_0b1845c5e8eb-src",
+    "navalcommand.gateway.grpc.api|main|C:/Software/GitHub/NavalCommand/Build.CMake/o/git-source-verification/run-w5y_3j_t/SeaPower.Mod/o/git-release/_deps/nc_2ce4f16e7409-src",
+    "navalcommand.gateway.grpc|main|C:/Software/GitHub/NavalCommand/Build.CMake/o/git-source-verification/run-w5y_3j_t/SeaPower.Mod/o/git-release/_deps/nc_9c6b3dc680b0-src",
+    "navalcommand.seapower.client|main|C:/Software/GitHub/NavalCommand/Build.CMake/o/git-source-verification/run-w5y_3j_t/SeaPower.Mod/o/git-release/_deps/nc_c754339ee794-src"
+  ],
+  "pass": [
+    "actual source snapshot Git FetchContent, no Build.Local.cmake",
+    "native and managed transitive graph configure",
+    "direct runtime Debug/Release ProjectReference builds",
+    "direct harness build",
+    "hashed dependency names and CMP0168",
+    "native configure/build/CTest without game SDK; requested game-dependent harness clearly rejected"
+  ],
+  "public_remote_tested": false
+}

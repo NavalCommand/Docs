@@ -1,0 +1,104 @@
+UpdateCTestConfiguration  from :C:/Software/GitHub/NavalCommand/SeaPower.Client/o/windows-msvc-release/DartConfiguration.tcl
+Parse Config file:C:/Software/GitHub/NavalCommand/SeaPower.Client/o/windows-msvc-release/DartConfiguration.tcl
+Test project C:/Software/GitHub/NavalCommand/SeaPower.Client/o/windows-msvc-release
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: provider
+
+1: Test command: "C:\Program Files\dotnet\dotnet.exe" "run" "--project" "C:/Software/GitHub/NavalCommand/SeaPower.Client/test/managed/ProviderTests.csproj" "--configuration" "Release"
+1: Working Directory: C:/Software/GitHub/NavalCommand/SeaPower.Client/o/windows-msvc-release/test
+1: Test timeout computed to be: 1500
+1: PASS distance_coincident
+1: PASS distance_one_degree_equator
+1: PASS distance_typical_waypoint
+1: PASS distance_date_line
+1: PASS distance_near_north_pole
+1: PASS distance_near_south_pole
+1: PASS distance_near_antipodal
+1: PASS wrong_side_filter
+1: PASS native_acceptance
+1: PASS duplicate_idempotency
+1: PASS movement_distinct
+1: PASS dispatch_revalidation_protected
+1: PASS grounded_conservative
+1: PASS formation_guard
+1: PASS wrong_entity
+1: PASS finite_arguments
+1: PASS engine_thread_only
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS queue_slot
+1: PASS backpressure
+1: PASS reload_invalidation
+1: PASS message_bound
+1/1 Test #1: provider .........................   Passed    1.91 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   1.92 sec

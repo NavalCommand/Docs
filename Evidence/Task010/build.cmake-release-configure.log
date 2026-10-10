@@ -1,0 +1,12 @@
+-- Found Python3: C:/Users/DmitriyPC/AppData/Local/Programs/Python/Python313/python.exe (found version "3.13.3") found components: Interpreter
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    FETCHCONTENT_SOURCE_DIR_NCBUILD
+    VCPKG_INSTALLED_DIR
+    VCPKG_MANIFEST_INSTALL
+
+
+-- Build files have been written to: C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release

@@ -1,0 +1,100 @@
+[
+  {
+    "project": "Gateway.Api/managed/Gateway.Api.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build Gateway.Api/managed/Gateway.Api.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-Gateway.Api-debug.log"
+  },
+  {
+    "project": "Gateway.Api/test/managed/Conformance.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build Gateway.Api/test/managed/Conformance.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-Conformance-debug.log"
+  },
+  {
+    "project": "SeaPower.Client/managed/SeaPower.Client.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build SeaPower.Client/managed/SeaPower.Client.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Client-debug.log"
+  },
+  {
+    "project": "SeaPower.Client/test/managed/ProviderTests.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build SeaPower.Client/test/managed/ProviderTests.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-ProviderTests-debug.log"
+  },
+  {
+    "project": "SeaPower.Mod/managed/runtime/SeaPower.Mod.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build SeaPower.Mod/managed/runtime/SeaPower.Mod.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Mod-debug.log"
+  },
+  {
+    "project": "SeaPower.Mod/managed/harness/SeaPower.Harness.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build SeaPower.Mod/managed/harness/SeaPower.Harness.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Harness-debug.log"
+  },
+  {
+    "project": "SeaPower.Mod/test/managed/RuntimeTests.csproj",
+    "configuration": "Debug",
+    "command": "dotnet build SeaPower.Mod/test/managed/RuntimeTests.csproj -c Debug -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-RuntimeTests-debug.log"
+  },
+  {
+    "project": "Gateway.Api/managed/Gateway.Api.csproj",
+    "configuration": "Release",
+    "command": "dotnet build Gateway.Api/managed/Gateway.Api.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-Gateway.Api-release.log"
+  },
+  {
+    "project": "Gateway.Api/test/managed/Conformance.csproj",
+    "configuration": "Release",
+    "command": "dotnet build Gateway.Api/test/managed/Conformance.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-Conformance-release.log"
+  },
+  {
+    "project": "SeaPower.Client/managed/SeaPower.Client.csproj",
+    "configuration": "Release",
+    "command": "dotnet build SeaPower.Client/managed/SeaPower.Client.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Client-release.log"
+  },
+  {
+    "project": "SeaPower.Client/test/managed/ProviderTests.csproj",
+    "configuration": "Release",
+    "command": "dotnet build SeaPower.Client/test/managed/ProviderTests.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-ProviderTests-release.log"
+  },
+  {
+    "project": "SeaPower.Mod/managed/runtime/SeaPower.Mod.csproj",
+    "configuration": "Release",
+    "command": "dotnet build SeaPower.Mod/managed/runtime/SeaPower.Mod.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Mod-release.log"
+  },
+  {
+    "project": "SeaPower.Mod/managed/harness/SeaPower.Harness.csproj",
+    "configuration": "Release",
+    "command": "dotnet build SeaPower.Mod/managed/harness/SeaPower.Harness.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-SeaPower.Harness-release.log"
+  },
+  {
+    "project": "SeaPower.Mod/test/managed/RuntimeTests.csproj",
+    "configuration": "Release",
+    "command": "dotnet build SeaPower.Mod/test/managed/RuntimeTests.csproj -c Release -t:Rebuild --nologo",
+    "exitCode": 0,
+    "log": "Docs/Evidence/Task010/direct-RuntimeTests-release.log"
+  }
+]

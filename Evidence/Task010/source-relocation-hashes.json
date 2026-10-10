@@ -1,0 +1,56 @@
+{
+  "src/NavalCommand/SeaPower/Client/IGameFacade.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/IGameFacade.cs",
+    "sha256": "57ee899255be327253f1e5c1d3b8673a6510a1b02e0117ed10b7f331b8d4c267",
+    "canonicalGitBlobSha256": "0b63c84aaba28c08ecbef0da77b20cdda325b12a9ea66433882a706452e7ba95",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "src/NavalCommand/SeaPower/Client/NativeGameFacade.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/NativeGameFacade.cs",
+    "sha256": "7005093f98674d5dd2fc1767a5a551f652c43753fbaf7caf7828a2d8df51c52f",
+    "canonicalGitBlobSha256": "b807f749dde0d204737d0279104da54a4713218c449a6ad340dde7bc36d2d41b",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "src/NavalCommand/SeaPower/Client/Provider.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/Provider.cs",
+    "sha256": "a1d6beb2a8d6d2a5156a848fd255b49623859e454a13bc04f21a461083e6f2dc",
+    "canonicalGitBlobSha256": "2542f185565ce563c0523f28bc82973c164888c8b99987326966e715e34116a9",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "src/NavalCommand/SeaPower/Client/StockSample.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/StockSample.cs",
+    "sha256": "d29de8fa99e8301d2ab46d2686487cfe39d3bc5bfb80ed64dd54af9d3df4b57f",
+    "canonicalGitBlobSha256": "e5f72d507f2f47d924b88f2081981b904e213b41a8efbff5b8c3099aba892f09",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "src/NavalCommand/SeaPower/Client/TrackSample.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/TrackSample.cs",
+    "sha256": "38a7364ae669023d3645655007ffb6c258a5ee3f0a20418d4e14f9746c8dfc10",
+    "canonicalGitBlobSha256": "cf0bb5d18a2d2565d56a639efb59474a28af831753c520dd1f3228eda897c399",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "src/NavalCommand/SeaPower/Client/UnitSample.cs": {
+    "destination": "managed/src/NavalCommand/SeaPower/Client/UnitSample.cs",
+    "sha256": "e91ef12dae804a333677397993420c93f6e08938477df61e5fc626c8841ed167",
+    "canonicalGitBlobSha256": "0d70610641d22e9eb3fe7771c96c35b2898aa64f1b51dbd07ed52a2e51235953",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "test/DistanceTests.cs": {
+    "destination": "test/managed/DistanceTests.cs",
+    "sha256": "18368ae38b485e2696da390c580c685e154df755b81587ef8adaaa7fa5989c2f",
+    "canonicalGitBlobSha256": "34e188c66a0c743be0949b6eed7995ec6fa68c032e58d15c10d049d6bfd9c98e",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "test/FakeGameFacade.cs": {
+    "destination": "test/managed/FakeGameFacade.cs",
+    "sha256": "bbea4b927dd25fd79c22a01b4c42cb6c295684fd1d5aa5b16f51ea6f755634c4",
+    "canonicalGitBlobSha256": "5708d9618410ef461c620f14cce15c25ef7a7e080e2f4d373f61ac4121fc2e89",
+    "unchangedAfterLineEndingNormalization": true
+  },
+  "test/Program.cs": {
+    "destination": "test/managed/Program.cs",
+    "sha256": "95bf30d27b121d104077d019a4ac2dc18f0d4dac2a673a003c9aa1e40c752092",
+    "canonicalGitBlobSha256": "1fd004936db9ab9a99c3ef32a3d13960073c63a098311beeb7241ecf22ca2005",
+    "unchangedAfterLineEndingNormalization": true
+  }
+}

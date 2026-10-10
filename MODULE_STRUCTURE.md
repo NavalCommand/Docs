@@ -15,7 +15,7 @@ The platform has five independent functional Git repositories and one separate i
 | `SeaPower.Mod` | C# composition/loader root, native host/C ABI, DI, package assembly and developer harness | Managed/native build and packaging orchestration |
 | `Build.CMake` | Shared CMake functions, policies, internal-source registry and native target configuration | Infrastructure only; never a runtime/domain module |
 
-Managed mod sources are grouped in `SeaPower.Mod/managed/runtime/` and `SeaPower.Mod/managed/harness/`, with distinct projects and outputs. `scripts/Build.ps1` stages the production runtime only; `scripts/Build-Harness.ps1` stages optional development tooling and scenario fixtures separately. `app/` owns CMake composition metadata, not managed implementation sources. The approved BepInEx runtime plugin bootstraps independently; a harness is never a runtime build or deployment prerequisite.
+Managed source ownership and CMake/MSBuild integration follow [MANAGED_BUILD.md](MANAGED_BUILD.md). Handwritten C# projects live under `managed/`; managed regression projects under `test/managed/`. `managed/CMakeLists.txt` registers projects and composition targets through `Build.CMake`. `SeaPower.Mod/managed/runtime/` and `managed/harness/` remain independent. CMake owns dependency source resolution and full-build orchestration; MSBuild owns normal ProjectReference compilation and NuGet. PowerShell build wrappers delegate to configured CMake targets, while the packaging helper only stages evaluated outputs and checks redistribution boundaries.
 
 The provider and gateway implementations do not depend on each other. `SeaPower.Mod` binds them. The common `.proto` payload types are defined once in `Gateway.Api`, imported by `Gateway.Grpc.Api` and generated for both C++ and C#. Build/source dependency edges must not contradict [ARCHITECTURE.md](ARCHITECTURE.md).
 
@@ -45,7 +45,7 @@ Public C++ targets must expose only necessary include paths and dependencies. Ke
 Every native root fetches and includes a versioned `Build.CMake` repository using CMake `FetchContent`; the shared repository owns:
 
 - Project-wide target configuration, C++26 compiler flags, warnings and native build options.
-- Consistent optional `src/`, `mock/`, `test/`, `app/`, `benchmark/` subdirectory composition.
+- Consistent optional `src/`, `managed/`, `mock/`, `test/`, `app/`, `benchmark/` subdirectory composition.
 - Internal `NavalCommandAddDependency(URL TAG)` registration and global source identity/override state.
 - Optional `NavalCommandSetDependencyPath(URL PATH)` resolution via ignored `Build.Local.cmake`.
 - Canonical, case-normalized repository identities and deterministic compact hashed `FetchContent` names to limit Windows dependency path length.
@@ -86,3 +86,11 @@ For local development of `Build.CMake`, use the standard one-off `-DFETCHCONTENT
 - Preserve original native game files, opt-in loader behavior and original normal launch configuration.
 - All handwritten C++/C#/CMake/scripts/tests must satisfy [CODE_STYLE.md](CODE_STYLE.md). Generated code, vendored files and installed game binaries are not formatting targets.
 - Source/revision/hash/test evidence belongs under `Evidence/` or an appropriately scoped project history folder, not in this normative document.
+
+## Cross-language output ownership
+
+All repository-owned generated files stay under that repository's `o/`. Native presets retain `o/${presetName}/`. Each managed repository imports an optional CMake-generated `o/managed/Build.Context.props` through its committed `Directory.Build.props`; the early output properties place MSBuild binaries and intermediates under `o/managed/<project>/{bin,obj}/`, retaining SDK configuration, platform and target-framework isolation. Canonical generated C# Protobuf sources are intermediates there, never checked-in source.
+
+Production mod staging is `o/package/0.1.0`; development staging is `o/harness/0.1.0`. CMake `package-runtime` builds the native host, then the top-level managed runtime graph, then assembles the production allowlist. `package-harness` builds only the independent managed harness and stages fixtures. Old stages move to recoverable uniquely named backups under `o/`. Evaluated MSBuild TargetPath/copy-local records select package inputs. No script resolves another dependency graph or guesses a source-adjacent binary path.
+
+The managed context contains configuration-independent resolved source, protoc and optional game-reference locations. Identical Debug/Release or consuming builds reuse it. Conflicting inputs fail unless one configure explicitly selects a replacement; old CMake consumers validate their captured contexts before invoking MSBuild. Do not build conflicting source/tool contexts concurrently. See [MANAGED_BUILD.md](MANAGED_BUILD.md) for configuration, direct IDE and package workflows.

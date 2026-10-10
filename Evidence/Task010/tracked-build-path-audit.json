@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "Build.CMake",
+    "machineSpecificBuildPaths": []
+  },
+  {
+    "repository": "Gateway.Api",
+    "machineSpecificBuildPaths": []
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "machineSpecificBuildPaths": []
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "machineSpecificBuildPaths": []
+  },
+  {
+    "repository": "SeaPower.Client",
+    "machineSpecificBuildPaths": []
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "machineSpecificBuildPaths": []
+  }
+]

@@ -7,6 +7,7 @@ These files are retained as original run artifacts, including observed logs, has
 - `Task004/`: gateway and native execution vertical-slice receipts.
 - `Task005/`: structure and regression/build verification.
 - `Task007/`: repository-wide readability audit, source and schema compatibility, static CRT verification, regressions and unresolved Debug teardown diagnostics.
+- [Task010/](Task010/README.md): unified CMake/MSBuild source/output layout, direct managed builds, package and live regressions; known Debug teardown failures reproduced and retained.
 - `StaticRuntime/`: miscellaneous retained static/runtime evidence, if present.
 
 Read each set together with its corresponding report in [../Tasks/](../Tasks/README.md). Do not rewrite a prior observation when changing design or toolchain policy.

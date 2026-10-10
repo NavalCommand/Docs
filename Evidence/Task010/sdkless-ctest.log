@@ -1,0 +1,9 @@
+Test project C:/Software/GitHub/NavalCommand/Build.CMake/o/git-source-verification/run-w5y_3j_t/sdkless/SeaPower.Mod/o/native-release
+    Start 1: host-abi
+1/2 Test #1: host-abi .........................   Passed    0.13 sec
+    Start 2: managed-runtime-harness
+2/2 Test #2: managed-runtime-harness ..........   Passed    1.76 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   1.91 sec

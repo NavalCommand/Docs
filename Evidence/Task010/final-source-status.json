@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "Build.CMake",
+    "head": "477d8055a366731839b42a4b73e913e0968301f9",
+    "status": []
+  },
+  {
+    "repository": "Gateway.Api",
+    "head": "bc141744364ca93a1d02dd6d7bc8448e292d1227",
+    "status": []
+  },
+  {
+    "repository": "Gateway.Grpc.Api",
+    "head": "71cf5c616b1c669c40b0fb9a1d33d277947f704c",
+    "status": []
+  },
+  {
+    "repository": "Gateway.Grpc",
+    "head": "476c9bc4dc88589893dee0c914ab2de3e984709c",
+    "status": []
+  },
+  {
+    "repository": "SeaPower.Client",
+    "head": "5c7a8862657b9cf937a40128150d93e0d8f69f91",
+    "status": []
+  },
+  {
+    "repository": "SeaPower.Mod",
+    "head": "f333d1c591150be107400858e6d49f232a1f52b2",
+    "status": []
+  }
+]

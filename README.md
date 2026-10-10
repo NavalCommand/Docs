@@ -10,6 +10,7 @@ This `Docs/` directory separates **normative project contracts** from **dated im
 | [ARCHITECTURE.md](ARCHITECTURE.md) | System concepts, domain ownership, observation boundaries, native automation and deployment architecture |
 | [DEVELOPMENT.md](DEVELOPMENT.md) | Permanent boundaries between production, reusable developer infrastructure, tests, and disposable experiments |
 | [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md) | Git repository separation, shared `Build.CMake`, module structure, toolchains, presets, dependency and runtime linkage policy |
+| [MANAGED_BUILD.md](MANAGED_BUILD.md) | Managed source ownership, CMake/MSBuild integration, direct IDE context and all generated outputs under repository-local o/ |
 | [LOCAL_SOURCES.md](LOCAL_SOURCES.md) | Optional, Git-ignored `Build.Local.cmake` internal dependency overrides |
 | [CODE_STYLE.md](CODE_STYLE.md) | Mandatory source readability and style requirements in all handwritten languages |
 | [CodeStyle.xml](CodeStyle.xml) | Original CLion/JetBrains C++ style export; retain verbatim |

@@ -1,0 +1,9 @@
+Test project C:/Software/GitHub/NavalCommand/Gateway.Api/o/windows-msvc-debug
+    Start 1: codec
+1/2 Test #1: codec ............................   Passed    0.12 sec
+    Start 2: managed-conformance
+2/2 Test #2: managed-conformance ..............   Passed    2.77 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   2.89 sec

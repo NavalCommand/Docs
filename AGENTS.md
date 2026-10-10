@@ -1,6 +1,6 @@
 # NavalCommandFramework — contributor and agent instructions
 
-These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Follow [DEVELOPMENT.md](DEVELOPMENT.md) for production/development/experiment boundaries and cleanup requirements. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
+These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Read [MANAGED_BUILD.md](MANAGED_BUILD.md) for managed source, IDE context and cross-language output rules. Follow [DEVELOPMENT.md](DEVELOPMENT.md) for production/development/experiment boundaries and cleanup requirements. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
 
 ## Architecture invariants
 

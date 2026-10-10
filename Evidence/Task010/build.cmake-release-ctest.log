@@ -1,0 +1,9 @@
+Test project C:/Software/GitHub/NavalCommand/Build.CMake/o/windows-msvc-release
+    Start 1: dependency-resolution
+1/2 Test #1: dependency-resolution ............   Passed   13.79 sec
+    Start 2: managed-integration
+2/2 Test #2: managed-integration ..............   Passed   22.94 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  36.73 sec

@@ -1,0 +1,117 @@
+[
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\out",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\legacy-generated\\out",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\managed\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\legacy-generated\\managed\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\managed\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\legacy-generated\\managed\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\test\\managed\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\legacy-generated\\test\\managed\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\test\\managed\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Api\\o\\legacy-generated\\test\\managed\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\out",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc.Api\\o\\legacy-generated\\out",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\out",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\Gateway.Grpc\\o\\legacy-generated\\out",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\legacy-generated\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\legacy-generated\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\out",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\legacy-generated\\out",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\test\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\legacy-generated\\test\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\test\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Client\\o\\legacy-generated\\test\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\out",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\out",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\app\\harness\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\app\\harness\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\app\\harness\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\app\\harness\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\test\\managed\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\test\\managed\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\test\\managed\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\test\\managed\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\harness\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\harness\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\harness\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\harness\\obj",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\runtime\\bin",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\runtime\\bin",
+    "action": "recoverable move, no deletion"
+  },
+  {
+    "source": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\managed\\runtime\\obj",
+    "destination": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\legacy-generated\\managed\\runtime\\obj",
+    "action": "recoverable move, no deletion"
+  }
+]

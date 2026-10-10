@@ -1,0 +1,43 @@
+{
+  "package": {
+    "stage": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\package\\0.1.0",
+    "files": [
+      "Gateway.Api.dll",
+      "Google.Protobuf.dll",
+      "SeaPower.Client.dll",
+      "SeaPower.Host.dll",
+      "SeaPower.Mod.dll",
+      "config.json",
+      "licenses/abseil.txt",
+      "licenses/c-ares.txt",
+      "licenses/fmt.txt",
+      "licenses/grpc.txt",
+      "licenses/gtest.txt",
+      "licenses/openssl.txt",
+      "licenses/protobuf.txt",
+      "licenses/re2.txt",
+      "licenses/spdlog.txt",
+      "licenses/utf8-range.txt",
+      "licenses/vcpkg-cmake-config.txt",
+      "licenses/vcpkg-cmake-get-vars.txt",
+      "licenses/vcpkg-cmake.txt",
+      "licenses/zlib.txt",
+      "manifest.json"
+    ],
+    "checksums": "PASS",
+    "configuration": "Release (latest stage)"
+  },
+  "harness": {
+    "stage": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\harness\\0.1.0",
+    "files": [
+      "SeaPower.Harness.dll",
+      "manifest.json",
+      "scenarios/AirFacilities.ini",
+      "scenarios/AircraftThreat.ini",
+      "scenarios/MinimalCombat.ini",
+      "scenarios/NearContact.ini"
+    ],
+    "checksums": "PASS",
+    "configuration": "Release (latest stage)"
+  }
+}

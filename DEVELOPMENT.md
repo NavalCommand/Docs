@@ -52,3 +52,5 @@ For each implementation change, reviewers and coding agents must confirm:
 - Tests, log/evidence paths, package manifests, and known gaps are reported accurately; a test not run is not marked passed.
 
 The acceptance gate is an enduring rule for all future tasks, not a reason to retrofit unrelated experimental history into production code.
+
+Managed build and distribution ownership follow [MANAGED_BUILD.md](MANAGED_BUILD.md): CMake resolves sources and orchestrates full builds, normal MSBuild projects remain independently usable after configuration, and repository-generated files stay under `o/`. Production and development packages have separate CMake targets and stages; neither staging nor an IDE build activates a loader.
