@@ -8,6 +8,7 @@ This `Docs/` directory separates **normative project contracts** from **dated im
 |---|---|
 | [AGENTS.md](AGENTS.md) | Sole project-wide instructions for contributors and coding agents; explicitly read this file from code repositories rather than copying it to the unsynchronized parent workspace |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | System concepts, domain ownership, observation boundaries, native automation and deployment architecture |
+| [DEVELOPMENT.md](DEVELOPMENT.md) | Permanent boundaries between production, reusable developer infrastructure, tests, and disposable experiments |
 | [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md) | Git repository separation, shared `Build.CMake`, module structure, toolchains, presets, dependency and runtime linkage policy |
 | [LOCAL_SOURCES.md](LOCAL_SOURCES.md) | Optional, Git-ignored `Build.Local.cmake` internal dependency overrides |
 | [CODE_STYLE.md](CODE_STYLE.md) | Mandatory source readability and style requirements in all handwritten languages |

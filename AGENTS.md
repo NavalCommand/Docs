@@ -1,6 +1,6 @@
 # NavalCommandFramework — contributor and agent instructions
 
-These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
+These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Follow [DEVELOPMENT.md](DEVELOPMENT.md) for production/development/experiment boundaries and cleanup requirements. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
 
 ## Architecture invariants
 
@@ -38,6 +38,17 @@ These are **permanent project rules**, not an active assignment or execution log
 The exact owner-provided C++ style is [CodeStyle.xml](CodeStyle.xml); [CODE_STYLE.md](CODE_STYLE.md) defines readability rules for **all handwritten languages** including C++, C#, CMake, PowerShell, Python, Proto, tests and development scripts. Follow both.
 
 Never minify source, pack multiple logical statements into one line, use cryptic mathematical variable names, hide physical units or embed unexplained domain constants. Use clear structure and mandatory control-flow braces; a passing formatter alone does not establish readability. Refactor nearby compressed handwritten code when modifying a file, preserve behavior and run regressions. Do not reformat generated protobuf code, dependencies or proprietary game assemblies.
+
+## Production, development tooling and experimental-code isolation
+
+- **Classify every new source component before adding it:** production runtime, maintained reusable development tool, automated regression fixture, or disposable experiment. Keep ownership, build targets, activation and deployment separate. See [DEVELOPMENT.md](DEVELOPMENT.md) for the permanent lifecycle and review gates.
+- **No task identities or test modes in maintained runtime code.** Task-numbered environment variables, namespaces, plugin IDs, shipping assembly names, runtime options, or branches (`TaskNNN`, `NC_TASK*`, experiment-specific modes) are inappropriate in production. Historical task IDs belong only in archived reports, evidence and narrowly scoped test fixtures.
+- **The production mod must be self-sufficient.** `SeaPower.Mod` owns a production managed runtime under `managed/runtime/` that independently handles configuration, approved bootstrap, composition, native transport, thread/lifecycle boundaries, logging and shutdown. Its normal execution must not rely on a test harness, scenario launcher, diagnostic probe or test-output directory.
+- **The development harness is independent and opt-in.** The separately built `managed/harness/` provides generic test scenario startup, readiness, bounded evidence collection and reversible process/loader handling. It must work without the production mod; the production mod must work without it. Do not turn it into a permanent collection of one-off task probes.
+- **No development tooling in production distributions.** Runtime packages must exclude harness assemblies, scenario fixtures, proprietary game references, one-off diagnostic probes and experimental switches. Distinguish production from test distribution with separate build/stage/manifest outputs.
+- **Close every experiment.** At completion, classify all probes, helpers and special-case code as either promoted (with a stable reusable contract and tests), archived (for reproducibility), or deleted. Document this classification and verify no unintended experimental source, activation, dependency or package artifact remains in maintained production paths.
+- **A harness feature must generalize by behavior, not task name.** Prefer configurable scenario selection, explicit opt-in, readiness and lifecycle hooks over additions such as `ExperimentSpecificMode` or `AirOpsProbeEnabled`. A new narrow experiment should live in a separate task fixture rather than modify the harness core by default.
+- **Review boundaries as well as formatting.** Clean names and automated formatters do not justify coupling disposable tests into production code. New/changed code should have a documented owner, activation path, cleanup behavior and verifiable tests.
 
 ## Sea Power installation and modding safety
 

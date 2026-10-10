@@ -6,6 +6,7 @@ These files are retained as original run artifacts, including observed logs, has
 - `Task003/`: flight-deck/aircraft live investigations.
 - `Task004/`: gateway and native execution vertical-slice receipts.
 - `Task005/`: structure and regression/build verification.
+- `Task007/`: repository-wide readability audit, source and schema compatibility, static CRT verification, regressions and unresolved Debug teardown diagnostics.
 - `StaticRuntime/`: miscellaneous retained static/runtime evidence, if present.
 
 Read each set together with its corresponding report in [../Tasks/](../Tasks/README.md). Do not rewrite a prior observation when changing design or toolchain policy.
