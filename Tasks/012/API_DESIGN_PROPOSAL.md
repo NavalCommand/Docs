@@ -4,7 +4,7 @@
 
 ## 1. Decision and scope
 
-**Recommend a single read-only `AssessEngagement` operation** for one friendly firing unit, one ammunition choice and one observer-visible track. Return a typed assessment with independent metric availability; perform at most one bounded, game-thread-safe native calculation job per request. A separate `DiscoverEngagementOptions` operation supplies selectable ammunition identifiers and the backend's metric capabilities. These are *conceptual names and shapes*, not a frozen schema.
+**Recommend a single read-only `AssessEngagement` operation** for one friendly firing unit, one catalog-identified ammunition type and one observer-visible track. Return a typed assessment with independent metric availability; perform at most one bounded, game-thread-safe native calculation job per request. **The complete weapon catalog is a separate first-class operational resource**, not a list of currently selectable ammunition or a substitute for one. A distinct `DiscoverEngagementCapabilities` query advertises the simulator's supported analytics, not its weapon catalog. Dynamic friendly-unit inventory ties catalog entries to what a unit actually carries. These are *conceptual names and shapes*, not a frozen schema.
 
 This is **engagement analytics**, not a fire order, target designation or permission to engage. An assessment can be available when a shot is prohibited, no ammunition remains, the weapon is held, or an actual launch would be rejected. Existing order-eligibility and dispatch-time authorization remain authoritative.
 
@@ -17,8 +17,10 @@ The generic contract **must not depend on Sea Power preserving a particular calc
 | Responsibility | Proposed owner | Reason |
 |---|---|---|
 | Abstract engagement request, result, metric availability and meanings | `Domain.Api`, within a small `Engagement.Api` interface area | Neither `Orders.Api` commands nor `World.Api` snapshots describe an on-demand pairwise analysis. No new repository required. |
-| Canonical request/response Protobuf representations and codecs | `Gateway.Api` | Keep the sole C++/C# wire schema source and the existing internal C ABI payload exchange. Add messages in a dedicated canonical `engagement.proto` or equivalent. |
-| External `DiscoverEngagementOptions` / `AssessEngagement` RPC declarations | `Gateway.Grpc.Api` | Service definitions import the canonical payloads; do not duplicate their definitions. |
+| Complete weapon/ammunition and launcher-class definitions | `Domain.Api` catalog domain (e.g. `Catalog.Api`) | Mostly static, content-versioned weapon records with stable identities; the catalog covers *all* content definitions, not just weapons fitted to the player's current units. This is already required by `Docs/ARCHITECTURE.md`. |
+| Friendly unit loadout, installed systems, ammunition stock and current readiness | `World.Api` own-unit observations or a scoped inventory query | Dynamic per-unit state, referencing catalog identities; not part of the global catalog and not analytics capability discovery. |
+| Canonical catalog, inventory and engagement Protobuf representations and codecs | `Gateway.Api` | Keep the sole C++/C# wire schema source and the existing internal C ABI payload exchange. Add appropriate canonical messages without mixing static catalog with dynamic assessments. |
+| External catalog retrieval, `DiscoverEngagementCapabilities` and `AssessEngagement` RPC declarations | `Gateway.Grpc.Api` | Service definitions import the canonical payloads; do not duplicate their definitions. Inventory can be included in `GetView` or exposed by a scoped read operation. |
 | Generic provider forwarding, deadlines and owned results | `Gateway.Api` provider boundary plus `Gateway.Grpc` | The current `IProvider` is thread-safe I/O-side and must **never call simulator code** directly. |
 | Native calculation/visibility gates | `SeaPower.Client` | Resolve observer tracks to native objects privately and evaluate on the game thread. `SeaPower.Mod` remains the composition root. |
 
@@ -28,22 +30,35 @@ Respect `Docs/CODE_STYLE.md`: one independently useful public type per header; e
 
 ## 3. Proposed V1 operations
 
-### 3.1 DiscoverEngagementOptions
+### 3.1 GetWeaponCatalog — complete, versioned simulator content
 
-**Input:** current session ID; friendly unit ID. The caller/connection's observer scope is authoritative (not an arbitrary caller-chosen enemy side).
+**Separate cross-domain API, not a Task 012-only discovery workaround.** Retrieve the **complete catalog of weapon definitions known to the current simulator/content installation**, including weapons not currently carried, armed or available to the selected faction. The catalog must be usable independently of a scenario and must not be restricted to the current player's equipment or ammunition stock. Ordinary static definitions are not a license to reveal secret current enemy loadouts or live state.
+
+Conceptual catalog contents, subject to the backend's actual data: weapon-system/launcher classes, ammunition/munition definitions, their relationships, stable catalog keys, display names, supported target categories and nominal published properties (such as nominal/minimum ranges, guidance type or compatible systems). Distinguish a **launcher definition** from a **munition definition**; their identities and many-to-many compatibility may differ. Enumerate all source-known definitions even if some optional *attributes* cannot be populated. Do not invent unknown nominal values or mix nominal catalog ranges with target/geometry-dependent engagement envelopes.
+
+The catalog should carry **content revision/hash and clear completeness reporting**, support bounded pages/snapshots if large, and invalidate stale keys when content changes. A backend unable to enumerate its full catalog must **report a coverage/completeness limitation**, not silently label a partial list complete. How to version source IDs across mods and updates needs an explicit implementation decision. Catalog schemas and collection mechanics belong to a dedicated catalog implementation task; this proposal does not purport to specify the entire weapon data model.
+
+### 3.2 Friendly inventory — dynamic, separate from the catalog
+
+Expose each friendly unit's **current installed weapons/launchers and ammunition stock**, identified by catalog keys, through the `World.Api` controlled-unit observation or a separately scoped inventory read operation. Record stock/readiness distinctions only when verified. A catalog may define an AIM-7M even when no friendly unit currently carries one; a unit inventory may refer to that AIM-7M by catalog ID.
+
+The present `WorldSnapshot.Unit` does **not** yet include general weapon inventory. That is a separate missing feature, not a reason to repurpose analytics capability discovery as a loadout query. The implementation should establish an actual mapping between the runtime ammunition selected by `WeaponEntry` and its stable catalog ammunition ID.
+
+Sea Power's `WeaponEntry` selects an **ammunition type** and can aggregate compatible weapon systems. Consequently V1 assessment identifies the ammunition definition, *not* an arbitrarily invented unique launcher. A catalog entry alone does not prove a unit carries or can fire it. A valid analysis may still be informative when ammunition is exhausted; firing eligibility remains separate.
+
+### 3.3 DiscoverEngagementCapabilities — backend capability metadata
+
+**Input:** current session (or backend metadata context); observer scope if capabilities vary with side. This is **not** a per-unit ammunition discovery query.
 
 **Result:**
 
-- The current session, observer and observation version.
-- Discoverable **ammunition choices** for that friendly unit, each with an opaque, session-scoped ammunition key, friendly display name and any **verified** selection/stock facts. This is necessary because the present `WorldSnapshot.Unit` has no general ammunition catalog.
-- **Generally implemented metric kinds**, optionally qualified by weapon family/platform, versus any capabilities disabled for this backend/game version. Capability support is *not* a prediction that a metric is available for every target or current weapon state.
-- Backend/content version or capability revision where known; a changed session or catalog invalidates previously discovered keys.
+- Backend/simulator build identity and analytics capability revision.
+- Metric kinds and model families the adapter generally implements (e.g. no-escape range only for supported missile/air-target cases), with supported/unsupported status or qualified applicability.
+- Declared output semantics and model version, where known; not a list of currently equipped weapons, actual stock, or currently valid firing orders.
 
-The Sea Power UI selects an **ammunition type** through `WeaponEntry` and can aggregate multiple compatible weapon systems. V1 therefore addresses ammunition, **not one arbitrarily chosen launcher**. Do not invent mount IDs or claim launcher-specific estimates; revisit mount selection only if a backend's semantics require it.
+This discovery describes **what analytic operations the simulator supports in principle**. The separate `AssessEngagement` response describes whether each metric can be computed **right now** for a specific shooter/ammunition/target. A simulator might support the weapon catalog but no engagement analysis, or support some analyses for only certain weapon families. A future game update may withdraw a metric without changing catalog identifiers or the generic API.
 
-This discovery is not an executable-order list: a discoverable ammunition key may have zero ready rounds. The assessment response describes analytical results; a future weapon-fire order will require independent eligibility checks.
-
-### 3.2 AssessEngagement
+### 3.4 AssessEngagement
 
 Conceptual request:
 
@@ -51,7 +66,7 @@ Conceptual request:
 EngagementAssessmentRequest {
     sessionId
     shooterUnitId       // friendly, controlled unit
-    ammunitionKey       // from DiscoverEngagementOptions
+    ammunitionCatalogId // identifies a munition definition in GetWeaponCatalog; unit inventory links it to shooter
     targetTrackId       // opaque, visible in this observer's view
     optional basedOnObservationVersion
 }
@@ -61,9 +76,9 @@ Conceptual response (names are provisional; units explicitly part of their meani
 
 ```text
 EngagementAssessment {
-    sessionId, observerId, shooterUnitId, ammunitionKey, targetTrackId
+    sessionId, observerId, shooterUnitId, ammunitionCatalogId, targetTrackId
     observationVersion, sampledAtOperationalSeconds
-    modelIdentifier, modelRevision
+    catalogRevision, modelIdentifier, modelRevision
 
     currentHorizontalDistanceMeters  : Metric<double>
     minimumLaunchRangeMeters         : Metric<double>
@@ -106,7 +121,8 @@ Whole-query failures remain separate from the metric statuses:
 | Case | Query outcome |
 |---|---|
 | Malformed key/arguments | `INVALID_ARGUMENT` |
-| Unknown or non-controlled shooter, invisible/expired target track, or nonexistent ammunition choice | `NOT_FOUND` without disclosing foreign-unit/hidden-track identity; optional stable safe reason |
+| Unknown or non-controlled shooter, invisible/expired target track, or nonexistent catalog ammunition ID | `NOT_FOUND` without disclosing foreign-unit/hidden-track identity; optional stable safe reason |
+| Known catalog ammunition not associated with the friendly shooter | Distinguish unsupported shooter/ammunition combination from a missing catalog ID; reject with a stable non-leaking reason, or support a clearly labeled hypothetical-only assessment if explicitly designed. Never imply that catalog presence proves installed ammunition. |
 | Session mismatch or rejected observation precondition | `FAILED_PRECONDITION` with `stale_session` or `stale_observation` |
 | Provider not ready, timed-out game-thread job | `UNAVAILABLE` (with bounded retry guidance if appropriate) |
 | Admission/queue limit reached | `RESOURCE_EXHAUSTED` |
@@ -119,7 +135,7 @@ Use **metres and seconds** in canonical wire/domain interfaces, consistent with 
 | Candidate V1 field | Meaning and Sea Power mapping | Availability and qualifications |
 |---|---|---|
 | `currentHorizontalDistanceMeters` | Current horizontal shooter-to-target separation used for kinematic/no-escape comparisons; native transforms. | Player-derived result, **not** a disclosure of raw opponent position. Do not silently substitute slant distance. |
-| `minimumLaunchRangeMeters` | Selected ammunition's nominal minimum boundary, `_launchRangesInUnity.x`. | May be static by ammunition, but reported with current weapon assessment. Zero is meaningful if confirmed. |
+| `minimumLaunchRangeMeters` | Selected ammunition's nominal minimum boundary, `_launchRangesInUnity.x`. | Nominal/static ammunition data can also appear in the complete catalog; repeating the validated value in an assessment is convenient but must not contradict the catalog. Zero is meaningful if confirmed. |
 | `maximumEngagementRangeMeters` | Current combined bound, `GetMaxEngagementRanges`: minimum of adjusted kinematic, sensor and terrain limits. | **Not** permission to fire; compare against distance and actual order eligibility separately. |
 | `kinematicRangeLimitMeters` | `GetKinematicRange` / `MaxRangePrecise`, current geometry-dependent limit. | Dynamics include true target velocity; private native use allowed by player-visible parity. |
 | `sensorRangeLimitMeters` | Native `GetSensorRange` / presentation adjustments. | Respect unidentified-contact adjustments; don't export internal raw values that the UI withholds. |
@@ -131,7 +147,7 @@ Use **metres and seconds** in canonical wire/domain interfaces, consistent with 
 | `impactRadius50Meters` | `CalculateExpectedDeviation` / UI `50% Radius`, converting native feet. | Return only when model's radius meaning is verified and finite. The recorded AIM-7M probe produced NaN: `Unavailable(CALCULATION_UNDEFINED)`, not zero. |
 | `engagementIssues` | Typed, documented subset of `ObjectBase.EngagementIssue` (lookdown, obscured vision, jamming, target altitude/speed/depth, etc.). | Only issues ordinarily disclosed for this side/contact; map backend-specific issues to stable generic codes where semantics are verified. Unmapped issues need an explicit unknown/extension mechanism rather than falsely equating them. |
 
-**Not included in V1:** fire orders or explicit fire authorization; raw target properties; independent radar-horizon annotations and their misleading fixed “20 ft target” text; wake-homing torpedo preview geometry, safety-offset “Hit Chance” categories or ad hoc predictive curves; unspecified catalog revision schemes; bulk all-target assessment endpoints. These may be separately added after evidence and a specific use case.
+**Not included in V1:** fire orders or explicit fire authorization; raw target properties; independent radar-horizon annotations and their misleading fixed “20 ft target” text; wake-homing torpedo preview geometry, safety-offset “Hit Chance” categories or ad hoc predictive curves; bulk all-target assessment endpoints. The **full weapon catalog is included in the platform's operational API plan**, but its detailed definition and implementation are a separate cross-domain task, not part of the engagement-calculation probe. These may be separately added after evidence and a specific use case.
 
 The list above is a **proposed surface**, not a promise that all eleven quantitative values are immediately implementable. A V1 backend may return `Unsupported` per metric, and the implementation should prioritize the current distance, minimum/maximum range, no-escape range, TOF, effectiveness, and engagement issues before less common outputs.
 
@@ -147,7 +163,7 @@ The list above is a **proposed surface**, not a promise that all eleven quantita
 
 **Blocking safety question:** Both probe blocks changed a fingerprint of selected `WeaponSystemHardpoint` fields without per-field/per-call attribution or an idle baseline. This is **not proof that native queries mutate weapon state**, but it prevents claiming they are pure. An implementation task must isolate the changed fields and check whether querying itself changes reservation/targeting/weapon status. If it does, use an isolated read-only equivalent or return `Unsupported`/`Unavailable` for affected metrics. Native simulation-global RNG checks were unchanged in the small sample, but transitive purity is unverified.
 
-**Other operational prerequisites:** resolve side-scoped track ID to `BaseObject` only within the adapter and only while track eligibility holds; avoid leaking identities in logs or errors; ensure the game-thread job and provider-owned response cannot outlive the target/weapon; distinguish track loss and stale query; bound main-thread cost; do not use GUI-selection state or mutate cursor/attack order. Never deploy the Task 012 diagnostic DLL as a production dependency. The previous report says `BepInEx/plugins/Task012EngagementProbe.dll` remains in the local game installation; remove it and verify teardown before any further development run.
+**Other operational prerequisites:** provide stable complete catalog IDs/revisions and their mapping to the shooter's dynamic, observer-authorized weapon inventory; resolve side-scoped track ID to `BaseObject` only within the adapter and only while track eligibility holds; avoid leaking identities in logs or errors; ensure the game-thread job and provider-owned response cannot outlive the target/weapon; distinguish track loss and stale query; bound main-thread cost; do not use GUI-selection state or mutate cursor/attack order. Never deploy the Task 012 diagnostic DLL as a production dependency. The previous report says `BepInEx/plugins/Task012EngagementProbe.dll` remains in the local game installation; remove it and verify teardown before any further development run.
 
 ### Acceptance checks for a later implementation
 
@@ -156,7 +172,7 @@ The list above is a **proposed surface**, not a promise that all eleven quantita
 3. One bounded result with per-metric `Available`/`Unavailable`/`Unsupported`, including genuine zero no-escape, not-applicable, NaN/deviation, no-finite-LOS-limit and backend-withdrawn-score cases.
 4. Same-session stale-version handling, cancellation/timeout, queue saturation and native-object lifetime; no UI-thread freeze.
 5. Before/after idle-baseline state audit around each native call; no ammo/task changes, global RNG consumption or unintended targeting/reservation effects.
-6. Cross-language Protobuf conformance, generic mock-provider tests, and existing world/order/regression tests. No modification to proprietary assemblies or deployment without opt-in.
+6. Cross-language Protobuf conformance, generic mock-provider tests, and existing world/order/regression tests. Validate catalog ID/revision mapping and that the catalog contains weapons not present in friendly inventory; validate that capability discovery does **not** enumerate ammunition. No modification to proprietary assemblies or deployment without opt-in.
 
 ## 7. Alternatives and approval questions
 
@@ -166,11 +182,12 @@ The list above is a **proposed surface**, not a promise that all eleven quantita
 | Add metrics to each `WorldSnapshot.Track` | **Reject.** Potentially quadratic per-weapon/per-track computation, forces evaluations even when not needed and conflates observations with a hypothetical shot. |
 | Sea Power-specific “hover values” endpoint | **Reject.** Locks the external contract to localization/UI presentation and breaks as other backends or game versions evolve. |
 | Track-estimate-only recomputation | **Not required.** The owner chose player-visible parity; replacing the native model would be less faithful. Could be a fallback *only if explicitly labeled as a different model*. |
-| One query with typed, status-bearing metrics and separate discovery | **Recommend.** Honest partial support and a stable generic surface with bounded calculation cost. |
+| Use an analytics discovery endpoint as the weapon catalog | **Reject.** A partial list of current ammunition choices is not the complete weapon catalog and conflates static definitions with dynamic inventory. |
+| One query with typed, status-bearing metrics; complete catalog; independent capability discovery | **Recommend.** Distinct operational responsibilities, honest partial analytics support and bounded calculation cost. |
 
 **Owner decisions requested:**
 
-1. Approve one `AssessEngagement` plus one `DiscoverEngagementOptions` operation, with `Engagement.Api` contracts physically in `Domain.Api`?
+1. Approve `AssessEngagement` plus a backend-wide `DiscoverEngagementCapabilities` query, distinct from the **complete weapon catalog** and friendly unit inventory? The complete catalog is an agreed platform requirement, not an alternative to capability discovery.
 2. Approve SI units in the API and status-bearing metrics, including explicit “no finite limit” representation?
 3. Include the **numeric `effectivenessScore` as a backend-specific model score** in V1 (with model metadata), or expose only the qualitative rating until its interpretation is further validated?
 4. Should uncertain/identified-contact gating mirror the native UI exactly by default, while allowing the owner-approved exception for purely cosmetic `HitChanceDisplay` modes?
