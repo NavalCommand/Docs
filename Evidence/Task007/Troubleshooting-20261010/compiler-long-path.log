@@ -1,0 +1,2 @@
+client_side_weighted_round_robin.upb_minitable.c
+c1: fatal error C1083: Cannot open source file: 'C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/windows-msvc-debug/vcpkg_installed/vcpkg/blds/grpc/src/v1.81.1-f067b41624.clean/src/core/ext/upb-gen/envoy/extensions/load_balancing_policies/client_side_weighted_round_robin/v3/client_side_weighted_round_robin.upb_minitable.c': No such file or directory
