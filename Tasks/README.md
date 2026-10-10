@@ -16,7 +16,7 @@ This directory contains historical work specifications, reports and reproduction
 | [010](010/010-unified-build-output-layout.md) | Implemented unified managed source/build/output architecture; [report](010/REPORT.md). Known Debug gateway/host exit failures reproduced and retained |
 
 | [011 specification](11/Task011-Domain-Contract-Ownership.md) | Domain.Api ownership extraction; [implementation report](011/REPORT.md). Public remote publication and known Debug teardown limitations are recorded explicitly |
-| [012 specification](012/Task012-Weapon-Engagement-Query-Investigation.md) | **Partial — static investigation complete; bounded native runtime diagnostics recorded:** [static findings](012/STATIC_FINDINGS.md), [runtime findings](012/RUNTIME_FINDINGS.md). GUI parity and safety attribution remain open; Gate D deferred |
+| [012 specification](012/Task012-Weapon-Engagement-Query-Investigation.md) | **Partial — Gate D design proposed for review:** [static findings](012/STATIC_FINDINGS.md), [runtime findings](012/RUNTIME_FINDINGS.md), [API design proposal](012/API_DESIGN_PROPOSAL.md). GUI parity and native side-effect attribution remain open; no API implemented |
 
 Run-specific evidence remains in [../Evidence/](../Evidence/README.md) under its original directory identifiers. Some archived commands or inline `Docs/...` paths reflect the former root-level document layout; use this index when locating moved reports.
 
