@@ -1,7 +1,6 @@
 # Task 012 — Sea Power weapon engagement envelope and effectiveness investigation
 
-**Status:** Partial — initial static investigation underway; the UI path and principal calculation semantics are recorded in [STATIC_FINDINGS.md](STATIC_FINDINGS.md). Runtime validation (Gate C) and API feasibility/design (Gate D) are deferred. Task 012 is not complete.
-
+**Status:** Partial — initial static investigation completed and recorded in [STATIC_FINDINGS.md](STATIC_FINDINGS.md). Bounded runtime validation (Gate C) is next; API feasibility/design (Gate D) follows review of those results. Task 012 remains open.  
 **Type:** Static investigation, limited runtime validation, and API feasibility assessment. **Do not implement a production API in this task.**  
 **Priority:** Investigate the existing player weapon-order hover display and its native calculations before deciding how to expose equivalent read-only information through NavalCommand.
 
@@ -16,6 +15,19 @@ Sea Power displays contextual information when the player is preparing a weapon/
 There may be other fields, colors, indicators or conditions. **These observations are starting leads, not verified specifications.** Recover the exact UI labels, source values, units, meanings and availability conditions from the installed game. In particular, do **not** assume that “effectiveness” is a calibrated hit probability, or that no-escape range is a universal property of a weapon independent of launcher, target, geometry and current conditions.
 
 The longer-term goal is to allow external deterministic and LLM-assisted controllers to ask, for a **friendly unit / specific weapon or launcher / observable target track**, what the game can currently determine about engagement feasibility and likely effectiveness. The immediate deliverable is an investigation and a justified recommendation, **not** a selected schema or implementation.
+
+### Agreed design direction — player-visible parity with backend-independent semantics
+
+This guidance supersedes any implication elsewhere in this specification that a calculation is disqualified merely because Sea Power uses its internal true target state:
+
+1. **Player-visible parity is acceptable.** The Sea Power adapter may internally call calculations that use a target's privileged `BaseObject` state when the **derived result** is information the native UI normally makes available to the same player/faction for the same observable contact, weapon and conditions. The API must never export the underlying hidden identity, exact target properties or other privileged inputs. Reusing a native computation is preferable to inventing a different approximation solely because its inputs are internal.
+2. **Honor information eligibility, not accidental UI configuration.** Investigate and preserve substantive visibility gates (controlled faction, contact visibility, identification/classification, uncertainty and weapon/target eligibility). Distinguish these from optional presentation choices such as `HitChanceDisplay = Off/Rough/Full`: a cosmetic preference is not automatically a prohibition on querying an otherwise player-accessible metric. Establish what the game actually permits before deciding the default public policy. Do not expose values the player could never obtain through ordinary permitted UI behavior without a separate design decision.
+3. **Generic analytics contracts can outlive a backend.** Recommend backend-independent engagement-assessment concepts rather than binding public domain names to Sea Power classes or guaranteeing universal support. Unsupported or withdrawn native calculations need not trigger schema removal or fabricated fallback values.
+4. **Per-metric availability is first-class.** Consider `Available` (value provided), `Unavailable` (concept supported but unavailable for this weapon/track/state, with a reason), and `Unsupported` (backend/version does not offer the concept or has intentionally withdrawn it). Include enough provenance, units, sampling/observation version and reason information to interpret values honestly. Distinguish whole-query invalid/not-found/unauthorized errors from a valid assessment containing unsupported metrics. No fake zero or guessed percentage for missing information.
+5. **Separate capability discovery from the current result.** Consider a lightweight description of generally supported analytic metrics distinct from the current per-weapon/per-track availability. The V1 contract remains a proposal until the investigation is reviewed.
+6. **Keep analytic meanings accurate.** A qualitative effectiveness score, predicted kill chance, 50%-radius estimate and actual probability of a hit are not interchangeable. An engagement envelope does not imply that firing is currently authorized or executable.
+
+These are architectural *evaluation criteria* for Task 012, not authorization to add APIs, new production behavior, RPCs or schemas before Gate D is reviewed. Preserve the prior static findings as evidence; verify applicability and UI-parity conditions in runtime.
 
 Use the current checked-out NavalCommand repositories and the installed game version. Read the latest permanent `Docs/AGENTS.md`, `ARCHITECTURE.md`, `MODULE_STRUCTURE.md`, `CODE_STYLE.md`, `CodeStyle.xml`, `LOCAL_SOURCES.md`, relevant findings from Tasks 001–003, actual Task 006 implementation/evidence, and Task 008's investigation specification. Task 008 concerns weapon *engagement posture* (rules of engagement), which is distinct from the weapon/target envelope and effectiveness investigated here. Do not merge the tasks.
 
@@ -44,7 +56,7 @@ Follow the actual implementation of each relevant numerical or categorical outpu
 - **No-escape range:** exact definition and source; whose escape behavior or kinematics it models; whether it changes with target type or relative geometry; whether the game uses a static data-table value, simple formula, precomputed curve, or runtime model. Check if the feature is present for all weapon families.
 - **Effectiveness:** establish whether the value represents a percentage probability of hit, expected damage, kill probability, ranking, compatibility score, heuristic, or other metric; inspect normalization, thresholds, rounding and any randomness. **Do not label it `hitChance` without evidence that it really is a probability of hitting.**
 - **Weapon and target choice:** how the display handles multiple compatible weapons, multiple mounts/ammunition types, launcher readiness, unavailable rounds, unguided weapons, aircraft missiles, surface missiles, torpedoes, guns, and unsupported target categories. Identify what the inspected build actually implements instead of demanding full coverage for every class.
-- **Information provenance:** whether calculations use player-visible track observations, classified/estimated attributes, known type catalog values or inaccessible true target properties from `BaseObject` or other native links. Test what an imprecise, stale, partially classified or lost contact does to the display.
+- **Information provenance and UI parity:** whether calculations use player-visible track observations, classified/estimated attributes, known type catalog values or internal true target properties from `BaseObject` or other native links. Internal truth-derived **UI-visible results are not prohibited**; establish which output values are ordinarily available to the selected player/faction, under which contact and weapon gates, and which underlying facts must remain hidden. Test imprecise, stale, partially classified and lost contacts.
 - **Safety of read-only access:** whether nominal “getter” paths mutate cache, consume random numbers, affect native targeting state, allocate long-lived tasks, cause simulation side effects, depend on Unity/render objects, or require special game/UI thread context. Inspect reachable callees rather than declaring the top-level function pure by name.
 
 For each field, document its precise value type, range/units, data dependencies, trust/provenance, native callsite, version/asset assumptions, uncertainty and supported/unsupported cases. Distinguish *possible to compute* from *currently executable as a firing order*. A target may be inside a theoretical envelope but not fireable because of ROE, ammunition, launcher alignment, identification, sensor/tracking or native protection.
@@ -66,7 +78,7 @@ Record actual shown numbers **and** relevant calculation inputs/outputs, units, 
 
 If direct mouse/GUI operation cannot be automated reliably, manually document it or use an isolated diagnostic to invoke the same verified native **read-only** calculation under equivalent conditions. Label the two test methods honestly: static call-path inspection or native-equivalent invocation does **not** prove an actual GUI hover occurred.
 
-Use the player-observable track as the public-side input model. A privileged test fixture may inspect true target state to diagnose possible information leakage, but it must remain isolated and never be repurposed to expose opponent ground truth through the production provider. No scenario/global-state mutations, synthetic target creation in production, automatic weapon discharge, global AI disabling, or changes to vendor binaries. Keep fixture/deployment reversible and preserve installation integrity.
+Use the observer-visible, faction-scoped **track identity** as the proposed public-side selector. A read-only native diagnostic may internally use the target's `BaseObject` to reproduce the **derived** values ordinarily exposed by that player's UI; this alone is not an information-leak violation. Compare actual displayed values, display suppression/gating and relevant internal inputs to determine parity. Privileged true target state must remain test-only and must never become a public API response. No scenario/global-state mutations, synthetic target creation in production, automatic weapon discharge, global AI disabling, or changes to vendor binaries. Keep fixture/deployment reversible and preserve installation integrity.
 
 **Gate C passes** on bounded, attributable runtime evidence. If a relevant UI or target scenario cannot be exercised safely, report a **Partial/Blocked** result with the exact cause rather than fabricating data.
 
@@ -76,7 +88,7 @@ Based on the observed native semantics, answer these questions separately and ex
 
 ### 5.1 Is a read-only engagement-envelope query justified?
 
-Could an external controller request an engagement assessment for a **friendly session-scoped unit + specific available weapon/launcher/munition + observer-visible track** without needing a mouse, current UI selection or issuing an attack order? Can the game calculate this on demand using authoritative but *authorized* inputs, or does the UI depend on transient state/privileged enemy truth? Consider side-scoped views, opaque track IDs, selected-faction constraints and stale observation versions.
+Could an external controller request an engagement assessment for a **friendly session-scoped unit + specific available weapon/launcher/munition + observer-visible track** without needing a mouse, current UI selection or issuing an attack order? Can the game calculate **the same player-accessible derived results** on demand, even if the native calculation privately reads true target state? Identify transient UI dependencies, hidden output differences, substantive eligibility gates, side-scoped views, opaque track IDs, selected-faction constraints and stale observation versions.
 
 Separate **mostly static weapon catalog properties** (e.g., nominal range and compatible target classes) from **dynamic weapon–track engagement estimates** (e.g., current distance, geometry-dependent range, no-escape conditions, current effectiveness). Explain whether a cached catalog, a bounded explicit query, a mixed approach or **no safe API yet** is warranted. Do not automatically put all metrics in `World.Api` snapshots, and do not automatically create a new domain repository or a second transport.
 
@@ -90,7 +102,9 @@ Produce a proposed **conceptual field table**, not code or `.proto` changes. For
 - Provenance, timestamp/content version and consistency/staleness limits.
 - Whether the field is a range bound, permission to fire, relative heuristic or actual probability, and **which distinctions must remain explicit**.
 
-If the game never computes a justified `hitProbability`, recommend omitting that concept rather than deriving a misleading percentage. If the UI obtains exact enemy attributes from native truth, explain how to avoid revealing them; do not recommend exposing the original value as if it were a legitimate track observation.
+If the game never computes a justified `hitProbability`, recommend omitting that concept rather than deriving a misleading percentage. If the UI uses exact enemy attributes internally, it is acceptable to reproduce **the derived player-visible metric** while withholding raw truth. Explain the precise UI gate and whether the value can be obtained from the normal UI, rather than requiring calculations to use estimated track properties only.
+
+For each proposed analytic field, describe **Available / Unavailable / Unsupported** semantics, including whether the status is constant for the backend/version or depends on the current weapon and track. Consider independent capability discovery, stable reason codes, observability/provenance, and graceful degradation if a future Sea Power version removes a previously available calculation. Do not conflate a player's cosmetic display setting with backend capability.
 
 ### 5.3 How expensive and safe would it be?
 
@@ -98,7 +112,7 @@ Assess main-thread requirements, query frequency and complexity, side effects/RN
 
 ### 5.4 What comes next?
 
-Provide **one recommended minimal V1 API concept** with alternatives and trade-offs, or recommend deferring if safe semantics cannot be demonstrated. Sketch only the requested identifiers and response shape in prose/table/pseudocode as needed. Do not add RPCs, Protobuf schema fields, C++ domain headers, managed provider methods or new generic client calls in Task 012. API design will be approved **after** reviewing this investigation.
+Provide **one recommended minimal backend-independent V1 analytics-query concept** with alternatives and trade-offs, or recommend deferring if meaningful parity and read-only safety cannot be demonstrated. Distinguish (a) query-wide validity/authorization and (b) per-metric Available / Unavailable / Unsupported, and consider separate discoverable capability support. Show how future backends or Sea Power versions can withhold individual metrics without contract changes. Sketch only identifiers and response shape in prose/table/pseudocode as needed. Do not add RPCs, Protobuf schema fields, C++ domain headers, managed provider methods or new generic client calls in Task 012. API design will be approved **after** reviewing this investigation.
 
 **Gate D passes** when the findings support a concrete implement/defer decision for each meaningful metric and an honest minimum-scope query design.
 
@@ -108,7 +122,7 @@ Provide **one recommended minimal V1 API concept** with alternatives and trade-o
 - Preserve architecture from Tasks 006–011: domain contracts in `Domain.Api`, canonical wire messages in `Gateway.Api`, service contract in `Gateway.Grpc.Api`, simulator-independent gateway and game-facing logic in `SeaPower.Client`, runtime/harness composition in `SeaPower.Mod`.
 - Respect `Docs/CODE_STYLE.md` and unmodified owner `CodeStyle.xml` in any diagnostic source. Do not perform unrelated header, naming, build or formatting TODO cleanup.
 - Keep read-only queries observational: never change native order/task selection, launch/firing state, targeting allocations, simulation RNG or caches invisibly. If the UI computation itself has side effects, identify them and avoid using it as a supposedly pure production getter.
-- Never expose classified enemy object identity or truth data from the opponent's real `BaseObject`. Use separate test-only privileged diagnostics where necessary and mark them clearly.
+- Never expose classified enemy object identity or raw privileged truth data from the opponent's real `BaseObject`. **This does not forbid derived estimates already ordinarily shown to the same player by the native UI**, even when they are computed using that object internally. Validate and preserve substantive native display/eligibility restrictions; use separate test-only privileged diagnostics where necessary and mark them clearly.
 - Do not require or execute real attacks to prove a UI estimate, and do not disable native protective behavior. Do not alter proprietary game files, ship decompiled source or commit proprietary binaries.
 - Avoid unnecessary exhaustive class inventories, mass scenario automation, framework restructuring, Task 008 formation/posture work, unrelated Debug teardown fixes or LLM integration.
 - If this investigation reveals a *side-effect-free* safe API is impossible or ambiguous, reporting **not currently feasible** is a successful outcome.
@@ -131,6 +145,6 @@ Finish with a gate table:
 | C | Runtime validation | | | |
 | D | API recommendation only | | | |
 
-**Completion criterion:** We can explain exactly what Sea Power displays during weapon targeting hover, what the game actually computes and from which data, which information is legitimately available to an external side-scoped controller, and whether a read-only engagement-envelope/effectiveness query can be implemented without guessing, leaking hidden truth or perturbing the simulation.
+**Completion criterion:** We can explain exactly what Sea Power displays during weapon targeting hover, what it computes and from which data, which derived outputs are ordinarily player-accessible, and whether a read-only, backend-independent engagement-assessment query can provide individually available/unavailable/unsupported metrics without revealing raw hidden truth, fabricating values or perturbing the simulation.
 
 Commit documentation and any strictly necessary isolated test fixtures in the appropriate repositories. **Do not push** without explicit authorization. Do not implement the proposed API before review.
