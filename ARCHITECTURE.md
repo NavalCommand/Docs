@@ -61,7 +61,7 @@ The platform models the following operational domains. Their boundaries do **not
 
 | Domain | What it exposes | Update pattern |
 |---|---|---|
-| Class catalog | **Complete unit-type catalog with resolved alternative loadouts and nominal weapon/sensor/EW/communication capabilities**, with shared capability definitions and optional physical traits; content-revisioned | Mostly static, content-versioned |
+| Class catalog | **Complete unit-type catalog with resolved alternative loadouts and nominal composed weapon, sensor and communications capabilities**, with shared definitions and optional physical traits; content-revisioned | Mostly static, content-versioned |
 | Order descriptions | Discoverable supported high-level order types, argument constraints, ongoing order state, availability/limitations | Definitions mostly static; unit applicability/state dynamic |
 | Controlled forces | Actual observable state of controlled/friendly units: position, status, damage, sensors, **installed weapons and current ammunition (distinct from nominal class configuration)**, active orders, and automation activities, to the extent exposed | Dynamic |
 | Contacts/tracks | Tracks observable to the controlled faction and shared by allies, with last observations, uncertainty and **only observer-legitimate equipment intelligence (which may be unknown or partial)**; never omniscient opposition truth | Dynamic |
