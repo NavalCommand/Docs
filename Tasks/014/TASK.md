@@ -145,7 +145,11 @@ Also test:
 - `Known(0)` stock is different from `Unknown` stock, and `not applicable` is different from either where modeled.
 - `Complete + []`, `Partial + [A]`, `Unknown + []`, invalid `Unknown + [A]` and default-unknown behavior.
 - A known-type enemy contact whose equipment remains unknown, and tagged own-unit versus track identifiers.
-- Header-level independent consumption/build and no regressions to existing `Orders.Api`/`World.Api` tests.
+- The **migrated `View`** represents one owned unit and one track as the same `UnitInstance` type, distinguished by tagged subject IDs; only the owned one has valid command eligibility.
+- All legacy state survives its move into typed components: name, known position, optional speed, planned route and inspected flag, orders, known `airborne=false`, track position/time/provenance.
+- C++ **gateway codec projection** preserves the existing old-wire own-unit/track fields and `Decode/Encode` currently supported behavior without confusing track IDs and own-unit IDs, silently falsifying unknowns or treating optional false as absent.
+- Existing `Gateway.Grpc` mock route/eligibility mutation and `DiscoverOrders` behavior still work, and integration tests still expect a single own unit and its existing wire fields.
+- Header-level independent consumption/build and existing `Orders.Api`, `World.Api`, `Gateway.Api` and `Gateway.Grpc` native tests pass.
 
 Do not claim to reproduce every Sea Power mechanic with these synthetic fixtures; use them to prove the generic model composes sensibly.
 
@@ -154,16 +158,19 @@ Do not claim to reproduce every Sea Power mechanic with these synthetic fixtures
 1. **Update the active conceptual design first:** `Docs/Tasks/012/DOMAIN_MODEL_PROPOSAL.md` to reflect the **single composed `EquipmentType`**, capability/operation separation, equipment-instance-as-capability, fully authoritative-but-selective catalog, scenario-resolved loadouts and observer-only unknowns. Treat Task 013's suggestion of uncertain/incomplete catalog values and public date applicability as **superseded design recommendations**, not errors in its recorded game findings.
 2. Align relevant normative `Docs/ARCHITECTURE.md` language with the accepted concepts. Keep Task 012's old method-first `API_DESIGN_PROPOSAL.md` explicitly **deferred**; do not silently promote its RPC surfaces or overwrite historical Task 013 findings.
 3. Implement the smallest coherent new headers under `Domain.Api/public/NavalCommand/...`, with namespace-mirrored PascalCase one-type-per-header organization. Determine whether a small separate `Catalog.Api` INTERFACE target is warranted or whether existing `World.Api` is sufficient; document your choice. **Do not create a new functional Git repository**, a duplicate domain/transport model or needless framework.
-4. Adjust `Domain.Api/src/CMakeLists.txt` and tests only as required, preserving existing independently consumable targets and transitive dependencies.
-5. Write `Docs/Tasks/014/REPORT.md`: added types/components, invariants, design tradeoffs, exact files, test commands/results, gaps/omissions and any deferred follow-up work. Update the Task 014 entry in `Docs/Tasks/README.md` to record actual outcome.
-6. Apply `Docs/CODE_STYLE.md` and `CodeStyle.xml` (PascalCase public C++, tab indentation, readable tests, no closing namespace comments in added files).
+4. **Migrate the existing world surface:** replace/deprecate old `World::Api::Unit`/`Track` representations in `World::Api::View` with one collection of `UnitInstance`; remove obsolete public structures by the end of the coordinated migration if no longer referenced. Move legacy behavior into named components, not new flat members. Preserve the `Orders.Api` dependency boundary and order types.
+5. **Migrate native consumers in `Gateway.Api` and `Gateway.Grpc`:** update `Codec.cpp`, mock `MockProvider.h`, server `DiscoverOrders`, affected tests and necessary CMake references. Keep the existing canonical Protobuf schema and external RPC layout unchanged. The legacy `WorldSnapshot` has separate `own_units` and `tracks` fields; the codec must project the **single tagged domain collection** to/from these fields for the supported legacy subset. No duplicate C++ domain model just to imitate the wire shape.
+6. **Be explicit about current wire limitations.** The current wire schema cannot carry the complete new equipment/knowledge model. Treat encode/decode as a **limited compatibility projection**, not a lossless full `UnitInstance` round-trip. For legacy fields that require a position or other definite value, **never manufacture 0/false or a confirmed empty list** from Unknown; choose a deliberate reject/fail-closed strategy or another documented non-fabricating handling policy and test it. Do not silently drop unknown/unrepresentable **legacy required data**. Exposing the full new model on the wire is deferred to a later task.
+7. Adjust `Domain.Api/src/CMakeLists.txt` and tests as required, preserving independently consumable targets and transitive dependencies. Keep `Domain.Api` independent of transport or Sea Power.
+8. Write `Docs/Tasks/014/REPORT.md`: components, migration maps, type invariants, compatible wire subset/limitations, exact affected repositories, build/test commands/results, gaps and follow-up work. Update the task index after implementation.
+9. Apply `Docs/CODE_STYLE.md` and `CodeStyle.xml` (PascalCase public C++, tab indentation, readable tests, no closing namespace comments in new/edited code).
 
 ## 5. Explicit exclusions
 
 **Do not**:
-- Change current `Gateway.Api` Protobuf messages or `Gateway.Grpc.Api` RPC services.
+- Change current `Gateway.Api` **Protobuf schema** or `Gateway.Grpc.Api` RPC services. **Changes to `Gateway.Api` C++ codec and `Gateway.Grpc` consumers are now explicitly in scope.**
 - Modify `SeaPower.Client`, `SeaPower.Mod`, installed game files or run live experiments.
-- Replace `World.Api::Unit/Track/View` or change existing order/availability semantics.
+- Preserve the old `World.Api::Unit`/`Track` shapes as permanent parallel public domain models, or change existing order/availability semantics. **Replacing the old domain shapes inside `View` is required.**
 - Implement `GetUnitTypes`, `GetCatalog`, `GetUnitEquipment`, `AssessEngagement`, command dispatch, engagement analysis or any transport API.
 - Build a full physical simulation of launcher slots, magazine partitions, sonobuoy life cycles, electricity/fuel networks or speculative radar performance.
 - Invent unspecified catalog values, unsupported device modes or operational AI behavior.
@@ -177,9 +184,12 @@ Do not claim to reproduce every Sea Power mechanic with these synthetic fixtures
 - [ ] Single composable `EquipmentType`, `EquipmentInstance` as capability, optional physical dimension and multiple equipment operations represented without weapon/sensor/EW roots.
 - [ ] Authoritative catalog has a small, definitive property subset and fully resolved loadouts; no catalog-level Unknown/Estimated states or generic historical year schema.
 - [ ] Shared `UnitInstance` correctly differentiates own-unit and observer track identity with instance-only uncertainty.
+- [ ] Existing `Unit`/`Track` state is migrated to typed components of the **same public `UnitInstance`**; `View` has a unified collection rather than separate public domain types.
+- [ ] Current legacy C++ gateway codec/mock/server adapted atomically; existing Proto messages/RPCs and the supported external view/orders behavior remain compatible.
+- [ ] Unknown/inapplicable state cannot quietly become a definite legacy position, zero, false or complete empty inventory through codec projection; limitations are documented and tested.
 - [ ] Empty-vs-unknown equipment distinction is structural and tested (including contradictory states).
 - [ ] All six representative equipment scenarios and cross-referencing/multiple loadouts tested with legible code.
-- [ ] Existing Domain.Api targets/tests preserved; actual tests executed and results reported honestly.
+- [ ] Existing `Domain.Api` target boundaries preserved; affected `Domain.Api`, `Gateway.Api` and `Gateway.Grpc` tests/builds run and results reported honestly.
 - [ ] Documentation report and task index updated; code, docs and tests committed **locally** by repository; **do not push** unless the owner explicitly asks.
 
-**Completion is domain-only.** A separate reviewed assignment will handle serialization, catalog construction/validation against the installed Sea Power build, enemy perspective filtering, real-time observations and API methods.
+**Completion is the new domain model plus migration of current C++ consumers to it.** A later reviewed assignment will extend the canonical Protobuf serialization to carry the full new catalog/equipment/uncertainty concepts and implement Sea Power catalog construction, side-safe runtime observations and API methods. Do not expand this task to redesign transport semantics.
