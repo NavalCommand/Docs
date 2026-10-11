@@ -1,14 +1,16 @@
-# Task 014 — Composable equipment and unit domain contracts
+# Task 014 — Composable equipment and unified world domain migration
 
-**Status:** Approved design direction; implementation pending. **Owner-approved decisions in this task supersede the older type sketches in Task 012 and the source-mapping suggestions in Task 013 when they differ.** This task is for C++ **domain contracts and tests**, not a Sea Power adapter, a catalog extractor or a public RPC.
+**Status:** Approved design direction; implementation pending. **Owner-approved decisions in this task supersede the older type sketches in Task 012 and the source-mapping suggestions in Task 013 when they differ.** This task implements C++ domain contracts **and coordinated migration of existing world-domain consumers**. It is not a Sea Power adapter, catalog extractor or public RPC redesign. **Latest owner correction:** do not preserve the old mixed-purpose `World::Api::Unit`/`Track` as parallel domain representations; migrate their useful fields into components of `UnitInstance`.
 
 ## 0. Start with repository synchronization
 
 Before editing, synchronize local NavalCommand checkouts with their remote branches, **especially**:
 
 - `NavalCommand/Docs` — this Task 014 specification and latest project conventions.
-- `NavalCommand/Domain.Api` — the repository to implement in.
-- Any other repository you need to read or build against.
+- `NavalCommand/Domain.Api` — the domain contracts and unified world shape.
+- `NavalCommand/Gateway.Api` — existing domain ↔ wire codecs currently consume `World::Api::Unit`, `Track` and `View`.
+- `NavalCommand/Gateway.Grpc` — the mock provider, server and tests consume the old `View`.
+- Any other repository you need to inspect or build against. Keep the `Gateway.Grpc.Api`/`SeaPower.Client` public wire behavior unchanged unless a verified blocker is escalated.
 
 Inspect working-tree status and current branches first. Pull/fast-forward safely where possible; do **not** reset, discard, overwrite or rebase uncommitted/unpublished user work without explicit authorization. Report a synchronization conflict/blocker instead of forcing it. Do not assume an old checkout contains the current task. Work from the synchronized `Docs/Tasks/014/TASK.md`.
 
@@ -23,10 +25,12 @@ Define a small, compositional, simulator-independent C++ domain model representi
 3. **Equipment types** composed from independently meaningful capabilities and employment/operation traits, covering sensors, conventional weapons, active EW, expendable countermeasures and auxiliary equipment.
 4. **Observer-scoped unit instances**, with equipment as **capability instances**, uncertainty/knowledge and optional physical traits.
 5. Explicit distinction between **known empty** and **unknown/partially known** equipment collections.
+6. **Replace legacy `World::Api::Unit` and `Track` with `UnitInstance`**, moving their current data into coherent components rather than keeping two competing domain models.
+7. **Migrate affected native consumers** (`Gateway.Api` codec, `Gateway.Grpc` mock/server/tests) as part of the same coordinated change, retaining existing wire/service behavior.
 
-Implement in `NavalCommand/Domain.Api`, with no dependency on Sea Power, Unity, protobuf, gRPC, external model providers, native launcher classes or vendor data. Integrate with the established C++ header-only/CMake conventions and tests. **Do not break or replace current `World.Api::Unit`, `World.Api::Track`, `World.Api::View` or `Orders.Api` contracts**; the existing gateway still consumes those. A later migration will be a separate assignment.
+Implement the simulator-independent types in `NavalCommand/Domain.Api` without Sea Power, Unity, protobuf, gRPC, model-provider or vendor dependencies. Transport/codecs remain in adapter repositories. **Do not preserve the old mixed-purpose public `World::Api::Unit` and `World::Api::Track` as permanent parallel types.** `World::Api::View` may remain as a snapshot envelope but should contain a single unified instance collection. Preserve existing `Orders.Api` contracts and behavior.
 
-This is a foundational **type contract** implementation. It does **not** promise that the Sea Power adapter can populate every new field today. Keep V1 small, internally consistent and extensible by adding meaningful components, not a speculative simulator encyclopedia.
+This is a domain implementation **plus synchronized native-consumer migration**, not a Sea Power integration. Keep V1 focused and composable; we do not need to express every simulator property immediately.
 
 ## 2. Accepted domain semantics
 
@@ -72,7 +76,28 @@ Retain a **tagged observer/session-scoped subject** so an own-unit ID and an obs
 
 Do **not** promote hypothetical class-standard equipment into a confirmed enemy instance. A known unit class with several possible loadouts can still have an entirely unknown installed equipment collection.
 
-### 2.4 Knowledge and observed-collection semantics
+### 2.4 Existing World.Api fields become typed components
+
+The current `World::Api::Unit` combines identity, position, motion, routes, order eligibility and aircraft state, while `Track` duplicates identity/position/provenance in a separate type. **Replace both with the common `UnitInstance` domain contract**, not an unused parallel `UnitInstance`.
+
+| Existing domain property | New component responsibility |
+|---|---|
+| `Unit.id`, `Track.id` | **Tagged subject/identity:** own-unit or observer-visible track; authority remains distinct |
+| `Unit.name` | **Identity/display:** named value, potentially unknown for a contact |
+| `Unit.position`, `Track.detectedPosition`, `Unit.speedMetersPerSecond` | **Kinematics/observation:** position uncertainty and observed motion |
+| `Unit.plannedRoute`, `Unit.routeInspected` | **Navigation:** route and explicit inspected/unknown semantics |
+| `Unit.orders` | **Order eligibility:** reuse `Orders.Api::Eligibility`; missing data must not be interpreted as executable |
+| `Unit.airborne` | **Aircraft/platform state:** optional and not applicable to ships |
+| `Unit.sampledAtSeconds`, `Track.sampledAtSeconds`, `Track.provenance` | **Observation metadata:** sample age/time and observer source |
+| New `EquipmentInstance` collection | **Equipment capabilities:** currently observed state, independently of physical installations |
+
+Compose these using named, typed components (e.g. focused optional state structures or narrow variants), not a monolithic new `UnitInstance` with all the old unrelated fields, and not an untyped string-key bag. Do not build a general-purpose ECS runtime/framework. Separate inapplicable optional components from unknown observed values; do not invent default zeros, false values or complete empty lists.
+
+**View shape:** prefer **one collection of `UnitInstance`** whose tagged identities distinguish owned units and observer-visible contacts. Do not maintain competing `units` and `tracks` *domain types*. `View` may retain session, observer, version, readiness and facility metadata. Only owned-unit identities can authorize unit orders.
+
+**Behavior to preserve from V1:** unit name, position and optional speed; current route, route-inspected flag and order eligibility; explicitly known airborne `false` vs unknown; unit/track observation times; track position, provenance and opaque identifier. Tests must cover these mappings.
+
+### 2.5 Knowledge and observed-collection semantics
 
 Provide small reusable **instance-side** knowledge and collection primitives, with safe default states and unambiguous semantics. Concepts:
 
