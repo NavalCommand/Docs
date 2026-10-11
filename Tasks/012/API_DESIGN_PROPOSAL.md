@@ -1,6 +1,6 @@
 # Task 012 — Engagement analytics API design proposal
 
-**Status:** Gate D proposal for owner review; **not approved or implemented**. Based on [STATIC_FINDINGS.md](STATIC_FINDINGS.md), [RUNTIME_FINDINGS.md](RUNTIME_FINDINGS.md), the existing NavalCommand public contracts and the owner's confirmation of ordinary player-visible metrics. Gates A–C remain partially validated; this document does not upgrade their evidence status.
+**Status:** Earlier method-first Gate D sketch, **deferred pending approval of the [type-first domain model](DOMAIN_MODEL_PROPOSAL.md)**. The operation names and request/response shapes in this document are **not approved or implemented**. Retained for historical context; do not implement from it before the domain concepts and equipment information boundaries are settled. Based on [STATIC_FINDINGS.md](STATIC_FINDINGS.md), [RUNTIME_FINDINGS.md](RUNTIME_FINDINGS.md), the existing NavalCommand public contracts and the owner's confirmation of ordinary player-visible engagement metrics. Gates A–C remain partially validated; this document does not upgrade their evidence status.
 
 ## 1. Decision and scope
 
