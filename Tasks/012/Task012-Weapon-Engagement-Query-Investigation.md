@@ -1,6 +1,6 @@
 # Task 012 — Sea Power weapon engagement envelope and effectiveness investigation
 
-**Status:** Partial — [static findings](STATIC_FINDINGS.md) and [bounded runtime diagnostics](RUNTIME_FINDINGS.md) recorded; [Gate D API design proposal](API_DESIGN_PROPOSAL.md) prepared for owner review. GUI parity, native side-effect attribution and implementation remain open. Task 012 is not complete.
+**Status:** Partial — [static findings](STATIC_FINDINGS.md) and [bounded runtime diagnostics](RUNTIME_FINDINGS.md) recorded. The [type-first catalog/equipment domain model](DOMAIN_MODEL_PROPOSAL.md) is now the active design discussion; the earlier [method-first Gate D sketch](API_DESIGN_PROPOSAL.md) is deferred pending type approval. GUI parity, native side-effect attribution and implementation remain open. Task 012 is not complete.
 **Type:** Static investigation, limited runtime validation, and API feasibility assessment. **Do not implement a production API in this task.**  
 **Priority:** Investigate the existing player weapon-order hover display and its native calculations before deciding how to expose equivalent read-only information through NavalCommand.
 
