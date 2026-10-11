@@ -1,161 +1,171 @@
-# Task 015 — Acyclic domain architecture and semantic refactor
+# Task 015 — Acyclic domain architecture, simulation truth and observer-specific views
 
-**Status:** Assignment ready for Codex; implementation pending. **This task supersedes Task 014's accepted *type layout* wherever specified below.** Preserve Task 012–014 findings as historical evidence, not as an obligation to keep their class names or wire shapes.
+**Status:** Implementation assigned; specification revised after owner discussion. **Pull the newest Docs before proceeding.** This task supersedes the *type and dependency layout* described in Tasks 012–014. Preserve their investigation findings as historical evidence. **Breaking changes are required; compatibility with pre-release interfaces is not a goal.**
 
-## 0. Synchronize before doing anything
+## 0. Synchronize and read current source
 
-Inspect branches and working-tree status; safely **pull/fast-forward** all impacted repositories before planning changes:
+Inspect branches and working-tree status, then safely `git pull --ff-only` (or equivalent safe fast-forward) across all affected checkouts:
 
-- `NavalCommand/Docs` (**reread this newest task after pulling**)
-- `NavalCommand/Domain.Api`
-- `NavalCommand/Gateway.Api`
-- `NavalCommand/Gateway.Grpc.Api`
-- `NavalCommand/Gateway.Grpc`
-- `NavalCommand/SeaPower.Client`
-- `NavalCommand/SeaPower.Mod`
-- `NavalCommand/Build.CMake` if required for builds
+- `NavalCommand/Docs` — **pull and reread this file before implementation**, as its scope changed after initial publication.
+- `NavalCommand/Domain.Api` — includes the owner's most recent TODO comments, which must be read in source.
+- `NavalCommand/Gateway.Api`, `Gateway.Grpc.Api`, `Gateway.Grpc`.
+- `NavalCommand/SeaPower.Client`, `SeaPower.Mod`.
+- `NavalCommand/Build.CMake` if needed for builds.
 
-The owner pushed additional TODO comments to Domain.Api **after** Task 014. Read those TODOs **in source** and inspect the latest code; do not design against the Task 014 completion report alone. Do not discard, reset, overwrite or rebase local user work. Stop and report conflicts rather than forcing synchronization. Record exact base commits in the report.
+Do not reset, discard, overwrite, or rebase unpublished local/user work. Report synchronization conflicts rather than forcing updates. Record precise baseline revisions. Read `Docs/AGENTS.md`, `ARCHITECTURE.md`, `MODULE_STRUCTURE.md`, `CODE_STYLE.md`, `CodeStyle.xml`, `LOCAL_SOURCES.md`, Task 014's report, Task 012/013 game evidence, and every owner TODO in the latest `Domain.Api`.
 
-Read `Docs/AGENTS.md`, `ARCHITECTURE.md`, `MODULE_STRUCTURE.md`, `CODE_STYLE.md`, `CodeStyle.xml`, `LOCAL_SOURCES.md`, and Task 014's report for context. The domain-ownership graph and decisions in **this** assignment are the new intended architecture; change outdated normative documentation as part of implementation.
+## 1. Goal and nonnegotiable concepts
 
-## 1. Objective
+Task 014 mixed independent concepts and left remnants of the legacy world model. Refactor its domain model into clean, strongly typed, noncyclic namespaces **inside the existing Domain.Api Git repository**, update the single canonical Protobuf schema, and migrate all affected C++ and C# consumers.
 
-Task 014 introduced too many overlapping abstractions, repeated semantic state, and legacy assumptions. Refactor to a **small set of independently meaningful concepts**, segregated into acyclic domain namespaces/targets **within the existing `Domain.Api` repository**. Then refactor the canonical protobuf and all consumers to that architecture. There are **no pre-release backward-compatibility obligations**; remove obsolete types/fields and avoid wrappers, aliases or double representations merely for compatibility.
+**Crucial change from the initial Task 015: simulation truth and player observation are different domain models.**
 
-**Deliverables:** (a) coherent domain definitions, (b) enforced directed dependency boundaries, (c) updated single canonical wire contract, (d) synchronized consumers with existing operational functionality, (e) architectural/behavioral tests, (f) documentation and a candid report.
+- `Units.Api::UnitInstance` and `EquipmentInstance` describe **authoritative simulated entities/capabilities**. Their **expressed fields are definite** and contain **no `Knowledge<T>` or observer contact identities**. Definitive does not mean exhaustive: deliberately omit unsupported/unmodeled fields.
+- `Observations.Api::UnitObservation` and `EquipmentObservation` describe **one observer's perceived state**. Existence, identity/classification, position, equipment, resource state and provenance can be unknown, estimated, incomplete or inaccurate, in ways permitted by the actual source. An observation might describe a false, ambiguous, merged or duplicated contact.
+- `UnitId` (truth) and `ObservationId` (per-observer contact/representation) are **different strong ID types**, not the old own-versus-enemy ID split. Friendly and hostile **observations use the same `ObservationId` type**.
+- `Orders.Api` accepts **observation identifiers scoped to the requesting observer/session**, then the authoritative backend checks control permissions and resolves the observed handle safely before issuing real commands. No order can be authorized just because an ID exists or looks like a friendly identifier.
+- `World.Api` provides **separate simulation-level and observer-specific aggregate views**; privileged truth must never be accidentally embedded in an ordinary faction snapshot. Multi-faction control uses separate perspectives of the same simulation; privileged replay/ML recording may retain both truth and all recorded perspectives.
+- **A `Unit` is a simulated tactical entity, NOT necessarily a crewed platform or vehicle.** Sea Power treats some projectiles, notably missiles, as unit-like simulated objects: they can be tracked and selected and some can receive commands. Such projectiles **must be representable as true `UnitInstance`s and observer-side `UnitObservation`s**. Do not assume all projectiles are separately simulated units or orderable; applicability is determined by the simulation and current authority.
 
-Do not turn this into a generic ECS engine, reflection-based component bag or comprehensive physical simulation. Typed composition through focused aggregates/optional components is sufficient.
+No generic ECS runtime, reflection dictionary, speculative full physical engine, or privilege-bypassing convenience API.
 
-## 2. Normative domain boundaries
+## 2. Domain namespace/CMake target boundaries (acyclic)
 
-Use these namespace and CMake-target ownership boundaries (the spelling `Physics.Api` is the working default; document a compelling semantic alternative if needed, but do not stall the implementation over the name):
+All targets reside in `NavalCommand/Domain.Api`; exported public headers mirror their namespace directories:
 
-| Domain | Owns | Must not own |
+| Target / namespace | Sole responsibility | Exclusions |
 |---|---|---|
-| `Physics.Api` | Physical quantity/value types (e.g. distance, speed, mass, angles, durations), geographic `Position`, geometry and coordinate semantics | Naval units, sensors, commands, uncertainty |
-| `Uncertainty.Api` | Generic `Knowledge<T>` and `ObservedCollection<T>` and generic uncertainty/coverage helpers | Native tracks, particular sensors, catalog definitions, order policy |
-| `Catalog.Api` | Authoritative session-context `Catalog`, strong catalog IDs, `UnitType`, `Loadout`, `EquipmentType`, operations/effects, resource definitions and definitive nominal fits | Runtime instance state, observer uncertainty, orders |
-| `Units.Api` | Stable public `UnitId`, `UnitInstance`, equipment capability instances, kinematics, navigation, flight and attached air-facility/air-operations inventory components | Orders, order eligibility, factions/task-force ownership |
-| `Orders.Api` | Typed order requests/payloads/results, descriptions, per-unit order-availability **overlay**, execution lifecycle | Unit type or unit state ownership, faction membership |
-| `Environment.Api` | Terrain, bathymetry, atmosphere/weather/ocean data and eventual environment observations | Unit/order implementations, fictitious current readings |
-| `World.Api` | World snapshot aggregation, session metadata, simulation clock, factions/task forces and unit-membership **overlay** | Equipment implementation, embedded order eligibility, duplicate unit models |
+| `Physics.Api` | Physical units/quantities, `Position`, angles, velocity/speed, geometry, time values | Units, orders, observation provenance |
+| `Uncertainty.Api` | Generic `Knowledge<T>`, `ObservedCollection<T>` and reusable uncertainty/coverage helpers | Simulator, tracks, sensor-specific models |
+| `Catalog.Api` | Authoritative scenario-context unit/equipment/resource **definitions**, IDs, loadouts and compatible effects/operations | Runtime state, uncertainty, orders |
+| `Units.Api` | **Authoritative** `UnitId`, `UnitInstance`, `EquipmentInstance`, actual kinematics, runtime equipment, optional flight/air-operations state | Observer uncertainty, contact records, Orders, World |
+| `Observations.Api` | **Observer-facing** `ObservationId`, `UnitObservation`, `EquipmentObservation`, observed kinematics, evidence/measurement age | True `UnitId`, authoritative state ownership, orders, World |
+| `Orders.Api` | Order payloads, requests, results, descriptions and per-observation **order-availability overlay** | Unit or observation type ownership, factions, embedded order eligibility |
+| `Environment.Api` | Terrain, bathymetry, weather, ocean/atmosphere information with clearly separated definitive source data vs observer observations when actually supported | Unit/order state, invented simulator data |
+| `World.Api` | Session/world snapshot wrappers, simulation clock, factions/task forces, authoritative membership and distinct observer-visible relationship overlays | Unit/equipment internals, embedded order-eligibility types |
 
-**Allowed direct dependencies only** (arrow means depends on):
+**Allowed direct dependency edges only:**
 
 ```text
-Physics.Api      -> (none)
-Uncertainty.Api  -> (none)
-Catalog.Api      -> Physics.Api
-Units.Api        -> Catalog.Api, Physics.Api, Uncertainty.Api
-Orders.Api       -> Units.Api, Physics.Api, Uncertainty.Api
-Environment.Api  -> Physics.Api, Uncertainty.Api
-World.Api        -> Units.Api, Environment.Api, Physics.Api, Uncertainty.Api
-
-Gateway.Api (outside Domain.Api) may depend on World.Api, Orders.Api,
-Catalog.Api and whichever other domain targets its contracts need.
+Physics.Api     -> (none)
+Uncertainty.Api -> (none)
+Catalog.Api     -> Physics.Api
+Units.Api       -> Catalog.Api, Physics.Api
+Observations.Api-> Catalog.Api, Physics.Api, Uncertainty.Api
+Orders.Api      -> Observations.Api, Physics.Api, Uncertainty.Api
+Environment.Api -> Physics.Api, Uncertainty.Api
+World.Api       -> Units.Api, Observations.Api, Environment.Api, Physics.Api, Uncertainty.Api
 ```
 
-Transitive dependencies follow from those edges. **No reverse edges or cycles.** In particular:
-- **Units must not import Orders**. Orders are an overlay keyed by a unit ID and query/observation context.
-- **Units must not import World**. Faction and task-force memberships are a world-level overlay keyed by unit IDs.
-- **World must not import Orders**. Domain snapshots and order discovery may be combined at the gateway/composition layer, not by violating domain dependencies.
-- **Orders imports Units** for `UnitId` and, where truly needed, read-only unit concepts. It must not invent another own-unit ID namespace.
-- **Catalog must not import Uncertainty**. All exposed catalog fields are certain by definition, though deliberately selective.
+**No cycles and no additional domain-to-domain includes or CMake links.** Transitive dependencies exist only through allowed edges. `Catalog.Api` and `Units.Api` must not depend on `Uncertainty.Api`; `Observations.Api` must not depend on `Units.Api`; `World.Api` must not depend on `Orders.Api`. `Orders.Api` must not depend on `Units.Api` or `World.Api` (orders operate on observation handles). It is fine for `Gateway.Api` to import several of these APIs to compose boundary contracts.
 
-Namespace paths must mirror `public/NavalCommand/<Domain>/Api/`; provide independent header-only `INTERFACE` CMake targets for **populated** domains, with dependencies exactly declared. Treat `Environment.Api` as a **reserved ownership boundary** if no supported environment data exists yet; don't invent bogus environment facts or meaningless placeholder data just to create a header or target. Still enforce the reserved boundary in the dependency checker. Do not introduce another Git repository. Avoid dependency inversions through aliases or re-exported duplicate types.
+`Environment.Api` may remain an explicitly reserved boundary with no production target/files if no verified environmental contract exists. Do **not** create meaningless empty components solely to satisfy a namespace list. Enforce even reserved boundaries against future forbidden includes.
 
-## 3. Specific design corrections required
+Do not create another Git repository. Build targets are distinct header-only `INTERFACE` targets; target links should reflect **actual** allowed dependencies, not an arbitrary umbrella include path.
 
-### 3.1 One public identity and observer-safe control
+### 2.1 World views, authority and replay ownership
 
-- Define a single strongly typed `Units.Api::UnitId` for every reported `UnitInstance`. It is a NavalCommand-owned **observer/session-scoped observation identity**, not a native Sea Power object identifier or a guarantee the record represents exactly one real platform (phantom/fused contacts are possible).
-- **Remove public `TrackId`, `Orders.Api::OwnUnitId`, `Subject` and own-vs-track tagged wire IDs**; don't merely rename them. Internal Sea Power plotting-table/contact structures may remain where they genuinely reflect native mechanics, but they must not leak into public domain identity.
-- Order requests refer to `UnitId` directly. **Authority is separate from identity**: order availability is supplied by `Orders.Api`; dispatch revalidates faction control/membership and native safety near execution. An enemy `UnitId` must never authorize an order merely by being syntactically valid.
-- Preserve stable handles across observations within the same session where the adapter can genuinely identify the same record. Do not leak hidden enemy truth or automatically merge contacts using privileged identity. Explicitly invalidate handles on session change.
+Use two distinct, clearly named values such as:
 
-### 3.2 Composable capability-oriented equipment
+```cpp
+// Illustrative responsibility, not fixed implementation signatures.
+World::Api::SimulationSnapshot   // privileged, definite Units.Api::UnitInstance data
+World::Api::ObserverSnapshot     // one faction/perspective's Observations.Api::UnitObservation data
+```
 
-- `Catalog.Api::EquipmentType` describes **one independently addressable operational capability**, potentially producing several *effect descriptions* and supporting several operations. It is not a compulsory representation of one physical device.
-- Simplify the `EquipmentCapability` vs `EquipmentOperation` overlap. Treat damage/sensing/jamming/deception/storage/etc. as **what a capability does**, not a second public capability identity. **Remove `CapabilityIndex`**, which currently indexes a parallel vector without adding useful identity.
-- Normalize the current action distinctions: **Use** (one invocation, e.g. launch, deploy or jettison) versus **SetActive** (desired on/off or meaningful operating state). Do not encode `Launch/Deploy/Jettison` as separate fundamental actions with the same resource/effect semantics. Allow distinct operations by ID only when their targeting or behavior genuinely differs.
-- Remove redundant `Duration` when it merely restates action. **The lasting effect of an expendable deployment is a different question** (sonobuoy listening after deployment) and must not be silently equated with invocation duration.
-- Remove `EquipmentOperation::Mode::{Active,Passive,Guided}`: sensor emission and projectile guidance are different properties. Only reintroduce **specific** typed traits where there's a real modeling use.
-- Targeting describes accepted designations (track/unit ID, geographic point, area, bearing, none, etc.) in one meaningful typed contract. A no-target operation is not a bogus required `None` target parameter.
-- `Units.Api::EquipmentInstance` is the **runtime operational capability**, with applicable activity/readiness/resource observations. Do not make a public instance correspond obligatorily to a physical launcher/hardpoint.
-- Physical characteristics are a separate dimension with clear ownership and coordinate frames: intrinsic capability constraints versus per-loadout installation geometry versus runtime physical observation. **Do not duplicate an ambiguous `PhysicalTraits` aggregate in `EquipmentType`, `EquipmentFit` and `EquipmentInstance`**. Introduce only traits required now; defer unused physical structures.
+Do **not** define one `View` with optional privileged and observer fields. Do not let ordinary `GetView` or faction clients receive a true `UnitId`, a truth-to-contact mapping, hidden equipment/classification, or any other privileged state.
 
-### 3.3 One resource semantics model
+A snapshot must be scoped to its session and simulation time. An observer snapshot additionally identifies its perspective/observer. If `Observations.Api` needs an observer-scoping ID, own a small `ObserverId` there; `World.Api` may associate it with authoritative `FactionId` without creating `Observations → World`.
 
-Current `ResourceQuantity::Kind::{Ammunition,DeploymentCharges,JamChannels,FuelLiters}` conflates identity, numeric units and accounting rules. Replace with:
-- Definitive catalog resource identity/definition (`ResourceId` with **numeric representation**, **measurement unit** and **accounting semantics** such as consumable/depletable versus reserved/allocatable). Do not force jam channels into ammunition or fuel into a charge count.
-- Shared strongly typed resource quantity/value shapes usable at the **distinct relationships**: nominal capacity/initial fit, operation consumption/reservation and current instance inventory. Relationships must remain named and meaningful; don't create three duplicate resource type systems.
-- Integers for discrete counts and continuous values for appropriate quantities; never silently use a floating point number for all discrete ammunition counts.
-- Runtime resource collections have **explicit unknown/partial/complete coverage** or a rigorously equivalent known-type contract; an empty vector must not silently assert a confirmed lack of resources. Distinguish `Known(0)` from `Unknown` and `not applicable`.
+- **Multi-faction:** multiple independent observer snapshots of the same authoritative simulation state, each with independent knowledge and contact lifecycle; no faction receives the other's hidden truth.
+- **ML/replay:** privileged recorder can capture authoritative snapshots, per-observer snapshots, issued commands and outcomes, plus optional **privileged** correlation of `ObservationId` to `UnitId` (which may be zero-to-many/many-to-one or absent due to false/fused contacts). Never put that correlation in observer-facing types. Distinguish recorded-state playback from deterministic engine replay; do not claim deterministic reconstruction solely from snapshots.
+- Implement necessary **type contracts and safe separation now**, not a full replay store, ML pipeline, historical database, privileged external RPC or complete simulation capture. Sea Power may not expose every ground-truth field; no pretending missing data is definitive. An authoritative snapshot source remains privileged and may be deferred until verified.
 
-Do not implement an accounting engine or fuel network; this is a domain definition.
+## 3. Required semantic cleanup
 
-### 3.4 Unit composition and air operations
+### 3.1 Identifiers, entity scope and projectiles
 
-- Keep `Units.Api::UnitInstance` as one observer-facing shape with typed components: identification, kinematics, equipment, optional navigation/flight/air operations, and other truly independent facts. No ECS runtime or meaningless one-field wrapper layers.
-- `Units.Api::UnitInstance` must **not** embed order eligibility or task-force membership. `Orders.Api` owns a per-unit `OrderAvailability`/discovery overlay; `World.Api` owns faction/task-force membership relationships. Avoid manufacturing faction assignments not supported by the provider.
-- Replace the duplicate `NavigationState.Inspected` + `Knowledge<vector<RoutePoint>>` relationship. `Known([])` is an inspected, known-empty route; `Unknown` means uninspected/unknown. If a distinct inspection flag has genuinely independent operational semantics, explicitly prove that with tests/documentation before retaining it.
-- Add meaningful observed heading/course if available, but do not invent the simulator reading. Heading and course-over-ground must not be conflated; support strongly typed SI/angle values. Geometry and `Position` belong in `Physics.Api`.
-- Collapse public `World.Api::Facility`, generic `Stock`, and snapshot-level `facilities` into an optional **`Units.Api::AirOperations` component** on applicable carrier/airfield/helicopter-capable `UnitInstance`. Clarify names (e.g. `AircraftInventory`, `AircraftInventoryEntry`), eligibility distinct from inventory, observation age, counts and lifecycle status. Use source-backed existing semantics only. The same unit ID identifies the owning air-operations facility. Never add a second public entity for an airfield that is already a unit.
-- `PlatformDescription` currently contains empty alternative structs and treats helicopter as disjoint from aircraft. Prefer a small authoritative platform classification with meaningful subtype/typed performance traits only where needed. A helicopter **is** aircraft; do not add complexity to encode fake exhaustive class hierarchies.
+- Replace old public `Orders.Api::OwnUnitId`, `World.Api::TrackId` and `Subject` with distinct `Units.Api::UnitId` (real entity) and `Observations.Api::ObservationId` (observer's potentially ambiguous record). Neither is automatically the game's native ID; adapters own mappings and validity. IDs stay stable during their documented session/lifetime; invalidate at session changes.
+- One `UnitObservation` is not guaranteed to correspond to exactly one true `UnitInstance`. Do not invent a direct `ObservedUnitId → UnitId` field in operational observation types.
+- A **missile or other independently represented projectile** may become a `UnitInstance` after launch and be an observed target (or controlled object). It may have kinematics, class, guidance status and whatever independent operations the simulator legitimately exposes; no crew, `AirOperations`, hull or aircraft requirement.
+- **Distinguish equipped inventory from deployed entities:** a missile carried on a ship or aircraft belongs to a launch/deployment equipment/resource fit. Once independently simulated, the launched missile is an entity with its own `UnitId`; it must **not** be the same object as the launcher's `EquipmentInstance`. Optional authoritative launch-origin/deployed-type relations can be introduced only if needed and source-backed. The catalog may describe projectile unit types without conflating them with launcher equipment types. Do not mandate that every consumable turns into an independently simulated entity.
+- Platform classification must not be a hard-coded manned vehicle hierarchy. Avoid variants containing empty `Aircraft`, `Helicopter`, `Submarine` types with artificial disjointness: a helicopter is an aircraft; a missile can fly without being an aircraft platform. Use a small meaningful classification or applicable traits justified by current simulator data.
+- Orders for a tracked missile are **supported only when an actual native operation and observer authority allow it**; tracking/selectability does not imply arbitrary commandability. Do not invent missile-specific commands just to demonstrate architecture.
 
-### 3.5 Evidence, uncertainty, and order contracts
+### 3.2 Capabilities, operations, resources and physical constraints
 
-- Keep `Uncertainty.Api::Knowledge<T>` and `ObservedCollection<T>` (with default-unknown and invalid Unknown+nonempty rejection) as genuinely reusable, transport-agnostic primitives; avoid multiple alternative wrappers for the same knowledge state.
-- **Snapshot capture time** belongs to `World.Api` snapshot metadata. **Last measurement time** belongs with a unit/field observation only if known. Don't assert that snapshot time was when a sensor measured an enemy track. Likewise, avoid duplicating a generic provenance string in both estimate and top-level metadata; distinguish source identity, source class and provenance trace when genuinely available. A hard-coded adapter cache path is not a sensor identity.
-- Strong identifiers: `Catalog.Api::UnitTypeId`, `EquipmentTypeId`, `LoadoutId`, `ResourceId`; `Units.Api::UnitId`; other IDs only with a demonstrated need. Make public fields follow `CodeStyle.xml` conventions. Use focused physical units in `Physics.Api` without inventing a generic measurement/units framework.
-- **Orders.Api** request must hold **exactly one** typed order payload (`std::variant` or equivalent), replacing two independent optional `routeCommand` and `facilityLaunch` fields. `Eligibility.kind` cannot remain an undocumented arbitrary string; associate availability with a well-defined `OrderKind` or typed order descriptor. Avoid duplicate eligibility in air-inventory launch options; preserve dynamic reasons, unknown/blocked/unsupported distinctions and protection against stale dispatch.
-- **World.Api** aggregates units, session state, simulation time, faction/task-force membership if known, and environment data as applicable. **Do not** have it own unit internals, orders or `Catalog.Api` definitions by copying their fields.
+- `Catalog.Api::EquipmentType` represents one independently addressable operational capability, possibly with several **effects and operations**. `Units.Api::EquipmentInstance` represents its definitive current operational state, `Observations.Api::EquipmentObservation` the observer's uncertain evidence about a capability. None is obligatorily a physical weapon mount.
+- Remove `CapabilityIndex` and the duplicate identity of `EquipmentCapability` versus `EquipmentOperation`: effects describe *what*, operations *how*. Don't invent a parallel vector of independently indexed capabilities.
+- Prefer `Use` (release/launch/deploy/jettison behavior) and `SetActive` (desired on/off or operating state) as fundamental invocation forms. Do not duplicate synonymous launch/deploy/jettison enums. Drop redundant invocation duration; one-shot sonobuoy deployment can result in a sustained sensing effect.
+- `EquipmentOperation::Mode::{Active,Passive,Guided}` conflates sensor emission and weapon guidance; remove it. Guidance, emission and any other real mode properties belong in distinct, applicable effect/operation descriptions when needed.
+- A targeting contract distinguishes no designation, observation/target ID, position, region, bearing, etc. Do not encode fake `None` as mandatory input; avoid invalid combinations or impossible unverified targeting modes.
+- Resource semantics distinguish resource identity from numerical representation, measurement units and accounting behavior (depletable vs reservable). Share authoritative `Catalog.Api::ResourceId/ResourceType` and focused value types; make discrete counts integer, quantities continuous where appropriate.
+- The **same resource definition** may appear as loadout nominal full stock, operation cost/reservation or runtime stock/occupancy, but those have **distinct semantic roles**. True instance resource quantities are definitive for expressed properties; observed resource collections/amounts have knowledge and coverage. `Known(0)` ≠ `Unknown` ≠ inapplicable.
+- Physical geometry has explicit context/frame: intrinsic capability limits vs installation-dependent constraints vs actual runtime physical state vs observer measurement. Remove vague triplicated `PhysicalTraits` if it has no unique semantics. Reuse underlying angle/geometry value types.
 
-## 4. Canonical wire and consumer migration
+### 3.3 Unit and observation composition
 
-Change `Gateway.Api` canonical protobuf schemas **directly** to express the revised domain. No backward compatibility, old Subject/Track/OwnUnit tags, old unit/facility split, legacy projected fields or parallel model. Follow existing repository/schema ownership, regenerate both C++ and C# bindings from the canonical source and migrate all callers.
+- `Units.Api::UnitInstance` comprises a definite ID, type (when represented), actual kinematics, installed capabilities, optional actual flight and air-facility state and other explicitly supported properties. **No `Knowledge<T>` and no `OrderEligibilityState`**.
+- `Observations.Api::UnitObservation` comprises observer-scoped `ObservationId`, uncertain classification, estimated/known position and movement, observed equipment, optionally observed navigation/flight/air-facility state and evidence. It is *not* mechanically `Knowledge<UnitInstance>`: different structures and lifecycle are allowed.
+- Keep `Uncertainty.Api::Knowledge<T>` and `ObservedCollection<T>` as reusable components, default-unknown with invalid Unknown+nonempty rejection. Do not create a second competing family of unknown/estimate wrappers.
+- `Known([])` route is definitely empty, `Unknown` route is not inspected/unknown. Remove duplicated `NavigationState.Inspected` unless the remaining independent semantics are verified and explicitly documented.
+- Distinguish heading from course-over-ground; add real observed values when available but do not invent them. Physical units (`Speed`, `Distance`, `Angle` and durations as required) live in `Physics.Api`.
+- Catalog platform descriptions and true unit properties may be definite but **only for the subset correctly obtainable from the source**. Never use guessed default zeros or placeholder certain state for unavailable attributes.
+- **Air operations:** remove public generic `Facility`/`Stock` duplicate world entities/collections. For applicable actual units, use an air-operations capability/state; observers see an appropriately filtered **air-operations observation**. Ground airfields, carriers and helicopter-capable ships can provide this capability. Aircraft inventory and order availability are not the same thing; launch availability belongs in `Orders.Api`. No generic missile or projectile is required to have any airfield/carrier/crew component.
 
-Ensure that:
-- Wire `UnitId` is identical for observations, order references and any air-operations owner reference.
-- Separate per-unit order-discovery/availability results are **not** fields of `UnitInstance` or `WorldSnapshot`. Do not force `World.Api` to depend on `Orders.Api`.
-- Faction/task-force observations (where currently supported) remain in the World-level relationship overlay. Do not invent an enemy faction from inaccessible simulator truth.
-- Unknown/estimated/known values, measured-versus-snapshot timestamps, `Known(false)`, `Known(0)`, complete-empty and unknown collections survive through protobuf without false certainty.
-- Existing route/waypoint and aircraft-launch functionality remains operative via new requests/response shapes; permission checks, side filtering, native automation protection and game-thread revalidation remain intact.
-- `Gateway.Grpc.Api` service, `Gateway.Grpc` server/mock, `Gateway.Api` native codec, `SeaPower.Client` managed wire publisher, and `SeaPower.Mod` native/managed bridge and tests use the **new** contract. Use direct changed types, not transitional replicas.
-- Existing simulator-native contact/track capture types may remain *inside the backend* when needed to represent how native sensors work. They must not be public NavalCommand IDs, a second operational schema, or a mechanism to reveal authoritative enemy state.
+### 3.4 Orders, overlays, world relationships and evidence
 
-**Feature scope:** this is a refactoring, not catalog retrieval implementation, equipment extraction, radar/engagement calculations, faction AI or new environment simulation. Do not add RPCs for unimplemented features. No live Sea Power runs, loader installation, vendor binary changes or deployment changes without separate authorization. Domain and mock/managed offline tests are in scope.
+- **Orders are an overlay** over an observer's known entities, keyed by `ObservationId`, not `UnitInstance` components. `Orders.Api` owns per-observer order availability, command request/result and the command-discovery contract. No dependency on `Units.Api` truth model; execution maps observer IDs to authorized native objects **inside the privileged provider**.
+- Order request holds exactly **one** typed payload (`std::variant`/protobuf oneof), not two optional route/launch members. `Eligibility.kind` becomes a documented typed order descriptor/ID, not an opaque arbitrary string. Recheck current control, native automation protection, current authorization, freshness and execution preconditions on the allowed game thread.
+- World owns **authoritative** faction/task-force membership relationships among actual `UnitId`s, and separately any **observer-known** faction/group relationships keyed by `ObservationId`. An unobserved hostile affiliation must not be invented from truth or inferred from ID format. Avoid `World ↔ Units` cycles.
+- Snapshot capture time is not enemy contact measurement time; represent measurement age/evidence separately where actually available. Avoid generic duplicated `Provenance` strings that misidentify an internal cache path as a physical sensor. Sources may be multiple/fused.
+- Strong typed identifiers for `Catalog.Api::{UnitTypeId,EquipmentTypeId,LoadoutId,ResourceId}`, `Units.Api::UnitId`, `Observations.Api::ObservationId`, plus other IDs only where justified. Public source fields follow `CodeStyle.xml`.
 
-## 5. Dependency enforcement (essential deliverable)
+## 4. Canonical Protobuf, privilege boundaries and all consumers
 
-- Exported headers must be placed under the owning namespace directory and compile **independently** when included directly.
-- Add a **maintained automated architecture check** run via CTest/CI that verifies both **direct public header include dependencies** and **CMake target dependencies** against the exact allowlist in §2, detects cycles and forbidden `Units → Orders` / `Units → World` / `World → Orders` edges, and reports an actionable file/target on failure.
-- `INTERFACE` target links must represent actual dependencies. Merely setting a shared root include path on every target does **not** enforce architectural segregation. The architecture check must reject an otherwise compiling forbidden cross-domain include.
-- Tests link individual `Physics.Api`, `Uncertainty.Api`, `Catalog.Api`, `Units.Api`, `Orders.Api`, `Environment.Api` (if populated), and `World.Api` targets, proving independent consumption and correct transitive linking.
-- Update `Docs/ARCHITECTURE.md`, `MODULE_STRUCTURE.md`, and `AGENTS.md` where they still mandate `World.Api → Orders.Api`, split Subject IDs, embedded order eligibility, or separate facility collections. Include a concise explicit dependency table/diagram and source ownership rules. Do not rewrite historical investigation evidence or the Task 014 report.
+Rewrite `Gateway.Api` canonical .proto definitions and native codec to match these **two distinct models** and eight ownership domains. No old `Subject`, `TrackId`, `OwnUnitId`, `Facility/Stock` split or obsolete message variants preserved solely for compatibility.
 
-## 6. Verification scenarios and acceptance criteria
+**Public operational wire/RPCs** carry `ObserverSnapshot`, `UnitObservation` and scoped `ObservationId`, never privileged `UnitInstance` state. A privileged truth snapshot may have internal wire representation if needed for bounded recorder/test work, but **must not become accessible through an existing public GetView**, debug switch, order request or ordinary provider endpoint. Keep transport authentication/authorization boundaries meaningful.
 
-Create focused tests, **not only synthetic codec round trips**:
+Migrate `Gateway.Grpc.Api` service and CLI, `Gateway.Grpc` server/mock, `Gateway.Api` codecs, `SeaPower.Client` C# publisher and authority checks, `SeaPower.Mod` bridge/runtime and their tests together. Reuse canonical wire definitions across languages. Native Sea Power `TrackSample`/contact objects may remain **inside the source adapter** because they accurately represent native sensor processing; they are not public NavalCommand identities or a second domain.
 
-1. **Identity and authority:** same public `UnitId` path for own units and contacts, same value type through observation and orders; enemy order rejected after current-side validation, including reused/stale IDs; no `TrackId`/own-unit public enum variants.
-2. **Observation semantics:** `Known([])` versus `Unknown` routes; complete-empty versus unknown/partial equipment and runtime resources; `Known(0)` versus unknown count; zero/false survive both languages; measurement age is never fabricated from snapshot capture time.
-3. **Equipment semantics:** guided missile, radar, active ECM, chaff, sonobuoy, external tank; one equipment capability can have multiple effects/operations without parallel capability indexes; clear Use versus SetActive and resource depletion versus channel allocation.
-4. **Catalog:** two resolved loadouts and shared types, authoritative definitive catalog fields, strong IDs, no catalogue uncertainty or provider-specific service-year schema.
-5. **Air operations:** carrier/airfield unit with attached inventory, known/unknown stock, no duplicate public facility, typed launch order and separately discoverable availability; existing launch lifecycle and safety semantics unchanged.
-6. **World relationships:** faction/task force overlay, when represented, references `UnitId` without creating a dependency from Units to World; no guessed enemy affiliation.
-7. **Architecture:** deliberate bad `Units → Orders` include/target edge must be rejected by architectural checker; no cycles; standalone headers/targets compile.
-8. **System:** affected native and managed builds, conformance tests, mock-host/CLI route and order discovery behavior, and offline SeaPower.Client provider/fake-game tests pass. Record any failing/unsupported checks honestly; do not claim live-game verification.
+Existing verified route/waypoint/aircraft-launch workflows must remain functionally operable through new types. **No new missile orders, catalog RPC, equipment extraction, environment simulation or replay-storage system in this task.** No unauthorized live game runs or vendor binary modifications.
 
-Completion means:
-- [ ] All populated domain types live under the correct new namespaces with acyclic, enforced dependencies.
-- [ ] One owner per concept; no duplicate public identity, resource types, equipment capability identity or eligibility state.
-- [ ] Orders and World faction memberships are overlays, not UnitInstance components.
-- [ ] No public TrackId, OwnUnitId, Subject, Facility/Stock world split or vestigial old World.Api type aliases.
-- [ ] Single revised canonical wire schema with all affected consumers migrated; no compatibility wrappers.
-- [ ] Above semantic and architecture tests run and reported.
-- [ ] `Docs/Tasks/015/REPORT.md` records actual changes, design choices/alternatives, removed types, dependency graph, repo commit IDs, build commands/results, known limitations.
-- [ ] Docs task index updated to reflect outcome; meaningful changes committed **locally per repository**. **Do not push** without owner approval.
+Do not make observer data by serializing ground truth and mechanically redacting fields when that would bypass native sensing/intelligence. Truth-to-observation association for privileged ML labels is a **separate, explicitly privileged** concern.
 
-**Do the work in this assignment now**; no separate redesign-approval loop is required. If a named requirement creates a genuine contradiction with proven simulator safety behavior, choose the smallest safe, clean design, document the evidence and deviation, and report it explicitly instead of adding a silent workaround.
+## 5. Enforce architecture, not just documentation
+
+- Add a maintained automated architecture test/check executed through CTest/CI which checks public header includes and declared CMake INTERFACE target edges **against the exact allowlist in §2**, detects cycles, and reports actual offending files/edges. A forbidden header include must fail even if everything still compiles via a shared include root.
+- Independently compile public headers and link populated domain targets; no domain source includes generated protobuf, Unity or gRPC.
+- Tests should explicitly prove **no `Units → Uncertainty`, `Units → Observations`, `Observations → Units`, `Units → Orders`, `World → Orders`**, or other forbidden dependencies.
+- Update normative `Docs/ARCHITECTURE.md`, `MODULE_STRUCTURE.md`, `AGENTS.md` and accepted domain proposal where needed to record truth-vs-observer separation, the eight domains, and projectile-as-unit support. Do not rewrite Task 014 report or historical game evidence.
+- Delete superseded public headers/messages and old dual-model compatibility adapters. No backwards compatibility obligations.
+
+## 6. Verification and acceptance
+
+Create meaningful model/behavior tests beyond codec round trips:
+
+1. **Authoritative vs observer:** definitive `UnitInstance` has no uncertainty types; uncertain `UnitObservation` has no truth ID; false/fused/duplicate observations representable without an actual 1:1 unit mapping.
+2. **Multi-faction/replay:** one truth entity with different observation identities/knowledge in two independent observer snapshots; ordinary faction view cannot retrieve privileged truth or hidden correlation. Privileged recorder/replay contracts can hold both snapshots and associate decisions/outcomes without implying deterministic replay.
+3. **Projectile as unit:** missile or another independently simulated projectile is representable as a true unit with its own ID/kinematics and can be observed as an uncertain contact, with **no mandatory crew/aircraft/air-operations state**. Distinguish missile inventory/launcher equipment from launched missile unit; supported commandability remains independently checked, not derived from its class or selectability.
+4. **Equipment/resource:** missile deployment capability, radar, ECM, chaff, sonobuoy, tank; shared typed effects/operations, discrete versus continuous and reservable resources, independent unknown/partial/complete observed inventory, no parallel capability index.
+5. **World/air operations:** airfield/carrier world entity with supported air-operations state, and corresponding filtered observation; faction memberships as overlays, no separate public `facilities` collection, no duplicated launch eligibility.
+6. **Orders:** per-observer overlay, exactly one typed order payload, reject unauthorized hostile/false/stale handles after current-state check; preserve protected native actions and order lifecycle.
+7. **Observability:** distinguish capture time and measured time; `Known(false)`, `Known(0)`, known-empty route/resources and unknown observations survive C++/C# encode/decode without invented information.
+8. **Boundaries:** automated include/CMake graph rejection for an injected forbidden edge; independent header compilation and correct target graph.
+9. **Integration:** build/test all affected native/managed repositories, mock host/CLI movement and discovery, offline managed provider/bridge behavior. Report which checks were actually performed and all blockers. **Do not claim live simulator verification.**
+
+**Deliverable checklist:**
+
+- [ ] Latest repositories pulled safely; owner TODOs reread; baseline revisions recorded.
+- [ ] Eight acyclic domain boundaries and automated include/target allowlist enforced.
+- [ ] Separate certain `Units.Api::UnitInstance` and uncertain `Observations.Api::UnitObservation` with separate IDs and privileges.
+- [ ] Uncrewed projectiles, including missile-as-unit, representable without platform assumptions; launch equipment remains separate from deployed unit.
+- [ ] Orders and faction/task-force associations modeled as overlays, no reverse dependencies.
+- [ ] No duplicate domain identity, equipment/resource meaning, facility/stock world entities, redundant navigation inspection, or order eligibility inside a unit.
+- [ ] Single new canonical Protobuf contract; affected C++/C# consumers migrated without legacy aliases.
+- [ ] Meaningful model, privilege, DAG and supported operational regression tests run and honestly reported.
+- [ ] `Docs/Tasks/015/REPORT.md` documents decisions, exact files, removed types, DAG, builds, tests, unresolved source limitations and repository commit IDs; task index updated.
+- [ ] Changes committed **locally per repository; do not push** without owner approval.
+
+Proceed with refactoring in this assignment, without an additional approval loop. If a requirement conflicts with verified game-engine safety/observability, document evidence and smallest justified deviation, rather than silently leaking privileged data or inventing values.
