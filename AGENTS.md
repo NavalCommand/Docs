@@ -2,6 +2,10 @@
 
 These are **permanent project rules**, not an active assignment or execution log. Read [ARCHITECTURE.md](ARCHITECTURE.md), [MODULE_STRUCTURE.md](MODULE_STRUCTURE.md), [LOCAL_SOURCES.md](LOCAL_SOURCES.md), [CODE_STYLE.md](CODE_STYLE.md) and [CodeStyle.xml](CodeStyle.xml) before changing architecture, dependencies or handwritten code. Read [MANAGED_BUILD.md](MANAGED_BUILD.md) for managed source, IDE context and cross-language output rules. Follow [DEVELOPMENT.md](DEVELOPMENT.md) for production/development/experiment boundaries and cleanup requirements. Historical investigations, acceptance criteria and evidence are indexed under [Tasks/](Tasks/README.md). The canonical project documentation directory is `Docs/` (capital D).
 
+## Pre-release contract evolution
+
+**This project is not shipping yet and has no general backward-compatibility requirement.** Optimize the domain model, wire schemas, RPC signatures and repository interfaces for correctness, cohesion and long-term maintainability. A cleaner architecture is sufficient justification for **intentional breaking changes**; do not add deprecated aliases, parallel representations, legacy wire projections, transitional adapters or fallback fields merely to keep existing internal consumers compiling. Instead, migrate all affected producers, callers, codecs, tests and generated bindings together and remove the superseded contracts. Preserve meaningful operational behavior and invariant safety requirements, **not obsolete interface shapes**. Do not churn interfaces without an actual architectural benefit. A future published compatibility policy may change this rule.
+
 ## Architecture invariants
 
 1. **Domain before transport.** Domain contracts must not depend on Sea Power, Unity, protobuf-generated classes, gRPC, Qt, or a particular model provider. Place network serialization and transports in adapters. Keep the operational naval-world API separate from privileged runtime/simulation-control APIs.
