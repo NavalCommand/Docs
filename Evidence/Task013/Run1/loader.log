@@ -1,0 +1,30 @@
+[Error  :   BepInEx] Unable to start Unity log writer
+[Message:   BepInEx] BepInEx 5.4.23.2 - Sea Power (12.02.2026 21:08:03)
+[Info   :   BepInEx] Running under Unity v6000.0.67.7905730
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.2]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 4 plugins to load
+[Info   :   BepInEx] Loading [NavalCommand Development Harness 0.1.0]
+[Info   :   BepInEx] Loading [Task002 Runtime Validation 0.0.1]
+[Info   :   BepInEx] Loading [Task 013 Catalog Probe 0.1.0]
+[Info   :Task 013 Catalog Probe] TASK013 fixture enabled; captures are read-only and game-thread scoped.
+[Info   :   BepInEx] Loading [AnchorChain Preloader 1.0.0]
+[Info   :AnchorChain Preloader] AnchorChain Preloader started!
+[Info   :AnchorChain Preloader] Loaded assembly AnchorChain, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :AnchorChain] Loaded assembly AnchorChain, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :AnchorChain] Loaded AnchorChain V1.1.0!
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Task 013 Catalog Probe] TASK013 catalog unitEntries=642 baseKeys=558 syntheticLoadoutKeys=84 ammunitionDefinitions=443 sensorDefinitions=508 objectTypes=Aircraft:92,Biologic:3,Helicopter:21,LandUnit:188,Submarine:70,Vessel:268
+[Info   :Task 013 Catalog Probe] TASK013 typeSample F-14A key=aircraft/usn_f-14a metadataId=66 platform=Aircraft loadouts=AirToAir[all_air_chaff_standard=25,usn_aim-7m=4,usn_cal_20mm=675];AirToAirIntercept[all_air_chaff_standard=25,usn_aim-54a=4,usn_aim-7m=2,usn_cal_20mm=675];AirToAirLongRange[all_air_chaff_standard=25,usn_aim-54a=1,usn_aim-7m=2,usn_cal_20mm=675];Empty[all_air_chaff_standard=25,usn_cal_20mm=675];Ferry[all_air_chaff_standard=25,usn_cal_20mm=675]
+[Info   :Task 013 Catalog Probe] TASK013 typeSample Perry key=vessels/usn_ffg_oliver_hazard_perry metadataId=499 platform=Vessel loadouts=Default[usn_adc_mk1_noisemaker=20];Late[usn_adc_mk1_noisemaker=20]
+[Info   :Task 013 Catalog Probe] TASK013 typeSample LosAngeles key=vessels/usn_ssn_los_angeles metadataId=526 platform=Submarine loadouts=Default[usn_adc_mk1_noisemaker=20,usn_mk48_mod4_adcap=12,usn_moss=4,usn_ugm-109b=4,usn_ugm-109c=4,usn_ugm-84a=4];Late[usn_adc_mk1_noisemaker=20,usn_mk48_mod4_adcap=14,usn_moss=4,usn_ugm-109b=2,usn_ugm-109c=8,usn_ugm-84c=4]
+[Info   :Task 013 Catalog Probe] TASK013 ownUnit platform=Aircraft loadout=AirToAir ammunition=all_air_chaff_standard=25,usn_aim-7m=4,usn_aim-9m=4,usn_cal_20mm=675,usn_tank_267_f-14=2 sensorSystems=AircraftDECM_Med:SensorSystemECM:on=True:inoperable=False,AircraftRWR:SensorSystemESM:on=True:inoperable=False,AN/AWG-9:SensorSystemRadar:on=False:inoperable=False,AN/AWG-9_Phoenix:SensorSystemRadar:on=True:inoperable=False,Eyes:SensorSystemVisual:on=True:inoperable=False,TCS:SensorSystemVisual:on=True:inoperable=False weaponSystemCount=4
+[Info   :Task 013 Catalog Probe] TASK013 playerTrack identified=True classVisible=True visibleClass=wp_mig-23mld liveTrack=True positionEstimatePresent=True fieldsRead=Identification,Class,LiveTrack,PositionEstimate privilegedObjectEquipmentRead=false
