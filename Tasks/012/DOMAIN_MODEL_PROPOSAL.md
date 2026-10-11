@@ -1,6 +1,6 @@
 # NavalCommand — Composed equipment and observer instances
 
-**Status:** Approved type direction in [Task 014](../014/TASK.md). The earlier [method-first API sketch](API_DESIGN_PROPOSAL.md) remains deferred. Task 013 records game evidence; its uncertain catalog and public date applicability recommendations are superseded by this design.
+**Status:** Historical Task 012 design superseded by [Task 015](../015/TASK.md). This document records the Task 014-era type direction and is retained as historical evidence, not a current interface requirement. Task 013's game evidence remains informative; Task 015 defines the separate authoritative-unit and observer-observation contracts.
 
 ## Authoritative definitions
 
