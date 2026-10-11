@@ -1,154 +1,181 @@
-# NavalCommand — Unit, equipment and configuration domain model
+# NavalCommand — Composed unit capabilities and observations
 
-**Status:** Type-first design proposal for owner review; not approved or implemented. The discussion originated in Task 012 but defines concepts shared by the catalog, world/track observations, equipment intelligence, and engagement analytics. **Do not derive or freeze RPC names from this document yet.**
+**Status:** Type-first domain design in discussion; not an approved wire schema or implementation. This is the active successor to the [earlier method-first API sketch](API_DESIGN_PROPOSAL.md). Focus on domain meaning, composition, identities and partial information; API methods and repository organization will follow.
 
-**Grounding:** `Docs/ARCHITECTURE.md`; Tasks 001 and 003 for game metadata, ammunition/loadout and magazine semantics; Task 012 for player-visible engagement values. This document proposes a *generic model*; it does not claim the installed Sea Power build has identical class names or can populate every field.
+**Evidence:** Tasks 001 and 003 established Sea Power equipment metadata, weapon/magazine state and alternative aircraft loadouts; Task 012 mapped the player weapon-selection and native engagement calculations. The shapes below are **design proposals**, not claims that the game has exact corresponding classes.
 
-## 1. First define the boundaries
+## 1. Design principles
 
-The ambiguous phrase "unit equipment" must mean **more than weapons**.
+1. **Composition, not a platform inheritance hierarchy.** A `UnitType` has a platform-specific description and a set of alternative, resolved `Loadout` definitions. Different platform types carry different descriptions without having to inherit different public base classes.
+2. **Equipment means capabilities/contracts first, not physical devices.** `WeaponType` is a capability to engage targets, `SensorType` is a sensing capability, `ElectronicWarfareType` is an EW capability, etc. The API need not expose a hardpoint, launcher, tube, or magazine as a physical entity merely because the backend uses one. Physical attributes are **optional attached components** when they affect behavior.
+3. **One observer-facing runtime shape.** A `UnitInstance` represents what the selected observer knows about a friendly unit or an enemy contact. Enemy fields can be unknown or estimated. The two subjects may have different identifiers and command permissions without requiring two incompatible data models.
+4. **Catalog ≠ current unit state.** A `Loadout` gives nominal equipment and full-stock quantities. A `UnitInstance` gives currently known equipment, operational state, damage and remaining stock, if available.
+5. **Information availability is explicit.** Unknown equipment is not absent equipment; a class's possible loadout is not proof that a contact actually carries it. Backend unsupported features are different from per-contact unknown observations.
+6. **One catalog retrieval operation is compatible with separate types.** The catalog may return unit definitions with embedded or ID-referenced capability definitions. The number of public methods is **not decided** by the number of distinct domain types.
 
-| Domain concept | What it represents | What it is not |
-|---|---|---|
-| **Unit class** | A catalog platform type: ship, submarine, aircraft, installation, etc. | A live unit or observed enemy track |
-| **Class configuration / variant** | One defined equipment fit or refit for a class (fixed systems, sensors, launchers, modifications) | An assertion that every instance has this fit |
-| **Loadout definition** | One possible mission-specific payload/stores arrangement for a class/configuration; may add removable pods/containers | A live aircraft's currently remaining ammunition |
-| **Equipment definition** | Catalog specification of a fitted system: weapon/launcher, sensor, EW/countermeasure, communication, etc. | Its present status, readiness, or emission state |
-| **Munition/consumable definition** | Catalog type of expendable stock: missile, torpedo, shell, chaff, etc. | A weapon mount or the current count of rounds |
-| **Equipment fit** | Nominal installations/mounts and carried-stock quantities associated with a configuration/loadout | Direct observation of an individual unit |
-| **Unit state** | Actual observer-authorized facts for an owned/friendly runtime unit | Catalog nominal equipment |
-| **Track** | An observer's possibly uncertain contact record with its own opaque, scoped identity | A reference to authoritative enemy unit state |
-| **Equipment picture** | What the observer currently knows or estimates about installations, sensors, weapons and stores on *one unit or track* | The class catalog or omniscient enemy inventory |
-| **Analytics capability** | What a backend is able/willing to calculate in general | Equipment definitions, unit loadouts or current state |
+## 2. Static domain types
 
-A catalog **enumerates all definitions and variants known to the simulator installation** (report incomplete coverage if enumeration fails), while a world/track equipment picture is always scoped to a specific observer and observation time.
+### 2.1 UnitType
 
-## 2. Static catalog definitions
+```cpp
+struct UnitType
+{
+    UnitTypeId id;
 
-### 2.1 UnitClass
+    std::variant<
+        AircraftTypeDescription,
+        ShipTypeDescription,
+        SubmarineTypeDescription,
+        OtherPlatformTypeDescription
+    > platformDescription;
 
-A unit class has a `UnitClassId`, display name, platform category and supported static specifications. Its possible class configurations are explicit catalog references. A class may have several configurations; no configuration is assumed to be universal or the default unless source data explicitly says so.
-
-The class represents the design family or platform entry in that simulator's catalog. A simulator that treats every refit as a separate class may map each to its own `UnitClassId` rather than inventing a higher-level relationship.
-
-### 2.2 UnitConfiguration and UnitLoadout
-
-These are **different dimensions** even when a particular game flattens them:
-
-- `UnitConfiguration` describes a structural/equipment **fit** (e.g. radar and sonar suite, permanent launchers or gun systems, upgrades/refits). It is a catalog definition, not a mutable deployed unit.
-- `UnitLoadout` describes a possible **mission payload** (selected munition mixture, external pods, fuel tanks, sonobuoys, expendable stores). A loadout can be associated with a configuration or directly with a class if no separate configuration level exists.
-- A defined variant may be represented as a fully resolved set of installations and nominal stores. Inheritance/delta encoding is an implementation detail, not a public requirement.
-
-Each has a stable **catalog-scoped ID**, a source/role/name when available, and relationships to compatible class/configuration IDs. The source may not supply a named default, exact ammunition counts, a complete list of variants, or any meaningful loadout concept for a particular platform; model those omissions honestly.
-
-### 2.3 EquipmentDefinition and its families
-
-**Equipment** means installed or fitted functional systems, not just ordnance. Prefer a small common core (`EquipmentId`, `Kind`, designation, manufacturer/source as available) and **specialized descriptions** rather than one giant union of hundreds of nullable fields.
-
-Core families to represent as the backend supports them:
-
-- **Weapon systems and mounts:** gun, launcher, missile/torpedo tube, hardpoint, CIWS, and compatible munition types. An installed launcher and a loaded missile are different things.
-- **Sensors:** radar, sonar, ESM/passive RF, electro-optical/IR, visual and other detection/track/fire-control systems. Define nominal sensing roles separately from whether an installed sensor is currently active, damaged, tracking, transmitting or emitting.
-- **Electronic warfare and countermeasure equipment:** jammers, decoys, dispensers; their consumables are stock, not the dispenser itself.
-- **Communications and data links:** installed capabilities, to the degree relevant and exposed.
-- **Other platform systems:** propulsion, aircraft handling, navigation or support systems when they have meaningful exposed capabilities. Do **not** require every internal Unity component to become an API equipment object.
-
-A sensor's presence in the catalog does **not** imply the observer can see its current emissions or attribute detections to it. A weapon mount's existence does **not** imply it is loaded, ready or authorized to fire. Nominal sensor/weapon performance is distinct from current target-specific effectiveness.
-
-### 2.4 MunitionDefinition, EquipmentInstallation and NominalStores
-
-`MunitionDefinition` describes an expendable type (missile, shell, torpedo, sonobuoy, chaff, etc.) and nominal specifications; some consumables are not fired by a weapon in the ordinary sense.
-
-A catalog `EquipmentInstallation` / fit entry connects a configuration or loadout to `EquipmentId`, with optional slot/station/location and nominal count. `NominalStores` separately connects a `MunitionId` to its intended location and **nominal quantity**. Keep launcher-loaded and magazine/reserve quantities distinct where the game makes that distinction; do not double-count.
-
-**Relationships (conceptual, not source-level inheritance):**
-
-```text
-UnitClass
-  ├── UnitConfiguration(s) ----------┐
-  │      └── nominal EquipmentFit ---┼---> EquipmentDefinition(s)
-  │                                  │       ├── WeaponSystem / Launcher
-  └── UnitLoadout(s) ----------------┘       ├── Sensor
-         ├── optional fitted pods/mounts     ├── EW / Countermeasure / Comms
-         └── NominalStores ----------------> MunitionDefinition(s)
-                                              ▲
-                weapon/launcher compatibility ┘
+    std::vector<Loadout> loadouts;
+};
 ```
 
-The same `EquipmentDefinition` can appear on multiple classes/configurations; the same `MunitionDefinition` can be carried by multiple loadouts and fired from compatible launchers. Provide content revision/hash and **catalog completeness**. Catalog IDs should not be assumed globally stable through mods, incompatible game versions or renaming.
+A `UnitType` is a class/type **definition**, not a unit in the simulation. Platform descriptions carry applicable attributes (e.g., flight performance for aircraft, hull/underwater characteristics for ships/submarines), without mandatory meaningless fields for other categories. This is composition through a tagged variant, **not public class inheritance**.
 
-## 3. Runtime instances and observer knowledge
+A `Loadout` is a **complete, resolved set of capabilities** for that type. The catalog can expose many possible fits, from different sensor suites and weapons to different mission payloads. For now, **do not impose an extra `UnitConfiguration` layer**. The backend may internally have refits, upgrade inheritance or nested loadout definitions; flatten these to resolved public loadouts unless there is demonstrated value in another level.
 
-### 3.1 Unit and Track are not the same public identity
+The catalog may identify a default loadout **only when the simulator source defines one**; do not invent a universal default. A loadout is not proof that every instance of the type actually uses it.
 
-A controllable/friendly `Unit` has a session-scoped unit ID and may have a known catalog `UnitClassId` and current `UnitConfigurationId`/`UnitLoadoutId`, if legitimately verifiable. Its actual systems and stores may diverge from the catalog because of mission editing, launch-time fitting, use, damage, reloading or reconfiguration.
+### 2.2 Loadout and capability fits
 
-An enemy `Track` has an **observer/session-scoped opaque track ID**, not a public `Unit` or `BaseObject` ID. It may have estimated or identified class/configuration information, or none at all. Different observers may have different equipment knowledge for the same physical unit. Do not force all observed tracks into a globally authoritative unit entity.
+```cpp
+struct Loadout
+{
+    LoadoutId id;
 
-### 3.2 EquipmentPicture (the desired answer to "what equipment does this unit have?")
+    std::vector<WeaponFit> weapons;
+    std::vector<SensorFit> sensors;
+    std::vector<ElectronicWarfareFit> electronicWarfare;
+    std::vector<CommunicationFit> communications;
+    // Other meaningful capability families only as justified.
+};
 
-The central runtime/observation concept is **`EquipmentPicture`**, associated with exactly one friendly `UnitId` *or* one observable `TrackId`. Its contents include:
+struct WeaponFit
+{
+    WeaponTypeId type;
+    std::optional<std::uint32_t> nominalFullAmmunitionCount;
+    std::optional<FiringGeometry> firingGeometry;
+};
+```
 
-- **InstalledSystemObservation(s)** — which weapon mounts, sensors, EW systems, communication systems and other equipment are actually confirmed/estimated present; optional locations/mount identities and condition/readiness as observer-visible.
-- **MunitionStockObservation(s)** — observed/known munition types and quantities; separately represent rounds *loaded in launchers*, *stored in magazines/reserves* and *total* only when trustworthy. A quantity may be unknown or estimated.
-- **OperatingStateObservation(s)** — *separate* from installation: sensor emitting/on/off/unknown; fire-control and tracking modes; weapon mount readiness/reload/damage/disabled state where known. Do not infer these from the nominal catalog.
-- **Class/configuration/loadout identification**, when known; the classification itself may be estimated, not confirmed.
-- Observation timestamp, observer/session/observation version, provenance and **coverage per equipment family** (not one global "everything known" switch).
+A `WeaponFit` represents a weapon capability as installed **on this platform in this loadout**, possibly with nominal/full ammunition. It is not obligatorily a physical mount. Platform-specific restrictions such as attack arcs, barrel orientation, minimum release altitude, number of simultaneous channels or firing offsets can be placed in optional attached components. Restrictions intrinsic to the weapon type may live in `WeaponType`; platform-dependent constraints belong in `WeaponFit`.
 
-A runtime installation is *an instance or observation of* a catalog definition; if its exact catalog type is unknown it can still be recorded as an unknown-type sensor/launcher contact without fabricating a catalog ID.
+A loadout's full ammo count is distinct from both the weapon's nominal performance and the runtime remaining count. A meaningful `0` is not the same as an unavailable quantity. If a backend has multiple munition choices for one user-visible weapon capability, model that as a component/choice set where necessary, not a mandatory `Launcher` entity.
 
-### 3.3 Knowledge, evidence and completeness are separate axes
+`SensorFit` can similarly carry installation-dependent coverage, orientation or location information, while `SensorType` describes sensing behavior. Presence does not assert the sensor is turned on, radiating, functional or independently known to an enemy observer.
 
-Conceptual value wrapper:
+### 2.3 Equipment types are behavior contracts
+
+The core catalogue families are:
+
+- **`WeaponType`:** selectable attack capability: target compatibility, nominal envelope and effectiveness-related descriptors where reliable, optional guidance/firing-geometry/weapon-control components.
+- **`SensorType`:** sensing capability: category, modes, applicable nominal performance and optional field-of-view/coverage components.
+- **`ElectronicWarfareType`:** jamming, deception, countermeasure deployment, etc.
+- **`CommunicationType`:** datalink and communications capabilities where relevant.
+- Other subsystem descriptions only where operationally useful, not a mirror of every game-engine component.
+
+Use small capability descriptions with composable optional traits rather than one universal `EquipmentDefinition` requiring every device to have irrelevant properties. The same capability type may be reused by many loadouts.
+
+**Weapon versus launcher:** The API **does not require separate public `LauncherType`, `MunitionDefinition` or per-hardpoint objects for normal weapons**. In Sea Power, Task 012 found that the player-facing `WeaponEntry` is an ammunition-group selection, which may aggregate several compatible native weapon systems. This justifies representing a single selectable **weapon capability** with aggregated ammunition and firing restrictions when that is what the player controls.
+
+Do not claim that all Sea Power weapon systems literally have one launcher or one ammo storage location. If an advanced weapon has selectable ammunition subtypes, separate magazine stocks or multiple firing arcs, introduce **optional parts of the capability description or runtime state** if they become operationally relevant. This is not a reason to mandate physical launcher entities across the public domain.
+
+### 2.4 Catalog closure and relationships
+
+The catalog is composed around `UnitType` definitions and their loadouts, plus any shared capability definitions referenced by ID. A single catalog query could return the entire graph.
+
+One caveat for the earlier **complete-catalog requirement**: the backend may define a weapon or sensor that is **not referenced by any enumerated unit loadout** (e.g. content awaiting a platform/mod). An implementation must either demonstrate that all definitions are reachable through `UnitType` or include unreferenced definitions in the *same* catalog result. This does **not** require separate `GetWeaponCatalog` and `GetSensorCatalog` methods.
+
+Records need catalog-scoped IDs, a content revision/hash and truthful enumeration completeness. Cached capability descriptions must invalidate when game/mod content changes. Do not duplicate incompatible copies of shared definitions in different loadouts.
+
+## 3. Runtime: one UnitInstance representation
+
+### 3.1 Shared shape, distinct observation identity
+
+```cpp
+struct UnitInstance
+{
+    ObservedUnitId id;     // Observer/session-scoped identity; friendly or track
+    Knowledge<UnitTypeId> type;
+    Knowledge<PositionWithUncertainty> position;
+    PlatformDamage damage; // Tagged platform-specific description; may be unknown
+
+    ObservedCollection<WeaponInstance> weapons;
+    ObservedCollection<SensorInstance> sensors;
+    ObservedCollection<ElectronicWarfareInstance> electronicWarfare;
+    // Other supported runtime capability state as needed.
+};
+
+struct WeaponInstance
+{
+    Knowledge<WeaponTypeId> type;
+    Knowledge<std::uint32_t> ammunitionRemaining;
+    Knowledge<Readiness> readiness;
+    Knowledge<DamageState> damage;
+    // Optional mode or firing geometry state only if observable/applicable.
+};
+
+struct SensorInstance
+{
+    Knowledge<SensorTypeId> type;
+    Knowledge<SensorOperatingState> operatingState;
+    Knowledge<DamageState> damage;
+};
+```
+
+These are conceptual shapes, **not compilable production headers**. `PlatformDamage` should compose a tagged aircraft/ship/submarine-specific description rather than force a common damage hierarchy. Some damage and operating values will be unknown even when the platform category is known.
+
+A friendly unit and an enemy track both use **`UnitInstance`**. For a friendly unit, the API may know almost all relevant fields. For an enemy contact, it may know only a position distribution and that an unidentified emitter is present. The same payload type captures both without filling enemy fields with authoritative truth.
+
+**Identity and authority:** A controlled own-unit handle and an observer-visible contact/track handle are **not the same authority**. The common type can use a tagged/discriminated identity or provide subject scope alongside it. The existing protocol's own-unit IDs and opaque track IDs must not be conflated or used interchangeably for orders. Common data shape does not grant command permissions to enemy tracks.
+
+**Sensor/weapon observation:** The catalog lists what a type *may carry*; a runtime `WeaponInstance` or `SensorInstance` describes what an observer **currently believes is present** and any known state. Do not inject catalog-derived hypothetical enemy equipment into the confirmed runtime collection.
+
+### 3.2 Known, estimated, unknown and collection coverage
 
 ```text
 Knowledge<T> {
     state: Known | Estimated | Unknown
     value?: T
     observedAtSeconds?: number
-    evidenceSource?: SourceKind
-    confidence?: number           // only if defensible and actually available
+    source?: ObservationSource
+    confidence?: number         // Only when meaningfully provided
 }
 CollectionCoverage = Complete | Partial | Unknown
-MetricSupport = Available | Unavailable | Unsupported  // different dimension
+BackendSupport = Supported | Unsupported   // Separate from contact knowledge
 ```
 
-`Known` means **the observer is justified in reporting it**, not that the software has certified universal ground truth. `Estimated` must expose its inferential nature. `Unknown` means absence of knowledge, **not absence of equipment**.
+An empty `weapons` collection with **Complete** coverage means known unarmed. An empty collection with **Unknown** coverage means no information. An enemy contact known to emit radar may justify a radar-family inference, but **not** exact hardware identity, a full sensor suite, or a weapon inventory.
 
-Examples:
+Position uncertainty is a first-class value (not simply nullable `Position`) and may be nearly zero for own units or substantial/unknown for enemy tracks. Mark data age/provenance on fields or coherent snapshots.
 
-- `installedSensors = []` with **Unknown** coverage: no sensor information; **not** evidence that the target has no sensors.
-- `installedWeapons = []` with **Complete** coverage: no weapon systems observed within a genuinely complete authorized inventory.
-- Radar emission detected: may justify evidence of a compatible radar/emitter family, **not automatically an exact sensor model or a complete onboard suite**.
-- Enemy identified as class X, which has four catalog loadout options: those four are **possibilities**, not four observed loadouts or confirmed carried rounds.
-- Own unit launcher known present with 2 loaded rounds: distinguishes mount existence, present inventory, capacity and source/measurement time.
+Distinguish per-field unknown information from a metric being unsupported by the simulator. Report actual zero ammunition as zero, not unknown, and do not double-count launcher-loaded rounds and magazine/reserve rounds if an advanced model adds those details.
 
-A backend may support some equipment families but not other ones (`Unsupported`), while an individual enemy contact may simply have **no observed information** about a supported family (`Unknown`). Do not collapse backend inability, uncertainty and confirmed zero into a single null/status.
+### 3.3 Relevant Sea Power evidence and limits
 
-### 3.4 Sea Power-specific evidence and open questions
+- Task 001 identified `UnitMetadataProvider.UnitData`, `AmmunitionData`, launcher compatibility and internal weapon/magazine counts. This is evidence of native structure, **not a requirement to replicate that structure publicly**.
+- Task 003 identified multiple `FlightDeck.Loadout` choices and aggregate hosted-aircraft stock by class/squadron. A hosted aircraft need not exist yet as a persistently fitted `UnitInstance`; selecting a loadout can be part of spawn/launch preparation.
+- Task 012 mapped `WeaponEntry` to ammunition-group choices and native compatible-system aggregation. The runtime probe did **not** prove exact UI hover equivalence or read-only purity of all native methods.
+- Owner-approved player-visible parity for **derived engagement estimates** does not authorize publishing raw hidden enemy weapon stocks/sensor types. Every `UnitInstance` observation must respect the selected faction's legitimately available information.
 
-- Task 001 mapped `UnitMetadataProvider.UnitData`, `AmmunitionData`, launcher compatibility and native weapon/magazine state. Loaded ammunition and magazine quantity are distinct; exact semantics need validation for representative platforms.
-- Task 003 found `FlightDeck.Loadout` variants for aircraft and **aggregate hosted airframes by class/squadron**, not persistent pre-equipped aircraft while stored. A selected loadout affects launch preparation, and deployed/spawned aircraft then become ordinary unit instances.
-- Task 012 found the player targeting UI uses true target `BaseObject` to calculate derived engagement estimates. The owner's approval to expose **UI-visible derived analytics** does **not** imply permission to disclose hidden raw enemy sensor fits, ammunition reserves or exact installed weapons. For the enemy `EquipmentPicture`, determine each field's ordinary player visibility independently.
-- No earlier task established a complete enumeration/mapping of all unit classes, their possible variants, all sensor types or complete enemy equipment visibility. These are **design requirements**, not verified implementation capabilities.
+## 4. Relationship to analytics, commands and eventual methods
 
-## 4. Separation from engagement analytics and orders
+- **`UnitType` / `Loadout` / capability descriptions:** possible defined platform functionality and nominal capacities.
+- **`UnitInstance` and component instances:** actual observer-known or observer-estimated capabilities and current state.
+- **`EngagementAssessment`:** what a particular friendly weapon capability may accomplish against an observer-visible target, not a live-fire command.
+- **Order eligibility:** whether a desired action is currently allowed/executable; reevaluated when dispatching.
+- **Backend capability discovery:** which concepts and analytics a simulator supports in general.
 
-- **Catalog:** what a class/configuration/loadout may *normally* have (plus definitions/capabilities).
-- **EquipmentPicture:** what this particular friendly unit or enemy track is *currently believed to have*, as observed by the selected side.
-- **EngagementAssessment:** what an actual friendly shooter/munition pairing is estimated to achieve against one observable target track under current conditions.
-- **Order eligibility:** what command can currently be submitted/executed; it must be validated on dispatch.
-- **Backend capability discovery:** what data families and calculations a simulator supports *in principle*.
+**Methods come after the model.** The existing [method-first proposal](API_DESIGN_PROPOSAL.md) is **deferred**. Its specific named RPCs—including separate unit/weapon catalog methods and an extra equipment query—are not approved. The model permits a **single complete catalog retrieval** and the same `UnitInstance` type for friendly and enemy observations. Whether some large/expensive observations deserve dedicated queries is a performance/transport design decision for later, not a reason to split the domain now.
 
-These concepts refer to one another via IDs/provenance but must not be combined into one giant snapshot, nor should a hypothetical catalog loadout be promoted silently into an observed enemy state.
+## 5. Remaining type questions
 
-The next design step should refine **types, relationships, identity, optionality and evidence provenance** before specifying methods, RPCs or wire topology. The method-first [API_DESIGN_PROPOSAL.md](API_DESIGN_PROPOSAL.md) is retained as historical discussion, **not the currently approved contract**. No schemas or implementation change as a consequence of this document.
+1. Should a loadout always expose **fully resolved** capabilities and nominal stock (recommended), even if the simulator stores variants as diffs?
+2. Should each weapon be keyed by the **player-selectable firing capability** (recommended for Sea Power), allowing optional components to describe multiple backing native mounts?
+3. Which traits need to be public first: generic firing geometry, selectable ammunition modes, or none until an actual backend/user story requires them?
+4. How should distinct friendly IDs and observer track IDs be tagged within a uniform `UnitInstance` while keeping command authority separate?
 
-## 5. Questions for owner approval (type-level only)
-
-1. Use the umbrella name **Equipment** to include weapon systems, **sensors**, EW/countermeasures, communications and additional exposed fitted systems; model *ammunition/consumables* as distinct stores?
-2. Distinguish **UnitClass → optional UnitConfiguration → optional UnitLoadout** to capture permanent fits/refits versus mission-specific payloads, while permitting flatter simulator source data?
-3. Keep **EquipmentPicture** as one observer-scoped description usable for own units and enemy tracks, with per-family completeness and per-field known/estimated/unknown provenance?
-4. Should the first implementation cover weapon systems, sensors, EW and their stores, adding other platform equipment families when justified, or require additional equipment domains immediately?
-
-**Status:** Design proposal only. No API method names, repository boundaries, Protobuf fields or actual implementation are approved by this document.
+**Status:** Domain proposal only; no public C++ types, Protobuf schemas, RPCs or simulator code changed.
