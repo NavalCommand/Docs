@@ -1,6 +1,6 @@
 # Task 014 — Composable equipment and unified world domain migration
 
-**Status:** Approved design direction; implementation pending. **Owner-approved decisions in this task supersede the older type sketches in Task 012 and the source-mapping suggestions in Task 013 when they differ.** This task implements C++ domain contracts **and coordinated migration of existing world-domain consumers**. It is not a Sea Power catalog extractor or a new operational feature assignment, but **breaking schema/RPC redesign and migration are explicitly authorized** where they serve the new domain model. We are pre-release: no backward-compatibility obligation. **Latest owner correction:** do not preserve the old mixed-purpose `World::Api::Unit`/`Track` as parallel domain representations; migrate their useful fields into components of `UnitInstance`.
+**Status:** Implemented and committed locally; awaiting owner review. See [implementation report](REPORT.md). **Owner-approved decisions in this task supersede the older type sketches in Task 012 and the source-mapping suggestions in Task 013 when they differ.** This task implements C++ domain contracts **and coordinated migration of existing world-domain consumers**. It is not a Sea Power catalog extractor or a new operational feature assignment, but **breaking schema/RPC redesign and migration are explicitly authorized** where they serve the new domain model. We are pre-release: no backward-compatibility obligation. **Latest owner correction:** do not preserve the old mixed-purpose `World::Api::Unit`/`Track` as parallel domain representations; migrate their useful fields into components of `UnitInstance`.
 
 ## 0. Start with repository synchronization
 
@@ -184,20 +184,20 @@ Do not claim to reproduce every Sea Power mechanic with these synthetic fixtures
 
 ## 6. Acceptance criteria
 
-- [ ] Latest repositories pulled safely; current checkout/revisions recorded and any working-tree conflicts reported.
-- [ ] Updated active conceptual proposal and normative architecture agree with accepted composition/knowledge semantics.
-- [ ] New independent domain-only C++ types compile with existing C++26/toolchain conventions.
-- [ ] Single composable `EquipmentType`, `EquipmentInstance` as capability, optional physical dimension and multiple equipment operations represented without weapon/sensor/EW roots.
-- [ ] Authoritative catalog has a small, definitive property subset and fully resolved loadouts; no catalog-level Unknown/Estimated states or generic historical year schema.
-- [ ] Shared `UnitInstance` correctly differentiates own-unit and observer track identity with instance-only uncertainty.
-- [ ] Existing `Unit`/`Track` state is migrated to typed components of the **same public `UnitInstance`**; `View` has a unified collection rather than separate public domain types.
-- [ ] The **canonical Protobuf messages/RPCs are updated** to match the composed domain; old `Unit`/`Track` and separate `own_units`/`tracks` legacy wire structure is removed, with no backwards-compatibility projections.
-- [ ] C++ and C# producer/consumer call sites (gateway/CLI/provider/mod as affected) all use the new generated schema; supported existing view/order workflows operate through updated interfaces.
-- [ ] New wire codec round trips preserve known/estimated/unknown, explicit zero/false, tagged subject authority and known-empty versus unknown equipment. No silent fabricated certainty.
-- [ ] Deprecated compatibility-only types, mappings and fields removed; no parallel models.
-- [ ] Empty-vs-unknown equipment distinction is structural and tested (including contradictory states).
-- [ ] All six representative equipment scenarios and cross-referencing/multiple loadouts tested with legible code.
-- [ ] Domain dependency boundaries remain sound; affected `Domain.Api`, `Gateway.Api`, `Gateway.Grpc.Api`, `Gateway.Grpc`, `SeaPower.Client` and `SeaPower.Mod` builds/tests run where available and exact results are reported honestly.
-- [ ] Documentation report and task index updated; code, docs and tests committed **locally** by repository; **do not push** unless the owner explicitly asks.
+- [x] Latest repositories pulled safely; current checkout/revisions recorded and any working-tree conflicts reported.
+- [x] Updated active conceptual proposal and normative architecture agree with accepted composition/knowledge semantics.
+- [x] New independent domain-only C++ types compile with existing C++26/toolchain conventions.
+- [x] Single composable `EquipmentType`, `EquipmentInstance` as capability, optional physical dimension and multiple equipment operations represented without weapon/sensor/EW roots.
+- [x] Authoritative catalog has a small, definitive property subset and fully resolved loadouts; no catalog-level Unknown/Estimated states or generic historical year schema.
+- [x] Shared `UnitInstance` correctly differentiates own-unit and observer track identity with instance-only uncertainty.
+- [x] Existing `Unit`/`Track` state is migrated to typed components of the **same public `UnitInstance`**; `View` has a unified collection rather than separate public domain types.
+- [x] The **canonical Protobuf messages/RPCs are updated** to match the composed domain; old `Unit`/`Track` and separate `own_units`/`tracks` legacy wire structure is removed, with no backwards-compatibility projections.
+- [x] C++ and C# producer/consumer call sites (gateway/CLI/provider/mod as affected) all use the new generated schema; supported existing view/order workflows operate through updated interfaces.
+- [x] New wire codec round trips preserve known/estimated/unknown, explicit zero/false, tagged subject authority and known-empty versus unknown equipment. No silent fabricated certainty.
+- [x] Deprecated compatibility-only types, mappings and fields removed; no parallel models.
+- [x] Empty-vs-unknown equipment distinction is structural and tested (including contradictory states).
+- [x] All six representative equipment scenarios and cross-referencing/multiple loadouts tested with legible code.
+- [x] Domain dependency boundaries remain sound; affected `Domain.Api`, `Gateway.Api`, `Gateway.Grpc.Api`, `Gateway.Grpc`, `SeaPower.Client` and `SeaPower.Mod` builds/tests run where available and exact results are reported honestly.
+- [x] Documentation report and task index updated; code, docs and tests committed **locally** by repository; **do not push** unless the owner explicitly asks.
 
 **Completion is a clean domain model, a matching canonical wire representation and coordinated migration of current consumers.** Later tasks will add the operational catalog retrieval methods, actual Sea Power catalog construction and observer-safe equipment capture, engagement analysis and other new functionality. This task **may break existing domain and wire interfaces** but must deliver a coherent internally working new version, not leave incompatible repository halves.
