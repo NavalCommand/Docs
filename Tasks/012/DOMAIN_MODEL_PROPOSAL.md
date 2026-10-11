@@ -7,7 +7,7 @@
 ## 1. Design principles
 
 1. **Composition, not a platform inheritance hierarchy.** A `UnitType` has a platform-specific description and a set of alternative, resolved `Loadout` definitions. Different platform types carry different descriptions without having to inherit different public base classes.
-2. **Equipment means capabilities/contracts first, not physical devices.** `WeaponType` is a capability to engage targets, `SensorType` is a sensing capability, `ElectronicWarfareType` is an EW capability, etc. The API need not expose a hardpoint, launcher, tube, or magazine as a physical entity merely because the backend uses one. Physical attributes are **optional attached components** when they affect behavior.
+2. **Equipment means capabilities/contracts first, not physical devices.** `WeaponType` represents an **active effect-producing or deployable capability**: missiles and guns, active jammers, chaff/flares, towed or launched decoys and similar countermeasures. `SensorType` represents sensing/observation. Do **not** introduce an `ElectronicWarfareType` parallel hierarchy: active electronic attack/deception is a weapon effect, while passive ESM is sensing. A multifunction native device may back both capabilities. The API need not expose a hardpoint, launcher, dispenser, tube, or magazine as a physical entity merely because the backend uses one. Physical attributes are **optional attached components** when they affect behavior.
 3. **One observer-facing runtime shape.** A `UnitInstance` represents what the selected observer knows about a friendly unit or an enemy contact. Enemy fields can be unknown or estimated. The two subjects may have different identifiers and command permissions without requiring two incompatible data models.
 4. **Catalog ≠ current unit state.** A `Loadout` gives nominal equipment and full-stock quantities. A `UnitInstance` gives currently known equipment, operational state, damage and remaining stock, if available.
 5. **Information availability is explicit.** Unknown equipment is not absent equipment; a class's possible loadout is not proof that a contact actually carries it. Backend unsupported features are different from per-contact unknown observations.
@@ -46,9 +46,8 @@ struct Loadout
 {
     LoadoutId id;
 
-    std::vector<WeaponFit> weapons;
-    std::vector<SensorFit> sensors;
-    std::vector<ElectronicWarfareFit> electronicWarfare;
+    std::vector<WeaponFit> weapons; // Attacks, active EW, countermeasures, decoys
+    std::vector<SensorFit> sensors; // Radar, sonar, ESM, etc.
     std::vector<CommunicationFit> communications;
     // Other meaningful capability families only as justified.
 };
@@ -57,11 +56,11 @@ struct WeaponFit
 {
     WeaponTypeId type;
     std::optional<std::uint32_t> nominalFullAmmunitionCount;
-    std::optional<FiringGeometry> firingGeometry;
+    std::optional<FiringGeometry> firingGeometry; // Only if relevant to this fit
 };
 ```
 
-A `WeaponFit` represents a weapon capability as installed **on this platform in this loadout**, possibly with nominal/full ammunition. It is not obligatorily a physical mount. Platform-specific restrictions such as attack arcs, barrel orientation, minimum release altitude, number of simultaneous channels or firing offsets can be placed in optional attached components. Restrictions intrinsic to the weapon type may live in `WeaponType`; platform-dependent constraints belong in `WeaponFit`.
+A `WeaponFit` represents a weapon capability as available **on this platform in this loadout**, possibly with nominal/full ammunition or consumable charges. It is not obligatorily a physical mount. Platform-specific restrictions such as attack arcs, emitter pointing, minimum release altitude, number of simultaneous channels or firing offsets can be placed in optional attached components. Restrictions intrinsic to the capability type may live in `WeaponType`; platform-dependent constraints belong in `WeaponFit`. An active jammer may have **no ammunition count at all**: *not applicable* is distinct from *unknown ammunition count*. A countermeasure dispenser's count can be represented as a nominal resource of the resulting player-selectable countermeasure capability.
 
 A loadout's full ammo count is distinct from both the weapon's nominal performance and the runtime remaining count. A meaningful `0` is not the same as an unavailable quantity. If a backend has multiple munition choices for one user-visible weapon capability, model that as a component/choice set where necessary, not a mandatory `Launcher` entity.
 
@@ -71,15 +70,39 @@ A loadout's full ammo count is distinct from both the weapon's nominal performan
 
 The core catalogue families are:
 
-- **`WeaponType`:** selectable attack capability: target compatibility, nominal envelope and effectiveness-related descriptors where reliable, optional guidance/firing-geometry/weapon-control components.
-- **`SensorType`:** sensing capability: category, modes, applicable nominal performance and optional field-of-view/coverage components.
-- **`ElectronicWarfareType`:** jamming, deception, countermeasure deployment, etc.
+- **`WeaponType`:** an effect-producing or deployable capability: kinetic attack, continuous jamming, deceptive emission, chaff/flares, sonar countermeasures, decoys, etc. Its employment may be offensive or defensive, manual or automatic, expendable or continuously operating. No universal target or ammo requirement.
+- **`SensorType`:** sensing capability: category, passive/active modes, nominal performance and optional field-of-view/coverage components. Passive ESM is a sensor, not a weapon merely because it belongs to an EW suite.
 - **`CommunicationType`:** datalink and communications capabilities where relevant.
 - Other subsystem descriptions only where operationally useful, not a mirror of every game-engine component.
 
 Use small capability descriptions with composable optional traits rather than one universal `EquipmentDefinition` requiring every device to have irrelevant properties. The same capability type may be reused by many loadouts.
 
-**Weapon versus launcher:** The API **does not require separate public `LauncherType`, `MunitionDefinition` or per-hardpoint objects for normal weapons**. In Sea Power, Task 012 found that the player-facing `WeaponEntry` is an ammunition-group selection, which may aggregate several compatible native weapon systems. This justifies representing a single selectable **weapon capability** with aggregated ammunition and firing restrictions when that is what the player controls.
+**A weapon's employment is composed, not determined by its label:**
+
+```cpp
+struct WeaponType
+{
+    WeaponTypeId id;
+
+    std::optional<TargetingContract> targeting;
+    std::optional<EmploymentProfile> employment;
+    std::optional<EffectDescription> effect;
+    std::optional<GuidanceDescription> guidance;
+    std::optional<FiringGeometry> inherentGeometry;
+    // Further traits only when justified by actual capabilities.
+};
+```
+
+- **`TargetingContract`** describes accepted inputs and whether they are required: no designation, unit/contact track, location/area, bearing, sector, frequency/band, or combinations. Do **not** hard-code `requiresUnitTarget` or reduce the problem to a single boolean. Even conventional weapons may fire at geographic locations, and launched decoys may require a bearing.
+- **`EmploymentProfile`** describes what invoking the capability does: single release/launch, salvo, sustained activation/deactivation, mode adjustment or automatic/native threat reaction. This is *not* the unit's separate weapons-free/tight/hold engagement posture and does not imply that the external controller is authorized to invoke every possible employment.
+- **`EffectDescription`** may describe damage, jamming, deception, screening or distraction without treating every effect as a calibrated numerical probability.
+- **`GuidanceDescription`** and **`FiringGeometry`** are optional; many countermeasures have no guidance, but a towed or launched decoy may have placement constraints. Installed platform geometry may override or refine the type-level envelope.
+
+Examples: a missile may need a track or target point and launch; chaff may be released with no target; an active jammer may be toggled and pointed at a frequency/sector; an acoustic decoy may be launched to a bearing. The *targeting*, *employment* and *effect* dimensions are independent; no separate countermeasure/EW type hierarchy is necessary.
+
+**Physical multifunction systems:** One physical device can implement both a sensor capability and an effect capability (for example ESM plus active ECM). The source adapter may correlate them privately; optional shared-equipment/provenance references can be added if coordination or damage propagation requires it. Do not force a one-to-one physical device identity on every capability.
+
+**Weapon versus launcher:** The API **does not require separate public `LauncherType`, `MunitionDefinition` or per-hardpoint objects for normal weapons**. In Sea Power, Task 012 found that the player-facing `WeaponEntry` is an ammunition-group selection, which may aggregate several compatible native weapon systems. This justifies representing a single selectable **weapon capability** with aggregated ammunition and firing restrictions when that is what the player controls. For non-ammunition or sustained-effect capabilities, selection and invocation may instead be a toggle or mode change; no identical native UI path has yet been established.
 
 Do not claim that all Sea Power weapon systems literally have one launcher or one ammo storage location. If an advanced weapon has selectable ammunition subtypes, separate magazine stocks or multiple firing arcs, introduce **optional parts of the capability description or runtime state** if they become operationally relevant. This is not a reason to mandate physical launcher entities across the public domain.
 
@@ -103,19 +126,19 @@ struct UnitInstance
     Knowledge<PositionWithUncertainty> position;
     PlatformDamage damage; // Tagged platform-specific description; may be unknown
 
-    ObservedCollection<WeaponInstance> weapons;
+    ObservedCollection<WeaponInstance> weapons; // Includes active EW/countermeasures
     ObservedCollection<SensorInstance> sensors;
-    ObservedCollection<ElectronicWarfareInstance> electronicWarfare;
     // Other supported runtime capability state as needed.
 };
 
 struct WeaponInstance
 {
     Knowledge<WeaponTypeId> type;
-    Knowledge<std::uint32_t> ammunitionRemaining;
+    std::optional<Knowledge<std::uint32_t>> ammunitionRemaining; // Absent if not applicable
     Knowledge<Readiness> readiness;
     Knowledge<DamageState> damage;
-    // Optional mode or firing geometry state only if observable/applicable.
+    std::optional<Knowledge<ActivationState>> activation; // e.g. active jammer on/off
+    // Additional resource, mode or employment state only if applicable/observable.
 };
 
 struct SensorInstance
@@ -128,7 +151,7 @@ struct SensorInstance
 
 These are conceptual shapes, **not compilable production headers**. `PlatformDamage` should compose a tagged aircraft/ship/submarine-specific description rather than force a common damage hierarchy. Some damage and operating values will be unknown even when the platform category is known.
 
-A friendly unit and an enemy track both use **`UnitInstance`**. For a friendly unit, the API may know almost all relevant fields. For an enemy contact, it may know only a position distribution and that an unidentified emitter is present. The same payload type captures both without filling enemy fields with authoritative truth.
+A friendly unit and an enemy track both use **`UnitInstance`**. For a friendly unit, the API may know almost all relevant fields. For an enemy contact, it may know only a position distribution and that an unidentified emitter is present. The same payload type captures both without filling enemy fields with authoritative truth. `WeaponInstance` includes **effect-producing systems and expendable countermeasures**, including those that have no target, no ammunition, or a continuously active state. A sensor-emitter observation alone does not prove an exact EW capability or that a particular jammer is installed.
 
 **Identity and authority:** A controlled own-unit handle and an observer-visible contact/track handle are **not the same authority**. The common type can use a tagged/discriminated identity or provide subject scope alongside it. The existing protocol's own-unit IDs and opaque track IDs must not be conflated or used interchangeably for orders. Common data shape does not grant command permissions to enemy tracks.
 
@@ -163,7 +186,7 @@ Distinguish per-field unknown information from a metric being unsupported by the
 
 ## 4. Relationship to analytics, commands and eventual methods
 
-- **`UnitType` / `Loadout` / capability descriptions:** possible defined platform functionality and nominal capacities.
+- **`UnitType` / `Loadout` / capability descriptions:** possible defined platform functionality, including passive sensors and active effect/deployment capabilities, and nominal capacities.
 - **`UnitInstance` and component instances:** actual observer-known or observer-estimated capabilities and current state.
 - **`EngagementAssessment`:** what a particular friendly weapon capability may accomplish against an observer-visible target, not a live-fire command.
 - **Order eligibility:** whether a desired action is currently allowed/executable; reevaluated when dispatching.
@@ -174,8 +197,8 @@ Distinguish per-field unknown information from a metric being unsupported by the
 ## 5. Remaining type questions
 
 1. Should a loadout always expose **fully resolved** capabilities and nominal stock (recommended), even if the simulator stores variants as diffs?
-2. Should each weapon be keyed by the **player-selectable firing capability** (recommended for Sea Power), allowing optional components to describe multiple backing native mounts?
-3. Which traits need to be public first: generic firing geometry, selectable ammunition modes, or none until an actual backend/user story requires them?
+2. Should each weapon be keyed by a **player-addressable effect/deployment capability** (recommended for Sea Power), allowing optional components to describe multiple backing native mounts, dispensers or emitters?
+3. Which composable employment traits need to be public first: optional target designation, one-shot versus sustained activation, firing geometry, effect kind or selectable ammunition modes? Do not introduce a mandatory `engagementMode` enum that conflates these dimensions or the unit's weapons-control posture.
 4. How should distinct friendly IDs and observer track IDs be tagged within a uniform `UnitInstance` while keeping command authority separate?
 
 **Status:** Domain proposal only; no public C++ types, Protobuf schemas, RPCs or simulator code changed.
