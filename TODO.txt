@@ -2,10 +2,10 @@ NavalCommandFramework — TODO
 =========================
 
 1. Add grid size display to TacticalDisplay
-2. Extend Domain.Api with missile target indication
+2. Extend Domain.Api with missile target indication. Implement via Activities domain.
 3. When TacticalDisplay connects to the game, the grid becomes rectangular instead of square. Is this intended? Anyway, the grid axis must be labled.
 4. For consistency with in-game Tactical Display, our TacticalDisplay should use LMB for dragging instead of RMB
 5. Clicking on units in TacticalDisplay does not work. Units can only be inspected from the list on the left, but not on the grid.
 6. Sonobouys are not displayed on TacticalDisplay, torpedoes and missiles as well. Projectiles should be represented as Unit::Api::Instance and also have Observations. Homing projectiles should have attached Activity with a reference to object they are homing onto.
-7. Activities should be attachable not only to Units, but also to Observations (with uncertainty). 
+7. Activities should be attachable not only to Units, but also to Observations (with uncertainty) - BLOCKED, DO NOT IMPLEMENT
 8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology
