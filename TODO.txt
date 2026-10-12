@@ -8,4 +8,4 @@ NavalCommandFramework — TODO
 5. Clicking on units in TacticalDisplay does not work. Units can only be inspected from the list on the left, but not on the grid.
 6. Sonobouys are not displayed on TacticalDisplay, torpedoes and missiles as well. Projectiles should be represented as Unit::Api::Instance and also have Observations. Homing projectiles should have attached Activity with a reference to object they are homing onto.
 7. Activities should be attachable not only to Units, but also to Observations (with uncertainty). 
-8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose using NATO schematic icons.
+8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology
