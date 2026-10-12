@@ -1,6 +1,6 @@
 # Sea Power integration: implementation and validation
 
-Status: offline implementation and mock integration are complete; real-game acceptance is pending explicit live deployment authorization. This report supersedes the Stage A feasibility plan. Updated 2026-10-12.
+Status: offline implementation, mock integration and authorized live data/control checks have passed. Complete native definition catalogs and manual GUI interaction remain outside the verified coverage below. This report supersedes the Stage A feasibility plan. Updated 2026-10-12.
 
 ## Scope and contracts
 
@@ -49,7 +49,7 @@ Sampling and mutations run only on engine callbacks after outstanding jobs are c
 
 Pause combines native player and client claims. Unpause releases only its owner. Disconnect release has a priority bridge channel; reconnect uses fresh ownership. Actual application awaits the next safe game-thread callback. Network loss detection is bounded by transport behavior; no instantaneous network-loss detection is claimed. Scene unload, shutdown and adapter failure clear external ownership while preserving native player ownership.
 
-While paused, selecting compression changes the native resume index without invoking the positive TimeCompression setter. Static inspection shows that setter unpauses and completes pending flight-deck preparations; avoiding it preserves ownership. Native input hooks observe player intent and selected-factor changes. Runtime hooks are reversible and are removed during teardown. Full native UI coverage, job safety, responsiveness and loader compatibility remain live gates.
+While paused, selecting compression changes the native resume index without invoking the positive TimeCompression setter. Static inspection shows that setter unpauses and completes pending flight-deck preparations; avoiding it preserves ownership. Native input hooks observe player intent and selected-factor changes. Runtime hooks are reversible and are removed during teardown. Live native-method checks establish the ownership cases below; complete native UI coverage remains unverified.
 
 ## Offline build and test evidence
 
@@ -73,7 +73,7 @@ World tests cover immutable revisions, cached reads, perspective isolation, sess
 
 CommandCenter's real mock-server test exercises gRPC -> World -> retained GUI providers and Win32/D3D11 rendering for ten seconds. It switches blue/red scopes, applies pause/compression through cached controllers, stops/restarts the server, verifies stale preservation and new ownership, and reloads the mock mission. The independent TacticalDisplay development app renders local providers. These tests call controllers programmatically; manual widget interaction and game behavior are not established by them.
 
-Managed runtime and harness builds succeed with zero errors. Runtime build reports six MSB3277 framework-reference version warnings; harness reports two. Native builds also report gRPC dependency deprecation warnings. These are unresolved compatibility considerations for the live loader check, not proof of a runtime failure.
+Managed runtime and harness builds succeed with zero errors. Runtime build reports six MSB3277 framework-reference version warnings; harness reports two. Native builds also report gRPC dependency deprecation warnings. The assemblies loaded and the gateway operated in the inspected game's Mono runtime. BepInEx reports an unresolved Unity log-writer internal-call warning on Unity 6000.0.67; its own file log, runtime transport log and harness evidence remained available.
 
 Reproduce from each module in an x64 developer shell:
 
@@ -99,14 +99,51 @@ Static evidence: GameTime.Pause/UnPause/TimeCompression and factor selectors; Jo
 
 ## Reviewable live deployment and rollback
 
-Prepared runtime: SeaPower.Mod/o/package/0.1.0. Its top-level files are SeaPower.Mod.dll, SeaPower.Client.dll, Gateway.Api.dll, Google.Protobuf.dll, SeaPower.Host.dll, config.json and manifest.json, plus licenses. Configuration schema/ABI are 2 and runtime activation is disabled by default. Separate development package: SeaPower.Mod/o/harness/0.1.0, containing SeaPower.Harness.dll and disposable scenario files. Neither package has been deployed.
+Prepared runtime: SeaPower.Mod/o/package/0.1.0. Its top-level files are SeaPower.Mod.dll, SeaPower.Client.dll, Gateway.Api.dll, Google.Protobuf.dll, SeaPower.Host.dll, config.json and manifest.json, plus licenses. Configuration schema/ABI are 2 and runtime activation is disabled by default. Separate development package: SeaPower.Mod/o/harness/0.1.0, containing SeaPower.Harness.dll and disposable scenario files. These stages were temporarily deployed for the owner-authorized live checks and removed afterward.
 
 Start-Live.ps1 is the maintained opt-in launcher. It checks manifests and the inspected assembly hash, refuses an existing game session or deployment directories, temporarily creates BepInEx/plugins/NavalCommand.Runtime and NavalCommand.Harness, and enables the existing doorstop loader configuration. It does not install a loader or change original game binaries. Existing plugins remain untouched. The child alone receives NC_MOD_ENABLED/NC_HARNESS_ENABLED and isolated run paths; inherited NC_* activation variables are removed from that child.
 
-The launcher preserves doorstop_config.ini bytes, writes launch/readiness/result receipts outside the game installation, owns the started game process, and removes only its checked plugin directories in finally. Normal exit is requested when selected; a forced cleanup fallback applies only to that owned process and is recorded. The loader configuration hash is verified after restoration. No saves or original assemblies are targeted. Script syntax has been checked offline; live execution has not been performed.
+The launcher preserves doorstop_config.ini bytes, writes launch/readiness/result receipts outside the game installation, owns the started game process, and removes only its checked plugin directories in finally. Normal exit is requested when selected; a forced cleanup fallback applies only to that owned process and is recorded. The loader configuration hash is verified after restoration. No saves or original assemblies are targeted. Both normal and failure rollback paths were exercised live.
 
-After authorization, use Combined mode with an explicit disposable scenario/player side, CommandCenter executable, bounded duration and NormalExit. Verify: real omniscient units; native faction plots vs scoped observations; hidden-unit lookups; heading/speed/partial ellipses; independent player/two-client pause combinations; factor changes while paused; last-applied native/client factors; disconnect release and fresh reconnection; mission reload; unload and game exit; responsive rendering and no native exceptions. Inventory-specific scenarios must confirm shared launcher state, real ammunition quantities, resource-free sensors/decoys and zero inventory. Preserve receipts, screenshots and rollback evidence before marking real-game acceptance complete.
+## Authorized live verification
+
+The owner authorized use of the game on 2026-10-12. Evidence is local and ignored under `SeaPower.Mod/o/live/`; no vendor code, game references or diagnostic binaries are committed. Each run records the staged checksums, owned PID, loader/harness/transport logs and exact loader restoration. Successful runs exited through normal window close with game exit code zero.
+
+| Evidence directory | Result |
+|---|---|
+| 20261012-smoke01 | Playable MinimalCombat mission; CommandCenter alongside the real gateway for 30 seconds; client and game exit zero |
+| 20261012-controls01 | Found paused control starvation; failure rollback restored loader and removed owned plugins |
+| 20261012-controls02 | Corrected runtime: real unit/resource data, three faction scopes, two client pause claims, selected factor 2 while paused, disconnect and fresh reconnect passed |
+| 20261012-native01 | Native Pause/UnPause/SetTimeCompression calls, frozen mission time, player claim preservation on disconnect, fresh ownership and actual native mission reload passed |
+| 20261012-contacts01 | Probe incorrectly waited for observing-faction contacts in the omniscient view; explicit assertion failed and rollback completed |
+| 20261012-contacts02 | Surface opponent detected naturally: Taskforce1 and Taskforce2 each had one own unit and one observer-specific contact; Neutral had neither; hidden truth and unknown kinematics checks passed |
+| 20261012-air01 | Airfield, carrier and frigate facilities returned native air-operation state; three own units and one enemy unit remained correctly scoped; data/control checks and normal exit passed |
+| 20261012-gui01 | CommandCenter alongside NearContact for 180 seconds; screenshot helper timed out, so widget interaction remained unverified; client/game exit zero and native worker shutdown status zero |
+
+The first pause was applied in the native job-completion postfix. The enclosing fixed update then scheduled its final jobs, leaving completion flags pending when pause stopped subsequent fixed updates. The corrected GameMain.Update postfix completes outstanding jobs while paused on the verified engine thread, without enforcing another simulation tick. This restores safe control draining and wall-clock publication. Live native evidence held mission time at 6.3016245844773948 seconds across a 600 ms pause check; native compression stayed effectively zero while selected compression changed to 2. After disconnect, the remaining native player's pause remained effective.
+
+The actual reload used MissionManager.UnloadMissionAndReload. The old remote view became invalid, a different session supplied new unit data, and pause ownership started fresh. Engine controls in these checks were invoked programmatically through the real game methods, not by clicking native UI widgets. GUI smoke verifies process/window lifetime and normal exit; it does not establish visual correctness of every widget or uncertainty ellipse. A computer-use attempt against the live GUI could enumerate both windows, but screenshot capture failed: `FrameArrived timed out: timed out waiting on channel` for the game and `window capture timed out: timed out waiting on channel` for CommandCenter, including a fresh-window retry. No screenshot-derived input was attempted. This is a visual verification limitation, not evidence that rendering failed.
+
+The reusable `NavalCommand.Gateway.Grpc.Client.LiveProbe` is a separately built development executable under the proxy test tree, never an unattended CTest. It accepts an explicit endpoint and checks real RPC data and controllers. Optional `--require-contacts true`, `--require-air-operations true` and `--expect-reload true` enable scenario-specific assertions. The separate `NavalCommand.SeaPower.Mod.LiveFixture` target builds `test/managed/live/SeaPower.LiveFixture.csproj`; it has no production dependency and is absent from runtime/harness packages. Explicit `-FixtureAssembly` deployment enables its native player-control requests via immutable queues. Its worker performs evidence I/O; native method calls stay on Unity's main thread. Both tools are retained as automated regression fixtures with explicit activation and bounded waits.
+
+Reproduce a native ownership/reload run from the workspace root after building the live probe and fixture:
+
+```powershell
+& ./SeaPower.Mod/scripts/Start-Live.ps1 `
+  -GameRoot C:/Games/Sea_Power_8_3 `
+  -OutputDirectory C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/live/new-run `
+  -ClientExecutable C:/Software/GitHub/NavalCommand/Gateway.Grpc.Client/o/windows-msvc-release/test/NavalCommand.Gateway.Grpc.Client.LiveProbe.exe `
+  -ClientArguments @('--fixture-directory','C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/live/new-run','--expect-reload','true') `
+  -FixtureAssembly C:/Software/GitHub/NavalCommand/SeaPower.Mod/o/managed/SeaPower.LiveFixture/bin/Release/netstandard2.1/SeaPower.LiveFixture.dll `
+  -ReloadTest -NormalExit -ApproveLoaderChanges
+```
+
+Deployment permission remains a per-session owner decision. The example's explicit approval switch does not authorize future runs on its own. Domain.Api remains frozen and unmodified. Complete unit type/loadout and weapon metadata remain explicitly unavailable, rather than being fabricated.
+
+Final rollback verification: no owned game/client process or NavalCommand plugin directories remained. The two preexisting plugins remained in place. Doorstop remained disabled and its restored SHA256 was `3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A`; Seapower-Scripts.dll retained the inspected hash above. Domain.Api remained clean at `9dec63d7ae1ed1db962f846bdf0e783aec442bb4`, with all 54 tests passing again. The affected five mod tests, seven proxy tests and CommandCenter mock GUI integration test also passed again. Local follow-up commits are `75fe5d3` (paused job completion and separate native fixture) and `687d5dd` (explicit live RPC regression probe). No commits were pushed.
+
+Further visual acceptance should use Combined mode with an explicit disposable scenario/player side, CommandCenter executable, bounded duration and NormalExit. Check widget input, responsive rendering, heading/speed/partial ellipse presentation, native UI coverage and equipment damage/reload edge cases. Preserve screenshots and rollback receipts when extending the evidence.
 
 ## Remaining acceptance gates
 
-Live deployment/activation requires owner authorization. Until then, real-game safety, responsiveness, pause UI arbitration, native catalog completeness and supported equipment edge cases remain unverified. Complete loadout/weapon definitions and other unsupported metadata remain explicit provider failures. Debug teardown from historical builds has not been retested; no Debug acceptance claim is made. All new repositories and integration commits remain local until publication is separately authorized.
+The authorized Release runs establish the recorded data/control/lifecycle behavior on this inspected installation, not exhaustive real-game safety or every native UI path. Manual widget interaction, visual ellipse correctness, complete native catalog definitions and equipment damage/reload edge cases remain unverified. Complete loadout/weapon definitions and other unsupported metadata remain explicit provider failures. Debug teardown from historical builds has not been retested; no Debug acceptance claim is made. All new repositories and integration commits remain local until publication is separately authorized.
