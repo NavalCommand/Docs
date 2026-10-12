@@ -4,6 +4,7 @@ This directory contains historical work specifications, reports and reproduction
 
 | Work item | Scope and available records |
 |---|---|
+| [Sea Power tactical display](SeaPower-TacticalDisplay/IMPLEMENTATION.md) | Current client architecture, offline implementation evidence, native gaps and pending live deployment/rollback |
 | [001](001/) | Static Sea Power reverse-engineering request and [technical findings](001/SEAPOWER_FINDINGS.md) |
 | [002](002/) | Runtime validation request, [runtime findings](002/SEAPOWER_RUNTIME_FINDINGS.md), [reproduction](002/TASK002_REPRODUCTION.md), [automatic launcher](002/AUTOMATED_LAUNCH.md) |
 | [003](003/) | Air-facility investigation request, [AirOps findings](003/SEAPOWER_AIROPS_FINDINGS.md), [reproduction](003/AIROPS_REPRODUCTION.md) |

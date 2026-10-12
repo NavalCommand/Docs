@@ -4,16 +4,20 @@
 
 ## Repository boundaries
 
-The platform has six independent functional Git repositories and one separate infrastructure repository:
+The platform has ten independent functional Git repositories and one separate infrastructure repository:
 
 | Repository | Responsibility | Build shape |
 |---|---|---|
-| `Domain.Api` | Acyclic Physics, Uncertainty, Catalog, Units, Observations, Orders, Environment and World ownership boundaries | Independent header-only targets for populated domains; Environment reserved until supported |
+| `Domain.Api` | Existing domain interfaces and values; current headers govern ownership | Independent header-only domain targets |
 | `Gateway.Api` | Canonical Protobuf payloads, provider-facing interfaces and domain ↔ wire conversion; PUBLIC domain dependencies | Native C++ libraries; generated C# bindings |
-| `Gateway.Grpc.Api` | External gRPC services importing canonical `Gateway.Api` payloads; development CLI | Native C++ bindings and executable |
+| `Gateway.Grpc.Api` | External gRPC services importing canonical `Gateway.Api` payloads | Native C++ bindings |
 | `Gateway.Grpc` | Generic, provider-injected C++ gateway; separately composable mock-host | Native library, mocks, tests and executable |
 | `SeaPower.Client` | Game-specific C# facade/provider, game-thread validation and observation | Managed compile-only game integration, local fake tests |
 | `SeaPower.Mod` | C# composition/loader root, native host/C ABI, DI, package assembly and developer harness | Managed/native build and packaging orchestration |
+| `Gateway.Grpc.Client` | Remote Domain.Api proxies and connection/session lifetime | Native library and mock-server tests |
+| `World` | Injected provider polling, immutable replication and cached domain providers | Native library and local-provider tests |
+| `TacticalDisplay` | Domain-provider presentation, Win32/D3D11/ImGui | Native library and local development app |
+| `CommandCenter` | Sole client composition root | Executable and full mock integration test |
 | `Build.CMake` | Shared CMake functions, policies, internal-source registry and native target configuration | Infrastructure only; never a runtime/domain module |
 
 Managed source ownership and CMake/MSBuild integration follow [MANAGED_BUILD.md](MANAGED_BUILD.md). Handwritten C# projects live under `managed/`; managed regression projects under `test/managed/`. `managed/CMakeLists.txt` registers projects and composition targets through `Build.CMake`. `SeaPower.Mod/managed/runtime/` and `managed/harness/` remain independent. CMake owns dependency source resolution and full-build orchestration; MSBuild owns normal ProjectReference compilation and NuGet. PowerShell build wrappers delegate to configured CMake targets, while the packaging helper only stages evaluated outputs and checks redistribution boundaries.
