@@ -1,10 +1,10 @@
 NavalCommandFramework — TODO
 =========================
 
-1. Naming: COMPLETED. `Orders::Api::Waypoint` is now `RouteCommand`; existing route elements remain `RoutePoint`. The C++ codec explicitly maps `RouteCommand` to the canonical Protobuf `Waypoint` without changing the schema.
-
-2. Build warning: UNRESOLVED (third-party). The current gRPC 1.81.1 public headers instantiate `std::vector<grpc::experimental::IdentityKeyCertPair>` inside `StaticDataCertificateProvider`. This project does not use that deprecated API. Upstream issue [grpc/grpc#43469](https://github.com/grpc/grpc/issues/43469) reports the same public-header warning in newer gRPC releases and remains open; no compatible fixed release was found. No warning suppression or dependency change was introduced.
-
-3. Test utilities: COMPLETED. `SchemaRoundtrip.cpp` and the gRPC CLI smoke helpers now live under their repositories' `test/` trees. The `schema-roundtrip` and `naval-cli` target names and CLI smoke modes are preserved; the mock host and public CLI remain applications.
-
-4. Header segregation: COMPLETED. `RouteCommand`, `RoutePoint` and `RouteMode` have separate public headers. `LaunchOption` is nested as `Stock::LaunchOption`, its only domain use. `Docs/CODE_STYLE.md` already states the one-independently-usable-public-type-per-header rule and prohibits closing namespace comments; the owner-supplied `CodeStyle.xml` was not modified.
+1. Add grid size display to TacticalDisplay
+2. Extend Domain.Api with missile target indication
+3. When TacticalDisplay connects to the game, the grid becomes rectangular instead of square. Is this intended? Anyway, the grid axis must be labled.
+4. For consistency with in-game Tactical Display, our TacticalDisplay should use LMB for dragging instead of RMB
+5. Clicking on units in TacticalDisplay does not work. Units can only be inspected from the list on the left, but not on the grid.
+6. Sonobouys are not displayed on TacticalDisplay, torpedoes and missiles as well. Projectiles should be represented as Unit::Api::Instance and also have Observations. Homing projectiles should have attached Activity with a reference to object they are homing onto.
+7. Activities should be attachable not only to Units, but also to Observations (with uncertainty).
