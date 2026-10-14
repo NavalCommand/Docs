@@ -149,8 +149,8 @@ All commits are on `feature/classification`; dependency declarations pin the exa
 | Gateway.Grpc.Api | `a90fd10dc7f57189840ac6b19ed39855e1c7801f` |
 | Gateway.Grpc | `8c1bfb771182eef0f0fc9ae2054fd908d7fdf138` |
 | Gateway.Grpc.Client | `4fc239e328a314063b0b7e7c829425d5b9596fbf` |
-| SeaPower.Client | `9a0dcb687e9323d706e6dc19f76cf6029f1d1521` |
-| SeaPower.Mod | `d6814d28d152a7be900fd0674d90c41aecbfaae9` |
+| SeaPower.Client | `46080ed07b27b6c61e45ba47965a0eca095a0046` |
+| SeaPower.Mod | `ff413b2949365296651e6fad450928ad0a594984` |
 | World | `660b32c3066d8d99e57ed2e2015bd5afb6fb0fb1` |
-| TacticalDisplay | `a835a6a1ccb3741b923c452caa6278cd223f3cf9` |
-| CommandCenter | `7fc2579d9ce3cb783e64dc2117387eec1e492ba4` |
+| TacticalDisplay | `667b2730d3efc1c675bc117b27fcce3fe4477426` |
+| CommandCenter | `7dfc12649ffc107dcafe782f20bf5a77145a3c3e` |
