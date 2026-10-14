@@ -10,7 +10,7 @@
 2. At mission time `1385.0` (scenario clock `10:23:05`), the contact changed to `wp_ss_kilo`, `Identified=true`, side `Enemy`, relation `Hostile`, a few seconds before the owner reported the Paltus model and hostile alignment. The native `Vehicle` wrapper exposed an exact class key, not an observed dimension/category/subcategory ladder.
 3. At the reported deep-evasion/fade, the exact class and hostile relation remained on the contact while `HasLiveTrack` was false and `PositionEstimate` remained present. The recorder did not see `HasLiveTrack` return until `10:30:42`, about 82 seconds after the reported `10:29:20` sound-sensed reappearance. The available records cannot determine whether the discrepancy is a timing difference or whether the UI's sound-sensed label differs from `HasLiveTrack`.
 4. The recorder saw seven separate `usn_ssq-53` rows and a separate `usn_mk46_mod5_air` row in the selected observer's plotting table. The MK-46 row disappeared at `10:33:39.6`, within a second of the reported torpedo impact. These are actual observer-table entries; the recorder did not inspect object links or infer them from a simulator-wide entity list.
-5. The target's contact row persisted with exact class, hostile relation, an estimate, and a live track after the owner reported the Kilo dead at `10:35:10`. It remained in the table through the run end at `10:36:51.7`. Contact presence and `HasLiveTrack` do not establish that a target is alive.
+5. The target's contact row persisted with exact class, hostile relation, an estimate, and a live track after the owner reported the Kilo dead at `10:35:10`. The owner later clarified that the Tactical Display symbol turned black at that time while the contact remained visible. The recorder did not capture this color change; its recorded fields and table-persistence result remain unchanged. Task 020 traces the UI color to a privileged destruction flag; see [Observer presentation findings](../020/OBSERVER_PRESENTATION_FINDINGS.md).
 6. The first-level UI cue cannot yet be safely converted into a Domain classification. The recorder's ECS reflection path was unavailable, its sampled contact-info lines were null, and some view-model values are presentation properties whose source can use the underlying `BaseObject`. This experiment is informative but **not sufficient for a safe full observer-classification integration**.
 
 The Domain hierarchy remains `Dimension → Category → SubCategory → TypeId`, represented for an observation by `Resolution<TypeId, SubCategory, Category, Dimension>`. Sea Power's simpler contact wrapper is a source limitation, not a reason to reduce the domain model.
@@ -45,7 +45,7 @@ The following is a faithful summary of the owner's notes; it is not a transcript
 | `10:29:20` | After the helo dropped a torpedo, the Kilo evaded by going deep. The track faded but remained displayed. At the same timestamp the owner reports it reappeared as a sound-sensed track with type known as Kilo. |
 | `10:33:40` | Torpedo hit the Kilo. |
 | `10:35:00` | Kilo surfaced and the owner reports “V+S tack info.” The phrase is retained as written; it may mean “V+S track info,” but that correction is not confirmed. |
-| `10:35:10` | Kilo died. |
+| `10:35:10` | Kilo died. A later owner correction reports that its Tactical Display symbol turned black while the contact remained present; this was not captured by the original recorder. See the supplemental correction below. |
 
 ## C. Native classification timeline
 
@@ -118,3 +118,9 @@ Task 018's matched surface scenario placed a Perry and Krivak about 0.5 NM apart
 **Not sufficient for full safe implementation of observer classification in `SeaPower.Client`.** The run validates an unknown-to-exact wrapper transition and separate affiliation, and confirms actual observer-table rows for separately exposed equipment. It does not reveal the candidate bits or establish the provenance of every class path, the displayed pre-identification signal labels, vertical-track presentation, the sound reacquisition transition, or contact expiry. The report supports a narrow design rule—use only observer-table entries and map only validated, non-empty observer-safe keys—but a follow-up read-only observer-state/UI experiment is still needed before implementing the integration end to end.
 
 No production mappings or code were implemented. No production repository was committed or pushed.
+
+## Supplemental owner correction — 2026-10-14
+
+After this report was first written, the owner clarified that at approximately `10:35:10`, when the Kilo was destroyed, its Tactical Display contact symbol changed to black and remained on the display. This is a manual, player-visible observation. It is not present in `task019-native-state.jsonl`: the Task 019 recorder did not sample the symbol color or any destruction-status field.
+
+Independently, the Task 019 recorder shows that contact `7001` remained in Taskforce1's plotting table through `10:36:51.7`, with its recorded class, relation, live-track flag, and estimate unchanged. This confirms contact-row persistence, not target survival. At the time of the original Task 019 write-up, the native source of the black symbol was unresolved. Task 020's static trace finds that Sea Power's Tactical Display selects its destroyed-color brush from the underlying object's `IsDestroyed` state; that is a UI presentation path, not an observer-owned destruction fact. See [Task 020 findings](../020/OBSERVER_PRESENTATION_FINDINGS.md#d-destroyed-contact-status).

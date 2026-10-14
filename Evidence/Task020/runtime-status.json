@@ -1,0 +1,23 @@
+{
+  "capturedUtc": "2026-10-14T16:41:03.7576694Z",
+  "status": "completed",
+  "authorization": "Explicit owner authorization received for one short launch",
+  "gameBuild": "Sea Power 0.8.3 Build 261001",
+  "unityVersion": "6000.0.67f1",
+  "mode": "Harness",
+  "harnessEnabled": true,
+  "productionRuntimeEnabled": false,
+  "fixtureAssemblySha256": "C2C4B579FDB311B8D80B8D374287E9D753ECC6CF16A43D37A2DE28BBF558EE6A",
+  "scenario": "Docs/Tasks/018/Fixture/SurfaceIdentification-Taskforce1.ini",
+  "scenarioSha256": "C8A933C4B882569C5804574E8B17C82B1866A38322CFF5914CA2DA7497744CC4",
+  "liveContactVerified": true,
+  "contactEvidence": "contact-7001-observer-capture.jsonl",
+  "gameExitedNormally": true,
+  "gameExitCode": 0,
+  "cleanupMode": "game-exited",
+  "doorstopRestored": true,
+  "doorstopSha256": "3B5FBCF2C104F967F63687A0FD240CB79A5253D08F4338A358EE796C17B5AA0A",
+  "temporaryPluginDirectoriesPresentAfterRun": false,
+  "seaPowerProcessCountAfterRun": 0,
+  "loaderWarning": "BepInEx could not start the Unity log writer because Unity internal log calls were unavailable; the Harness became ready, the fixture wrote its JSONL capture, and cleanup completed normally."
+}

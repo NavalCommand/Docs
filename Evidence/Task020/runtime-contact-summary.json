@@ -1,0 +1,91 @@
+{
+  "gameBuild": "Sea Power 0.8.3 Build 261001",
+  "observer": "Taskforce1",
+  "scenario": "Task 018 disposable surface-identification scenario",
+  "captureFile": "contact-7001-observer-capture.jsonl",
+  "captureRecordCount": 54,
+  "contactId": 7001,
+  "captureDurationSeconds": 49.418,
+  "firstRecord": {
+    "kind": "contact-created",
+    "missionSeconds": 3.223,
+    "unityRealtimeSeconds": 20.38
+  },
+  "lastRecord": {
+    "kind": "contact-updated",
+    "missionSeconds": 49.616,
+    "unityRealtimeSeconds": 69.798
+  },
+  "observerClassification": {
+    "classInformationPresent": true,
+    "candidateCount": 1,
+    "candidateIds": [611],
+    "overrideIdentification": true,
+    "preventTaskforceAnalysis": false,
+    "isFalse": false,
+    "wrapperClassPresent": true,
+    "identified": true,
+    "classKeyRecorded": false,
+    "ordinaryPathValidated": false
+  },
+  "alignment": {
+    "detectedSideComponentPresent": true,
+    "sideEntityExists": true,
+    "taskforceReferencePresent": true,
+    "side": "Enemy",
+    "relationship": "Hostile"
+  },
+  "trackAndSensors": {
+    "initial": {
+      "missionSeconds": 3.223,
+      "detectedPosition": true,
+      "estimatedPosition": true,
+      "hasLiveTrack": true,
+      "dormant": false,
+      "detectingSensors": ["Visual", "SearchRadar", "ESM"]
+    },
+    "passiveSonarObserved": {
+      "missionSeconds": 6.497,
+      "hasLiveTrack": true,
+      "detectingSensors": ["Visual", "SearchRadar", "PassiveSonar", "ESM"]
+    },
+    "liveTrackLost": {
+      "missionSeconds": 42.468,
+      "detectedPosition": false,
+      "estimatedPosition": true,
+      "hasLiveTrack": false,
+      "dormant": false,
+      "detectingSensors": ["Visual"]
+    },
+    "dormant": {
+      "missionSeconds": 43.186,
+      "detectedPosition": false,
+      "estimatedPosition": true,
+      "hasLiveTrack": false,
+      "dormant": true,
+      "detectingSensors": ["Unknown"]
+    },
+    "lastRecord": {
+      "missionSeconds": 49.616,
+      "candidateIdStillPresent": true,
+      "detectedSideStillPresent": true,
+      "hasLiveTrack": false,
+      "dormant": true,
+      "detectingSensors": ["Unknown"]
+    },
+    "contactRemovedBeforeSessionEnd": false
+  },
+  "uiViewModel": {
+    "type": "SeapowerUI.MapUnitViewModel",
+    "visualType": "Surface",
+    "visualPosture": "Enemy",
+    "contactInfoLines": "null throughout capture",
+    "unitColorBrush": "null throughout capture"
+  },
+  "limitations": [
+    "The only live candidate was on an overrideIdentification path, so it does not establish ordinary exact-class provenance.",
+    "No multi-candidate state, non-null contact-info line, or symbol brush was observed.",
+    "No unit was destroyed in this runtime scenario; destruction-color findings remain static-source analysis corroborated by the owner's Task 019 UI observation.",
+    "The owner confirmed the scenario ran automatically and closed without issues; no additional visual label or color observation was supplied for this short run."
+  ]
+}

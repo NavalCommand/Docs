@@ -1,0 +1,18 @@
+{
+  "project": "Docs/Tasks/020/Fixture/Task020ObserverRecorder.csproj",
+  "projectSha256": "75CAEB962B48886B809FBC3DE2C86C7EF7D57B69FB8AD6E90494CCAD7B0442DB",
+  "source": "Docs/Tasks/020/Fixture/Task020ObserverRecorder.cs",
+  "sourceSha256": "D2FA7E90331C373EB21BFDC2E9C461983FF448E8DE94168C43AC8572C589FD90",
+  "assemblySha256": "C2C4B579FDB311B8D80B8D374287E9D753ECC6CF16A43D37A2DE28BBF558EE6A",
+  "buildConfiguration": "Release / netstandard2.1",
+  "buildCommand": "dotnet build Docs/Tasks/020/Fixture/Task020ObserverRecorder.csproj --configuration Release --output SeaPower.Mod/o/live/task020-fixture-build/bin -p:BaseIntermediateOutputPath=<workspace>/SeaPower.Mod/o/live/task020-fixture-build/obj/",
+  "buildSucceeded": true,
+  "errorCount": 0,
+  "warningCount": 2,
+  "warningDetails": [
+    "MSB3277 System.IO.Compression reference version conflict",
+    "MSB3277 System.Net.Http reference version conflict"
+  ],
+  "outputRoot": "SeaPower.Mod/o/live/task020-fixture-build/bin",
+  "assemblyCommitted": false
+}

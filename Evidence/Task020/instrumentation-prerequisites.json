@@ -1,0 +1,35 @@
+{
+  "capturedUtc": "2026-10-14T16:35:11.1143210Z",
+  "gameBuild": "Sea Power 0.8.3 Build 261001",
+  "gameProductVersion": "6000.0.67f1 (78a1c2bbeb6a)",
+  "seapowerScriptsSha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "vehicleEntity": {
+    "publicEntityField": true,
+    "propertyLookupReturnsNull": true,
+    "fieldType": "Unity.Entities.Entity"
+  },
+  "vehicleComponent": {
+    "publicType": true,
+    "valueType": true,
+    "currentStateEntityField": true
+  },
+  "entityManager": {
+    "getComponentDataGenericEntityOverload": true,
+    "getComponentDataSignature": "T GetComponentData[T](Unity.Entities.Entity)",
+    "hasComponentGenericEntityOverload": true,
+    "hasComponentSignature": "Boolean HasComponent[T](Unity.Entities.Entity)"
+  },
+  "classInformation": {
+    "publicType": true,
+    "bitsPropertyType": "Unity.Collections.FixedList512Bytes`1[[System.UInt64, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+    "overrideIdentificationPublic": true,
+    "preventTaskforceAnalysisPublic": true,
+    "isFalsePublic": true
+  },
+  "detectedSide": {
+    "publicType": true,
+    "sideEntityField": true
+  },
+  "typedPath": "Vehicle.Entity -> GetComponentData<VehicleComponent> -> CurrentState -> ClassInformation / DetectedSide",
+  "runtimeContactVerified": false
+}

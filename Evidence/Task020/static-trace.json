@@ -1,0 +1,27 @@
+{
+  "gameBuild": "Sea Power 0.8.3 Build 261001",
+  "seapowerScriptsSha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "uiSettingsFile": "Sea Power_Data/StreamingAssets/original/ui/Default/Settings_UI_Tactical.ini",
+  "uiSettingsSha256": "A63820616C2C79B20B345A86E1CB0418C3228018F1E39EA2116A38F70EAADFBC",
+  "domainApiHead": "57dee1e188b1522cad96c3333633ab25b2505fdf",
+  "methodFindings": {
+    "Vehicle.TransferFromComponents": "Reads ClassInformation on VehicleComponent.CurrentState; ordinary Class assignment requires one candidate bit; overrideIdentification or weapon paths read Object.getObjectIniName(); DetectedSide with a side entity lacking TaskforceReference falls back to Object._taskforce.",
+    "VehicleClassificationUpdate.OriginalLambdaBody": "Combines/intersects ClassInformation from current/last state and track entities, then writes candidates to CurrentState; can add DetectedSide under nationality-analysis conditions.",
+    "VehicleSideUpdate.OriginalLambdaBody": "Carries DetectedSide from prior/current track evidence into CurrentState; self-track branch reads TaskforceMember for the controlled object's own taskforce.",
+    "VehicleSourcesUpdate.OriginalLambdaBody": "Aggregates sensor modalities from track records still within each TrackComponent.MaxAge, computes strongest sonar/ESM values, and writes DetectingSensors to CurrentState.",
+    "Vehicle.IncomingSignalInfo": "Uses the _bestTrack IncomingSignalData and caches text for the same track; it does not check HasLiveTrack; non-sonar/non-ESM formatting reads Object._sensorData._size.",
+    "Vehicle.get_IsDetectedTrackFresh": "Compares missionSessionTime with the cached detected track epoch and that TrackComponent.MaxAge.",
+    "Vehicle.get_HasLiveTrack": "Requires DetectedPosition and a fresh detected track, except for a self-track; it does not test destruction.",
+    "MapUnitViewModel.GetMapType": "Maps ObjectBase._type and related implementation fields into VisualType, including Submarine and native sonobuoy deployment forms.",
+    "MapUnitViewModel.UpdateContactDisplay": "When the class-info layer is visible, uses BaseObject class/display names if Identified; otherwise calls IncomingSignalInfo().",
+    "MapContactVisuals.Resolve": "Uses CurrentRelationship for posture and relation color, then overrides with TM_DestroyedColor_Brush when BaseObject.IsDestroyed or TM_DormantColor_Brush when the contact is dormant.",
+    "VehicleAgeOut.OriginalLambdaBody": "Deletes contacts for missing SPObjectRef, missing position state, or family-specific position-fix expiry; adds DormantVehicle at a shorter fix-age threshold; does not check ObjectBase.IsDestroyed."
+  },
+  "defaultPalette": {
+    "destroyedColorArgb": "255,0,0,0",
+    "dormantColorArgb": "255,151,152,153",
+    "nightDestroyedColorArgb": "255,151,152,153"
+  },
+  "vendorSourceIncluded": false,
+  "vendorBinaryIncluded": false
+}
