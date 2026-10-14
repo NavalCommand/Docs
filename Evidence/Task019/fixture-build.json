@@ -1,0 +1,16 @@
+{
+  "project": "C:\\Software\\GitHub\\NavalCommand\\Docs\\Tasks\\019\\Fixture\\Task019ClassificationRecorder.csproj",
+  "projectSha256": "A563E9AEB529602A59B227244BEAA30F80285F1C3A4302012078AA7CAE026A9B",
+  "source": "C:\\Software\\GitHub\\NavalCommand\\Docs\\Tasks\\019\\Fixture\\Task019ClassificationRecorder.cs",
+  "sourceSha256": "EB2129888E6112E87667D9360AD9862394CC7CB5532B83FA740BECA53DCCF7E8",
+  "assembly": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\live\\task019-fixture-build\\bin\\Release\\netstandard2.1\\Task019ClassificationRecorder.dll",
+  "assemblySha256": "69DC7290206C5386E14A956F30489CC313C768B0693233C12EE319D114216BFD",
+  "buildConfiguration": "Release / netstandard2.1",
+  "buildSucceeded": true,
+  "warningCount": 2,
+  "warningDetails": [
+    "MSB3277 System.IO.Compression reference version conflict",
+    "MSB3277 System.Net.Http reference version conflict"
+  ],
+  "outputRoot": "C:\\Software\\GitHub\\NavalCommand\\SeaPower.Mod\\o\\live\\task019-fixture-build"
+}

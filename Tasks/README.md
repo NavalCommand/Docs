@@ -23,6 +23,7 @@ This directory contains historical work specifications, reports and reproduction
 | [015](015/TASK.md) | **Completed — truth versus observation and acyclic refactor:** [implementation report](015/REPORT.md); eight domain boundaries, authoritative `UnitInstance` vs observer-specific `UnitObservation` including projectiles, minimal `Exact<T>` plus specialized partial observations and typed contributors, enforced dependency graph, overlay orders/relationships and breaking canonical wire migration |
 | [016](016/) | Sea Power classification model investigation; [findings](016/CLASSIFICATION_FINDINGS.md). Investigation only; no production API/schema changes |
 | [018](018/) | Sea Power runtime classification and observation experiments; [report](018/REPORT.md) and [run evidence](../Evidence/Task018/README.md). No production APIs, schemas, codecs, adapters, or TacticalDisplay changes |
+| [019](019/) | Interactive Sea Power identification experiment; [runtime findings](019/IDENTIFICATION_RUNTIME_FINDINGS.md), [recorder fixture](019/Fixture/), and [run evidence](../Evidence/Task019/README.md). No production integration changes |
 
 Run-specific evidence remains in [../Evidence/](../Evidence/README.md) under its original directory identifiers. Some archived commands or inline `Docs/...` paths reflect the former root-level document layout; use this index when locating moved reports.
 

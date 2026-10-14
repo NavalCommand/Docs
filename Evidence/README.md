@@ -12,6 +12,7 @@ These files are retained as original run artifacts, including observed logs, has
 - [Task011/](Task011/README.md): independent domain contract extraction, transitive local/Git resolution, native/managed and package regressions; public publication blocked and known Debug teardown failures retained.
 - `Task013/`: bounded unit-catalog, friendly-equipment and identified-track sample with exact harness cleanup receipts.
 - [Task018/](Task018/README.md): faction-scoped contact-classification runs and a bounded independently simulated object-contact sample; see the linked report for run limitations.
+- [Task019/](Task019/README.md): interactive Taskforce1 identification run with owner-reported Tactical Display stages, observer-table recorder output, and launch/cleanup receipts; see the linked report for correlation gaps.
 - `StaticRuntime/`: miscellaneous retained static/runtime evidence, if present.
 
 Read each set together with its corresponding report in [../Tasks/](../Tasks/README.md). Do not rewrite a prior observation when changing design or toolchain policy.
