@@ -11,6 +11,7 @@ These files are retained as original run artifacts, including observed logs, has
 - [Task010/](Task010/README.md): unified CMake/MSBuild source/output layout, direct managed builds, package and live regressions; known Debug teardown failures reproduced and retained.
 - [Task011/](Task011/README.md): independent domain contract extraction, transitive local/Git resolution, native/managed and package regressions; public publication blocked and known Debug teardown failures retained.
 - `Task013/`: bounded unit-catalog, friendly-equipment and identified-track sample with exact harness cleanup receipts.
+- [Task018/](Task018/README.md): faction-scoped contact-classification runs and a bounded independently simulated object-contact sample; see the linked report for run limitations.
 - `StaticRuntime/`: miscellaneous retained static/runtime evidence, if present.
 
 Read each set together with its corresponding report in [../Tasks/](../Tasks/README.md). Do not rewrite a prior observation when changing design or toolchain policy.

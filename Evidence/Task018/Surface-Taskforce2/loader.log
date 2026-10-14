@@ -1,0 +1,36 @@
+[Error  :   BepInEx] Unable to start Unity log writer
+[Message:   BepInEx] BepInEx 5.4.23.2 - Sea Power (12.02.2026 21:08:03)
+[Info   :   BepInEx] Running under Unity v6000.0.67.7905730
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.2]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 4 plugins to load
+[Info   :   BepInEx] Loading [NavalCommand Development Harness 0.1.0]
+[Info   :   BepInEx] Loading [Task002 Runtime Validation 0.0.1]
+[Info   :   BepInEx] Loading [Task 018 Classification Probe 0.1.0]
+[Info   :Task 018 Classification Probe] TASK018 fixture enabled; it reads only the selected observer's plotting-table wrapper fields.
+[Info   :   BepInEx] Loading [AnchorChain Preloader 1.0.0]
+[Info   :AnchorChain Preloader] AnchorChain Preloader started!
+[Info   :AnchorChain Preloader] Loaded assembly AnchorChain, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :AnchorChain] Loaded assembly AnchorChain, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :AnchorChain] Loaded AnchorChain V1.1.0!
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Task 018 Classification Probe] TASK018 capture-start observer=Taskforce2 missionTimeSeconds=0.0
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=0.0 tracks=0 identified=0 classFieldPresent=0 classValueNonEmpty=0 sideKnown=0 live=0
+[Info   :Task 018 Classification Probe] TASK018 track-state observer=Taskforce2 trackId=1001 missionTimeSeconds=0.0 identified=False classFieldPresent=False classValueNonEmpty=False class="unknown" sideKnown=False relationship=unknown liveTrack=False positionEstimatePresent=False
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=0.0 tracks=1 identified=0 classFieldPresent=0 classValueNonEmpty=0 sideKnown=0 live=0
+[Info   :Task 018 Classification Probe] TASK018 track-state observer=Taskforce2 trackId=1001 missionTimeSeconds=0.1 identified=True classFieldPresent=True classValueNonEmpty=True class="wp_skr_krivak1" sideKnown=True relationship=Friendly liveTrack=True positionEstimatePresent=True
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=1.5 tracks=1 identified=1 classFieldPresent=1 classValueNonEmpty=1 sideKnown=1 live=1
+[Info   :Task 018 Classification Probe] TASK018 track-state observer=Taskforce2 trackId=7001 missionTimeSeconds=3.0 identified=False classFieldPresent=False classValueNonEmpty=False class="unknown" sideKnown=False relationship=unknown liveTrack=False positionEstimatePresent=False
+[Info   :Task 018 Classification Probe] TASK018 track-state observer=Taskforce2 trackId=7001 missionTimeSeconds=3.3 identified=True classFieldPresent=True classValueNonEmpty=True class="usn_ffg_oliver_hazard_perry" sideKnown=True relationship=Hostile liveTrack=True positionEstimatePresent=True
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=3.6 tracks=2 identified=2 classFieldPresent=2 classValueNonEmpty=2 sideKnown=2 live=2
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=4.6 tracks=2 identified=2 classFieldPresent=2 classValueNonEmpty=2 sideKnown=2 live=2
+[Info   :Task 018 Classification Probe] TASK018 summary observer=Taskforce2 missionTimeSeconds=6.7 tracks=2 identified=2 classFieldPresent=2 classValueNonEmpty=2 sideKnown=2 live=2
+[Info   :Task 018 Classification Probe] TASK018 capture-finished observer=Taskforce2 durationSeconds=12.0 lastMissionTimeSeconds=8.3

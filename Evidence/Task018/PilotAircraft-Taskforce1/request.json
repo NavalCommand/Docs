@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "token": "0d1aa471-49dc-44e0-a882-c9993822d480",
+  "assemblySha256": "0FE6AAF2A6D9982E7E2EB41FD6035CB97C149773202C90821D71C00A9FDEB01A",
+  "scenario": "C:\\Software\\GitHub\\NavalCommand\\Docs\\Tasks\\018\\Fixture\\AircraftIdentification-Taskforce1.ini",
+  "side": "Taskforce1",
+  "timeoutSeconds": 180,
+  "status": "prepared-only-no-loader-activated",
+  "ready": false
+}
