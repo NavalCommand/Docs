@@ -14,8 +14,10 @@ The current domain headers and owner-approved revised client architecture govern
 | SeaPower.Mod | Server composition, loader, byte bridge and packaging | SeaPower.Client, Gateway.Grpc, API modules |
 | Gateway.Grpc.Client | Remote domain provider/controller implementations | Domain.Api, Gateway.Api, Gateway.Grpc.Api, gRPC/protobuf |
 | World | Provider-injected replication and cached domain interfaces | Domain.Api |
-| TacticalDisplay | Provider-injected presentation library | Domain.Api, Dear ImGui, Win32/D3D11 |
-| CommandCenter | Sole client composition root | Gateway.Grpc.Client, World, TacticalDisplay |
+| Symbology.Nato.Api | APP-06(E)(1) SIDC, semantic amplifiers, renderer contract and optional domain adapter | C++ standard library; Domain.Api for the separate domain adapter target |
+| Symbology.Nato.ImGui | Dear ImGui implementation of the NATO renderer contract | Symbology.Nato.Api, Dear ImGui |
+| TacticalDisplay | Provider-injected presentation library and geographic projection | Domain.Api, Symbology.Nato.Api, Dear ImGui, Win32/D3D11 |
+| CommandCenter | Sole client composition root | Gateway.Grpc.Client, World, TacticalDisplay, Symbology.Nato.ImGui |
 | Build.CMake | Shared build/dependency policy | Infrastructure only |
 
 Test dependencies are separate. World uses local GoogleMock providers; TacticalDisplay has a local development application; client/application integration tests inject Gateway.Grpc.Mock. Test infrastructure is not a production library dependency.
@@ -32,6 +34,10 @@ flowchart LR
     subgraph Client[CommandCenter process]
         Proxy[Gateway.Grpc.Client] -->|injected domain providers| Cache[World: wall-clock polling]
         Cache -->|retained cached domain providers| GUI[TacticalDisplay]
+        GUI -->|framework-independent symbols and IRenderer| SymbologyCore[Symbology.Nato.Api core]
+        Composition -.-> ImGuiRenderer[Symbology.Nato.ImGui]
+        ImGuiRenderer --> SymbologyCore
+        DomainAdapter[Symbology.Nato.Api.Domain] --> Domain[Domain.Api]
         Composition[CommandCenter composition] -.-> Proxy
         Composition -.-> Cache
         Composition -.-> GUI
@@ -40,7 +46,7 @@ flowchart LR
     Server <-->|loopback gRPC| Proxy
 ```
 
-World imports neither gRPC nor windowing. TacticalDisplay imports neither World nor transport. CommandCenter binds scopes and lifetimes and dispatches controls. The managed/native boundary exchanges bytes, not gRPC or game objects.
+World imports neither gRPC nor windowing. TacticalDisplay imports neither World nor transport, and depends only on the framework-independent NATO rendering contract; it owns geographic projection and injects no concrete renderer. Symbology.Nato.Api's core `SymbolConverter`, SIDC and semantic amplifier types work without Units or Observations. Its separate `DomainConverter` target supplies additive Unit/Observation adapters. CommandCenter constructs `Symbology.Nato.ImGui::Renderer`, injects it into TacticalDisplay, binds scopes and lifetimes, and dispatches controls. The managed/native boundary exchanges bytes, not gRPC or game objects.
 
 ## Domain and serialization
 
