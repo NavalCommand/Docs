@@ -300,3 +300,7 @@ Follow-up validation:
 The initial timing figures above describe the original implementation. Geographic
 marker obstacles add work to changed frames; the updated pathological 300-object
 Release test completed in about 0.11 seconds including its 20 cached frames.
+
+## Primary role and icon follow-up
+
+See [the decision, migration and validation record](PRIMARY_PLATFORM_ROLE_AND_ICON_CORRECTIONS.md) for the owner-approved primary platform role and icon corrections. Its selection behavior supersedes the selected-priority behavior described above.

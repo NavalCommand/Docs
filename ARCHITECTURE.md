@@ -58,7 +58,17 @@ navigation and uncertainty geometry retain their geographic coordinates.
 
 Domain.Api is the source of truth. Gateway.Api owns one canonical schema; Gateway.Grpc.Api imports it. C++/C# codecs preserve variant alternatives, optional presence, known false/zero, partial localization, infrastructure errors and domain errors. Unknown data is not a default value or a legitimately empty collection.
 
-Equipment models operational capabilities. A physical launcher can yield distinct weapon/ammunition capabilities with real optional inventories. Resource-free sensors have no inventory; a present zero means a real depleted resource. Fits group resource identity/capacity/initial inventory; operations group identity/use/amount. Consumable and allocatable resources remain distinct. The owner-approved isolated resource correction is the only authorized Domain.Api change; the freeze remains in effect.
+Equipment models operational capabilities. A physical launcher can yield distinct weapon/ammunition capabilities with real optional inventories. Resource-free sensors have no inventory; a present zero means a real depleted resource. Fits group resource identity/capacity/initial inventory; operations group identity/use/amount. Consumable and allocatable resources remain distinct. The owner-approved resource correction and primary platform role addition are authorized Domain.Api changes; the freeze otherwise remains in effect.
+
+`Units::Api::Type::PrimaryPlatformRole` is an optional generic classification role
+describing the platform's principal intrinsic mission. Physical `SubCategory` and
+the complete `PlatformRoles` capability list remain independent dimensions. A
+present primary role must also appear in that list. Absence means unspecified;
+consumers must not infer priority from list order or the selected loadout. The
+domain-to-NATO adapter uses the primary role for supported aircraft mission
+modifiers. Engine adapters translate native classification into these generic
+values; neither the domain nor the renderer contains game-specific hull codes.
+See the [decision and migration record](Tasks/023/PRIMARY_PLATFORM_ROLE_AND_ICON_CORRECTIONS.md).
 
 ## Scopes and stable views
 
