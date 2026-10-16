@@ -2,6 +2,10 @@
 
 16 October 2026. Follow-up to the primary-platform-role implementation.
 
+The subsequent [fill, stability and role-override correction](FILL_WINDING_STABLE_LAYOUT_AND_ROLE_OVERRIDES.md)
+fixes the winding/triangulation defects still visible in this report's gallery
+and adds decluttering hysteresis and configurable primary roles.
+
 ## Changes
 
 - Carrier geometry now has a tower 10 coordinate units high above a hull 25 units
