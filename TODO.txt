@@ -9,3 +9,14 @@ NavalCommandFramework — TODO
 6. Sonobouys are not displayed on TacticalDisplay, torpedoes and missiles as well. Projectiles should be represented as Unit::Api::Instance and also have Observations. Homing projectiles should have attached Activity with a reference to object they are homing onto.
 7. Activities should be attachable not only to Units, but also to Observations (with uncertainty) - BLOCKED, DO NOT IMPLEMENT
 8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology
+
+
+Letter "A" in submarine's symbol is colliding with the internal submarine icon.
+I am not sure what Nimitz' icon depicts, but, first, it seems to be a bit incorrect, because the perimeter is incorrectly enclosed. Not sure if this is intended. Second, I expected to see an Aircraft Carrier icon and Platform Role.
+Ticonderoga is drawn like a generic surface combatant instead of CG. The game correctly prints CG, CVN and SSN for all three units. Our code does something wrong here, I expected the mod to query the game for this information. Instead we are hard-coding the mapping, aren't we?
+Helicopter's icon has wrong geometry. Instead of two triangles it looks more like a butterfly with a rectangular body in the middle.
+Both fixed-wing aircraft and helos have too small internal icons. In Wikipedia's example the icon almost touches the envelop.
+E-2C is not classified as AWACS, as it is in the game.
+EA-6B is not classified as EW aircraft.
+
+Bottomline, it seems that we have to decouple Platform Roles from the symbol, since the game clearly has these things separated. We need an architectural decision for this. I suggest instroducing a new unit type field - MainPlatformRole, which will be used for decisively selecting the symbol
