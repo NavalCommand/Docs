@@ -63,10 +63,13 @@ Equipment models operational capabilities. A physical launcher can yield distinc
 `Units::Api::Type::PrimaryPlatformRole` is an optional generic classification role
 describing the platform's principal intrinsic mission. Physical `SubCategory` and
 the complete `PlatformRoles` capability list remain independent dimensions. A
-present primary role must also appear in that list. Absence means unspecified;
+present primary role must also appear in that list. Absence permits a multipurpose platform or an unspecified/unrepresented mission;
 consumers must not infer priority from list order or the selected loadout. The
-domain-to-NATO adapter uses the primary role for supported aircraft mission
-modifiers and the GuidedMissile ship capability modifier. Engine adapters translate native classification into these generic
+domain-to-NATO adapter uses the primary role independently of physical subcategory
+for applicable aircraft, missile and common mission modifiers. An unsupported
+role/classification pair produces an explicit conversion error rather than silently
+dropping the role. The Sea Power configuration ledger records deliberate absence
+as well as specialist decisions, with sources and separate capability lists. Engine adapters translate native classification into these generic
 values; neither the domain nor the renderer contains game-specific hull codes.
 See the [decision and migration record](Tasks/023/PRIMARY_PLATFORM_ROLE_AND_ICON_CORRECTIONS.md).
 The [guided missile cruiser follow-up](Tasks/023/CARRIER_FRAMES_AND_GUIDED_CRUISERS.md)
