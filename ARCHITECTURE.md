@@ -48,6 +48,12 @@ flowchart LR
 
 World imports neither gRPC nor windowing. TacticalDisplay imports neither World nor transport, and depends only on the framework-independent NATO rendering contract; it owns geographic projection and injects no concrete renderer. Symbology.Nato.Api's core `SymbolConverter`, SIDC and semantic amplifier types work without Units or Observations. Its separate `DomainConverter` target supplies additive Unit/Observation adapters. CommandCenter constructs `Symbology.Nato.ImGui::Renderer`, injects it into TacticalDisplay, binds scopes and lifetimes, and dispatches controls. The managed/native boundary exchanges bytes, not gRPC or game objects.
 
+NATO styling and per-symbol measurement are public Symbology.Nato.Api contracts.
+The ImGui renderer measures and draws individual symbols with separate geographic
+and visual anchors. TacticalDisplay owns all scene-wide collision layout, stable
+hover and selection, exact-position dots and displacement connectors. Kinematic,
+navigation and uncertainty geometry retain their geographic coordinates.
+
 ## Domain and serialization
 
 Domain.Api is the source of truth. Gateway.Api owns one canonical schema; Gateway.Grpc.Api imports it. C++/C# codecs preserve variant alternatives, optional presence, known false/zero, partial localization, infrastructure errors and domain errors. Unknown data is not a default value or a legitimately empty collection.
