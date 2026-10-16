@@ -2,6 +2,11 @@
 
 Date: 16 October 2026. Owner-approved extension to Task 023.
 
+Subsequent feedback is implemented in the
+[carrier, frames and guided cruiser follow-up](CARRIER_FRAMES_AND_GUIDED_CRUISERS.md),
+which supersedes the carrier/unknown-frame geometry and adds explicit GuidedMissile
+classification and CG presentation.
+
 ## Decision
 
 Add optional `Classification::Api::Role PrimaryPlatformRole` to

@@ -66,9 +66,11 @@ the complete `PlatformRoles` capability list remain independent dimensions. A
 present primary role must also appear in that list. Absence means unspecified;
 consumers must not infer priority from list order or the selected loadout. The
 domain-to-NATO adapter uses the primary role for supported aircraft mission
-modifiers. Engine adapters translate native classification into these generic
+modifiers and the GuidedMissile ship capability modifier. Engine adapters translate native classification into these generic
 values; neither the domain nor the renderer contains game-specific hull codes.
 See the [decision and migration record](Tasks/023/PRIMARY_PLATFORM_ROLE_AND_ICON_CORRECTIONS.md).
+The [guided missile cruiser follow-up](Tasks/023/CARRIER_FRAMES_AND_GUIDED_CRUISERS.md)
+records the additional owner-approved generic role and its adapter mapping.
 
 ## Scopes and stable views
 
