@@ -11,15 +11,7 @@ NavalCommandFramework — TODO
 8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology
 
 
-Letter "A" in submarine's symbol is colliding with the internal submarine icon.
-I am not sure what Nimitz' icon depicts, but, first, it seems to be a bit incorrect, because the perimeter is incorrectly enclosed. Not sure if this is intended. Second, I expected to see an Aircraft Carrier icon. Nimitz has correctly-set Aircraft Carrier SubCategory.
-Ticonderoga is drawn like a generic surface combatant instead of CG. The game correctly prints CG, CVN and SSN for all three units. 
-Helicopter's icon has wrong geometry. Instead of two triangles it looks more like a butterfly with a rectangular body in the middle.
-Both fixed-wing aircraft and helos have too small internal icons. In Wikipedia's example the icon almost touches the envelop.
-E-2C is not classified as AWACS, as it is in the game.
-EA-6B is not classified as EW aircraft.
-AFAIK, AWACS and EW are roles, not SubCategories. It seems that we have to decouple Platform Roles from the symbol, since the game clearly has these things separated. We need an architectural decision for this. I suggest instroducing a new unit type field - PrimaryPlatformRole, which will be used for decisively selecting the symbol. PlatformRoles list should remain.
-
-1. Hovering causes decluttering recalculation.
-2. Udaloy has correctly-set ASW primary role, but has no ASW label inside its symbol. It shows just DD instead of ASW DD.
-3. Kilo also has ASW primary role, but does not have ASW label in the symbol. However it is questionable whether this class has any primary role at all. I think we need to deliberatly allow platforms to have no primary role, if the platform is truely multi-purpose. So the goal is to have consistent SW implementation (unit with a primary role must have an applicable modifier inside its symbol), but some platforms are allowed to omit primary roles. Domain.Api already allows this. Please make a sweep for all in-game units, use internet research to determine if platform is multi-purpose or has a primary role and encode your findings in the config files. Make sure that all unit Sub-Categories correctly display associated primary role modifiers.
+1. Hovering causes decluttering recalculation, even if geometry does not change.
+2. Lets again introduce sticky decluttering. Hysteresis did not help much, symbols still reposition themselves on small changes. Add a GUI dropdown that allows selecting between current decluttering and sticky mode. In sticky mode, decluttering must run only when current layout detects collisions, how you did it in the first place.
+3. Udaloy has correctly-set ASW primary role, but has no ASW label inside its symbol. It shows just DD instead of ASW DD.
+4. Kilo also has ASW primary role, but does not have ASW label in the symbol. However it is questionable whether this class has any primary role at all. I think we need to deliberatly allow platforms to have no primary role, if the platform is truely multi-purpose. So the goal is to have consistent SW implementation (unit with a primary role must have an applicable modifier inside its symbol), but some platforms are allowed to omit primary roles. Domain.Api already allows this. Please make a sweep for all in-game units, use internet research to determine if platform is multi-purpose or has a primary role and encode your findings in the config files. Make sure that all unit Sub-Categories correctly display associated primary role modifiers.
