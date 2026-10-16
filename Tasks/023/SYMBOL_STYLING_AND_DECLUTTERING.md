@@ -1,4 +1,4 @@
-# Task 023 — Symbol styling and tactical map decluttering
+# Task 023 â€” Symbol styling and tactical map decluttering
 
 ## Scope and architecture
 
@@ -9,10 +9,10 @@ presentation code; tests and CPU visual rasterization are regression fixtures.
 No Domain, simulation, transport, observation or classification semantics changed.
 
 The owner separately approved dependency-pin-only edits in Gateway.Api,
-Gateway.Grpc.Api, Gateway.Grpc.Client, Gateway.Grpc and World. Their existing pins
-referenced the older Domain type contract, and the shared resolver correctly
-rejected a graph containing both revisions. Those five repositories contain only
-CMake pin changes for this task.
+Gateway.Grpc.Api, Gateway.Grpc.Client, Gateway.Grpc and World, followed by
+SeaPower.Client and SeaPower.Mod. Their existing pins referenced the older
+contract graph, and the shared resolver correctly rejected conflicting revisions.
+Those seven repositories contain only CMake pin changes for this task.
 
 The accepted dependency-injection decision is preserved: TacticalDisplay knows
 `IRenderer`, never the concrete ImGui renderer. Scene-wide layout is exclusively
@@ -42,7 +42,7 @@ Text defaults to a light foreground on the dark map. FilledLight uses dark text.
 | Neutral | `#AAFFAA` |
 | Unknown / pending | `#FFFF80` |
 
-Reviewed [APP-06 Edition E Version 1, §1.2.1](https://studylib.net/doc/28067209/app-06-ede-v1-e):
+Reviewed [APP-06 Edition E Version 1, Â§1.2.1](https://studylib.net/doc/28067209/app-06-ede-v1-e):
 frame shape communicates identity/dimension; fill represents its interior and may
 reinforce identity. Air/space frames remain open below and subsurface frames open
 above. Uncertain identities retain alternating black/white patterns; planned
@@ -176,6 +176,7 @@ features used here; complete C++26 conformance is not claimed.
 | CommandCenter Debug | 2/2 passed, including mock gRPC/World/rendering/reconnect |
 | Fresh pinned-Git CommandCenter Release | build passed; 2/2 tests passed |
 | TacticalDisplay Release | build passed; 12/12 tests passed |
+| SeaPower.Mod Release runtime and harness packages | build passed; 30 manifest checksums verified |
 
 Coverage includes palette/presets, custom API colors, filled/unfilled and open
 frames, uncertain/planned frames, status/destruction colors, unchanged SIDC/domain
@@ -204,6 +205,15 @@ was changed. The clone, configure/build logs and test results remain under
 `CommandCenter/o/git-validation/`. Existing third-party vcpkg binaries were reused;
 this was a clean internal-source Release build, not a rebuild of vcpkg itself.
 
+After aligning the approved SeaPower dependency pins, the existing local-source
+Release configuration successfully built `NavalCommand.SeaPower.Mod.PackageRuntime`
+and `NavalCommand.SeaPower.Mod.PackageHarness`. Outputs are staged independently
+under `SeaPower.Mod/o/package/0.1.0` and `SeaPower.Mod/o/harness/0.1.0`; all 24
+runtime and six harness manifest checksums were verified. The runtime packaging
+allowlist passed. Existing managed assembly-version conflict warnings remain;
+there were zero build errors. The log is `SeaPower.Mod/o/styling-package-build.log`.
+These are package-build results, not live game acceptance.
+
 Visual fixtures write PPM files in the test working directory; the PNGs here are
 lossless conversions. No vendor assets or game binaries were used. Tests require
 no live Sea Power session. No live game launch, loader activation or game-folder
@@ -231,3 +241,5 @@ the final code revisions.
 | Gateway.Grpc.Client | `4960966e505be4aa9861180660e80e439b8c0c3f` |
 | Gateway.Grpc | `291a296f4d3ee4df1d978038d110c5b3faad116a` |
 | World | `66ec0b2e498a378af63f53a90d2d1ddfee63ddbc` |
+| SeaPower.Client | `4bec78801b37638272da8710005140d217f65d06` |
+| SeaPower.Mod | `e06562b6c806a8d42cd37d5cd185c174a61475a5` |
