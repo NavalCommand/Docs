@@ -53,6 +53,10 @@ The ImGui renderer measures and draws individual symbols with separate geographi
 and visual anchors. TacticalDisplay owns all scene-wide collision layout, stable
 hover and selection, exact-position dots and displacement connectors. Kinematic,
 navigation and uncertainty geometry retain their geographic coordinates.
+TacticalDisplay recovers classification/rendering failures at its presentation boundary
+with the standard Unknown-dimension symbol, retains authorized amplifiers, and exposes
+the conversion diagnostic in details. Strict NATO conversion still reports failures;
+no new domain classification or parallel interaction pipeline is introduced.
 
 ## Domain and serialization
 
