@@ -79,6 +79,15 @@ See the [decision and migration record](Tasks/023/PRIMARY_PLATFORM_ROLE_AND_ICON
 The [guided missile cruiser follow-up](Tasks/023/CARRIER_FRAMES_AND_GUIDED_CRUISERS.md)
 records the additional owner-approved generic role and its adapter mapping.
 
+Observation kinematics distinguish reported contact heading from authoritative
+unit body orientation. `Observations::Api::Kinematics::Heading` preserves the
+source's reported track direction, which may be movement-derived. It does not
+guarantee target bow/nose orientation. Observation heading and course may share
+one source and must not be treated as independent measurements by AI controllers
+or other consumers. Authoritative `Units::Api::Kinematics::Heading` remains body
+orientation. Availability follows the permitted observer presentation sources,
+independently of classification or dormancy where the source imposes no such gate.
+
 ## Scopes and stable views
 
 A publication contains independent omniscient and faction scopes. Omniscient units are authoritative truth. Faction scopes contain accessible authoritative units and actual native plotting-table observations. Observation identities are distinct from truth identities, scoped by observer faction, and expose no correlation map. Hidden identifiers return errors.

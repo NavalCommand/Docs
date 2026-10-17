@@ -10,7 +10,9 @@ launch is part of this execution.
 The owner's clarification is authoritative: absent `PrimaryPlatformRole` is a
 valid final decision. No primary is inferred from capabilities, equipment, loadout
 or hull subcategory. The reviewed ledger and generated INI are unchanged.
-Domain.Api, wire properties and observer identities are unchanged.
+The original fixes left Domain.Api unchanged. The heading-semantics follow-up
+below adds contract documentation only; wire properties and observer identities
+remain unchanged.
 
 ## A. Submarine SIDCs — confirmed defect
 
@@ -115,6 +117,62 @@ that contact direction, speed and elevation are available before identity/type.
 stale/missing-reference timing, player settings and every family's presentation.
 Source inspection does not establish that these live cases passed. No new
 player-information-policy decision is introduced.
+
+### Heading semantics follow-up — 2026-10-17
+
+Addresses [the remaining heading semantics comment](https://github.com/NavalCommand/SeaPower.Client/pull/1#issuecomment-6234009662).
+The owner explicitly requires observation heading and speed to retain their
+player-visible values and availability, including unidentified, partial, exact
+and dormant contacts. Leaving heading Unknown merely because the source is
+movement-derived would violate that requirement.
+
+| Field | Meaning |
+|---|---|
+| Authoritative unit `Heading` | Actual platform/body orientation; unchanged |
+| Observation `Heading` | Source-reported track heading; Sea Power derives its displayed heading from `Vehicle.UnityVelocityVector`, then the adapter converts the grid direction to a geographic bearing |
+| Observation `CourseOverGround` | Reported horizontal movement direction from that same vector when nonzero |
+
+The two observation fields are not independent measurements. Their equality is
+not evidence of bow/nose orientation. `Exact::Known` describes availability of
+the reported value; it does not independently verify physical orientation.
+This distinction is now explicit in the generic Domain.Api observation header
+and README, project architecture, adapter comments and SeaPower.Client README.
+No simulator dependency, property, protobuf change or breaking migration is added.
+Authoritative unit heading documentation and mapping remain unchanged.
+
+The production changes are comments only. Source review reconfirmed that
+`CaptureObservation` calls `CaptureDisplayedKinematics` before independent
+classification resolution; neither that call nor the mapping has an
+identification/dormancy gate. The native mapping still reads
+`track.UnityVelocityVector`; it does not read native body heading, true scalar
+speed or a replacement truth velocity. Zero-vector reported heading remains
+known north, speed known zero and course Unknown. Missing object/latitude and
+nonfinite vector behavior are preserved. Geographic correction and speed-leader
+inputs are unchanged. No new native inspection or live-game result is claimed.
+
+Regression additions execute the production pure mapping and protobuf round trip
+for unknown, partial and exact observation classifications with active/retained
+dormant-vector fixtures. They assert presence as well as values, known zero
+heading/speed, vertical-only movement, differing authoritative body heading and
+speed, unavailable speed display and NaN/infinite components on every axis.
+Existing missing-object/localization and multi-latitude/oblique-bearing regressions
+remain. The helper deliberately accepts neither classification/dormancy nor
+authoritative heading/speed; fixture metadata is not a simulated native UI gate.
+These tests protect mapping/serialization behavior; absence of native gates and
+truth substitution is established by the source review above, not a live UI test.
+
+Executed: `dotnet run --project SeaPower.Client/test/managed/ProviderTests.csproj --configuration Release`
+and the same command with `--configuration Debug` — both passed on 2026-10-17.
+This includes existing ownership, observer classification,
+expiry, session and thread-boundary regressions. Changes to native contract headers
+are comments only; native suites and runtime packaging were not rerun for this
+follow-up. No dependency pins change because executable code and contracts are
+unchanged. No deployment, game launch, main merge or review resolution is performed.
+
+Published on the existing `feature/classification` branches:
+Domain.Api `63109941b1982cffcdeaef9a9cd497b7a2eedfa4` (documentation only),
+SeaPower.Client `e70e3fc570073901bd1f18ea9c13ec0e9f0b292c`
+(comments, README and regressions).
 
 ## C. Map omission — confirmed defect
 
