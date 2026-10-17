@@ -4,7 +4,7 @@
 
 ## Repository boundaries
 
-The platform has ten independent functional Git repositories and one separate infrastructure repository:
+The platform has twelve independent functional Git repositories and one separate infrastructure repository:
 
 | Repository | Responsibility | Build shape |
 |---|---|---|
@@ -16,13 +16,15 @@ The platform has ten independent functional Git repositories and one separate in
 | `SeaPower.Mod` | C# composition/loader root, native host/C ABI, DI, package assembly and developer harness | Managed/native build and packaging orchestration |
 | `Gateway.Grpc.Client` | Remote Domain.Api proxies and connection/session lifetime | Native library and mock-server tests |
 | `World` | Injected provider polling, immutable replication and cached domain providers | Native library and local-provider tests |
-| `TacticalDisplay` | Domain-provider presentation, Win32/D3D11/ImGui | Native library and local development app |
-| `CommandCenter` | Sole client composition root | Executable and full mock integration test |
+| `Symbology.Nato.Api` | GUI-independent APP-06(E)(1) SIDC, semantic amplifiers, `IRenderer`, and separate Domain.Api adapters | Core and domain-converter libraries with independent tests |
+| `Symbology.Nato.ImGui` | Dear ImGui implementation of the GUI-independent NATO rendering interface | Renderer library and drawing tests |
+| `TacticalDisplay` | Domain-provider presentation, map projection, Win32/D3D11/ImGui | Native library and local development app |
+| `CommandCenter` | Sole client composition root; injects the concrete NATO renderer | Executable and full mock integration test |
 | `Build.CMake` | Shared CMake functions, policies, internal-source registry and native target configuration | Infrastructure only; never a runtime/domain module |
 
 Managed source ownership and CMake/MSBuild integration follow [MANAGED_BUILD.md](MANAGED_BUILD.md). Handwritten C# projects live under `managed/`; managed regression projects under `test/managed/`. `managed/CMakeLists.txt` registers projects and composition targets through `Build.CMake`. `SeaPower.Mod/managed/runtime/` and `managed/harness/` remain independent. CMake owns dependency source resolution and full-build orchestration; MSBuild owns normal ProjectReference compilation and NuGet. PowerShell build wrappers delegate to configured CMake targets, while the packaging helper only stages evaluated outputs and checks redistribution boundaries.
 
-The provider and gateway implementations do not depend on each other. `SeaPower.Mod` binds them. The common `.proto` payload types are defined once in `Gateway.Api`, imported by `Gateway.Grpc.Api` and generated for both C++ and C#. Build/source dependency edges must not contradict [ARCHITECTURE.md](ARCHITECTURE.md).
+The provider and gateway implementations do not depend on each other. `SeaPower.Mod` binds them. The common `.proto` payload types are defined once in `Gateway.Api`, imported by `Gateway.Grpc.Api` and generated for both C++ and C#. The `Symbology.Nato.Api` core target has no Domain.Api, GUI or simulation-object requirement; the sibling domain adapter target depends on Domain.Api. `Symbology.Nato.ImGui` depends only on that core API and Dear ImGui. TacticalDisplay depends on the abstract renderer interface, while CommandCenter composes the concrete implementation. Build/source dependency edges must not contradict [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Native repository layout
 

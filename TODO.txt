@@ -9,3 +9,9 @@ NavalCommandFramework — TODO
 6. Sonobouys are not displayed on TacticalDisplay, torpedoes and missiles as well. Projectiles should be represented as Unit::Api::Instance and also have Observations. Homing projectiles should have attached Activity with a reference to object they are homing onto.
 7. Activities should be attachable not only to Units, but also to Observations (with uncertainty) - BLOCKED, DO NOT IMPLEMENT
 8. TacticalDisplay should have different icons for different unit types, for both real units and observations. I propose https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology
+
+
+1. Hovering causes decluttering recalculation, even if geometry does not change.
+2. Lets again introduce sticky decluttering. Hysteresis did not help much, symbols still reposition themselves on small changes. Add a GUI dropdown that allows selecting between current decluttering and sticky mode. In sticky mode, decluttering must run only when current layout detects collisions, how you did it in the first place.
+3. Udaloy has correctly-set ASW primary role, but has no ASW label inside its symbol. It shows just DD instead of ASW DD.
+4. Kilo also has ASW primary role, but does not have ASW label in the symbol. However it is questionable whether this class has any primary role at all. I think we need to deliberatly allow platforms to have no primary role, if the platform is truely multi-purpose. So the goal is to have consistent SW implementation (unit with a primary role must have an applicable modifier inside its symbol), but some platforms are allowed to omit primary roles. Domain.Api already allows this. Please make a sweep for all in-game units, use internet research to determine if platform is multi-purpose or has a primary role and encode your findings in the config files. Make sure that all unit Sub-Categories correctly display associated primary role modifiers.

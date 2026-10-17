@@ -24,6 +24,9 @@ This directory contains historical work specifications, reports and reproduction
 | [016](016/) | Sea Power classification model investigation; [findings](016/CLASSIFICATION_FINDINGS.md). Investigation only; no production API/schema changes |
 | [018](018/) | Sea Power runtime classification and observation experiments; [report](018/REPORT.md) and [run evidence](../Evidence/Task018/README.md). No production APIs, schemas, codecs, adapters, or TacticalDisplay changes |
 | [019](019/) | Interactive Sea Power identification experiment; [runtime findings](019/IDENTIFICATION_RUNTIME_FINDINGS.md), [recorder fixture](019/Fixture/), and [run evidence](../Evidence/Task019/README.md). No production integration changes |
+| [023](023/SYMBOL_STYLING_AND_DECLUTTERING.md) | NATO symbol styling, measurement, independent geographic/visual anchors and text-aware TacticalDisplay decluttering; build/test evidence and revisions; [sticky modes and primary-role inventory review](023/STICKY_LAYOUT_AND_PRIMARY_ROLE_REVIEW.md) |
+| [024](024/PR_REVIEW_FIXES.md) | Classification integration review corrections: submarine SIDCs, contact-panel kinematics and explicit generic map fallback |
+| [022](022/) | NATO APP-06(E) symbology API, independent renderer, ImGui binding, TacticalDisplay and CommandCenter integration; [implementation report](022/SYMBOLOGY_IMPLEMENTATION.md) |
 
 Run-specific evidence remains in [../Evidence/](../Evidence/README.md) under its original directory identifiers. Some archived commands or inline `Docs/...` paths reflect the former root-level document layout; use this index when locating moved reports.
 
